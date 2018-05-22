@@ -1,6 +1,6 @@
 <?php
 include "src/functions/functions.php";
-connection();
+connect();
 ?>
 <!doctype html>
 <html lang="en">
@@ -9,7 +9,7 @@ connection();
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>UADV - Top</title>
 </head>
 <body>
     top
