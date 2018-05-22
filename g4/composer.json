@@ -1,0 +1,12 @@
+{
+    "name": "nounoursnoir/g4",
+    "authors": [
+        {
+            "name": "PierreTurnbull",
+            "email": "pierre.turnbull42@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^4.0"
+    }
+}
