@@ -1,5 +1,5 @@
 <?php
-function connect()
+function connect(): PDO
 {
     $host       = "localhost";
     $port       = "3306";
@@ -12,4 +12,5 @@ function connect()
         echo "Fatal error: couldn't not connect to the database.";
         exit;
     }
+    return $connection;
 }
