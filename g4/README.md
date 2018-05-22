@@ -61,14 +61,6 @@ Boîte à image -> imagebox.php
 
 TOP 100 -> top.php
 
-Bons plans -> goodplan.php
-
-Bons plans aériens: “mes bons plans” -> goodplanMyArticles.php
-
-Bons plans aériens: créer -> goodplanCreate.php
-
-Bons plans aériens: page d’un bon plan -> goodplanArticle.php
-
 Footer: page de modifiation -> footerUpdate.php
 
 **ARBORESCENCE**
@@ -98,13 +90,5 @@ contact.php
 imagebox.php
 
 top.php
-
-goodplans.php
-
-|__ goodplansMyArticles.php
-
-|__ goodplansCreate.php
-
-|__ goodplansArticle.php
 
 footerUpdate.php
