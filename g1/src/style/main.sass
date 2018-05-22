@@ -1,2 +1,44 @@
+$maxphone: 767px
+$mintablet: 768px
+
 body
-  background: #987
+  font-family: "Agency FB",sans-serif
+
+
+html
+  font-size: 62.5%
+  
+.header
+  background-image: url("../src/assets/img/main.jpg")
+  @media screen and (max-width: $maxphone)
+  	height: 568px
+  &-header
+  	display: flex
+  	justify-content: space-around
+  	align-items: center
+  &-logo
+  	width: 40px
+  	height: 40px
+  &-burger
+    width: 20px
+    height: 20px
+    @media screen and (min-width: $mintablet)
+      display: none
+  &-title
+  	color: white
+  	text-transform: uppercase
+  &-subtitle
+  	color: white
+
+.section3
+	background-image: url("../src/assets/img/cote.png")
+	&-textArrow-arrow
+  			height: 20px
+	@media screen and (max-width: $maxphone)
+  		height: 463px
+  	
+
+.section4
+	background-image: url("../src/assets/img/discover.png")
+	@media screen and (max-width: $maxphone)
+  		height: 277px
