@@ -1,5 +1,32 @@
-$maxphone: 767px
-$mintablet: 768px
+$bp-tablet: 600px
+$bp-desktop: 949px
+$bp-desktop-large: 1200px
+$bp-desktop-x-large: 1800px
+
+
+
+@mixin for-size($range) 
+  $phone-upper-boundary: $bp-tablet
+  $tablet-portrait-upper-boundary: $bp-desktop
+  $tablet-landscape-upper-boundary: $bp-desktop-large
+  $desktop-upper-boundary: $bp-desktop-x-large
+
+  @if $range == phone-only 
+    @media (max-width: #{$phone-upper-boundary - 1}) 
+     @content
+   @else if $range == tablet-portrait-up 
+    @media (min-width: $phone-upper-boundary) 
+      @content
+   @else if $range == tablet-landscape-up 
+    @media (min-width: $tablet-portrait-upper-boundary)
+      @content
+   @else if $range == desktop-up 
+    @media (min-width: $tablet-landscape-upper-boundary) 
+      @content
+   @else if $range == big-desktop-up 
+    @media (min-width: $desktop-upper-boundary) 
+     @content
+
 
 body
   font-family: "Agency FB",sans-serif
@@ -19,16 +46,20 @@ html
   &-logo
   	width: 40px
   	height: 40px
+  &-subtitle
+  	color: white
+    @media screen and (min-width: $mintablet)
+      display: none
   &-burger
     width: 20px
     height: 20px
-    @media screen and (min-width: $mintablet)
-      display: none
   &-title
   	color: white
   	text-transform: uppercase
-  &-subtitle
-  	color: white
+  
+
+
+
 
 .section3
 	background-image: url("../src/assets/img/cote.png")
@@ -38,7 +69,7 @@ html
   		height: 463px
   	
 
-.section4
+.section4Mobile
 	background-image: url("../src/assets/img/discover.png")
 	@media screen and (max-width: $maxphone)
   		height: 277px

@@ -43,6 +43,9 @@
 
     <section class="section2">
         <h2 class="section2-title">Soyez un voyageur averti !</h2>
+        <div class="section2-blueline"></div>
+        <span class="section2-list">Un mook collector. Des fiches pratiques. Une application. Un site.</span>
+        <p class="section2-paragraph">"Un mook (contraction de magazine et book) est un ouvrage hybride dont le format se situe entre le magazine et le livre. Il est publié de manière périodique et renferme essentiellement de grands reportages. Il comprend également des dessins et des photos servant à l'illustration des textes.</p>
         <img class="section2-magazine" src="">
     </section>
 
@@ -59,14 +62,25 @@
         
     </section>
 
-    <section class="section4">
+    <section class="section4Mobile">
         <h2>Découvrez nos Tops</h2>
-        <div class="section4-textArrow">
-            <span class="section4-textArrow-text">Découvrir</span>
-            <img class="section4-textArrow-arrow" src="../src/assets/img/chevron-right.svg">
+        <div class="section4Mobile-textArrow">
+            <span class="section4Mobile-textArrow-text">Découvrir</span>
+            <img class="section4Mobile-textArrow-arrow" src="../src/assets/img/chevron-right.svg">
         </div>
     </section>
 
+    <section class="section4Desktop"></section>
+        <h2>Découvrez nos TOPS</h2>
+        <div class="section4Desktop-blueline"></div>
+        <div class="section4Desktop-align">
+            <div class="section4Desktop-align-item">
+                <img src="../src/assets/img/discover.png">
+                <p>Top 100 de nos meilleurs restaurants</p>
+            </div>
+            <div class="section4Desktop-align-item"></div>
+            <div class="section4Desktop-align-item"></div>
+        </div>
     <footer>
 
     </footer>
