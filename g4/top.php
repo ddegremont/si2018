@@ -22,7 +22,7 @@ $cat3_data = getTopData($connection, "spas");
     </style>
 </head>
 <body>
-    top
+    <h1>Top 100 destinations</h1>
     <section class="top top_cat1">
         <h2>Category: hostels</h2>
         <?php displayTopContent($cat1_data) ?>
