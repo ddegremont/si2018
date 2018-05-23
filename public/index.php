@@ -6,10 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
 </head>
 <body>
 
+<script type="text/javascript" src="./js/main.js">
+
+</script>
 </body>
 </html>
