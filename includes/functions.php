@@ -7,37 +7,30 @@ function handlePDOError(PDOStatement $stmt): void
     }
 }
 
-function displayEstablishementsList(\PDO $pdo): ?array
+function displayEstablishementsList(\PDO $pdo)
 {
-    $sql = "SELECT 
+    $sql = "SELECT
               `id`,
-              `country_id`,
+              `cover_img_src`,
               `name`,
-              `type`,
-              `main_pic`
+              `type`
             FROM
-              `establishement`, `country`
+              `establishement`
             ;";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     handlePDOError($stmt);
     ?>
-    <h2> Etablissements </h2>
-    <table>
-        <thead>
-            <tr>
-                <td>id</td>
-                <td>thumbnail</td>
-                <td>nom</td>
-                <td>ville</td>
-                <td>type d'établissement</td>
-            </tr>
-        </thead>
         <tbody>
             <?php while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
                 <tr>
-                    <td><?=$row["id"]?></td>
-                    <td><img src="<?=$row["img_"]?>" alt=""></td>
+                    <th><?=$row["id"]?></th>
+                    <td><img src="<?=$row["cover_img_src"]?>" alt="">-</td>
+                    <td><?=$row["name"]?></td>
+                    <td>-</td>
+                    <td><?=$row["type"]?></td>
+                    <td><a href="show.php?id=<?=$row["id"]?>">éditer</a></td>
+                    <td><a href="delete.php?id=<?=$row["id"]?>">supprimer</a></td>
                 </tr>
             <?php endwhile;?>
         </tbody>
