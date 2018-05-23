@@ -14,7 +14,7 @@ if(!empty($_POST['title']) && !empty($_POST['h1']) && !empty($_POST['p']) && !em
     $imgSrc = $_POST['img-src'];
     $navTitle = $_POST['nav-title'];
 } else{
-    header('Location: index.php');
+    header('Location: login.php');
 }
 
 $sql = "INSERT INTO `page` (
@@ -52,4 +52,4 @@ $stmt->bindParam(':imgSrc',$imgSrc, PDO::PARAM_STR);
 $stmt->bindParam(':navTitle',$navTitle, PDO::PARAM_STR);
 $stmt->execute();
 
-header('Location: index.php');
+header('Location: login.php');

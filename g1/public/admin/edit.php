@@ -11,4 +11,4 @@
     <button type="submit">send</button>
 </form>
 
-<p><a href="index.php">Retours vers la home</a></p>
+<p><a href="login.php">Retours vers la home</a></p>

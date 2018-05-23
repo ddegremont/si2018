@@ -12,4 +12,4 @@ $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':id', $_POST['id']);
 $stmt->execute();
 
-header("Location:index.php");
+header("Location:login.php");

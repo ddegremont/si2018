@@ -5,39 +5,41 @@ $bp-desktop-x-large: 1800px
 
 
 
-@mixin for-size($range) 
+@mixin for-size($range)
   $phone-upper-boundary: $bp-tablet
   $tablet-portrait-upper-boundary: $bp-desktop
   $tablet-landscape-upper-boundary: $bp-desktop-large
   $desktop-upper-boundary: $bp-desktop-x-large
 
-  @if $range == phone-only 
-    @media (max-width: #{$phone-upper-boundary - 1}) 
+  @if $range == phone-only
+   @media (max-width: #{$phone-upper-boundary - 1})
      @content
-   @else if $range == tablet-portrait-up 
-    @media (min-width: $phone-upper-boundary) 
-      @content
-   @else if $range == tablet-landscape-up 
+  @else if $range == tablet-portrait-up
+   @media (min-width: $phone-upper-boundary)
+     @content
+  @else if $range == tablet-landscape-up
     @media (min-width: $tablet-portrait-upper-boundary)
-      @content
-   @else if $range == desktop-up 
-    @media (min-width: $tablet-landscape-upper-boundary) 
-      @content
-   @else if $range == big-desktop-up 
-    @media (min-width: $desktop-upper-boundary) 
+     @content
+  @else if $range == desktop-up
+   @media (min-width: $tablet-landscape-upper-boundary)
+     @content
+  @else if $range == big-desktop-up
+   @media (min-width: $desktop-upper-boundary)
      @content
 
 
 body
   font-family: "Agency FB",sans-serif
+  background: #000
 
 
 html
   font-size: 62.5%
   
 .header
-  background-image: url("../src/assets/img/main.jpg")
-  @media screen and (max-width: $maxphone)
+  background: url("../assets/img/main.jpg") no-repeat
+  background-size: cover
+  //@media screen and (max-width: $maxphone)
   	height: 568px
   &-header
   	display: flex
@@ -48,7 +50,7 @@ html
   	height: 40px
   &-subtitle
   	color: white
-    @media screen and (min-width: $mintablet)
+    //@media screen and (min-width: $mintablet)
       display: none
   &-burger
     width: 20px
@@ -62,14 +64,17 @@ html
 
 
 .section3
-	background-image: url("../src/assets/img/cote.png")
-	&-textArrow-arrow
-  			height: 20px
-	@media screen and (max-width: $maxphone)
-  		height: 463px
+  background: url("../assets/img/cote.png") no-repeat
+  background-size: cover
+  &-textArrow-arrow
+          height: 20px
+  //@media screen and (max-width: $maxphone)
+      height: 463px
   	
 
 .section4Mobile
-	background-image: url("../src/assets/img/discover.png")
-	@media screen and (max-width: $maxphone)
-  		height: 277px
+  background: url("../assets/img/discover.png") no-repeat
+  background-size: cover
+
+  //@media screen and (max-width: $maxphone)
+      height: 277px

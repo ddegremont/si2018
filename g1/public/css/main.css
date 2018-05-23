@@ -1,0 +1,35 @@
+body {
+  font-family: "Agency FB",sans-serif;
+  background: #000; }
+
+html {
+  font-size: 62.5%; }
+
+.header {
+  background: url("../assets/img/main.jpg") no-repeat;
+  background-size: cover; }
+  .header-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .header-logo {
+    width: 40px;
+    height: 40px; }
+  .header-subtitle {
+    color: white; }
+  .header-burger {
+    width: 20px;
+    height: 20px; }
+  .header-title {
+    color: white;
+    text-transform: uppercase; }
+
+.section3 {
+  background: url("../assets/img/cote.png") no-repeat;
+  background-size: cover; }
+  .section3-textArrow-arrow {
+    height: 20px; }
+
+.section4Mobile {
+  background: url("../assets/img/discover.png") no-repeat;
+  background-size: cover; }

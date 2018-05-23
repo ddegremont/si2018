@@ -62,9 +62,14 @@ SET
   `nav-title` = 'nav-title'
 WHERE
 `id` = 1;
--- Michael Jackson
+
+
 DELETE FROM `page` WHERE `id` = 2;
 -- géneration de la nav
 SELECT `slug`, `nav-title` FROM `page`;
--- Affichage de la page Teletubbies
-SELECT `h1`, `p`, `span-class`, `span-text`, `img-alt`, `img-src` FROM `page` WHERE `slug` = 'teletubbies';
+
+CREATE TABLE `Users` (
+  `id` int(10) NOT NULL,
+  `pseudo` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

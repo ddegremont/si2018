@@ -37,7 +37,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 <p><?=$row['id']. ' ' .$row['title']. ' ' .$row['h1']. ' ' .$row['p']. ' ' .$row['span-class']. ' ' .$row['span-text']. ' ' .$row['title'] ?></p>
 
-<p><a href="index.php">Retours vers la home</a></p>
+<p><a href="login.php">Retours vers la home</a></p>
 <p><a href="edit.php?id=<?=$row['id'] ?>">Modifer</a></p>
 <p><a href="delete.php?id=<?=$row['id'] ?>">Supprimer</a></p>
 

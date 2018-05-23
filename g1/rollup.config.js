@@ -10,12 +10,12 @@ export default {
     },
     sourceMap: true,
     plugins: [
-        sass(),
         url({
             limit: 10 * 1024, // inline files < 10k, copy files > 10k
             include: ["**/*.svg","**/*.png","**/*.jpg","**/*.mov","**/*.gif","**/*.mp3"], // defaults to .svg, .png, .jpg and .gif files
             emitFiles: true // defaults to true
         }),
+        sass(),
         sourcemaps(),
     ],
 };

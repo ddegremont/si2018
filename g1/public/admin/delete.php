@@ -6,5 +6,5 @@
         <input type="submit" value="Oui">
     </form>
 
-    <p><a href="index.php">Retour vers la home</a></p>
+    <p><a href="login.php">Retour vers la home</a></p>
 </div>
