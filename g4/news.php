@@ -21,6 +21,7 @@ $data = getNewsData($connection);
 </head>
 <body>
     <h1>News</h1>
+    <a href="newsCreate.php">Créer un article</a>
     <section class="news_filter">
         <form>
             <h2 class="news_filter_title">Filtres:</h2>
