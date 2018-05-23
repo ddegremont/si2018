@@ -1,5 +1,45 @@
-.Header{
-  background: red;
-  height: 50px;
-  width: 100vw;
+.Top {
+  background-image: url('/img/top-hotel-fond.jpg');
+  background-position: left;
+  background-size: cover;
+  height: 100vh;
+  &__titles {
+    margin-top: 200px;
+    margin-left: 20px;
+  }
+  &__hotelTitle {
+    font-family: 'AvenirNext-Regular';
+    color: white;
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+.Header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  &__img {
+    width: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+.Menu {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 20px;
+  &__text {
+    font-family: 'AvenirNext-Regular';
+    color: white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
 }

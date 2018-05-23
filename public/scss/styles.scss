@@ -1,11 +1,9 @@
 
 // global
 @import "global/_vars.scss";
+@import "global/_reset.scss";
+@import "global/_fonts.scss";
 // mixins
 @import "mixins/_forsize.scss";
 // partials
 @import "partials/_header.scss";
-
-body{
-   background: red;
- }
