@@ -6,16 +6,15 @@
  * Time: 20:50
  */
 
-require_once "connection.php";
+require_once "../connection.php";
 $request =
     'DELETE FROM
-    `page`
+    `Article`
     WHERE
     `id` = :id
-    ;';
-
+;';
 $stmt = $connection->prepare($request);
-$stmt->bindParam(':id', $_POST['id']);
+$stmt->bindParam(':id', htmlspecialchars($_POST['id']));
 $stmt->execute();
 
-header('Location: admin.php');
+header('Location: index.php');

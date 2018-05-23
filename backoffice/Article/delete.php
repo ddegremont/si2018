@@ -6,12 +6,20 @@
  * Time: 18:08
  */
 
-require_once "connection.php";
+require_once "../connection.php";
 
 $request = 'SELECT
-
+            `id`,
+            `title`,
+            `texte`,
+            `image`,
+            `alt`,
+            `pdate`,
+            `auteur`,
+            `signature`,
+            `logo`
           FROM
-            `#`
+            `Article`
           WHERE
             `id`= :id
           ;';
@@ -21,7 +29,6 @@ $stmt->bindParam(':id', $_GET['id']);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
