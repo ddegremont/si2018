@@ -1,11 +1,11 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 // global
 @import "global/_vars.scss";
 // mixins
 @import "mixins/_forsize.scss";
 // partials
 @import "partials/_header.scss";
-
-body{
-   background: red;
- }
+@import "partials/_admin.scss";
