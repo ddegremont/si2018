@@ -1,20 +1,3 @@
-.Top {
-  background-image: url('/img/top-hotel-fond.jpg');
-  background-position: left;
-  background-size: cover;
-  height: 100vh;
-  &__titles {
-    margin-top: 200px;
-    margin-left: 20px;
-  }
-  &__hotelTitle {
-    font-family: 'AvenirNext-Regular';
-    color: white;
-    font-size: 38px;
-    line-height: 48px;
-  }
-}
-
 .Header {
   width: 100%;
   display: flex;

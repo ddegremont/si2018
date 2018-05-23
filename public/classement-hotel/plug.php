@@ -6,21 +6,21 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Une année de voyages</title>
 </head>
 <body>
 
   <section class="Oneplug">
 
-    <div class="Oneplug__header" style="background-image: url('/img/maroc-opacity.jpg');">
+    <div class="Oneplug__header" style="background-image: url('../img/maroc-opacity.jpg');">
       <div class="Oneplug__headerTextContainer">
         <h3 class="Oneplug__headerCountryTitle">Maroc</h3>
         <h2 class="Oneplug__headerCityTitle">BANYAN TREE</h2>
         <h2 class="Oneplug__headerCityTitle">TAMOUDA BAY</h2>
       </div>
       <div class="Oneplug__closeIconContainer">
-        <a href="classement.php"><img class="Oneplug__closeIcon" src="img/close.svg" alt="Close icon"></a>
+        <a href="index.php"><img class="Oneplug__closeIcon" src="../img/close.svg" alt="Close icon"></a>
       </div>
     </div>
 
@@ -34,31 +34,31 @@
       <div class="Oneplug__iconsContainer">
         <div class="Oneplug__iconsLine">
           <div class="Oneplug__iconBox">
-            <img class="Oneplug__icon" src="img/location.svg" alt="Location icon">
+            <img class="Oneplug__icon" src="../img/location.svg" alt="Location icon">
             <p class="Oneplug__text">À 1 heure de Tanger, Tétouan et Chefchaouen.</p>
           </div>
           <div class="Oneplug__iconBox">
-            <img class="Oneplug__icon" src="img/visa.svg" alt="Visa icon">
+            <img class="Oneplug__icon" src="../img/visa.svg" alt="Visa icon">
             <p class="Oneplug__text">Passeport valide, Visa si le voyage dépasse 3 mois.</p>
           </div>
         </div>
         <div class="Oneplug__iconsLine">
           <div class="Oneplug__iconBox">
-            <img class="Oneplug__icon" src="img/flower.svg" alt="Flower icon">
+            <img class="Oneplug__icon" src="../img/flower.svg" alt="Flower icon">
             <p class="Oneplug__text">Spa: sauna, hammam, piscine, jets massants.</p>
           </div>
           <div class="Oneplug__iconBox">
-            <img class="Oneplug__icon" src="img/money.svg" alt="Money icon">
+            <img class="Oneplug__icon" src="../img/money.svg" alt="Money icon">
             <p class="Oneplug__text">Dès 250€ par nuit/personne. Petit-déjeuner inclus.</p>
           </div>
         </div>
         <div class="Oneplug__iconsLine">
           <div class="Oneplug__iconBox">
-            <img class="Oneplug__icon" src="img/stethoscope.svg" alt="Health icon">
+            <img class="Oneplug__icon" src="../img/stethoscope.svg" alt="Health icon">
             <p class="Oneplug__text">Aucun vaccin exigé.</p>
           </div>
           <div class="Oneplug__iconBox">
-            <img class="Oneplug__icon" src="img/sun.svg" alt="Sun icon">
+            <img class="Oneplug__icon" src="../img/sun.svg" alt="Sun icon">
             <p class="Oneplug__text">Avril à juin, 18°C à 27°C.</p>
           </div>
         </div>
@@ -66,7 +66,7 @@
     </div>
 
   </section>
-<script type="text/javascript" src="./js/main.js">
+<script type="text/javascript" src="../js/main.js">
 
 </script>
 </body>

@@ -95,20 +95,6 @@ a {
   font-family: 'AvenirNext-UltraLightItalic';
   src: url("../fonts/AvenirNext-UltraLightItalic.ttf"); }
 
-.Top {
-  background-image: url("/img/top-hotel-fond.jpg");
-  background-position: left;
-  background-size: cover;
-  height: 100vh; }
-  .Top__titles {
-    margin-top: 200px;
-    margin-left: 20px; }
-  .Top__hotelTitle {
-    font-family: 'AvenirNext-Regular';
-    color: white;
-    font-size: 38px;
-    line-height: 48px; }
-
 .Header {
   width: 100%;
   display: flex;
@@ -126,6 +112,19 @@ a {
   justify-content: center;
   margin-top: 20px;
   margin-right: 20px; }
+
+.Top {
+  background-position: left;
+  background-size: cover;
+  height: 100vh; }
+  .Top__titles {
+    margin-top: 200px;
+    margin-left: 20px; }
+  .Top__hotelTitle {
+    font-family: 'AvenirNext-Regular';
+    color: white;
+    font-size: 38px;
+    line-height: 48px; }
 
 .Plugs {
   background: white;
