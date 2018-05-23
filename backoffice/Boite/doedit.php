@@ -7,13 +7,9 @@
  */
 session_start();
 require_once "../connection.php";
-if (empty($_POST['name']) || empty($_POST['image']) || empty($_POST['alt']) || empty($_POST['type'])) {
-    header('Location: error.php');
-    exit;
-}
 
 $request = 'UPDATE
-            `Partenaire`
+            `Boite`
             SET
             `name` = :name,
             `image` = :image,

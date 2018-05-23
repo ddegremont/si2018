@@ -9,7 +9,7 @@ session_start();
 require_once "../connection.php";
 $request =
     'DELETE FROM
-    `Article`
+    `Boite`
     WHERE
     `id` = :id
 ;';

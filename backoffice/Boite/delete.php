@@ -14,11 +14,12 @@ $request = 'SELECT
             `image`,
             `alt`,
             `type`
-            FROM
-            `Partenaire`
-            WHERE
+          FROM
+            `Boite`
+          WHERE
             `id`= :id
-;';
+          ;';
+
 $stmt = $connection->prepare($request);
 $stmt->bindParam(':id', $_GET['id']);
 $stmt->execute();

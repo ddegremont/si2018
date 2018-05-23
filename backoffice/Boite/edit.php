@@ -14,7 +14,7 @@ $request = 'SELECT
               `alt`,
               `type`
             FROM
-              `Partenaire`
+              `Boite`
             WHERE
               `id` = :id
                 ;';
@@ -30,10 +30,10 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
         <h1><strong>Modifier</strong></h1>
         <form action="doedit.php" method="post">
             <input type="hidden" name="id" value="<?=$_GET['id']?>" placeholder="id">
-            <input placeholder="name" value="<?=$row['name']?>" type="text" name="name">
+            <input placeholder="Name" value="<?=$row['name']?>" type="text" name="name">
+            <input placeholder="type" value="<?=$row['type']?>" type="text" name="type">
             <input placeholder="image" value="<?=$row['image']?>" type="text" name="image">
             <input placeholder="alt" value="<?=$row['alt']?>" type="text" name="alt">
-            <input placeholder="type" value="<?=$row['type']?>" type="text" name="type">
             <input placeholder="" type="submit" value="Modifier">
         </form>
     </div>

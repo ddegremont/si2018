@@ -9,12 +9,16 @@ session_start();
 require_once "../connection.php";
 $request = 'SELECT
               `id`,
-              `name`,
+              `title`,
+              `texte`,
               `image`,
               `alt`,
-              `type`
+              `pdate`,
+              `auteur`,
+              `signature`,
+              `logo`  
             FROM
-              `Partenaire`
+              `Article`
             WHERE
               `id` = :id
                 ;';
@@ -30,10 +34,14 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
         <h1><strong>Modifier</strong></h1>
         <form action="doedit.php" method="post">
             <input type="hidden" name="id" value="<?=$_GET['id']?>" placeholder="id">
-            <input placeholder="name" value="<?=$row['name']?>" type="text" name="name">
+            <input placeholder="title" value="<?=$row['title']?>" type="text" name="title">
+            <input placeholder="texte" value="<?=$row['texte']?>" type="text" name="texte">
             <input placeholder="image" value="<?=$row['image']?>" type="text" name="image">
             <input placeholder="alt" value="<?=$row['alt']?>" type="text" name="alt">
-            <input placeholder="type" value="<?=$row['type']?>" type="text" name="type">
+            <input placeholder="date" value="<?=$row['pdate']?>" type="date" name="pdate">
+            <input placeholder="auteur" value="<?=$row['auteur']?>" type="text" name="auteur">
+            <input placeholder="signature" value="<?=$row['signature']?>" type="text" name="signature">
+            <input placeholder="logo" value="<?=$row['logo']?>" type="text" name="logo">
             <input placeholder="" type="submit" value="Modifier">
         </form>
     </div>

@@ -8,16 +8,12 @@
 session_start();
 require_once "../connection.php";
 
-if (empty($_POST['name']) || empty($_POST['image']) || empty($_POST['alt']) || empty($_POST['type'])) {
-    header('Location: error.php');
-    exit;
-}
 
 $request = 'INSERT INTO
-          `Partenaire`
-          (`name`, `image`, `alt`, `type`)
+          `Boite` 
+          (`name`, `type`, `image`, `alt`)
         VALUES
-          (:name, :image, :alt, :type)
+          (:name, :type, :image, :alt)
 ;';
 
 $stmt = $connection->prepare($request);
