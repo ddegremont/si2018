@@ -27,54 +27,12 @@ $bp-desktop-x-large: 1800px
    @media (min-width: $desktop-upper-boundary)
      @content
 
+// partials
+@import partials/topRestoPage
+
 
 body
   font-family: "Agency FB",sans-serif
-  background: #000
-
 
 html
   font-size: 62.5%
-  
-.header
-  background: url("../assets/img/main.jpg") no-repeat
-  background-size: cover
-  //@media screen and (max-width: $maxphone)
-  	height: 568px
-  &-header
-  	display: flex
-  	justify-content: space-around
-  	align-items: center
-  &-logo
-  	width: 40px
-  	height: 40px
-  &-subtitle
-  	color: white
-    //@media screen and (min-width: $mintablet)
-      display: none
-  &-burger
-    width: 20px
-    height: 20px
-  &-title
-  	color: white
-  	text-transform: uppercase
-  
-
-
-
-
-.section3
-  background: url("../assets/img/cote.png") no-repeat
-  background-size: cover
-  &-textArrow-arrow
-          height: 20px
-  //@media screen and (max-width: $maxphone)
-      height: 463px
-  	
-
-.section4Mobile
-  background: url("../assets/img/discover.png") no-repeat
-  background-size: cover
-
-  //@media screen and (max-width: $maxphone)
-      height: 277px
