@@ -14,9 +14,12 @@ $connection = connect();
 <body>
     <h1>Image Box</h1>
     <button id="imagebox_generator">Click here to get a random image!</button>
+    <h2>Category: <span class="category">cat1</span></h2>
+    <button class="category_prevbtn">previous category</button>
+    <button class="category_nextbtn">next category</button>
     <section class="imagebox" style="display: none">
-        <h2 class="imagebox_title"></h2>
-        <h3 class="imagebox_subtitle"></h3>
+        <h3 class="imagebox_title"></h3>
+        <h4 class="imagebox_subtitle"></h4>
         <img class="imagebox_image" src="" alt="">
     </section>
 </body>

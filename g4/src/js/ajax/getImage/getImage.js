@@ -1,5 +1,16 @@
-const host = "localhost:8000/g4";
+const host = "localhost:8000";
 var btn = document.querySelector("#imagebox_generator");
+var cat = document.querySelector(".category");
+var catPrev = document.querySelector(".category_prevbtn");
+var catNext = document.querySelector(".category_nextbtn");
+var catList = [
+    "cat1",
+    "cat2",
+    "cat3",
+    "cat4"
+];
+var catIndex = 0;
+var catText = catList[catIndex];
 var imagebox = {
     self: document.querySelector(".imagebox"),
     title: document.querySelector(".imagebox_title"),
@@ -17,7 +28,9 @@ function putImageInDOM(data) {
 }
 
 function getNewImage() {
-    fetch("http://" + host + "/src/js/ajax/getImage/getImage.php")
+    fetch("http://" + host + "/src/js/ajax/getImage/getImage.php?category=" + catText, {
+        method: "get"
+    })
         .then(function(response) {
             return response.json();
         })
@@ -28,6 +41,20 @@ function getNewImage() {
         });
 }
 
+catNext.addEventListener("click", function() {
+    if (catIndex < 3) {
+        catIndex++;
+    }
+    catText = catList[catIndex];
+    cat.textContent = catText;
+});
+catPrev.addEventListener("click", function() {
+    if (catIndex > 0) {
+        catIndex--;
+    }
+    catText = catList[catIndex];
+    cat.textContent = catText;
+});
 btn.addEventListener("click", function() {
     getNewImage();
 });
