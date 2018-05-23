@@ -34,20 +34,23 @@
   </section>
 
   <section class="Plugs">
+
     <div class="Container">
-      <div class="Container__plug">
-        <div class="Container__imgContainer">
-          <img class="Container__img" src="img/maroc.jpg" alt="">
-          <h3 class="Container__countryTitle">Maroc</h3>
-          <div class="Container__cityTitleContainer">
-            <h4 class="Container__cityTitle">BANYAN TREE</h4>
-            <h4 class="Container__cityTitle">TAMOUDA BAY</h4>
-          </div>
-          <div class="Container__place">
-            <p class="Container__placeText">100</p>
+      <a href="plug.php">
+        <div class="Container__plug">
+          <div class="Container__imgContainer">
+            <img class="Container__img" src="img/maroc.jpg" alt="">
+            <h3 class="Container__countryTitle">Maroc</h3>
+            <div class="Container__cityTitleContainer">
+              <h4 class="Container__cityTitle">BANYAN TREE</h4>
+              <h4 class="Container__cityTitle">TAMOUDA BAY</h4>
+            </div>
+            <div class="Container__place">
+              <p class="Container__placeText">100</p>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
       <div class="Container__plug">
         <div class="Container__imgContainer">
           <img class="Container__img" src="img/mexique.jpg" alt="">
@@ -86,6 +89,7 @@
         </div>
       </div>
     </div>
+
   </section>
 
 <script type="text/javascript" src="./js/main.js">

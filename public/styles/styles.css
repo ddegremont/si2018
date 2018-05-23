@@ -40,6 +40,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a {
+  text-decoration: none; }
+
 @font-face {
   font-family: 'Didot';
   src: url("././fonts/Didot.ttf"); }
@@ -175,3 +178,66 @@ table {
   .Container__placeText {
     font-family: 'AvenirNext-Regular';
     color: white; }
+
+.Oneplug {
+  background: white; }
+  .Oneplug__header {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; }
+  .Oneplug__headerTextContainer {
+    line-height: 32px;
+    padding-top: 40px;
+    padding-left: 20px; }
+  .Oneplug__headerCountryTitle {
+    font-family: 'AvenirNext-Regular';
+    color: #32CCCD; }
+  .Oneplug__headerCityTitle {
+    font-family: 'AvenirNext-Regular';
+    color: white;
+    font-size: 30px; }
+  .Oneplug__contentParagraph {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: flex; }
+  .Oneplug__line {
+    width: 20px;
+    height: 3px;
+    background: #32CCCD;
+    margin-top: 8px; }
+  .Oneplug__paragraph {
+    width: 80%;
+    font-family: 'AvenirNext-Regular';
+    margin-left: 10px;
+    color: #646464;
+    line-height: 20px; }
+  .Oneplug__closeIconContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .Oneplug__iconsContainer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column; }
+  .Oneplug__iconsLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
+  .Oneplug__iconBox {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; }
+  .Oneplug__text {
+    margin-top: 10px;
+    font-family: 'AvenirNext-Regular';
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center; }
