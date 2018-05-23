@@ -12,6 +12,10 @@ function displayNewsArticleContent($data)
         <p class="news_articles_item_signature"><?= $data["signature"] ?></p>
         <img src="<?= $imgPath . $data["logoSrc"] ?>" alt="<?= $data["logoAlt"] ?>">
         <a href="newsArticle.php?id=<?= $data["id"] ?>">see article</a>
+        <form action="src/actions/newsArticle_doDelete.php" method="POST">
+            <input value="<?= $data["id"] ?>" name="id" title="id" style="display:none">
+            <input type="submit" value="Delete">
+        </form>
     </article>
     <?php
 }
