@@ -14,6 +14,10 @@ function displayNewsArticleDetailContent($data)
             <img src="<?= $imgPath . $data["logoSrc"] ?>" alt="<?= $data["logoAlt"] ?>">
             <a href="news.php">Go back to the list</a>
             <button class="article_item_update">Update</button>
+            <form action="src/actions/newsArticle_doDelete.php" method="POST">
+                <input value="<?= $_GET["id"] ?>" name="id" title="id" style="display:none">
+                <input type="submit" value="Delete">
+            </form>
         </article>
     </section>
     <?php
