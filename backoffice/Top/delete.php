@@ -10,15 +10,20 @@ require_once "../connection.php";
 
 $request = 'SELECT
             `id`,
-            `name`,
+            `title`,
+            `texte`,
             `image`,
             `alt`,
-            `type`
-            FROM
-            `Partenaire`
-            WHERE
+            `pdate`,
+            `auteur`,
+            `signature`,
+            `logo`
+          FROM
+            `Article`
+          WHERE
             `id`= :id
-;';
+          ;';
+
 $stmt = $connection->prepare($request);
 $stmt->bindParam(':id', $_GET['id']);
 $stmt->execute();

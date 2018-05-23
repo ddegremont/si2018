@@ -5,7 +5,7 @@
  * Date: 01/05/2018
  * Time: 18:09
  */
-
+session_start();
 require_once "../connection.php";
 $request = 'SELECT
               `id`,
@@ -13,7 +13,7 @@ $request = 'SELECT
               `texte`,
               `image`,
               `alt`,
-              `pdate`,
+              `date`,
               `auteur`,
               `signature`,
               `logo`  
@@ -38,7 +38,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
             <input placeholder="texte" value="<?=$row['texte']?>" type="text" name="texte">
             <input placeholder="image" value="<?=$row['image']?>" type="text" name="image">
             <input placeholder="alt" value="<?=$row['alt']?>" type="text" name="alt">
-            <input placeholder="date" value="<?=$row['pdate']?>" type="date" name="pdate">
+            <input placeholder="date" value="<?=$row['date']?>" type="hidden" name="date">
             <input placeholder="auteur" value="<?=$row['auteur']?>" type="text" name="auteur">
             <input placeholder="signature" value="<?=$row['signature']?>" type="text" name="signature">
             <input placeholder="logo" value="<?=$row['logo']?>" type="text" name="logo">

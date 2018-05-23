@@ -8,7 +8,7 @@
 session_start();
 require_once "../connection.php";
 if (empty($_POST['title']) || empty($_POST['texte']) || empty($_POST['image']) || empty($_POST['alt'])||
-    empty($_POST['date']) || empty($_POST['auteur']) || empty($_POST['signature']) || empty($_POST['logo'])) {
+    empty($_POST['pdate']) || empty($_POST['auteur']) || empty($_POST['signature']) || empty($_POST['logo'])) {
     header('Location: error.php');
     exit;
 }
@@ -20,7 +20,7 @@ $request = 'UPDATE
             `texte`= :texte,
             `image` = :image,
             `alt` = :alt,
-            `date` = :date,
+            `pdate` = :pdate,
             `auteur` = :auteur,
             `signature` = :signature,
             `logo` = :logo
@@ -33,7 +33,7 @@ $stmt->bindParam(':title', htmlspecialchars($_POST['title']));
 $stmt->bindParam(':texte', htmlspecialchars($_POST['texte']));
 $stmt->bindParam(':image', htmlspecialchars($_POST['image']));
 $stmt->bindParam(':alt', htmlspecialchars($_POST['alt']));
-$stmt->bindParam(':date', htmlspecialchars($_POST['date']));
+$stmt->bindParam(':pdate', htmlspecialchars($_POST['pdate']));
 $stmt->bindParam(':auteur', htmlspecialchars($_POST['auteur']));
 $stmt->bindParam(':signature', htmlspecialchars($_POST['signature']));
 $stmt->bindParam(':logo', htmlspecialchars($_POST['logo']));

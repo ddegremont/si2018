@@ -5,7 +5,7 @@
  * Date: 19/04/2018
  * Time: 20:50
  */
-
+session_start();
 require_once "../connection.php";
 $request =
     'DELETE FROM

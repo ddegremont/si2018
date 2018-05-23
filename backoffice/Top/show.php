@@ -11,14 +11,11 @@ require_once "../connection.php";
 
 $request = "SELECT 
               `id`,
-              `title`,
-              `texte`,
+              `name`,
+              `type`,
               `image`,
               `alt`,
-              `date`,
-              `auteur`,
-              `signature`,
-              `logo`
+              `pdate`
             FROM
               `Article`
             WHERE 
@@ -54,7 +51,7 @@ if ($row === false) {
                     <th class="name">Texte</th>
                     <th class="name">image</th>
                     <th class="name">alt</th>
-                    <th class="name">date</th>
+                    <th class="name">pdate</th>
                     <th class="name">auteur</th>
                     <th class="name">signature</th>
                     <th class="name">logo</th>
@@ -66,7 +63,7 @@ if ($row === false) {
                     <td><?= $row['texte']?></td>
                     <td><?= $row['image']?></td>
                     <td><?= $row['alt']?></td>
-                    <td><?= $row['date']?></td>
+                    <td><?= $row['pdate']?></td>
                     <td><?= $row['auteur']?></td>
                     <td><?= $row['signature']?></td>
                     <td><?= $row['logo']?></td>

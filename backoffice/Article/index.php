@@ -21,6 +21,7 @@
     </thead>
     <tbody>
     <?php
+    session_start();
     require_once "../connection.php";
     $request = 'SELECT
                   `id`,
