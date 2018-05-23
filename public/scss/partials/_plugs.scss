@@ -1,0 +1,61 @@
+.Plugs {
+  background: white;
+  width: 100%;
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  &__plug {
+    width: 250px;
+    height: 250px;
+    background: white;
+    margin-top: 50px;
+    -webkit-box-shadow: 2px 2px 12px -1px rgba(204,204,204,1);
+    -moz-box-shadow: 2px 2px 12px -1px rgba(204,204,204,1);
+    box-shadow: 2px 2px 12px -1px rgba(204,204,204,1);
+    position: relative;
+  }
+  &__imgContainer{
+    width: 100%;
+    height: 125px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+  &__countryTitle {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Didot';
+    color: #32CCCD;
+  }
+  &__cityTitle {
+    margin-left: 10px;
+    font-family: 'AvenirNext-Regular';
+    color: #646464;
+    font-size: 18px;
+  }
+  &__cityTitleContainer {
+    margin-top: 5px;
+    line-height: 20px;
+  }
+  &__place {
+    width: 50px;
+    height: 50px;
+    background: #32CCCD;
+    border-radius: 100%;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    right: -25px;
+  }
+  &__placeText {
+    font-family: 'AvenirNext-Regular';
+    color: white;
+  }
+}

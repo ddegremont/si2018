@@ -19,7 +19,7 @@
         <span class="Logo__name"></span>
       </div>
       <div class="Menu">
-        <p class="Menu__text">Menu</p>
+        <img class="Menu__img" src="img/burger_menu.svg" alt="">
       </div>
     </header>
     <!-- Header -->
@@ -31,6 +31,61 @@
     </div>
     <!-- Top Titles -->
 
+  </section>
+
+  <section class="Plugs">
+    <div class="Container">
+      <div class="Container__plug">
+        <div class="Container__imgContainer">
+          <img class="Container__img" src="img/maroc.jpg" alt="">
+          <h3 class="Container__countryTitle">Maroc</h3>
+          <div class="Container__cityTitleContainer">
+            <h4 class="Container__cityTitle">BANYAN TREE</h4>
+            <h4 class="Container__cityTitle">TAMOUDA BAY</h4>
+          </div>
+          <div class="Container__place">
+            <p class="Container__placeText">100</p>
+          </div>
+        </div>
+      </div>
+      <div class="Container__plug">
+        <div class="Container__imgContainer">
+          <img class="Container__img" src="img/mexique.jpg" alt="">
+          <h3 class="Container__countryTitle">Mexique</h3>
+          <div class="Container__cityTitleContainer">
+            <h4 class="Container__cityTitle">THE RESORT AT</h4>
+            <h4 class="Container__cityTitle">PEDREGAL</h4>
+          </div>
+          <div class="Container__place">
+            <p class="Container__placeText">99</p>
+          </div>
+        </div>
+      </div>
+      <div class="Container__plug">
+        <div class="Container__imgContainer">
+          <img class="Container__img" src="img/france.jpg" alt="">
+          <div class="Container__cityTitleContainer">
+            <h3 class="Container__countryTitle">France</h3>
+            <h4 class="Container__cityTitle">HOTEL CAP EDEN</h4>
+          </div>
+          <div class="Container__place">
+            <p class="Container__placeText">98</p>
+          </div>
+        </div>
+      </div>
+      <div class="Container__plug">
+        <div class="Container__imgContainer">
+          <img class="Container__img" src="img/italie.jpg" alt="">
+          <div class="Container__cityTitleContainer">
+            <h3 class="Container__countryTitle">Italie</h3>
+            <h4 class="Container__cityTitle">J.K PLACE CAPRI</h4>
+          </div>
+          <div class="Container__place">
+            <p class="Container__placeText">97</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 <script type="text/javascript" src="./js/main.js">
