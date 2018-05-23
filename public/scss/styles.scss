@@ -1,6 +1,11 @@
+
 // global
-@import "global/";
+@import "global/_vars.scss";
 // mixins
-@import "mixins/";
+@import "mixins/_forsize.scss";
 // partials
-@import "partials/";
+@import "partials/_header.scss";
+
+body{
+   background: red;
+ }
