@@ -17,7 +17,6 @@ $queryStr = "
     WHERE
         `id` = :id
 ";
-var_dump($_POST);
 $stmt = $connection->prepare($queryStr);
 $stmt->bindValue(":title", $_POST["title"]);
 $stmt->bindValue(":subtitle", $_POST["subtitle"]);
