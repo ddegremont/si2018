@@ -22,7 +22,7 @@ function putImageInDOM(data) {
     imagebox.self.style.display = "block";
     imagebox.title.textContent = data.title;
     imagebox.subtitle.textContent = data.subtitle;
-    imagebox.image.src = "src/img/imagebox/" + data.imgSrc;
+    imagebox.image.src = "src/img/" + data.imgSrc;
     imagebox.image.title = data.title;
     imagebox.image.alt = data.imgAlt;
 }
