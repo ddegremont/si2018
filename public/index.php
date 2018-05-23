@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Document</title>
+    <title>Une année de voyages</title>
 </head>
 <body>
 
