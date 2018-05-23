@@ -51,8 +51,10 @@ CREATE TABLE `factsheets` (
   `paragraph` text NOT NULL,
   `category` varchar(64) NOT NULL,
   `websiteUrl` varchar(255) NOT NULL,
-  PRIMARY KEY (`title`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -61,6 +63,7 @@ CREATE TABLE `factsheets` (
 
 LOCK TABLES `factsheets` WRITE;
 /*!40000 ALTER TABLE `factsheets` DISABLE KEYS */;
+INSERT INTO `factsheets` VALUES ('title 1','tmp1.jpg','alt1','paragraphe 1','cat1','http://google.fr',8),('title 2','tmp1.jpg','alt2','paragraphe 2','cat2','http://google.fr',9),('title 3','tmp1.jpg','alt3','paragraphe 3','cat1','http://google.fr',10),('title 4','tmp1.jpg','alt4','paragraphe 4','cat3','http://google.fr',11),('title 5','tmp1.jpg','alt5','paragraphe 5','cat4','http://google.fr',12),('title 6','tmp1.jpg','alt6','paragraphe 6','cat4','http://google.fr',13),('title 7','tmp1.jpg','alt7','paragraphe 7','cat4','http://google.fr',14);
 /*!40000 ALTER TABLE `factsheets` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,7 +116,7 @@ CREATE TABLE `news` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -122,7 +125,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES ('title 6','subtitle 6','tmp1.jpg','imgalt 6','paragraphe 6','signature 6','tmp1.jpg','logoalt 6','company 2',6),('title 5','subtitle 5','tmp1.jpg','imgalt 5','paragraphe 5','signature 5','tmp1.jpg','logoalt 5','company 1',7),('title 1','subtitle 1','tmp1.jpg','imgalt 1','paragraphe 1','signature 1','tmp1.jpg','logoalt 1','company 2',8),('title 2','subtitle 2','tmp1.jpg','imgalt 2','paragraphe 2','signature 2','tmp1.jpg','logoalt 2','company 2',9),('title 3','subtitle 3','tmp1.jpg','imgalt 3','paragraphe 3','signature 3','tmp1.jpg','logoalt 3','company 3',10),('title 4','subtitle 4','tmp1.jpg','imgalt 4','paragraphe 4','signature 4','tmp1.jpg','logoalt 4','company 2',11),('title 5','subtitle 5','tmp1.jpg','imgalt 5','paragraphe 5','signature 5','tmp1.jpg','logoalt 5','company 1',12),('title 7','subtitle 7','tmp1.jpg','imgalt 7','paragraphe 7','signature 7','tmp1.jpg','logoalt 7','company 2',13);
+INSERT INTO `news` VALUES ('title 6','subtitle 6','tmp1.jpg','imgalt 6','paragraphe 6','signature 6','tmp1.jpg','logoalt 6','company 2',6),('title 5','subtitle 5','tmp1.jpg','imgalt 5','paragraphe 5','signature 5','tmp1.jpg','logoalt 5','company 1',7),('title 1','subtitle 1','tmp1.jpg','imgalt 1','paragraphe 1','signature 1','tmp1.jpg','logoalt 1','company 2',8),('title 2','subtitle 2','tmp1.jpg','imgalt 2','paragraphe 2','signature 2','tmp1.jpg','logoalt 2','company 2',9),('title 3','subtitle 3','tmp1.jpg','imgalt 3','paragraphe 3','signature 3','tmp1.jpg','logoalt 3','company 3',10),('title 4','subtitle 4','tmp1.jpg','imgalt 4','paragraphe 4','signature 4','tmp1.jpg','logoalt 4','company 2',11),('title 5','subtitle 5','tmp1.jpg','imgalt 5','paragraphe 5','signature 5','tmp1.jpg','logoalt 5','company 1',12),('title 7','subtitle 7','tmp1.jpg','imgalt 7','paragraphe 7','signature 7','tmp1.jpg','logoalt 7','company 2',13),('title 8','subtitle 8','tmp1.jpg','alt 8','paragraphe 8','signature 8','tmp1.jpg','logoalt 8','company 3',15);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -137,8 +140,10 @@ CREATE TABLE `partners` (
   `name` varchar(64) NOT NULL,
   `logoSrc` varchar(255) NOT NULL,
   `logoAlt` varchar(64) NOT NULL,
-  PRIMARY KEY (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -147,6 +152,7 @@ CREATE TABLE `partners` (
 
 LOCK TABLES `partners` WRITE;
 /*!40000 ALTER TABLE `partners` DISABLE KEYS */;
+INSERT INTO `partners` VALUES ('e','e','e',4),('j','j','j',5);
 /*!40000 ALTER TABLE `partners` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -187,4 +193,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-23 17:56:30
+-- Dump completed on 2018-05-23 23:08:07
