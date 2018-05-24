@@ -5,7 +5,7 @@ function connect(): PDO
     $port       = "3306";
     $dbname     = "perfect_website";
     $username   = "root";
-    $password   = "root";
+    $password   = "";
     try {
         $connection = new PDO("mysql:host=" . $host . ";dbname=" . $dbname . ";port=" . $port, $username, $password);
     } catch(Exception $exception) {
