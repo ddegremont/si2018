@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 /* Header Style */
 .header {
-  background: url('https://zupimages.net/up/18/21/h5f6.png');
+  background: url('http://www.image-heberg.fr/files/15271751351623221179.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
@@ -134,6 +134,18 @@
   margin-bottom: 1%;
 }
 
+.categoryTitle{
+  font-family: 'Poppins';
+}
+
+.image_box_cont{
+  margin-top: 1%;
+  margin-right: 2%;
+}
+
+.imagebox_btn_cont{
+  margin-right: 11%;
+}
 #imagebox_generator{
   background-color: red; /* Green */
 border: none;

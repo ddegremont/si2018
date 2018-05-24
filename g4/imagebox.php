@@ -28,7 +28,7 @@ $connection = connect();
           <a class="headerNav" href="">Contact</a>
       </div>
       <div class="headerTitleContainer">
-          <h1 class="headerTitle">Une Année de Voyages</h1>
+          <h1 class="headerTitle">Boîte à images</h1>
           <h1 class="headerSubTitle">Soyez un voyageur averti !</h1>
       </div>
   </header>
@@ -37,9 +37,13 @@ $connection = connect();
       <button id="imagebox_generator">Click here to get a random image!</button>
     </div>
     <div class="imagebox_container">
-      <h2 class="categoryTitle">Category: <span class="category">cat1</span></h2>
-      <button class="category_prevbtn">previous category</button>
-      <button class="category_nextbtn">next category</button>
+      <div class="image_box_cont">
+          <h2 class="categoryTitle">Category: <span class="category">cat1</span></h2>
+      </div>
+      <div class="imagebox_btn_cont">
+        <button class="category_prevbtn">previous category</button>
+        <button class="category_nextbtn">next category</button>
+      </div>
     </div>
     <section class="imagebox" style="display: none">
         <h3 class="imagebox_title"></h3>

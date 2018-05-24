@@ -9,12 +9,9 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
-  background-position: center;
   color: white;
   font-family: 'Poppins', sans-serif;
   height: 300px;
-  object-fit: cover;
-
 }
 .headerNavTContainer {
   display: flex;
@@ -38,22 +35,18 @@ body{
   margin-right: 10px;
 }
 .headerNavContainer {
+
   display: none;
-
+  justify-content: flex-end;
 }
-
 .headerNav {
   margin-right: 1%;
   color: white;
-}
-.headerNav:hover {
-  margin-right: 1%;
-  color: #49c6e5;
-  border-bottom: 1px solid;
+
 }
 .headerTitleContainer {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 45px;
  }
 .headerTitle{
   font-size: 40px;
@@ -61,6 +54,53 @@ body{
 .headerSubTitle{
   padding-top: 1%;
   font-size: 20px;
+}
+/* Section formulaire Twitter */
+.twitter_form_container{
+
+}
+
+.twitter_delete{
+  background-color: #49c6e5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.form_twitter{
+    margin-top: 50%;
+ display:block;
+ float:left;
+ width:150px;
+ text-align: left;
+ padding:0 5px 0 0;
+ font-family: 'Poppins';
+}
+
+.create_twittter_btn{
+  background-color: #49c6e5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.twitter_container2{
+  display: flex;
+  flex-wrap: wrap;
 }
 /* Section News Air */
 
@@ -91,6 +131,20 @@ body{
   display: block;
   text-align: center;
 }
+
+/* Twitter container */
+.twitterContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.twitterTitle{
+  margin-top: 2%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #49c6e5;
+}
 /* Les logo */
 .logoTeamAirImgContainer{
   margin-top: 5%;
@@ -109,7 +163,6 @@ body{
 .logoTeamAirImgOne{
   width: 15%;
 }
-
 /* Footer style */
 
 .footer {
@@ -151,19 +204,3 @@ body{
   text-transform: uppercase;
   margin-right: 30px;
 }
-
-@media screen and (min-width: 1024px) {
-  /* header Style Descktop */
-  .headerNavContainer {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    margin: 10px 20px 0 0;
-  }
-  .headerNavBurger {
-    display: none;
-  }
-  .headerNavLogo {
-    position: absolute;
-  }
-  }

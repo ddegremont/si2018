@@ -4,6 +4,7 @@ function displayFactsheetArticleDetailContent($data)
     $imgPath = "src/img/";
     ?>
     <section class="article">
+      <div class="article_container">
         <article class="article_item">
             <h2 class="article_item_title"><?= $data["title"] ?></h2>
             <h4 class="article_item_company"><?= $data["category"] ?></h4>
@@ -14,8 +15,9 @@ function displayFactsheetArticleDetailContent($data)
             <button class="article_item_update">Update</button>
             <form action="src/actions/factsheetArticle_doDelete.php" method="POST">
                 <input value="<?= $_GET["id"] ?>" name="id" title="id" style="display:none">
-                <input type="submit" value="Delete">
+                <input class="delete_button" type="submit" value="Delete">
             </form>
+            </div>
         </article>
     </section>
     <?php

@@ -51,7 +51,9 @@ $data = getFactsheetData($connection);
 <section class="catSection">
     <h2 class="catTitle">Choisssez une catégorie</h2>
     <p class="catOrtext">Ou</p>
-    <a class="catAddArticle" href="factsheetsCreate.php">AJOUTER UN ARTICLE</a>
+    <div class="link_addarticle">
+        <a class="catAddArticle" href="factsheetsCreate.php">AJOUTER UN ARTICLE</a>
+    </div>
     <form>
         <h2 class="factsheets_filter_title">Filtres:</h2>
         <label for="category">Company name</label>

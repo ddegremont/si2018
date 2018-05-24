@@ -40,7 +40,7 @@ $data = getNewsData($connection);
         <a class="headerNav" href="src/components/">Contact</a>
     </div>
     <div class="headerTitleContainer">
-        <h1 class="headerTitle">Une Année de Voyages</h1>
+        <h1 class="headerTitle">Actualités</h1>
         <h1 class="headerSubTitle">Soyez un voyageur averti !</h1>
     </div>
 </header>
@@ -88,5 +88,4 @@ $data = getNewsData($connection);
 </footer>
 <script type="text/javascript" src="src/js/news.js"></script>
 </body>
-
 </html>

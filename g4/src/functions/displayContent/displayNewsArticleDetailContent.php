@@ -8,10 +8,10 @@ function displayNewsArticleDetailContent($data)
             <h2 class="article_item_title"><?= $data["title"] ?></h2>
             <h3 class="article_item_subtitle"><?= $data["subtitle"] ?></h3>
             <h4 class="article_item_company"><?= $data["company"] ?></h4>
-            <img src="<?= $imgPath . $data["imgSrc"] ?>" alt="<?= $data["imgAlt"] ?>">
+            <img class="image_article" src="<?= $imgPath . $data["imgSrc"] ?>" alt="<?= $data["imgAlt"] ?>">
             <p class="article_item_subtitle"><?= $data["paragraph"] ?></p>
             <p class="article_item_signature"><?= $data["signature"] ?></p>
-            <img src="<?= $imgPath . $data["logoSrc"] ?>" alt="<?= $data["logoAlt"] ?>">
+            <img class="logo_compagnie" src="<?= $imgPath . $data["logoSrc"] ?>" alt="<?= $data["logoAlt"] ?>">
             <a href="news.php">Go back to the list</a>
             <button class="article_item_update">Update</button>
             <form action="src/actions/newsArticle_doDelete.php" method="POST">
