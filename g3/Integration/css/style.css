@@ -1,0 +1,531 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "LeagueSpartan-Bold";
+  src: url("fonts/LeagueSpartan-Bold.otf"); }
+@font-face {
+  font-family: "Montserrat300";
+  src: url("fonts/Montserrat300.ttf"); }
+.container-a {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  font-size: 35px;
+  overflow: hidden;
+  top: 5px; }
+  .container-a:after {
+    content: '';
+    position: absolute;
+    background: #000;
+    height: 2px;
+    width: 0%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    transition: .35s ease; }
+  .container-a:hover:after, .container-a:focus:after, .container-a:active:after {
+    width: 100%; }
+
+.button_container {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease; }
+  .button_container:hover {
+    opacity: .7; }
+  .button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #000; }
+  .button_container.active .middle {
+    opacity: 0;
+    background: #000; }
+  .button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #000; }
+  .button_container .--pos {
+    background: #000;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer; }
+    .button_container .--pos:nth-of-type(2) {
+      top: 11px; }
+    .button_container .--pos:nth-of-type(3) {
+      top: 22px; }
+
+.overlay {
+  position: fixed;
+  background: #FFF;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden; }
+  .overlay.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%; }
+    .overlay.open li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s; }
+      .overlay.open li:nth-of-type(2) {
+        animation-delay: .4s; }
+      .overlay.open li:nth-of-type(3) {
+        animation-delay: .45s; }
+      .overlay.open li:nth-of-type(4) {
+        animation-delay: .50s; }
+  .overlay .--nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    text-align: center; }
+  .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+    .overlay ul li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0; }
+      .overlay ul li a {
+        display: block;
+        position: relative;
+        color: #000;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: "LeagueSpartan-Bold"; }
+        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+          width: 100%; }
+        .overlay ul li a:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: #000;
+          transition: .35s; }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+.--phoneTablet {
+  display: block; }
+  @media (min-width: 1200px) {
+    .--phoneTablet {
+      display: none; } }
+
+.menuDesktop {
+  display: none; }
+  @media (min-width: 1200px) {
+    .menuDesktop {
+      display: block; } }
+
+.menuDesktop {
+  top: 0;
+  right: 0;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: black; }
+
+.ulDesktop {
+  display: flex;
+  justify-content: flex-end; }
+
+.liDesktop, .liLinks {
+  font-size: 22px;
+  margin: 40px 30px 0 0;
+  color: black;
+  font-weight: bold;
+  text-decoration: none; }
+
+@font-face {
+  font-family: "LeagueSpartan-Bold";
+  src: url("fonts/LeagueSpartan-Bold.otf"); }
+@font-face {
+  font-family: "Montserrat300";
+  src: url("fonts/Montserrat300.ttf"); }
+.homepage {
+  background-image: url("../styles/img/mook_filter.png");
+  background-repeat: no-repeat;
+  background-position: top right -19rem;
+  background-size: 42rem 59.4rem;
+  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 63rem; }
+  @media (min-width: 600px) {
+    .homepage {
+      background-image: url("../styles/img/mook_filter.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+      background-size: 42rem 59.4rem; } }
+  @media (min-width: 1200px) {
+    .homepage {
+      background-color: white; } }
+  .homepage-bar {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: black;
+    height: 0.4rem;
+    width: 77px; }
+  .homepage-title {
+    font-family: "LeagueSpartan-Bold";
+    font-size: 4rem; }
+  .homepage-paragraph {
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+    font-family: "Montserrat300"; }
+
+.about {
+  margin-bottom: 8rem;
+  height: 35rem; }
+  .about-title {
+    font-family: "LeagueSpartan-Bold";
+    margin-top: 1rem;
+    margin-left: 3rem;
+    font-size: 2.4rem; }
+  .about-bar {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: black;
+    height: 0.4rem;
+    width: 77px; }
+  .about-paragraph {
+    width: 24.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.3rem;
+    font-family: "Montserrat300"; }
+    @media (min-width: 600px) {
+      .about-paragraph {
+        width: 60rem; } }
+    .about-paragraph-content {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem; }
+      @media (min-width: 600px) {
+        .about-paragraph-content {
+          font-size: 1.7rem; } }
+
+.tweets {
+  height: 35rem;
+  width: 100%; }
+  .tweets-title {
+    margin-left: 3rem;
+    font-family: "LeagueSpartan-Bold";
+    font-size: 2.4rem; }
+  .tweets-bar {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: black;
+    height: 0.4rem;
+    width: 77px; }
+
+.partners {
+  background-color: #F7F7F7;
+  height: 14rem;
+  width: 100%; }
+  .partners-title {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.4rem;
+    font-family: "LeagueSpartan-Bold"; }
+  .partners-container {
+    margin-bottom: 2.5rem;
+    padding: 0 16rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .partners-container-aeroports {
+      height: 3.4rem;
+      width: 6rem; }
+    .partners-container-fujifilm {
+      height: 1.5rem;
+      width: 7.7rem; }
+    .partners-container-nikon {
+      height: 3.9rem;
+      width: 3.9rem; }
+  .partners-copyrights {
+    border-top: 0.001rem solid #d3d3d3; }
+    .partners-copyrights-content {
+      padding-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      font-size: 0.9rem; }
+
+.tweeterContainer {
+  display: flex;
+  padding: 1rem; }
+
+.articles {
+  width: 85%;
+  margin: 0 auto; }
+  .articles-titleContainer {
+    margin: 70px 0 40px 0; }
+  .articles-mainTitle {
+    font-size: 38px; }
+  .articles-titleDecor {
+    width: 65px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 26px; }
+  .articles-tagContainer {
+    display: flex;
+    flex-wrap: wrap; }
+  .articles-tagTitles {
+    color: #BEBEBE;
+    font-size: 13px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    background-color: #EEEEEE;
+    padding: 6px; }
+  .articles-stroke {
+    width: 100%;
+    height: 1px;
+    background-color: #E3E3E3;
+    margin-bottom: 18px; }
+  @media (min-width: 600px) {
+    .articles-imgContainer {
+      margin: 0px 0 0 100px; } }
+  .articles-imgContentcontainer {
+    margin: 0 -15px; }
+    @media (min-width: 600px) {
+      .articles-imgContentcontainer {
+        margin: 0 15px; } }
+  .articles-imgContent {
+    cursor: pointer; }
+
+@font-face {
+  font-family: "LeagueSpartan-Bold";
+  src: url("../fonts/LeagueSpartan-Bold.otf"); }
+@font-face {
+  font-family: "Montserrat300";
+  src: url("../fonts/Montserrat300.ttf"); }
+.contact {
+  margin: 100px auto;
+  padding: 0 2rem; }
+  @media (min-width: 600px) {
+    .contact-titlesContainer {
+      padding: 0 4rem; } }
+  .contact-titles {
+    font-size: 3rem;
+    font-family: "LeagueSpartan-Bold"; }
+  @media (min-width: 600px) {
+    .contact-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+      align-items: center; } }
+  .contact-line {
+    background-color: black;
+    width: 70px;
+    height: 5px;
+    margin: 0 0 20px 0; }
+  .contact-form {
+    background-color: black;
+    padding: 33px 25px;
+    border-radius: 8px; }
+    @media (min-width: 600px) {
+      .contact-form {
+        width: 50%;
+        height: 70%;
+        padding: 3rem 3rem; } }
+  .contact-input {
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    padding: 2rem;
+    border: none;
+    border-color: #fff;
+    font-family: "Montserrat300"; }
+  .contact-address {
+    margin: 0 0 20px 0; }
+  .contact-addressSocialIcon {
+    display: inline-block;
+    margin: 2%; }
+  .contact-para {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    font-family: "Montserrat300"; }
+  .contact-addresslegend {
+    color: #9C9C9C; }
+  .contact-spanTitles {
+    font-weight: bolder; }
+  .contact-Sub {
+    padding: 10px 20px 11px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #9C9C9C;
+    border-radius: 9px;
+    cursor: pointer;
+    font-family: "Montserrat300"; }
+  .contact-select {
+    padding: 10px 20px 11px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #9C9C9C;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 2%; }
+
+@font-face {
+  font-family: "LeagueSpartan-Bold";
+  src: url("../fonts/LeagueSpartan-Bold.otf"); }
+@font-face {
+  font-family: "Montserrat300";
+  src: url("../fonts/Montserrat300.ttf"); }
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .modal-overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); }
+  .modal-content {
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem; }
+    @media (min-width: 600px) {
+      .modal-content {
+        width: 700px; } }
+  .modal-imgcontent {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px; }
+    @media (min-width: 600px) {
+      .modal-imgcontent {
+        height: 65%;
+        margin: 0 45px; } }
+  .modal img {
+    max-width: 100%;
+    max-height: 100%; }
+  .modal-contentContainer {
+    display: flex; }
+    @media (min-width: 600px) {
+      .modal-contentContainer {
+        justify-content: space-between;
+        padding: 1rem; } }
+  .modal-rightContent {
+    width: 70%; }
+  .modal-para {
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+    font-family: "Montserrat300"; }
+  .modal-title {
+    font-family: "LeagueSpartan-Bold"; }
+  .modal-legend {
+    color: #9C9C9C;
+    font-style: italic; }
+
+@font-face {
+  font-family: "LeagueSpartan-Bold";
+  src: url("../fonts/LeagueSpartan-Bold.otf"); }
+@font-face {
+  font-family: "Montserrat300";
+  src: url("../fonts/Montserrat300.ttf"); }
+.top {
+  width: 85%;
+  margin: 0 auto; }
+  .top-titleContainer {
+    margin: 70px 0 40px 0; }
+  .top-mainTitle {
+    font-size: 38px;
+    font-family: "LeagueSpartan-Bold"; }
+  .top-titleDecor {
+    width: 65px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 26px; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  text-decoration: none; }
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif; }
+
+/*# sourceMappingURL=style.css.map */

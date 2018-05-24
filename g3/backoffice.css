@@ -1,0 +1,57 @@
+a {
+    text-decoration: underline;
+    color: #111222;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+}
+.index {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #111222;
+    width: 250px;
+    text-align: center;
+}
+
+.indexLink {
+    text-decoration: none;
+}
+
+.allLink {
+    border: 2px solid #111222;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.compagnieName{
+    font-weight: bold;
+}
+
+table, td, th {
+border: 1px solid #ddd;
+text-align: left;
+}
+
+table {
+border-collapse: collapse;
+width:50%;
+}
+
+th, td {
+padding: 15px;
+}
+
+.classement {
+    width: 80px;
+}
