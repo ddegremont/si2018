@@ -7,6 +7,7 @@ function applyFilter(filterType, filterValue) {
     for (let i = 0; i < articleList.length; i++) {
         articleCriteriaList.push(document.querySelectorAll(".news_articles_item_" + filterType)[i]);
     }
+    console.log(articleCriteriaList);
     for (let i = 0; i < articleList.length; i++) {
         if (filterValue === "none" || articleCriteriaList[i].textContent === filterValue) {
             articleList[i].style.display = "block";
