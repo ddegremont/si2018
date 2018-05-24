@@ -73,9 +73,9 @@ $data = getNewsData($connection);
 <footer class="footer">
     <h1 class="footerPartenaire">PARTENAIRES</h1>
     <div class="footerPartImgContainer">
-        <img class="footerPartImg" src="img/Accueil/adp-logo2.png" alt="">
-        <img class="footerPartImg" src="img/Accueil/Fujifilm_logo_logotype.png" alt="">
-        <img class="footerPartImg" src="img/Accueil/nikon-logo.png" alt="">
+        <img class="footerPartImg" src="src/components/img/Accueil/adp-logo2.png" alt="">
+        <img class="footerPartImg" src="src/components/img/Accueil/Fujifilm_logo_logotype.png" alt="">
+        <img class="footerPartImg" src="src/components/img/Accueil/nikon-logo.png" alt="">
     </div>
     <div class="footerBotomContainer">
         <div class="footerBotomCopyContainer">
