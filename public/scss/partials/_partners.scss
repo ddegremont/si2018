@@ -13,10 +13,19 @@
     width: 25px;
     height: 3px;
   }
+  &__logos {
+    display: flex;
+    justify-content: center;
+  }
   &__logosContainer {
-    text-align: center;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
   }
   &__logo {
-    width: auto;
+    object-fit: contain;
+    &:not(:first-child) {
+      width: 100px;
+    }
   }
 }

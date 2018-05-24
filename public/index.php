@@ -217,10 +217,12 @@
             <h3 class="Partners__maintitle">Partenaires</h3>
             <div class="Partners__titleLine"></div>
         </div>
-        <div class="Partners__logosContainer">
-            <img class="Partners__logo" src="img/nikon.png" alt="Nikon logo">
-            <img class="Partners__logo" src="img/adp.png" alt="Adp logo">
-            <img class="Partners__logo" src="img/fujifilm.png" alt="Fujifilm">
+        <div class="Partners__logos">
+            <div class="Partners__logosContainer">
+                <img class="Partners__logo" src="img/nikon.png" alt="Nikon logo">
+                <img class="Partners__logo" src="img/adp.png" alt="Adp logo">
+                <img class="Partners__logo" src="img/fujifilm.png" alt="Fujifilm">
+            </div>
         </div>
 
     </section>

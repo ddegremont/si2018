@@ -15,8 +15,11 @@
 
 .Menu {
   width: 50px;
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
   margin-right: 20px;
+  &__imgBlack {
+    -webkit-filter: brightness(0.20);
+    filter: brightness(0.20);
+  }
 }
+
