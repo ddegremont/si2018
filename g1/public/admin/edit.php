@@ -1,14 +1,39 @@
+<?php
+include 'admin_header.php';
+require_once '../includes/connection.php';
+
+$sql = "SELECT
+    `id`,
+    `title`,
+    `subtitle`,
+    `content`,
+    `img_src`,
+    `img_alt`,
+    `slug`
+FROM
+  `articles`
+WHERE
+  `id` = :id
+;";
+$stmt = $pdo->prepare($sql);
+$stmt->bindValue(':id', $_GET['id']);
+$stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+?>
+
 <form action="doedit.php" method="post">
     <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
-    <input name = "title" type="text" placeholder="title">
-    <input name = "h1" type="text" placeholder="h1">
-    <input name = "p" type="text" placeholder="p">
-    <input name = "span-class" type="text" placeholder="span-class">
-    <input name = "span-text" type="text" placeholder="span-text">
-    <input name = "img-alt" type="text" placeholder="img-alt">
-    <input name = "img-src" type="text" placeholder="img-src ">
-    <input name = "nav-title" type="text" placeholder="nav-title">
-    <button type="submit">send</button>
+    <input name = "title" type="text" placeholder="title" value="<?= $row['title'] ?>">
+    <input name = "subtitle" type="text" placeholder="subtitle" value="<?= $row['subtitle'] ?>">
+    <input name = "content" type="text" placeholder="content" value="<?= $row['content'] ?>">
+    <input name = "img_src" type="text" placeholder="img_src" value="<?= $row['img_src'] ?>">
+    <input name = "img_alt" type="text" placeholder="img_alt" value="<?= $row['img_alt'] ?>">
+    <button type="submit">Modifer</button>
 </form>
 
-<p><a href="login.php">Retours vers la home</a></p>
+<p><a href="login.php">Retour vers la home</a></p>
+
+<?php
+include 'admin_footer.php';
+?>

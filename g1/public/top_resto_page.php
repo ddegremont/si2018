@@ -13,25 +13,27 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute();
 ?>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="header__container__logoContainer">
-          <img src="../src/img/logo.png" alt="logo">
-        </div>
-        <h2 class="header__container__title">Les tops</h2>
-        <div class="header__container__burgerMenu">
-          <div class=""></div>
-          <div class=""></div>
-          <div class=""></div>
-        </div>
-      </div>
-      <ul class="header__menuList">
-        <li class="header__menuList__item">Accueil</li>
-        <li class="header__menuList__item">Catégories</li>
-        <li class="header__menuList__item">Actualités</li>
-        <li class="header__menuList__item">Qui sommes-nous ?</li>
-        <li class="header__menuList__item">Contact</li>
-      </ul>
+    <header class="headerTops">
+      <nav class="headerTops__nav">
+
+          <div class="header__nav__logo">
+              <img src="assets/img/logo.png" alt="" class="header__nav__logo__img">
+          </div>
+
+          <div class="header__nav__list">
+              <div class="header__nav__list__item">Accueil </div>
+              <div class="header__nav__list__item">Catégorie</div>
+              <div class="header__nav__list__item">Qui sommes-nous ?</div>
+              <div class="header__nav__list__item">Contact</div>
+          </div>
+
+          <div class="header__nav__burger">
+              <div class="header__nav__burger__item"></div>
+              <div class="header__nav__burger__item"></div>
+              <div class="header__nav__burger__item"></div>
+          </div>
+      </nav>
+      <div class="burger"></div>
     </header>
     <h2 class="title">Top 100 Restaurants</h2>
     <div class="filtersCtn">
@@ -80,5 +82,5 @@ $stmt->execute();
         <?php endwhile;?>
     </div>
     <div class="overlay"></div>
-    <script type="text/javascript" src="../../src/js/app.js"></script>
+    <script type="text/javascript" src="app.generated.js"></script>
 <?php require 'includes/footer.php' ?>

@@ -2,54 +2,41 @@
 require_once "../includes/connection.php";
 require_once "../includes/functions.php";
 
-if(!empty($_POST['title']) && !empty($_POST['h1']) && !empty($_POST['p']) && !empty($_POST['span-text']) ||
-    !empty($_POST['span-class']) && !empty($_POST['img-alt']) && !empty($_POST['img-src']) && !empty($_POST['nav-title'])){
+if(!empty($_POST['title']) && !empty($_POST['subtitle']) && !empty($_POST['content']) && !empty($_POST['img_src']) && !empty($_POST['img_alt'])){
     $title = $_POST['title'];
+    $subtitle = $_POST['subtitle'];
+    $content = $_POST['content'];
+    $imgAlt = $_POST['img_alt'];
+    $imgSrc = $_POST['img_src'];
     $slug = slugify($title);
-    $h1 = $_POST['h1'];
-    $p = $_POST['p'];
-    $spanClass = $_POST['span-class'];
-    $spanText = $_POST['span-text'];
-    $imgAlt = $_POST['img-alt'];
-    $imgSrc = $_POST['img-src'];
-    $navTitle = $_POST['nav-title'];
 } else{
     header('Location: login.php');
 }
 
-$sql = "INSERT INTO `page` (
+$sql = "INSERT INTO `articles` (
 `title`,
-`slug`,
-`h1`,
-`p`,
-`span-class`,
-`span-text`,
-`img-alt`,
-`img-src`,
-`nav-title`
+`subtitle`,
+`content`,
+`img_src`,
+`img_alt`,
+`slug`
 )
 VALUES(
   :title,
-  :slug,
-  :h1,
-  :p,
-  :spanClass,
-  :spanText,
+  :subtitle,
+  :content,
   :imgAlt,
   :imgSrc,
-  :navTitle
+  :slug
   )
 ;";
 $stmt = $pdo->prepare($sql);
 $stmt->bindParam(':title',$title, PDO::PARAM_STR);
-$stmt->bindParam(':slug',$slug, PDO::PARAM_STR);
-$stmt->bindParam(':h1',$h1, PDO::PARAM_STR);
-$stmt->bindParam(':p',$p, PDO::PARAM_STR);
-$stmt->bindParam(':spanClass',$spanClass, PDO::PARAM_STR);
-$stmt->bindParam(':spanText',$spanText, PDO::PARAM_STR);
+$stmt->bindParam(':subtitle',$subtitle, PDO::PARAM_STR);
+$stmt->bindParam(':content',$content, PDO::PARAM_STR);
 $stmt->bindParam(':imgAlt',$imgAlt, PDO::PARAM_STR);
 $stmt->bindParam(':imgSrc',$imgSrc, PDO::PARAM_STR);
-$stmt->bindParam(':navTitle',$navTitle, PDO::PARAM_STR);
+$stmt->bindParam(':slug',$slug, PDO::PARAM_STR);
 $stmt->execute();
 
 header('Location: login.php');

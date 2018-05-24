@@ -8,4 +8,3 @@ burger.addEventListener('click',function () {
    burgerItem[2].classList.toggle('--set-rotationLeft');
    burgerItem[0].classList.toggle('--set-rotationRight');
 });
-

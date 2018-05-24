@@ -7,14 +7,11 @@ require_once "../includes/connection.php";
 <section class="alert alert-primary">
 <form action="doadd.php" method="post">
     <input name = "title" type="text" placeholder="title">
-    <input name = "h1" type="text" placeholder="h1">
-    <input name = "p" type="text" placeholder="p">
-    <input name = "span-class" type="text" placeholder="span-class">
-    <input name = "span-text" type="text" placeholder="span-text">
-    <input name = "img-alt" type="text" placeholder="img-alt">
-    <input name = "img-src" type="text" placeholder="img-src">
-    <input name = "nav-title" type="text" placeholder="nav-title">
-    <button type="submit">send</button>
+    <input name = "subtitle" type="text" placeholder="subtitle">
+    <input name = "content" type="text" placeholder="content">
+    <input name = "img_src" type="text" placeholder="img_src">
+    <input name = "img_alt" type="text" placeholder="img_alt">
+    <button type="submit">Ajouter</button>
 </form>
 
 <?php
@@ -27,3 +24,5 @@ foreach ($pages as $page) { ?>
 <?php
     require_once "admin_footer.php";
 ?>
+
+

@@ -3,7 +3,7 @@ require_once "../includes/functions.php";
 require_once "../includes/connection.php";
 
 $sql = "DELETE FROM 
-  `page` 
+  `articles` 
 WHERE 
   `id` = :id
 ;";

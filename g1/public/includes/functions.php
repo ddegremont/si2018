@@ -33,11 +33,11 @@ function displayPage(array $page): void
 ?>
     <div class="container theme-showcase" role="main">
         <div class="jumbotron">
-            <h1><?=$page['h1']?></h1>
-            <p><?=$page['p']?></p>
-            <span class="label <?=$page['span-class']?>"><?=$page['span-text']?></span>
+            <h1><?=$page['title']?></h1>
+            <h2><?=$page['subtitle']?></h2>
+            <p><?=$page['content']?></p>
         </div>
-        <img class="img-thumbnail" alt="<?=$page['img-alt']?>" src="img/<?=$page['img-src']?>.jpg" data-holder-rendered="true">
+        <img class="img-thumbnail" alt="<?=$page['img_alt']?>" src="img/<?=$page['img_src']?>.jpg" data-holder-rendered="true">
     </div>
 <?php
 }
@@ -53,14 +53,13 @@ function getPages(PDO $pdo): ?array
     $sql = "SELECT
               `id`,
               `title`,
-              `h1`, 
-              `p`,
-              `span-class`, 
-              `span-text`,
-              `img-alt`, 
-              `img-src` 
+              `subtitle`, 
+              `content`,
+              `img_alt`, 
+              `img_src`,
+              `slug` 
             FROM 
-              `page` 
+              `articles` 
             ORDER BY id ASC
             ;";
     $stmt = $pdo->prepare($sql);
@@ -77,14 +76,14 @@ function getPage(PDO $pdo, string $slug): ?array
 {
     $sql = "SELECT
               `id`,
-              `h1`, 
-              `p`, 
-              `span-class`, 
-              `span-text`, 
-              `img-alt`, 
-              `img-src` 
+              `title`,
+              `subtitle`, 
+              `content`,
+              `img_alt`, 
+              `img_src`,
+              `slug` 
             FROM 
-              `page` 
+              `articles`  
             WHERE 
               `slug` = :slug
             ;";
@@ -106,19 +105,6 @@ function getPage(PDO $pdo, string $slug): ?array
  *
  * @return array
  */
-function getNav(PDO $pdo): array
-{
-    $sql = "SELECT 
-              `slug`, 
-              `nav-title`
-            FROM 
-              `page`
-            ;";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute();
-    pdoErrorHandler($stmt);
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
-}
 
 function slugify($text)
 {
@@ -145,52 +131,6 @@ function slugify($text)
     }
 
     return $text;
-}
-/**
- * @param $pdo
- * @param $currentPage
- */
-function getHeader($pdo, $currentPage): void
-{
-    $navData = getNav($pdo);
-    ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-</head>
-<body role="document">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-<div class="container">
-<div class="navbar-header">
-    <a class="navbar-brand" href="<?=APP_URL_STRUCT?>">WTF-CMS</a>
-</div>
-<div id="navbar" class="navbar-collapse collapse">
-<ul class="nav navbar-nav">
-<?php
-    foreach ($navData as $onePage){
-        addActive($onePage['slug'], $onePage['nav-title'], $currentPage);
-    }
-?>
-</ul>
-</div>
-</div>
-</nav>
-<?php
-}
-
-/**
- *
- */
-function getFooter(): void
-{
-?>
-</body>
-</html>
-<?php
 }
 
 /**
