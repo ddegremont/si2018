@@ -16,6 +16,8 @@ CREATE TABLE Partenaire (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `Partenaire` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'partenaire1', 'test.jpg', 'alt', 'type');
+INSERT INTO `Partenaire` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'partenaire2', 'test.jpg', 'alt', 'type');
 
 DROP TABLE IF EXISTS Article;
 
@@ -63,6 +65,8 @@ CREATE TABLE Top (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `Top` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'top1', 'test.jpg', 'alt', 'type');
+INSERT INTO `Top` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'top2', 'test.jpg', 'alt', 'type');
 
 
 DROP TABLE IF EXISTS Boite;
@@ -76,6 +80,8 @@ CREATE TABLE Boite (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite1', 'test.jpg', 'alt', 'type');
+INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite2', 'test.jpg', 'alt', 'type');
 
 
 DROP TABLE IF EXISTS Twitter;
@@ -89,4 +95,6 @@ CREATE TABLE Twitter (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `Twitter` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'twitter1', 'test.jpg', 'alt', 'type');
+INSERT INTO `Twitter` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'twitter2', 'test.jpg', 'alt', 'type');
 
