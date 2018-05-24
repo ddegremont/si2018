@@ -1,0 +1,185 @@
+/* Header Style */
+
+.header {
+    background: url('https://zupimages.net/up/18/21/h5f6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 300px;
+    object-fit: cover;
+    padding: 25px 50px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.headerNavContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNavLogo {
+    width: 47px;
+    height: 31px;
+}
+
+.headerNavTel {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 46px;
+    height: 23px;
+}
+
+.headerNavLogoContainer {
+    margin: 10px 0 0 10px;
+}
+
+.headerNavBurger {
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.headerNavContainer {
+    display: none;
+}
+
+.headerNav {
+    margin-right: 30px;
+    color: white;
+    font-family: 'Poppins Light', sans-serif;
+}
+
+.headerNav:hover {
+    color: #49c6e5;
+    border-bottom: 1px solid #49c6e5;
+    transition: 0.3s;
+}
+
+.headerTitleContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.headerTitle {
+    font-size: 50px;
+    font-family: 'Poppins Light', sans-serif;
+    text-shadow: 2px 2px 2px rgb(126, 126, 126);
+}
+
+.headerSubTitle {
+    padding-top: 1%;
+    font-size: 20px;
+    font-family: 'Poppins Light', sans-serif;
+    text-shadow: 2px 2px 2px rgb(126, 126, 126);
+}
+
+@media screen and (min-width: 1024px) {
+    /* header Style Descktop */
+    .headerNavContainer {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 25px;
+        right: 50px;
+        margin: 10px 20px 0 0;
+    }
+    .headerNavBurger {
+        display: none;
+    }
+    .headerNavLogo {
+        position: absolute;
+    }
+    .mookSection {
+        margin-top: 0;
+        flex-wrap: nowrap;
+    }
+    .toolTip {
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-bottom: 50px;
+    }
+}@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100');
+ul {
+    list-style-type: none;
+}
+
+ul li:before {
+    content: "\2022";
+    font-size: 25px;
+    margin-right: 10px;
+    color: #49c6e5;
+}
+
+/* The Overlay (background) */
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    /* Black fallback color */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #49c6e5;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #8bd8d2;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}

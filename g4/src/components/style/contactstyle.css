@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100');
+ul {
+    list-style-type: none;
+}
+
+ul li:before {
+    content: "\2022";
+    font-size: 25px;
+    margin-right: 10px;
+    color: #49c6e5;
+}
+
+
+/* Header Style */
+
+.header {
+    background: url('https://zupimages.net/up/18/21/2i22.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 300px;
+    object-fit: cover;
+}
+
+.headerNavTContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNavLogo {
+    width: 52px;
+    height: 51px;
+}
+
+.headerNavTel {
+    width: 46px;
+    height: 23px;
+}
+
+.headerNavLogoContainer {
+    display: ;
+    margin: 10px 0 0 10px;
+}
+
+.headerNavBurger {
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.headerNavContainer {
+    display: none;
+}
+
+.headerNav {
+    color: white;
+    font-family: 'Poppins Light', sans-serif;
+}
+
+.headerNav:hover {
+    color: #49c6e5;
+    transition: 0.3s;
+}
+
+.headerTitleContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.headerTitle {
+    font-size: 50px;
+    font-family: 'Poppins Light', sans-serif;
+    text-shadow: 2px 2px 2px rgb(126, 126, 126);
+}
+
+.headerSubTitle {
+    padding-top: 1%;
+    font-size: 20px;
+    font-family: 'Poppins Light', sans-serif;
+    text-shadow: 2px 2px 2px rgb(126, 126, 126);
+}
+
+
+/* The Overlay (background) */
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    /* Black fallback color */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+
+/* contact info */
+
+.contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info {
+    line-height: 2;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: 'Poppins Medium', sans-serif;
+}
+
+.contactblue {
+    color: #49c6e5;
+}
+
+.contactmail {
+    margin-top: 100px;
+}
+
+.contactmailinput {
+    background: #111111;
+    color: white;
+    font-size: 14px;
+    width: 300px;
+    height: 36px;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    margin-top: 15px;
+}
+
+.contacttextarea {
+    background: #111111;
+    color: white;
+    font-size: 14px;
+    width: 300px;
+    height: 150px;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    margin-top: 15px;
+}
+
+select {
+    background: #2e2e2e;
+    color: white;
+    font-size: 14px;
+    width: 300px;
+    height: 36px;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+.contactbtn {
+    display: block;
+    margin-left: 70px;
+    text-transform: uppercase;
+    font-family: 'Poppins Medium', sans-serif;
+    font-size: 16px;
+    background: #8bd7d2;
+    width: 150px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.socialmedia {
+    margin-left: 120px;
+    margin-top: 15px;
+}
+
+.imgsocial {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+@media (min-width: 968px) {
+    .contactinfo {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .info {
+        line-height: 2;
+        font-family: 'Poppins Medium', sans-serif;
+    }
+    .contactblue {
+        color: #49c6e5;
+    }
+    .contactmail {
+        margin-top: 100px;
+    }
+    .contactmailinput {
+        background: #111111;
+        color: white;
+        font-size: 14px;
+        width: 450px;
+        height: 36px;
+        padding-left: 10px;
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        margin-top: 15px;
+    }
+    .contacttextarea {
+        background: #111111;
+        color: white;
+        font-size: 14px;
+        width: 450px;
+        height: 150px;
+        padding-left: 10px;
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        margin-top: 15px;
+    }
+    select {
+        background: #2e2e2e;
+        color: white;
+        font-size: 14px;
+        width: 460px;
+        height: 36px;
+        padding-left: 10px;
+        font-family: 'Poppins', sans-serif;
+        border: none;
+    }
+    .contactbtn {
+        display: block;
+        margin-left: 170px;
+        text-transform: uppercase;
+        font-family: 'Poppins Medium', sans-serif;
+        font-size: 16px;
+        background: #8bd7d2;
+        width: 150px;
+        height: 36px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .socialmedia {
+        margin-left: 150px;
+    }
+    .imgsocial {
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.headerBurgerpointer {
+    cursor: pointer;
+}
+
+
+/* footer Style */
+
+.footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #9ac2cc;
+}
+
+.footerPartenaire {
+    padding-top: 20px;
+    text-transform: uppercase;
+    margin: 50px 0 20px 0;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.footerPartImgContainer {
+    text-align: center;
+}
+
+.footerPartImg {
+    margin-right: 80px;
+    width: 30;
+}
+
+.footerBotomCopyContainer {
+    display: flex;
+}
+
+.footerBotomContainer {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.footerBotomCopyContainerNav {
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.footerBotomCopyright {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+    /* header Style Descktop */
+    .headerNavContainer {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin: 10px 20px 0 0;
+    }
+    .headerNavBurger {
+        display: none;
+    }
+    .headerNavLogo {
+        position: absolute;
+    }
+}

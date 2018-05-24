@@ -1,0 +1,26 @@
+<?php
+include "connect/connect.php";
+include "getData/getTopData.php";
+include "getData/getNewsData.php";
+include "getData/getNewsArticleData.php";
+include "getData/getFactsheetData.php";
+include "getData/getFactsheetArticleData.php";
+include "getData/getPartnersData.php";
+include "getData/getTwitterData.php";
+include "displayContent/displayTopContent.php";
+include "displayContent/displayNewsContent.php";
+include "displayContent/displayNewsSelectCompany.php";
+include "displayContent/displayNewsArticleContent.php";
+include "displayContent/displayNewsArticleDetailContent.php";
+include "displayContent/displayNewsArticleUpdateContent.php";
+include "displayContent/displayFactsheetContent.php";
+include "displayContent/displayFactsheetSelectCategory.php";
+include "displayContent/displayFactsheetArticleContent.php";
+include "displayContent/displayFactsheetArticleDetailContent.php";
+include "displayContent/displayFactsheetArticleUpdateContent.php";
+include "displayContent/displayPartnersData.php";
+include "displayContent/displayPartnersItemData.php";
+include "displayContent/displayTwitterContent.php";
+include "displayContent/displayTwitterArticleContent.php";
+include "displayContent/displayFooterContent.php";
+include "displayContent/displayFooterArticleContent.php";

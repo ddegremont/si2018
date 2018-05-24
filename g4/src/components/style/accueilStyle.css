@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100');
+ul {
+  list-style-type: none;
+}
+
+ul li:before {
+  content: "\2022";
+  font-size: 25px;
+  margin-right: 10px;
+  color: #49c6e5;
+}
+
+/* The Overlay (background) */
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  /* Black fallback color */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #49c6e5;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #8bd8d2;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.headerBurgerpointer {
+  cursor: pointer;
+}
+
+
+/* MookSection Style */
+
+.mookSection {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.mookSectionImg {
+  margin-left: 25px;
+  object-fit: cover;
+  margin-top: -30px;
+}
+
+.mookDescriptContainer {
+  margin: 50px;
+}
+
+.mookTitle {
+  font-weight: 800;
+  color: #49c6e5;
+  font-size: 35px;
+  font-family: 'Poppins Light', sans-serif;
+  text-transform: uppercase;
+}
+
+.mookDescrip {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-family: 'Poppins Light', sans-serif;
+  margin-bottom: 5px;
+}
+
+.mookDescripWiki {
+  font-weight: 600;
+}
+
+.mookListDescrip {
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+
+/* toolTip Style */
+
+.toolTip {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.toolTipTitle {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 50px 0 20px 0;
+  text-align: center;
+  font-size: 40px;
+  color: #49c6e5;
+  font-family: 'Poppins Light', sans-serif;
+}
+
+.toolTiptextContainer {
+  margin: 0 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.toolTiptext {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.toolTiptextli {
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+
+/* Stats Screen Style */
+
+.statScreen {
+  background: url('https://zupimages.net/up/18/21/m1kq.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  height: 300px;
+}
+
+.statScreenNumberContainer {
+  color: white;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.statScreenContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.statScreenDesc {
+  font-family: 'Poppins';
+}
+
+.statScreenNumber {
+  font-family: 'Poppins';
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.slider {
+  margin: 0 auto;
+  max-width: 3024px;
+}
+
+.slide_viewer {
+  margin-top: 50px;
+  height: 540px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+  background: url('http://www.image-heberg.fr/files/1527090582200742956.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  background-position: center;
+}
+
+.slide:nth-of-type(2) {
+  background: url('http://www.image-heberg.fr/files/15270902581691274209.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  background-position: center;
+}
+
+.slide:nth-of-type(3) {
+  background: url('http://www.image-heberg.fr/files/15270902581691274209.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  background-position: center;
+}
+
+.slide:nth-of-type(4) {
+  background: url('http://www.image-heberg.fr/files/15270902581691274209.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  background-position: center;
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active,
+.slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+}
+
+.cd-top {
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  background: url(uparrow.png) center 50%;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+}
+
+.cd-top.cd-top--show,
+.cd-top.cd-top--fade-out,
+.cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+}
+
+.cd-top.cd-top--show {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-top--fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.cd-top:hover {
+  background-color: #569de8;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(86, 181, 232, 0.8);
+url(https://codyhouse.co/demo/back-to-top/img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #569de8;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+/* Staff Style */
+
+.staffScreen {
+  background: url('https://zupimages.net/up/18/21/54av.jpg') center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.staffPresContainer {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  padding: 30px;
+}
+
+.staffScreenContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.staffScreenName {
+  font-family: 'Poppins';
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 2px rgb(126, 126, 126);
+}
+
+.staffScreenDesc {
+  font-family: 'Poppins';
+  text-transform: none;
+  font-size: 13px;
+  text-shadow: 2px 2px 2px rgb(126, 126, 126);
+}
+
+.staffScreenphoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 10px solid white;
+}
+
+.stafftitle {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  /* Staff Style */
+  .staffScreen {
+    background: url('https://zupimages.net/up/18/21/54av.jpg') center center no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    height: auto;
+    margin-top: 80px;
+    padding: 30px;
+  }
+  .staffPresContainer {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .staffScreenContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .staffScreenName {
+    font-family: 'Poppins';
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 2px rgb(126, 126, 126);
+  }
+  .staffScreenDesc {
+    font-family: 'Poppins';
+    text-transform: none;
+    font-size: 13px;
+    text-shadow: 2px 2px 2px rgb(126, 126, 126);
+  }
+  .staffScreenphoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 10px solid white;
+  }
+}
