@@ -1,0 +1,108 @@
+body {
+  font-family: "Montserrat", sans-serif; }
+
+.header {
+  background: url("../assets/img/form.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 82px;
+  padding-top: 20px;
+  margin-bottom: 30px; }
+  .header__logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 5%; }
+
+@media (min-width: 600px) {
+  .content {
+    display: flex; } }
+
+.informations {
+  margin-left: 5%; }
+  .informations__subtitle {
+    text-transform: uppercase; }
+  .informations__blueline {
+    height: 1px;
+    width: 50px;
+    background-color: #00CCCC;
+    margin-top: 10px;
+    margin-left: 6%;
+    margin-bottom: 30px; }
+  .informations__paragraph {
+    margin-top: 30px; }
+    .informations__paragraph__blue {
+      color: #00CCCC; }
+  .informations__circles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-right: 40%; }
+    @media (min-width: 600px) {
+      .informations__circles {
+        display: none; } }
+    .informations__circles__circle {
+      background-color: rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      height: 40px;
+      width: 40px;
+      border-radius: 50%; }
+
+.form {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .form__theForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 600px) {
+      .form__theForm {
+        margin-top: -50px; } }
+    .form__theForm__input {
+      height: 40px;
+      margin-top: 15px;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      padding-left: 1%;
+      width: 300px; }
+      @media (min-width: 600px) {
+        .form__theForm__input {
+          width: 600px; } }
+    .form__theForm__message {
+      height: 250px;
+      margin-top: 15px;
+      width: 300px;
+      border: 1px solid rgba(0, 0, 0, 0.4); }
+      @media (min-width: 600px) {
+        .form__theForm__message {
+          width: 600px; } }
+    .form__theForm__submit {
+      color: #00CCCC;
+      border: 1px solid #00CCCC;
+      background-color: white;
+      height: 30px;
+      width: 100px;
+      margin-top: 15px;
+      margin-bottom: 50px; }
+      @media (min-width: 600px) {
+        .form__theForm__submit {
+          width: 200px; } }
+
+.footer {
+  height: 50px;
+  background-color: #4A4A4A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  @media (min-width: 600px) {
+    .footer {
+      height: 127px; } }
+  .footer__logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 5%; }
+  .footer__text {
+    color: white;
+    width: 60%;
+    text-align: center;
+    margin-right: 5%; }

@@ -9,12 +9,12 @@
       padding-bottom: 50px; } }
   .header__header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center; }
   .header__logo {
     width: 40px;
     height: 40px;
-    margin-right: 50px; }
+    margin-left: 5%; }
   .header__burger {
     width: 20px;
     height: 20px; }
@@ -25,14 +25,20 @@
     display: none; }
     @media (min-width: 600px) {
       .header__nav {
-        display: block; } }
+        display: block;
+        margin-right: 50%;
+        min-width: 40%; } }
     .header__nav__items {
       display: flex; }
       .header__nav__items__item {
         margin-left: 15%; }
         .header__nav__items__item__link {
           text-decoration: none;
-          color: white; }
+          color: white;
+          white-space: nowrap; }
+  .header__three {
+    min-width: 300px;
+    text-align: center; }
   .header__title {
     color: white;
     margin-top: 150px;
@@ -65,12 +71,14 @@
     display: flex;
     align-items: center;
     margin-top: 150px;
-    float: right;
-      float-text-align: center;
-      float-margin-right: 5%; }
+    justify-content: flex-end;
+      justify-content-text-align: center;
+      justify-content-min-width: 500px; }
     .preview__textArrow__arrow {
       width: 15px;
-      margin-left: 10%; }
+      margin-left: 5%; }
+    .preview__textArrow__text {
+      font-weight: bold; }
     @media (min-width: 600px) {
       .preview__textArrow {
         margin-top: 60px; } }
@@ -87,7 +95,46 @@
   width: 55px;
   background-color: #00CCCC;
   margin-top: 10px;
-  margin-left: 6%; }
+  margin-left: 6%;
+  margin-bottom: 50px; }
+
+.oneWorld__container {
+  display: none; }
+  @media (min-width: 600px) {
+    .oneWorld__container {
+      display: flex;
+      justify-content: space-around; } }
+  .oneWorld__container__item {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 20%;
+    height: 313px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; }
+    .oneWorld__container__item__circle {
+      height: 60px;
+      width: 60px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      z-index: 2;
+      margin-bottom: 50px; }
+    .oneWorld__container__item__img {
+      height: 66%; }
+    .oneWorld__container__item__box {
+      border-top: 1px solid rgba(0, 0, 0, 0.5); }
+
+.oneWorld__mobileContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px; }
+  @media (min-width: 600px) {
+    .oneWorld__mobileContainer {
+      display: none; } }
+  .oneWorld__mobileContainer__item {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: 313px; }
 
 .starAlliance__title {
   margin-top: 50px;
@@ -100,6 +147,38 @@
   margin-top: 10px;
   margin-left: 6%; }
 
+.starAlliance__container {
+  display: none; }
+  @media (min-width: 600px) {
+    .starAlliance__container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px; } }
+  .starAlliance__container__item {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 20%;
+    height: 313px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; }
+    .starAlliance__container__item__img {
+      height: 66%; }
+    .starAlliance__container__item__box {
+      border-top: 1px solid rgba(0, 0, 0, 0.5); }
+
+.starAlliance__mobileContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px; }
+  @media (min-width: 600px) {
+    .starAlliance__mobileContainer {
+      display: none; } }
+  .starAlliance__mobileContainer__item {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: 313px; }
+
 .skyTeam__title {
   margin-top: 50px;
   margin-left: 5%; }
@@ -110,6 +189,38 @@
   background-color: #00CCCC;
   margin-top: 10px;
   margin-left: 6%; }
+
+.skyTeam__container {
+  display: none; }
+  @media (min-width: 600px) {
+    .skyTeam__container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px; } }
+  .skyTeam__container__item {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 20%;
+    height: 313px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; }
+    .skyTeam__container__item__img {
+      height: 66%; }
+    .skyTeam__container__item__box {
+      border-top: 1px solid rgba(0, 0, 0, 0.5); }
+
+.skyTeam__mobileContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px; }
+  @media (min-width: 600px) {
+    .skyTeam__mobileContainer {
+      display: none; } }
+  .skyTeam__mobileContainer__item {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: 313px; }
 
 .footer {
   height: 51px;

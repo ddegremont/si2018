@@ -41,7 +41,7 @@
                 <ul class="header__nav__items">
                     <li class="header__nav__items__item"><a href="#" class="header__nav__items__item__link">Accueil</a></li>
                     <li class="header__nav__items__item"><a href="#" class="header__nav__items__item__link">Catégorie</a></li>
-                    <li class="header__nav__items__item"><a href="#" class="header__nav__items__item__link">Qui sommes-nous ?</a>
+                    <li class="header__nav__items__item"><a href="#" class="header__nav__items__item__link header__three">Qui sommes-nous ?</a></li>
                     <li class="header__nav__items__item"><a href="#" class="header__nav__items__item__link">Contact</a></li>
                 </ul>
             </nav>
@@ -65,20 +65,55 @@
         <h2 class="oneWorld__title">One World</h2>
         <div class="oneWorld__blueline"></div>
         <div class="oneWorld__container">
-            <div class="oneWorld__item"></div>
-            <div class="oneWorld__item"></div>
-            <div class="oneWorld__item"></div>
+            <div class="oneWorld__container__item">
+                <div class="oneWorld__container__item__img"></div>
+                <div class="oneWorld__container__item__circle"></div>
+                <div class="oneWorld__container__item__box"></div>
+            </div>
+            <div class="oneWorld__container__item"></div>
+            <div class="oneWorld__container__item"></div>
+            <div class="oneWorld__container__item"></div>
+        </div>
+        <div class="oneWorld__mobileContainer">
+            <div class="oneWorld__mobileContainer__item">
+            </div>
+            <div class="oneWorld__mobileContainer__item"></div>
         </div>
     </section>
 
     <section class="starAlliance">
         <h2 class="starAlliance__title">StarAlliance</h2>
         <div class="starAlliance__blueline"></div>
+        <div class="starAlliance__container">
+            <div class="starAlliance__container__item">
+            </div>
+            <div class="starAlliance__container__item"></div>
+            <div class="starAlliance__container__item"></div>
+            <div class="starAlliance__container__item"></div>
+        </div>
+        <div class="starAlliance__mobileContainer">
+            <div class="starAlliance__mobileContainer__item">
+            </div>
+            <div class="starAlliance__mobileContainer__item"></div>
+        </div>
+
     </section>
 
     <section class="skyTeam">
         <h2 class="skyTeam__title">Sky Team</h2>
         <div class="skyTeam__blueline"></div>
+        <div class="skyTeam__container">
+            <div class="skyTeam__container__item">
+            </div>
+            <div class="skyTeam__container__item"></div>
+            <div class="skyTeam__container__item"></div>
+            <div class="skyTeam__container__item"></div>
+        </div>
+        <div class="skyTeam__mobileContainer">
+            <div class="skyTeam__mobileContainer__item">
+            </div>
+            <div class="skyTeam__mobileContainer__item"></div>
+        </div>
     </section>
 
     <footer class="footer">
