@@ -46,7 +46,7 @@ a {
 
 @font-face {
   font-family: 'Didot';
-  src: url("././fonts/Didot.ttf"); }
+  src: url("../fonts/Didot.ttf"); }
 
 @font-face {
   font-family: 'AvenirNext-Bold';
@@ -261,3 +261,97 @@ a {
     font-size: 12px;
     line-height: 16px;
     text-align: center; }
+
+.Find {
+  background-position: left;
+  background-size: cover;
+  height: 100vh; }
+  .Find__mainTitle {
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 32px;
+    font-family: 'AvenirNext-Regular';
+    color: white;
+    font-size: 30px; }
+  .Find__searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: .9; }
+  .Find__searchBox {
+    background: white;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px; }
+  .Find__searchTitle {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 16px; }
+  .Find__text {
+    font-family: 'AvenirNext-DemiBold';
+    margin-top: 20px;
+    font-size: 14px; }
+  .Find__location {
+    margin-top: 10px;
+    border: 1px solid #979797;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5px; }
+  .Find__category {
+    margin-top: 10px;
+    border: 1px solid #979797;
+    height: 30px; }
+  .Find__submitContainer {
+    display: flex;
+    justify-content: center; }
+  .Find__submit {
+    margin-top: 20px;
+    background: #00CCCC;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    font-family: 'AvenirNext-DemiBold'; }
+
+.Desc {
+  background: white; }
+  .Desc__content {
+    padding: 20px; }
+  .Desc__titleContainer:not(:first-child) {
+    margin-top: 30px; }
+  .Desc__title {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 20px; }
+  .Desc__titleLine {
+    background: #00CCCC;
+    margin-top: 5px;
+    width: 25px;
+    height: 3px; }
+  .Desc__travelContent {
+    margin-top: 30px; }
+  .Desc__travelBox {
+    display: flex;
+    align-items: center; }
+    .Desc__travelBox:not(:last-child) {
+      margin-bottom: 20px; }
+  .Desc__travelImg {
+    width: 50px; }
+  .Desc__travelText {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 16px; }
+  .Desc__subtitle {
+    font-family: 'AvenirNext-Medium';
+    margin-top: 30px;
+    line-height: 22px; }
+  .Desc__paragraph {
+    margin-top: 20px;
+    font-family: 'AvenirNext-Regular';
+    color: #646464;
+    line-height: 22px; }
+  .Desc .__mockupContainer {
+    width: 200px; }
+  .Desc .__mockup {
+    width: 100%; }
