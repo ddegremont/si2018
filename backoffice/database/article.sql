@@ -22,15 +22,12 @@ CREATE TABLE Article (
   `texte` VARCHAR(3000) NOT NULL,
   `image` VARCHAR(2048)NOT NULL,
   `alt` VARCHAR(100)NOT NULL,
-  `pdate` VARCHAR(100)NOT NULL,
+  `date` VARCHAR(100)NOT NULL,
   `auteur` VARCHAR(40)NOT NULL,
   `signature` VARCHAR(200) NOT NULL,
   `logo` VARCHAR(2048) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
-
-
-INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`pdate`,`auteur`, `signature`, `logo`) VALUES ('Airfrance','lalalala','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
 
 
 USE Voyage;
@@ -45,9 +42,6 @@ CREATE TABLE Admin (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
-INSERT INTO `Admin` (`pseudo`,`password`) VALUES ('admin','admin');
-
-
 USE Voyage;
 
 DROP TABLE IF EXISTS Top;
@@ -58,7 +52,7 @@ CREATE TABLE Top (
   `type` VARCHAR(100) NOT NULL,
   `image` VARCHAR(2048)NOT NULL,
   `alt` VARCHAR(100)NOT NULL,
-  `desc` VARCHAR(100)NOT NULL,
+  `desc` VARCHAR(1000)NOT NULL,
   `Adresse` VARCHAR(100)NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
@@ -90,5 +84,39 @@ CREATE TABLE Twitter (
   `type` VARCHAR(100)NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+
+USE Voyage;
+
+DROP TABLE IF EXISTS Fiche;
+
+CREATE TABLE Fiche (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(110) NOT NULL,
+  `desc` VARCHAR(1000)NOT NULL,
+  `rating` VARCHAR(200)NOT NULL,
+  `location` VARCHAR(200)NOT NULL,
+  `cost` VARCHAR(100)NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+
+USE Voyage;
+
+DROP TABLE IF EXISTS Bon;
+
+CREATE TABLE Bon (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `from` VARCHAR(100) NOT NULL,
+  `to` VARCHAR(100) NOT NULL,
+  `image` VARCHAR(2048)NOT NULL,
+  `alt` VARCHAR(100)NOT NULL,
+  `date` VARCHAR(100)NOT NULL,
+  `price` VARCHAR(40)NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+
+
 
 
