@@ -1,3 +1,5 @@
+import './burger.js';
+
 const topPages = () => {
   const sortBtn = document.querySelector('.--sortBtn')
   const filterBtn = document.querySelector('.--filterBtn')
@@ -33,3 +35,4 @@ const topPages = () => {
 }
 
 topPages()
+

@@ -12,6 +12,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
+    "gulp-watch-sass": "^1.4.1",
     "rollup": "^0.59.2",
     "rollup-plugin-sass": "^0.6.1",
     "rollup-plugin-sourcemaps": "^0.4.2",
