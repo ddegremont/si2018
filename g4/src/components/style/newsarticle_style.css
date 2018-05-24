@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+nput {
+    display: block;
+}
+.article_form {
+    display: none;
+}
+/* BLOC DE DETAILS */
+
+.newsarticleDetailsContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.article_item_subtitle{
+  font-family: 'Poppins';
+  padding: 5px;
+}
+
+.article_item_title{
+  font-family: 'Poppins';
+    padding: 5px;
+}
+
+.article_item_company{
+  font-family: 'Poppins';
+    padding: 5px;
+}
+
+.article_item_signature{
+  font-family: 'Poppins';
+    padding: 5px;
+}
+
+a:hover{
+  color: red;
+}
+
+a{
+  padding: 5px;
+	color: #49c6e5;
+  font-family: 'Poppins';
+}
+
+input{
+background-color: grey;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 3px;
+}
+button{
+  background-color: #49c6e5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+/* Form */
+.article_item{
+  height: 100vh;
+}

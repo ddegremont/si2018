@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+  border: 15px solid #fff;
+}
+.headerMargin {
+  background: url('http://www.image-heberg.fr/files/15270612931619750617.jpg');
+  font-family: 'Poppins light', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  background-position: center;
+  margin: 25px;
+}
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+}
+.headerLogo {
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 55px;
+  height: 39px;
+}
+.headerBurger {
+  margin-right: 15px;
+  margin-top: 15px;
+  width: 46px;
+  height: 23px;
+}
+.headerNavContainer {
+  display: none;
+}
+.headerNavTitle {
+  margin-right: 1%;
+  color: white;
+}
+.headerNavTitle:hover {
+  margin-right: 1%;
+  color: #49c6e5;
+  border-bottom: 1px solid;
+}
+.headerNavTContainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+.headerTitle{
+  font-size: 60px;
+   color: white;
+}
+.headerSubTitle {
+   font-size: 30px;
+   color: white;
+}
+.headerContainer {
+  height: 90vh;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.headerImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.headerArrow {
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  /* header Style Descktop */
+  .headerNavContainer {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin: 10px 20px 0 0;
+  }
+  .headerBurger {
+    display: none;
+  }
+  .headerLogo {
+
+    position: absolute;
+  }
+  }
