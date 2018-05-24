@@ -339,6 +339,7 @@ input{
   cursor: pointer;
   border-radius: 3px;
   transition: 0.1s;
+  display: block;
 }
 
 input:hover {
@@ -404,6 +405,9 @@ input:hover {
   }
 }
 
+.article_form {
+  display: none;
+}
 
 .news_articles_item_imgContainer {
   width: 100%;

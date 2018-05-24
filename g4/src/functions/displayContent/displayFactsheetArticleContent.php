@@ -9,7 +9,7 @@ function displayFactsheetArticleContent($data)
         <img src="<?= $imgPath . $data["imgSrc"] ?>" alt="<?= $data["imgAlt"] ?>">
         <p><?= $data["paragraph"] ?></p>
         <p>Website: <a href="<?= $data["websiteUrl"] ?>"><?= $data["websiteUrl"] ?></a></p>
-        <a href="newsArticle.php?id=<?= $data["id"] ?>">Voir l'article</a>
+        <a href="factsheetsArticle.php?id=<?= $data["id"] ?>">Voir l'article</a>
         <form action="src/actions/factsheetArticle_doDelete.php" method="POST">
             <input value="<?= $data["id"] ?>" name="id" title="id" style="display:none">
             <input type="submit" value="Supprimer">
