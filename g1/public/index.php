@@ -120,33 +120,45 @@ $stmt2->execute();
 
     <section class="search">
         <div class="search__head">
-            <h2 class="search__head__title">Je cherche un(e)...</h2>
+            <h2 class="search__head__title">Je recherche ...</h2>
             <div class="search__head__underline"></div>
         </div>
 
         <div class="search__infosContainer">
             <div class="search__infosContainer__item">
-                <div class="search__infosContainer__item__img"></div>
+                <div class="search__infosContainer__item__img">
+                  <a><img src="../src/img/Tops/Resto/r1.jpg" alt=""></a>
+                </div>
                 <p class="search__infosContainer__item__title">Compagnies aériennes</p>
             </div>
             <div class="search__infosContainer__item">
-                <div class="search__infosContainer__item__img"></div>
+                <div class="search__infosContainer__item__img">
+                  <a><img src="../src/img/Tops/Resto/r1.jpg" alt=""></a>
+                </div>
                 <p class="search__infosContainer__item__title">Croisières</p>
             </div>
             <div class="search__infosContainer__item">
-                <div class="search__infosContainer__item__img"></div>
+                <div class="search__infosContainer__item__img">
+                  <a><img src="../src/img/Tops/Hotel/barcelona.jpg" alt=""></a>
+                </div>
                 <p class="search__infosContainer__item__title">Hôtel</p>
             </div>
             <div class="search__infosContainer__item">
-                <div class="search__infosContainer__item__img"></div>
+                <div class="search__infosContainer__item__img">
+                  <a><img src="../src/img/Tops/Resto/r1.jpg" alt=""></a>
+                </div>
                 <p class="search__infosContainer__item__title">Restaurants</p>
             </div>
             <div class="search__infosContainer__item">
-                <div class="search__infosContainer__item__img"></div>
+                <div class="search__infosContainer__item__img">
+                  <a><img src="../src/img/Tops/Resto/r1.jpg" alt=""></a>
+                </div>
                 <p class="search__infosContainer__item__title">Activités</p>
             </div>
             <div class="search__infosContainer__item">
-                <div class="search__infosContainer__item__img"></div>
+                <div class="search__infosContainer__item__img">
+                  <a><img src="../src/img/Tops/Spa/spaHome.jpg" alt=""></a>
+                </div>
                 <p class="search__infosContainer__item__title">Spa / Thalasso</p>
             </div>
         </div>
@@ -155,6 +167,7 @@ $stmt2->execute();
 
     <section class="articlesSection">
           <h2 class="articlesSection__title">Les derniers articles</h2>
+          <div class="articlesSection__underline"></div>
           <div class="articlesSection__articlesCtn">
             <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
             <div class="articlesSection__articlesCtn__article">
@@ -196,18 +209,18 @@ $stmt2->execute();
 
         <div class="top__container">
             <div class="top__container__item">
-                <img src="assets/img/top1.png" alt="" class="top__container__item__img">
+                <a href="top_resto_page.php"><img src="../src/img/Tops/Resto/r1.jpg" alt="Top 100 Restaurants" class="top__container__item__img"></a>
+                <p class="top__container__item__title">Nos meilleurs restaurants</p>
+            </div>
+
+            <div class="top__container__item">
+                <a href="top_hotels_page.php"><img src="../src/img/Tops/Hotel/barcelona.jpg" alt="Top 100 Hôtels" class="top__container__item__img"></a>
                 <p class="top__container__item__title">Nos meilleurs hôtels</p>
             </div>
 
             <div class="top__container__item">
-                <img src="assets/img/top1.png" alt="" class="top__container__item__img">
-                <p class="top__container__item__title">Nos meilleurs hôtels</p>
-            </div>
-
-            <div class="top__container__item">
-                <img src="assets/img/top1.png" alt="" class="top__container__item__img">
-                <p class="top__container__item__title">Nos meilleurs hôtels</p>
+                <img src="../src/img/Tops/Spa/spaHome.jpg" alt="Top 100 Spas/Thalassos" class="top__container__item__img">
+                <p class="top__container__item__title">Nos meilleures Thalassos</p>
             </div>
         </div>
 
@@ -216,8 +229,7 @@ $stmt2->execute();
     <section class="advertise">
         <div class="advertise__infos">
             <h2 class="advertise__infos__title">Annonceurs rejoignez-nous !</h2>
-            <p class="advertise__infos__sentence">En savoir plus</p>
-            <img src="assets/img/arrow.svg" alt="" class="advertise__infos__img">
+            <div class="advertise__infos__btn">En savoir plus</div>
         </div>
     </section>
 
@@ -247,7 +259,7 @@ $stmt2->execute();
             <div class="promo__container__description">
                 <img src="assets/img/leftLine.png" alt="" class="promo__container__description__img --left">
                 <p class="promo__container__description__text">
-                    "Un mook (contraction de magazine et book) est un ouvrage hybride dont le format se situe entre le magazine et le livre. Il est publié de manière périodique et renferme essentiellement de grands reportages. Il comprend également des dessins et des photos servant à l’illustration des textes." <span class="promo__container__description__text__quote">— Wikipédia</span></p>
+                    TÉLÉCHARGEZ notre mook, hybride dont le format se situe entre le magazine et le livre. Ce numéro 2018 est unique renfermant 4211 photographies est le résultat d'une collaboration avec 11 reporters-photographes qui ont parcouru le monde à travers 130 destinations exceptionnelles.</p>
                 <img src="assets/img/rightLine.png" alt="" class="promo__container__description__img --right">
             </div>
         </div>
@@ -305,7 +317,7 @@ $stmt2->execute();
             <img src="assets/img/sponsor.png" alt="" class="sponsor__container__img">
         </div>
     </section>
-    
+
 
     <footer class="footer">
 

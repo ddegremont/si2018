@@ -123,24 +123,24 @@
   padding-bottom: 3vh
   display: grid
   grid-template-columns: repeat(2, 1fr)
-  grid-template-rows: repeat(5, 230px)
+  grid-template-rows: repeat(10, 230px)
   grid-auto-rows: auto
   grid-gap: 2vh
   overflow: hidden
   @include for-size(tablet-portrait-up)
     width: 85%
     grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: repeat(5, 240px)
+    grid-template-rows: repeat(10, 240px)
     grid-gap: 3vh
   @include for-size(tablet-landscape-up)
     width: 80%
     grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: repeat(5, 260px)
+    grid-template-rows: repeat(10, 260px)
     grid-gap: 4vh
     @include for-size(desktop-up)
       width: 75%
       grid-template-columns: repeat(5, 1fr)
-      grid-template-rows: repeat(5, 290px)
+      grid-template-rows: repeat(10, 290px)
       grid-gap: 4vh
   &__imgContainer
     height: 100%
