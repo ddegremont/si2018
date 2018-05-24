@@ -166,47 +166,61 @@
                 </div>
             </div>
             <div class="Ads__box">
-                <img class="Ads__img" src="img/travel.svg" alt="Travel icon">
+                <img class="Ads__img" src="img/network.svg" alt="Travel icon">
                 <div class="Ads__textContainer">
                     <p class="Ads__title">Office du tourisme</p>
                     <p class="Ads__text">Vous êtes en charge de la promotion d’un pays, d’une région ou d’une ville, affichez vos trésors dans Une année de voyages!</p>
                 </div>
             </div>
             <div class="Ads__box">
-                <img class="Ads__img" src="img/travel.svg" alt="Travel icon">
+                <img class="Ads__img" src="img/plane.svg" alt="Travel icon">
                 <div class="Ads__textContainer">
                     <p class="Ads__title">Compagnies aériennes</p>
                     <p class="Ads__text">Nous offrons une place de choix aux compagnies aériennes dans nos articles. Affichez vos vertues, différences dans Une année de voyages!</p>
                 </div>
             </div>
             <div class="Ads__box">
-                <img class="Ads__img" src="img/travel.svg" alt="Travel icon">
+                <img class="Ads__img" src="img/bus.svg" alt="Travel icon">
                 <div class="Ads__textContainer">
                     <p class="Ads__title">Transports</p>
                     <p class="Ads__text">Les transports sont l’essence même du voyage. Prendre un bus, le bateau ou le train est le B.A BA du voyage. Affichez vos univers dans Une année de voyages!</p>
                 </div>
             </div>
             <div class="Ads__box">
-                <img class="Ads__img" src="img/travel.svg" alt="Travel icon">
+                <img class="Ads__img" src="img/diamond.svg" alt="Travel icon">
                 <div class="Ads__textContainer">
                     <p class="Ads__title">Luxe, style et voyages</p>
                     <p class="Ads__text">L’art de vivre de la voyage, c’est voyager avec élégance et bien équipé. Affichez vos marques et créations Lifestyle dans Une année de voyages!</p>
                 </div>
             </div>
             <div class="Ads__box">
-                <img class="Ads__img" src="img/travel.svg" alt="Travel icon">
+                <img class="Ads__img" src="img/hotel.svg" alt="Travel icon">
                 <div class="Ads__textContainer">
                     <p class="Ads__title">Hôtellerie/Restauration/Hébergement</p>
                     <p class="Ads__text">« On a dormi dans un hôtel merveilleux  ! » , « Nous avons mangé un plat merveilleux ! » Affichez la personnalité de vos hôtels, hébergements et gastronomie dans Une année de Voyages!</p>
                 </div>
             </div>
             <div class="Ads__box">
-                <img class="Ads__img" src="img/travel.svg" alt="Travel icon">
+                <img class="Ads__img" src="img/ship.svg" alt="Travel icon">
                 <div class="Ads__textContainer">
                     <p class="Ads__title">Croisière, SPA, Thalasso</p>
                     <p class="Ads__text">L’art de vivre de la voyage, c’est voyager avec élégance et bien équipé. Affichez vos marques et créations Lifestyle dans Une année de voyages!</p>
                 </div>
             </div>
+        </div>
+
+    </section>
+
+    <section class="Partners">
+
+        <div class="Partners__maintitleContainer">
+            <h3 class="Partners__maintitle">Partenaires</h3>
+            <div class="Partners__titleLine"></div>
+        </div>
+        <div class="Partners__logosContainer">
+            <img class="Partners__logo" src="img/nikon.png" alt="Nikon logo">
+            <img class="Partners__logo" src="img/adp.png" alt="Adp logo">
+            <img class="Partners__logo" src="img/fujifilm.png" alt="Fujifilm">
         </div>
 
     </section>

@@ -1,0 +1,22 @@
+.Partners {
+  margin-top: 30px;
+  &__maintitleContainer {
+    margin-left: 20px;
+  }
+  &__maintitle {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 20px;
+  }
+  &__titleLine {
+    background: #00CCCC;
+    margin-top: 5px;
+    width: 25px;
+    height: 3px;
+  }
+  &__logosContainer {
+    text-align: center;
+  }
+  &__logo {
+    width: auto;
+  }
+}

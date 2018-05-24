@@ -471,7 +471,7 @@ a {
   height: 3px; }
 
 .Ads__img {
-  width: 50px; }
+  width: 40px; }
 
 .Ads__box {
   display: flex;
@@ -489,4 +489,22 @@ a {
   font-family: 'AvenirNext-Regular';
   font-size: 11px;
   margin-top: 10px;
-  line-height: 16px; }
+  line-height: 16px;
+  width: 250px; }
+
+.Partners {
+  margin-top: 30px; }
+  .Partners__maintitleContainer {
+    margin-left: 20px; }
+  .Partners__maintitle {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 20px; }
+  .Partners__titleLine {
+    background: #00CCCC;
+    margin-top: 5px;
+    width: 25px;
+    height: 3px; }
+  .Partners__logosContainer {
+    text-align: center; }
+  .Partners__logo {
+    width: auto; }
