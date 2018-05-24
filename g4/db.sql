@@ -79,8 +79,11 @@ CREATE TABLE `imagebox` (
   `subtitle` varchar(255) NOT NULL,
   `imgSrc` varchar(255) NOT NULL,
   `imgAlt` varchar(64) NOT NULL,
-  PRIMARY KEY (`title`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `category` varchar(64) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,6 +92,7 @@ CREATE TABLE `imagebox` (
 
 LOCK TABLES `imagebox` WRITE;
 /*!40000 ALTER TABLE `imagebox` DISABLE KEYS */;
+INSERT INTO `imagebox` VALUES ('1','1','1','1',1,'cat1'),('2','2','2','2',2,'cat2'),('3','3','3','3',3,'cat2'),('4','4','4','4',4,'cat1'),('5','5','5','5',5,'cat3'),('6','6','6','6',6,'cat4');
 /*!40000 ALTER TABLE `imagebox` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -186,4 +190,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-24 10:41:33
+-- Dump completed on 2018-05-24 10:49:24
