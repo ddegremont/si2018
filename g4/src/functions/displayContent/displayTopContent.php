@@ -10,6 +10,11 @@ function displayTopContent(array $data)
             <p class="top_list_item_rank">rank: <?= $item["rank"] ?></p>
             <h3 class="top_list_item_title">title: <?= $item["title"] ?></h3>
             <p class="top_list_item_subtitle">subtitle: <?= $item["subtitle"] ?></p>
+            <p class="top_list_item_address"><?= $item["address"] ?></p>
+            <p class="top_list_item_phone"><?= $item["phone"] ?></p>
+            <div class="top_list_item_imgContainer">
+                <img class="top_list_item_img" src="src/img/<?= $item["imgSrc"] ?>" alt="<?= $item["imgAlt"] ?>">
+            </div>
         </li>
         <?php
     }

@@ -31,36 +31,55 @@ $cat3_data = getTopData($connection, "spas");
         <h1 class="headerSubTitle">Découvrez notre top 100 des bars/restaurants/hôtels</h1>
     </div>
 </header>
+<!--
+<body>
+    <h1>Top 100 destinations</h1>
+    <section class="top top_cat1">
+        <h2>Category: hostels</h2>
+        <?php displayTopContent($cat1_data) ?>
+    </section>
+    <section class="top top_cat2">
+        <h2>Category: restaurants</h2>
+        <?php displayTopContent($cat2_data) ?>
+    </section>
+    <section class="top top_cat3">
+        <h2>Category: spas</h2>
+        <?php displayTopContent($cat3_data) ?>
+    </section>
+</body>-->
 <body>
 
-<h1 class="categorieTitle">TOP 100 DES</h1>
-<section class="categorieContainer">
+    <h1 class="categorieTitle">TOP 100 DES</h1>
+    <section class="categorieContainer">
     <section class="categorieContain">
-        <div class="titleBlock">
-            <img class="arrow" src="src/img/arrow.png" alt="go left">
-            <h2 class="categorieSubTitle" >Hotels</h2>
-            <img class="arrow" src="src/img/arrow.png" alt="go right">
-        </div>
+        <h2 class="categorieSubTitle" >Hotels</h2>
         <?php displayTopContent($cat1_data) ?>
     </section>
     <section class="categorieContain">
-        <div class="titleBlock">
-            <img class="arrow" src="src/img/arrow.png" alt="go left">
-            <h2 class="categorieSubTitle">Restaurants</h2>
-            <img class="arrow" src="src/img/arrow.png" alt="go right">
-        </div>
+        <h2 class="categorieSubTitle">Restaurants</h2>
         <?php displayTopContent($cat2_data) ?>
     </section>
     <section class="categorieContain">
-        <div class="titleBlock">
-            <img class="arrow" src="src/img/arrow.png" alt="go left">
-            <h2 class="categorieSubTitle">Spas</h2>
-            <img class="arrow" src="src/img/arrow.png" alt="go right">
-        </div>
+        <h2 class="categorieSubTitle">Spas</h2>
         <?php displayTopContent($cat3_data) ?>
     </section>
 </section>
-<?php include "src/includes/footer.php"; ?>
-<script src="js/top.js"></script>
+<footer class="footer">
+    <h1 class="footerPartenaire">PARTENAIRES</h1>
+    <div class="footerPartImgContainer">
+        <img class="footerPartImg" src="src/components/img/Accueil/adp-logo2.png" alt="">
+        <img class="footerPartImg" src="src/components/img/Accueil/Fujifilm_logo_logotype.png" alt="">
+        <img class="footerPartImg" src="src/components/img/Accueil/nikon-logo.png" alt="">
+    </div>
+    <div class="footerBotomContainer">
+        <div class="footerBotomCopyContainer">
+            <h1 class="footerBotomCopyContainerNav">Homepage</h1>
+            <h1 class="footerBotomCopyContainerNav">About</h1>
+            <h1 class="footerBotomCopyContainerNav">US contact</h1>
+        </div>
+        <div class="footerBotomCopyright">Tous droits réservés Une Année De Voyages ©2018-2020</div>
+    </div>
+</footer>
+
 </body>
 </html>

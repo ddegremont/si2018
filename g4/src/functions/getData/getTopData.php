@@ -5,7 +5,11 @@ function getTopData(PDO $connection, string $category)
         SELECT
             `title`,
             `subtitle`,
-            `rank`
+            `rank`,
+            `imgSrc`,
+            `imgAlt`,
+            `phone`,
+            `address`
         FROM
             `top`
         WHERE

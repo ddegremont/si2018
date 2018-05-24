@@ -12,7 +12,7 @@
 <header class="header">
     <div class="headerNavTContainer">
         <div class="headerNavLogoContainer">
-            <a href="index.php"><img class="headerNavLogo" src="src/components/img/Home/planewhite.png" alt="LogoUneAnneeDeVoyage" class="logo"></a>
+            <a href="index.html"><img class="headerNavLogo" src="src/components/img/home/planewhite.png" alt="LogoUneAnneeDeVoyage" class="logo"></a>
         </div>
         <!-- The overlay -->
         <div id="myNav" class="overlay">
@@ -22,12 +22,12 @@
 
             <!-- Overlay content -->
             <div class="overlay-content">
-                <a href="index.php">Home</a>
-                <a href="news.php">Actualités</a>
-                <a href="factsheets.php">Fiches Pratiques</a>
-                <a href="imagebox.php">Boite à image</a>
-                <a href="top.php">Top 100</a>
-                <a href="contact.php">Contact</a>
+                <a href="accueil.html">Home</a>
+                <a href="actualit.html">Actualités</a>
+                <a href="fichepratique.html">Fiches Pratiques</a>
+                <a href="imagebox.html">Boite à image</a>
+                <a href="top.html">Top 100</a>
+                <a href="contact.html">Contact</a>
             </div>
 
         </div>
@@ -36,12 +36,12 @@
         <span onclick="openNav()"><div class="headerNavBurger"><img class="headerNavTel" src="src/components/img/home/burger.png" alt="BurgerMenu" class="bugerMenu"></div></span>
     </div>
     <div class="headerNavContainer">
-        <a class="headerNav" href="index.php">Home</a>
-        <a class="headerNav" href="news.php">Actualités</a>
-        <a class="headerNav" href="factsheets.php">Fiches pratiques</a>
-        <a class="headerNav" href="imagebox.php">Boite à image</a>
-        <a class="headerNav" href="top.php">Top 100</a>
-        <a class="headerNav" href="contact.php">Contact</a>
+        <a class="headerNav" href="accueil.html">Home</a>
+        <a class="headerNav" href="actualit.html">Actualités</a>
+        <a class="headerNav" href="fichepratique.html">Fiches pratiques</a>
+        <a class="headerNav" href="imagebox.html">Boite à image</a>
+        <a class="headerNav" href="top.html">Top 100</a>
+        <a class="headerNav" href="contact.html">Contact</a>
     </div>
     <div class="headerTitleContainer">
         <h1 class="headerTitle">Une Année de Voyages</h1>
@@ -50,7 +50,7 @@
 </header>
 <section class="mookSection">
     <a href="https://fr.calameo.com/read/0055876561d93fbc72946" target="_blank"><img class="mookSectionImg" src="src/components/img/Accueil/uadv-couv.png" alt="CouvertureDuMook" class="mookImg"></a>
-
+    </div>
 
     <div class="mookDescriptContainer">
         <h2 class="mookTitle">Mook Collector</h2>
@@ -135,6 +135,9 @@
 
     <div class="slide_buttons">
     </div>
+
+    </div>
+    </div>
     <!-- End // .directional_nav -->
 </section>
 <section class="staffScreen">
@@ -186,7 +189,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
+<script src="../../js/index.js"></script>
 </body>
 
 </html>
