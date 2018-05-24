@@ -10,10 +10,12 @@ require_once "../connection.php";
 
 $request = "SELECT 
               `id`,
-              `name`,
               `image`,
-              `alt`,
-              `type`
+              `image1`,
+              `image2`,
+              `image3`,
+              `image4`,
+              `image5`
             FROM
               `Boite`
             WHERE 

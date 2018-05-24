@@ -24,11 +24,13 @@
     <?php
     require_once "../connection.php";
     $request = 'SELECT
-                  `id`,
-                  `name`,
-                  `image`,
-                  `alt`,
-                  `type`
+             `id`,
+              `image`,
+              `image1`,
+              `image2`,
+              `image3`,
+              `image4`,
+              `image5`
                 FROM
                   `Boite`
     ;';
@@ -36,8 +38,8 @@
     $stmt->execute();
     while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
         <td><?=$row["id"]?></td>
-        <td><?=$row["name"]?></td>
-        <td><?=$row["type"]?></td>
+        <td><?=$row["image"]?></td>
+        <td><?=$row["image1"]?></td>
     <td><a href="show.php?id=<?=$row['id']?>" class="btn btn-default"><span class="glyphicon glyphicon-eye-open"></span>Voir </a>
         <a href="edit.php?id=<?=$row['id']?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>Edit </a>
         <a href="delete.php?id=<?=$row['id']?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span>Delete </a></td>
