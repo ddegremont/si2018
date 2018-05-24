@@ -3,6 +3,25 @@ $bp-desktop: 949px
 $bp-desktop-large: 1200px
 $bp-desktop-x-large: 1800px
 
+//fonts
+@font-face
+  font-family: "montserrat-light"
+  src: url("../../src/fonts/Montserrat-Light.otf")
+
+
+@font-face
+  font-family: "montserrat-regular"
+  src: url("../../src/fonts/Montserrat-Regular.otf")
+
+
+@font-face
+  font-family: "montserrat-bold"
+  src: url("../../src/fonts/Montserrat-Bold.otf")
+
+@font-face
+  font-family: "didot"
+  src: url("../../src/fonts/TheanoDidot-Regular.ttf")
+
 
 
 @mixin for-size($range)
@@ -28,6 +47,7 @@ $bp-desktop-x-large: 1800px
      @content
 
 // partials
+@import partials/home
 @import partials/topRestoPage
 @import partials/home
 @import mixins/mixins

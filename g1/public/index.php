@@ -1,3 +1,28 @@
+<?php
+require 'includes/connection.php';
+
+$sql = "SELECT
+`title`,
+`content`,
+`img_src`,
+`img_alt`
+FROM
+`articles`
+;";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+
+
+$sql = "SELECT
+`content`,
+`article_number`
+FROM
+`articles`
+;";
+$stmt2 = $pdo->prepare($sql);
+$stmt2->execute();
+?>
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -58,6 +83,7 @@
             <p class="header__infos__quote">Des voyages testés… Des idées pour partir toute l’année !</p>
         </div>
         <div class="burger"></div>
+
     </header>
 
     <section class="search">
@@ -95,7 +121,38 @@
     </section>
 
 
-<!--integration christelle article-->
+    <section class="articlesSection">
+          <h2 class="articlesSection__title">Les derniers articles</h2>
+          <div class="articlesSection__articlesCtn">
+            <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
+            <div class="articlesSection__articlesCtn__article">
+              <img class="articlesSection__articlesCtn__article__img" src="<?=$row['img_src']?>" alt="<?=$row['img_alt']?>">
+              <h3 class="articlesSection__articlesCtn__article__title"><?=$row['title']?></h3>
+            </div>
+            <?php endwhile;?>
+            <?php while (false !== $row = $stmt2->fetch(PDO::FETCH_ASSOC)) :?>
+              <div class="articlesSection__articlesCtn__article__ctn <?=$row['article_number']?>">
+                <p class="articlesSection__articlesCtn__article__ctn__content"><?=$row['content']?></p>
+                <div class="articlesSection__articlesCtn__article__ctn__circle">
+                  <a>
+                    <svg fill="#32CCCD" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
+                    <polygon points="42,20 22,20 22,0 20,0 20,20 0,20 0,22 20,22 20,42 22,42 22,22 42,22 "/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            <?php endwhile;?>
+            <div class="circlesCtn">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="articlesSection__btn">
+            Voir tous les articles
+          </div>
+        </section>
 
     <section class="top">
         <div class="top__head">
@@ -213,7 +270,8 @@
         <div class="sponsor__container">
             <img src="assets/img/sponsor.png" alt="" class="sponsor__container__img">
         </div>
-    </section>
+      
+    
 
     <footer class="footer">
 

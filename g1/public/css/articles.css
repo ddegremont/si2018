@@ -1,0 +1,122 @@
+.header {
+  background: url("../assets/img/cote.png") no-repeat;
+  background-size: cover;
+  height: 249px;
+  padding-top: 5%; }
+  @media (min-width: 600px) {
+    .header {
+      height: 100vh;
+      padding-bottom: 50px; } }
+  .header__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .header__logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 50px; }
+  .header__burger {
+    width: 20px;
+    height: 20px; }
+    @media (min-width: 600px) {
+      .header__burger {
+        display: none; } }
+  .header__nav {
+    display: none; }
+    @media (min-width: 600px) {
+      .header__nav {
+        display: block; } }
+    .header__nav__items {
+      display: flex; }
+      .header__nav__items__item {
+        margin-left: 15%; }
+        .header__nav__items__item__link {
+          text-decoration: none;
+          color: white; }
+  .header__title {
+    color: white;
+    margin-top: 150px;
+    margin-left: 5%;
+    margin-top: 450px; }
+
+.preview {
+  padding-right: 5%; }
+  .preview__title {
+    margin-top: 20px;
+    margin-left: 5%; }
+    @media (min-width: 600px) {
+      .preview__title {
+        margin-top: 200px; } }
+  .preview__blueline {
+    height: 1px;
+    width: 50px;
+    background-color: #00CCCC;
+    margin-top: 10px;
+    margin-left: 6%; }
+    @media (min-width: 600px) {
+      .preview__blueline {
+        margin-bottom: 70px; } }
+  .preview__paragraph {
+    margin: 10% 8% 0 8%; }
+    @media (min-width: 600px) {
+      .preview__paragraph {
+        margin-top: 30px; } }
+  .preview__textArrow {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    float: right;
+      float-text-align: center;
+      float-margin-right: 5%; }
+    .preview__textArrow__arrow {
+      width: 15px;
+      margin-left: 10%; }
+    @media (min-width: 600px) {
+      .preview__textArrow {
+        margin-top: 60px; } }
+
+.oneWorld__title {
+  margin-top: 280px;
+  margin-left: 5%; }
+  @media (min-width: 600px) {
+    .oneWorld__title {
+      margin-top: 160px; } }
+
+.oneWorld__blueline {
+  height: 1px;
+  width: 55px;
+  background-color: #00CCCC;
+  margin-top: 10px;
+  margin-left: 6%; }
+
+.starAlliance__title {
+  margin-top: 50px;
+  margin-left: 5%; }
+
+.starAlliance__blueline {
+  height: 1px;
+  width: 55px;
+  background-color: #00CCCC;
+  margin-top: 10px;
+  margin-left: 6%; }
+
+.skyTeam__title {
+  margin-top: 50px;
+  margin-left: 5%; }
+
+.skyTeam__blueline {
+  height: 1px;
+  width: 55px;
+  background-color: #00CCCC;
+  margin-top: 10px;
+  margin-left: 6%; }
+
+.footer {
+  height: 51px;
+  background-color: #4A4A4A;
+  margin-top: 80px;
+  padding-left: 8%;
+  padding-top: 2%; }
+  .footer__logo {
+    width: 34px;
+      width-height: 34px; }

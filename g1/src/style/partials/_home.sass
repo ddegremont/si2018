@@ -1,0 +1,164 @@
+.articlesSection
+  width: 100%
+  height: 100vh
+  margin: 30px auto
+  @include for-size (tablet-portrait-up)
+    height: auto
+  &__title
+    font-family: "montserrat-bold"
+    text-align: center
+    text-transform: uppercase
+    font-size: 14px
+    margin: 30px
+    @include for-size (tablet-landscape-up)
+      margin: 60px
+  &__articlesCtn
+    height: 72vh
+    width: 100vw
+    position: relative
+    @include for-size (tablet-landscape-up)
+      display: grid
+      width: 80vw
+      margin: auto
+      padding-bottom: 5vh
+      grid-template-columns: repeat(3, 1fr)
+      grid-template-rows: repeat(2, 40vh)
+      overflow: hidden
+      grid-gap: 10px
+      height: auto
+      @include for-size (desktop-up)
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: 250px 200px
+        grid-gap: none
+    &__article
+      width: 90%
+      height: 100%
+      position: relative
+      margin: auto
+      display: none
+      overflow: hidden
+      @include for-size (tablet-landscape-up)
+        display: block
+      &__title
+        color: #fff
+        font-size: 25px
+        position: absolute
+        z-index: 2
+        padding: 30px 20px
+        line-height: 34px
+      &__img
+        height: 100%
+        overflow: hidden
+        @include for-size (tablet-landscape-up)
+        min-width: 100%
+        height: 100%
+        position: absolute
+        transition: transform .5s
+        &:hover
+          transform: scale(1.1)
+          transition: transform .5s
+          cursor: pointer
+      &__ctn
+        display: none
+        @include for-size (desktop-up)
+          display: block
+          margin: 0 auto
+          box-shadow: 5px 10px 8px #e6e6e6
+          padding: 10px
+          justify-content: center
+          height: 200px
+        &__content
+          font-size: 13px
+          line-height: 19px
+          font-family: 'didot'
+          height: 150px
+        &__circle
+          width: 100%
+          & > a
+            margin: auto
+            height: 25px
+            width: 25px
+            border: 1px solid #32CCCD
+            cursor: pointer
+            color: #32CCCD
+            border-radius: 50%
+            background: #fff
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+              background: #32CCCD
+            & svg
+              width: 70%
+              z-index: 2
+            & svg:hover
+              fill: #ffffff
+
+    .article04
+      display: none
+
+
+    .circlesCtn
+        display: flex
+        justify-content: center
+        width: 100%
+        position: absolute
+        bottom: 20px
+        z-index: 2
+        @include for-size (tablet-landscape-up)
+          display: none
+        & > div
+          border-radius: 50%
+          border: 1px solid #fff
+          height: 11px
+          width: 11px
+          margin: 0 5px
+        & > div:first-child
+          background: #fff
+    &__article:nth-child(2)
+      grid-column-start: 3
+      grid-column-end: 4
+      width: 100%
+      @include for-size (desktop-up)
+        grid-column-start: 2
+        grid-column-end: 3
+    &__article:nth-child(3)
+      grid-column-start: 1
+      grid-column-end: 2
+      width: 100%
+      @include for-size (desktop-up)
+        grid-column-start: 3
+        grid-column-end: 4
+    &__article:nth-child(4)
+      grid-column-start: 2
+      grid-column-end: 4
+      width: 100%
+      @include for-size (desktop-up)
+        display: none
+    &__article:first-child
+      display: block
+      @include for-size (tablet-landscape-up)
+      grid-column-start: 1
+      grid-column-end: 3
+      width: 100%
+      @include for-size (desktop-up)
+        grid-column-start: 1
+        grid-column-end: 2
+  &__btn
+    border: 1px solid #32CCCD
+    cursor: pointer
+    height: 30px
+    width: 130px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 12px
+    margin: 30px auto
+    @include for-size (tablet-landscape-up)
+      margin: 20px auto
+      height: 35px
+      font-size: 12px
+      width: 150px
+    &:hover
+      background: #32CCCD
+      color: #fff
