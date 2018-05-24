@@ -1,5 +1,6 @@
 <?php
 include "src/functions/functions.php";
+
 $connection = connect();
 ?>
 <!doctype html>
@@ -46,5 +47,6 @@ $connection = connect();
         <input class="submitbtn" type="submit" value="Créer">
     </form>
 
+    <?php include "src/includes/footer.php"; ?>
 </body>
 </html>

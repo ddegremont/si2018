@@ -11,6 +11,8 @@ $data = getPartnersData($connection);
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="src/components/style/reset.css">
+    <link rel="stylesheet" href="src/components/style/fichepratique.css">
     <style>
         input {
             display: block;
@@ -40,5 +42,6 @@ $data = getPartnersData($connection);
         <input type="submit">
     </form>
     <?php displayPartnersData($data) ?>
+    <?php include "src/includes/footer.php"; ?>
 </body>
 </html>

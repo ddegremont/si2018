@@ -16,12 +16,13 @@ $data = getNewsArticleData($connection, $_GET["id"]);
     <title>Article</title>
 </head>
 <body>
-  <div class="newsarticleDetailsContainer">
-      <?php displayNewsArticleDetailContent($data[0]); ?>
-  </div>
-  <div class="newsarticleUpdateContainer">
-      <?php displayNewsArticleUpdateContent($data[0]); ?>
-  </div>
+    <div class="newsarticleDetailsContainer">
+        <?php displayNewsArticleDetailContent($data[0]); ?>
+    </div>
+    <div class="newsarticleUpdateContainer">
+        <?php displayNewsArticleUpdateContent($data[0]); ?>
+    </div>
+    <?php include "src/includes/footer.php"; ?>
     <script type="text/javascript" src="src/js/newsArticle.js"></script>
 </body>
 </html>

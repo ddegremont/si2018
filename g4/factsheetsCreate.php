@@ -34,5 +34,6 @@ $connection = connect();
     <input type="text" name="websiteUrl" title="websiteUrl">
     <input type="submit" value="Créer">
 </form>
+<?php include "src/includes/footer.php"; ?>
 </body>
 </html>

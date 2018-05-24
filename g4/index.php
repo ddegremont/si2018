@@ -138,22 +138,7 @@
         </div>
     </div>
 </section>
-<footer class="footer">
-    <h1 class="footerPartenaire">PARTENAIRES</h1>
-    <div class="footerPartImgContainer">
-        <img class="footerPartImg" src="src/components/img/Accueil/adp-logo2.png" alt="">
-        <img class="footerPartImg" src="src/components/img/Accueil/Fujifilm_logo_logotype.png" alt="">
-        <img class="footerPartImg" src="src/components/img/Accueil/nikon-logo.png" alt="">
-    </div>
-    <div class="footerBotomContainer">
-        <div class="footerBotomCopyContainer">
-            <h1 class="footerBotomCopyContainerNav">Homepage</h1>
-            <h1 class="footerBotomCopyContainerNav">About</h1>
-            <h1 class="footerBotomCopyContainerNav">US contact</h1>
-        </div>
-        <div class="footerBotomCopyright">Tous droits réservés Une Année De Voyages ©2018-2020</div>
-    </div>
-</footer>
+<?php include "src/includes/footer.php"; ?>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/index.js"></script></script>
 </body>
