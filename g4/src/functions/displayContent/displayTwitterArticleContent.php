@@ -7,6 +7,10 @@ function displayTwitterArticleContent($data)
             Tweets by <?= $data["name"] ?>
         </a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <form action="src/actions/twitter_doDelete.php" method="post">
+            <input type="text" value="<?= $data["id"] ?>" name="id" style="display:none">
+            <input type="submit" value="Delete">
+        </form>
     </article>
     <?php
 }

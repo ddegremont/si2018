@@ -197,7 +197,7 @@ CREATE TABLE `twitter` (
   `name` varchar(64) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -206,7 +206,7 @@ CREATE TABLE `twitter` (
 
 LOCK TABLES `twitter` WRITE;
 /*!40000 ALTER TABLE `twitter` DISABLE KEYS */;
-INSERT INTO `twitter` VALUES (1,'https://twitter.com/TNomadBusiness','TNB'),(2,'https://twitter.com/KLM','KLM'),(3,'https://twitter.com/AmericanAir','AmericanAir');
+INSERT INTO `twitter` VALUES (8,'https://twitter.com/AmericanAir','AmericanAir'),(9,'https://twitter.com/Delta','Delta'),(10,'https://twitter.com/SouthwestAir','Southwest'),(11,'https://twitter.com/JetBlue','JetBlue');
 /*!40000 ALTER TABLE `twitter` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -219,4 +219,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-24 12:19:21
+-- Dump completed on 2018-05-24 14:17:54

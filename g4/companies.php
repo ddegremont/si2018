@@ -35,6 +35,13 @@ $data = getTwitterData($connection);
 <section class="twittersection">
     <h2 class="twitterTitle">Actualités Twitter</h2>
     <div class="twitterContainer">
+        <form action="src/actions/twitter_doCreate.php" method="post">
+            <label for="name">name</label>
+            <input type="text" name="name">
+            <label for="url">url</label>
+            <input type="text" name="url">
+            <input type="submit" value="Create">
+        </form>
         <?php displayTwitterContent($data) ?>
     </div>
 </section>
