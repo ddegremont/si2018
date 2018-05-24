@@ -12,6 +12,8 @@ $connection = connect();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="src/components/style/reset.css">
     <link rel="stylesheet" href="src/components/style/newsCreate.css">
+    <link rel="stylesheet" href="src/components/style/header.css">
+    <link rel="stylesheet" href="src/components/style/footer.css">
     <title>Document</title>
     <style>
         input {
@@ -20,7 +22,7 @@ $connection = connect();
     </style>
 </head>
 <body>
-
+<?php include "src/includes/header.php" ?>
     <div class="create_article_container">
         <h1 class="create_article" >Créer un article</h1>
     </div>

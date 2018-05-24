@@ -11,28 +11,13 @@ $data = getTwitterData($connection);
     <meta charset="utf-8">
     <link rel="stylesheet" href="src/components/style/reset.css">
     <link rel="stylesheet" href="src/components/style/newsairstyle.css">
+    <link rel="stylesheet" href="src/components/style/header.css">
+    <link rel="stylesheet" href="src/components/style/footer.css">
     <title>Actualités</title>
 </head>
 
 <body>
-<header class="header">
-    <div class="headerNavTContainer">
-        <div class="headerNavLogoContainer"><img class="headerNavLogo" src="src/components/img/Home/planewhite.png" alt="LogoUneAnneeDeVoyage" class="logo"></div>
-        <div class="headerNavBurger"><img class="headerNavTel" src="src/components/img/Home/burger.png" alt="BurgerMenu" class="bugerMenu"></div>
-    </div>
-    <div class="headerNavContainer">
-        <a class="headerNav" href="">Home</a>
-        <a class="headerNav" href="">Actualités</a>
-        <a class="headerNav" href="">Fiches pratiques</a>
-        <a class="headerNav" href="">Boite à image</a>
-        <a class="headerNav" href="">Top 100</a>
-        <a class="headerNav" href="">Contact</a>
-    </div>
-    <div class="headerTitleContainer">
-        <h1 class="headerTitle">Une Année de Voyages</h1>
-        <h1 class="headerSubTitle">Soyez un voyageur averti !</h1>
-    </div>
-</header>
+<?php include "src/includes/header.php" ?>
 <section class="twittersection">
     <h2 class="twitterTitle">Actualités Twitter</h2>
     <div class="twitterContainer">

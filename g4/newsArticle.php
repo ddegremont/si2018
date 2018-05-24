@@ -12,10 +12,12 @@ $data = getNewsArticleData($connection, $_GET["id"]);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="src/components/style/reset.css">
     <link rel="stylesheet" href="src/components/style/newsarticle_style.css">
-
+    <link rel="stylesheet" href="src/components/style/header.css">
+    <link rel="stylesheet" href="src/components/style/footer.css">
     <title>Article</title>
 </head>
 <body>
+<?php include "src/includes/header.php" ?>
     <div class="newsarticleDetailsContainer">
         <?php displayNewsArticleDetailContent($data[0]); ?>
     </div>

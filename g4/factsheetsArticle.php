@@ -13,8 +13,11 @@ $data = getFactsheetArticleData($connection, $_GET["id"]);
     <title>Document</title>
     <link rel="stylesheet" href="src/components/style/reset.css">
     <link rel="stylesheet" href="src/components/style/fichepratique.css">
+    <link rel="stylesheet" href="src/components/style/header.css">
+    <link rel="stylesheet" href="src/components/style/footer.css">
 </head>
 <body>
+<?php include "src/includes/header.php" ?>
 <?php displayFactsheetArticleDetailContent($data[0]); ?>
 <?php displayFactsheetArticleUpdateContent($data[0]); ?>
 <?php include "src/includes/footer.php"; ?>

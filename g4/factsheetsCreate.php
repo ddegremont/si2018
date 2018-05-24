@@ -10,6 +10,8 @@ $connection = connect();
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="src/components/style/header.css">
+    <link rel="stylesheet" href="src/components/style/footer.css">
     <style>
         input {
             display: block;
@@ -17,6 +19,7 @@ $connection = connect();
     </style>
 </head>
 <body>
+<?php include "src/includes/header.php" ?>
 <h1>Créer un article</h1>
 <a href="factsheets.php">Revenir en arrière</a>
 <form action="src/actions/factsheetArticle_doCreate.php" method="post">

@@ -22,3 +22,5 @@ include "displayContent/displayPartnersData.php";
 include "displayContent/displayPartnersItemData.php";
 include "displayContent/displayTwitterContent.php";
 include "displayContent/displayTwitterArticleContent.php";
+include "displayContent/displayFooterContent.php";
+include "displayContent/displayFooterArticleContent.php";

@@ -4,10 +4,10 @@ var cat = document.querySelector(".category");
 var catPrev = document.querySelector(".category_prevbtn");
 var catNext = document.querySelector(".category_nextbtn");
 var catList = [
-    "cat1",
-    "cat2",
-    "cat3",
-    "cat4"
+    "Gastronomie",
+    "Bien-être",
+    "Cultures",
+    "Sports"
 ];
 var catIndex = 0;
 var catText = catList[catIndex];
@@ -58,3 +58,4 @@ catPrev.addEventListener("click", function() {
 btn.addEventListener("click", function() {
     getNewImage();
 });
+getNewImage();

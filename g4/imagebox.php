@@ -11,33 +11,18 @@ $connection = connect();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="src/components/style/reset.css">
     <link rel="stylesheet" href="src/components/style/imagebox.css">
+    <link rel="stylesheet" href="src/components/style/header.css">
+    <link rel="stylesheet" href="src/components/style/footer.css">
     <title>Boite d'îmages</title>
 </head>
 <body>
-  <header class="header">
-      <div class="headerNavTContainer">
-          <div class="headerNavLogoContainer"><img class="headerNavLogo" src="src/components/img/home/planewhite.png" alt="LogoUneAnneeDeVoyage" class="logo"></div>
-          <div class="headerNavBurger"><img class="headerNavTel" src="src/components/img/home/burger.png" alt="BurgerMenu" class="bugerMenu"></div>
-      </div>
-      <div class="headerNavContainer">
-          <a class="headerNav" href="">Home</a>
-          <a class="headerNav" href="">Actualités</a>
-          <a class="headerNav" href="">Fiches pratiques</a>
-          <a class="headerNav" href="">Boite à image</a>
-          <a class="headerNav" href="">Top 100</a>
-          <a class="headerNav" href="">Contact</a>
-      </div>
-      <div class="headerTitleContainer">
-          <h1 class="headerTitle">Une Année de Voyages</h1>
-          <h1 class="headerSubTitle">Soyez un voyageur averti !</h1>
-      </div>
-  </header>
+<?php include "src/includes/header.php" ?>
     <h1 class="imagebox_title">Choissisez une images</h1>
     <div class="imagebox_buttonContainer">
       <button id="imagebox_generator">Click here to get a random image!</button>
     </div>
     <div class="imagebox_container">
-      <h2 class="categoryTitle">Category: <span class="category">cat1</span></h2>
+      <h2 class="categoryTitle">Category: <span class="category">Gastronomie</span></h2>
       <button class="category_prevbtn">previous category</button>
       <button class="category_nextbtn">next category</button>
     </div>
