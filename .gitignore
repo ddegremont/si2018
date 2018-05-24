@@ -1,3 +1,7 @@
+
+.DS_Store
+.sass-cache
+
 .idea
 .sass-cache
 
@@ -111,3 +115,4 @@ fabric.properties
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
+
