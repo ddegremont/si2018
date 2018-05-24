@@ -10,7 +10,7 @@ if(!empty($_POST['title']) && !empty($_POST['subtitle']) && !empty($_POST['conte
     $imgSrc = $_POST['img_src'];
     $slug = slugify($title);
 } else{
-    header('Location: login.php');
+    header('Location: index.php');
 }
 
 $sql = "INSERT INTO `articles` (
@@ -39,4 +39,4 @@ $stmt->bindParam(':imgSrc',$imgSrc, PDO::PARAM_STR);
 $stmt->bindParam(':slug',$slug, PDO::PARAM_STR);
 $stmt->execute();
 
-header('Location: login.php');
+header('Location: index.php');

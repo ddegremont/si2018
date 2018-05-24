@@ -3,7 +3,7 @@ require_once "../includes/functions.php";
 require_once "../includes/connection.php";
 
 if(!isset($_POST['title']) || !isset($_POST['subtitle']) || !isset($_POST['content']) || !isset($_POST['img_src']) || !isset($_POST['img_alt'])|| !isset($_POST['slug'])){
-    header("Location: login.php");
+    header("Location: index.php");
 }else{
     $slug = slugify($_POST['title']);
 }
@@ -31,4 +31,4 @@ $stmt->bindParam(':imgAlt',$_POST['img_alt'], PDO::PARAM_STR);
 $stmt->bindParam(':slug',$slug, PDO::PARAM_STR);
 $stmt->execute();
 
-header("Location:login.php");
+header("Location:index.php");

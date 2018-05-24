@@ -20,7 +20,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$row) {
-        header('Location:login.php?error=N');
+        header('Location:index.php?error=N');
         exit;
     }
 
@@ -29,10 +29,10 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     if ($testPassword) {
         session_start();
         $_SESSION['prenom'] = $row ['prenom'];
-        header('Location:login.php');
+        header('Location:index.php');
         exit;
     } else {
-        header('Location:login.php?error=N');
+        header('Location:index.php?error=N');
         exit;
     }
 }

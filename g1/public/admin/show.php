@@ -1,5 +1,5 @@
 <?php
-
+include 'admin_header.php';
 require_once "../includes/functions.php";
 require_once "../includes/connection.php";
 
@@ -33,9 +33,42 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
-<p><?=$row['id']. ' ' .$row['title']. ' ' .$row['subtitle']. ' ' .$row['content']. ' ' .$row['img_src']. ' ' .$row['img_alt']. ' ' .$row['slug'] ?></p>
 
-<p><a href="login.php">Retours vers la home</a></p>
-<p><a href="edit.php?id=<?=$row['id'] ?>">Modifer</a></p>
-<p><a href="delete.php?id=<?=$row['id'] ?>">Supprimer</a></p>
+
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-header">
+            <h2>Tous les articles</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <tr>
+                    <th>ID</th>
+                    <th>Titre</th>
+                    <th>Sous-titre</th>
+                    <th>Contenu</th>
+                    <th>Image SRC</th>
+                    <th>Image ALT</th>
+                    <th>Slug</th>
+                    <th>Modifier</th>
+                    <th>Supprimer</th>
+                </tr>
+                    <tr>
+                        <td><?=$row['id']?></td>
+                        <td><?=$row['title']?></td>
+                        <td><?=$row['subtitle']?></td>
+                        <td><?=$row['content']?></td>
+                        <td><?=$row['img_src']?></td>
+                        <td><?=$row['img_alt']?></td>
+                        <td><?=$row['slug']?></td>
+                        <td><a href='edit.php?id=<?=$row['id'] ?>' class='btn btn-info'>Modifier</a></td>
+                        <td><a href='delete.php?id=<?=$row['id'] ?>' class='btn btn-danger'>Supprimer</a></td>
+                    </tr>
+            </table>
+            <div><a href="index.php" class="btn btn-primary">Retours vers la home</a></div>
+        </div>
+    </div>
+</div>
+
+
 

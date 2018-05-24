@@ -1,28 +1,17 @@
-<?php
-require_once "admin_header.php";
-require_once "../includes/functions.php";
-require_once "../includes/connection.php";
-?>
+<?php include_once "admin_header.php"  ?>
 
-<section class="alert alert-primary">
-<form action="doadd.php" method="post">
-    <input name = "title" type="text" placeholder="title">
-    <input name = "subtitle" type="text" placeholder="subtitle">
-    <input name = "content" type="text" placeholder="content">
-    <input name = "img_src" type="text" placeholder="img_src">
-    <input name = "img_alt" type="text" placeholder="img_alt">
-    <button type="submit">Ajouter</button>
-</form>
 
-<?php
-    $pages = getPages($pdo);
-foreach ($pages as $page) { ?>
-    <li><a href="show.php?id=<?=$page['id']?>"> <?= $page['id'] ?>  <?= $page['title'] ?></a></li>
-<?php } ?>
+
+<section class="login">
+    <h1 class="main-title">Admin Connexion</h1>
+
+    <form action="dologin.php" method="post" class="form-container">
+        <input type="text" class="input" autofocus>
+        <input type="password" class="input">
+        <button type="submit" class="button">se connecter</button>
+    </form>
 </section>
 
-<?php
-    require_once "admin_footer.php";
-?>
 
 
+<?php include_once "admin_footer.php"  ?>
