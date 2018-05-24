@@ -33,8 +33,6 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
-
-
 <div class="container">
     <div class="card mt-5">
         <div class="card-header">

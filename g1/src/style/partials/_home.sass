@@ -1,5 +1,8 @@
 @import ../mixins/mixins
 
+body
+  overflow-x: hidden
+
 .headerTops
   width: 100vw
   height: 50px
@@ -134,18 +137,15 @@
 
 
 .search
-  padding: 10px
+  width: 90vw
+  margin: auto
   &__head
-    display: flex
-    align-items: center
-    flex-direction: column
-    @include for-size(tablet-landscape-up)
-      align-items: flex-start
-      padding: 0 4%
+    text-align: center
     &__title
       font-size: 1.4rem
-      font-weight: bold
-      padding-top: 50px
+      font-family: 'montserrat-bold'
+      text-transform: uppercase
+      padding-top: 30px
       @include for-size(tablet-landscape-up)
         font-size: 1.6rem
       @include for-size(desktop-up)
@@ -153,17 +153,17 @@
     &__underline
       height: 1px
       background: #32CCCD
-      width: 17%
-      margin: 10px 0 50px
+      width: 50px
+      margin: 10px auto 30px auto
       @include for-size(tablet-landscape-up)
-        width: 6%
+        width: 70px
   &__infosContainer
     display: flex
     justify-content: center
     flex-wrap: wrap
     margin: 20px 0
     &__item
-      width: 32%
+      width: 35%
       margin: 0 20px
       display: flex
       align-items: center
@@ -171,141 +171,48 @@
       @include for-size(tablet-landscape-up)
         margin: 0
       &__img
-        width: 80px
-        height: 80px
+        width: 90px
+        height: 90px
         border-radius: 50%
         background: #000
+        overflow: hidden
         @include for-size(tablet-landscape-up)
           width: 152px
           height: 152px
+        & > a
+          & > img
+            height: 100%
       &__title
-        font-size: 1.1rem
+        font-size: 1.2rem
         text-align: center
         padding: 14px 0 45px
 
-.top
-  padding: 10px
-  &__head
-    display: flex
-    align-items: center
-    flex-direction: column
-    @include for-size(tablet-landscape-up)
-      align-items: flex-start
-      padding: 0 4%
-    &__title
-      font-size: 1.4rem
-      font-weight: bold
-      padding-top: 50px
-      @include for-size(tablet-landscape-up)
-        font-size: 1.6rem
-      @include for-size(desktop-up)
-        font-size: 1.8rem
-    &__underline
-      height: 1px
-      background: #32CCCD
-      width: 17%
-      margin: 10px 0 50px
-      @include for-size(tablet-landscape-up)
-        width: 6%
-
-  &__container
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    @include for-size(tablet-landscape-up)
-      flex-direction: inherit
-    &__item
-      width: 69%
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50)
-      margin: 5% 0
-      @include for-size(tablet-landscape-up)
-        margin: 0 5%
-      &__img
-        width: 100%
-      &__title
-        text-align: center
-        padding: 5% 0
-        font-size: 1.4rem
-        font-weight: 500
-
-.advertise
-  display: none
-  @include for-size(tablet-landscape-up)
-    display: block
-    height: 360px
-    background: url("../assets/img/sand.png")
-    background-size: cover
-    margin: 70px 0
-  &__infos
-    display: flex
-    height: 100%
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    color: #fff
-    &__title
-      font-size: 2.4rem
-      font-weight: 600
-      padding: 30px 0
-    &__sentence
-      font-size: 1.4rem
-      padding: 20px 0
-    &__img
-      cursor: pointer
-
-.twitter
-  padding: 10px
-  &__head
-    display: flex
-    align-items: center
-    flex-direction: column
-    @include for-size(tablet-landscape-up)
-      align-items: flex-start
-      padding: 0 4%
-    &__title
-      font-size: 1.4rem
-      font-weight: bold
-      padding-top: 50px
-      @include for-size(tablet-landscape-up)
-        font-size: 1.6rem
-      @include for-size(desktop-up)
-        font-size: 1.8rem
-    &__underline
-      height: 1px
-      background: #32CCCD
-      width: 17%
-      margin: 10px 0 50px
-      @include for-size(tablet-landscape-up)
-        width: 6%
-  &__container
-    display: flex
-    flex-direction: column
-    @include for-size(tablet-landscape-up)
-      flex-direction: inherit
-      justify-content: space-around
-
 .articlesSection
-  width: 100%
+  width: 100vw
   height: 100vh
-  margin: 30px auto
+  margin: 20px auto
   @include for-size (tablet-portrait-up)
     height: auto
+    width: 90vw
   &__title
     font-family: "montserrat-bold"
     text-align: center
     text-transform: uppercase
-    font-size: 14px
-    margin: 30px
-    @include for-size (tablet-landscape-up)
-      margin: 60px
+    font-size: 1.4rem
+  &__underline
+    height: 1px
+    background: #32CCCD
+    width: 50px
+    margin: 10px auto 30px auto
+    @include for-size(tablet-landscape-up)
+      width: 70px
   &__articlesCtn
     height: 72vh
     width: 100vw
     position: relative
     @include for-size (tablet-landscape-up)
       display: grid
-      width: 80vw
+      width: 100%
       margin: auto
       padding-bottom: 5vh
       grid-template-columns: repeat(3, 1fr)
@@ -328,11 +235,12 @@
         display: block
       &__title
         color: #fff
-        font-size: 25px
+        font-size: 20px
         position: absolute
         z-index: 2
         padding: 30px 20px
         line-height: 34px
+        font-family: 'montserrat-regular'
       &__img
         height: 100%
         overflow: hidden
@@ -380,11 +288,8 @@
               z-index: 2
             & svg:hover
               fill: #ffffff
-
     .article04
       display: none
-
-
     .circlesCtn
         display: flex
         justify-content: center
@@ -435,7 +340,7 @@
     border: 1px solid #32CCCD
     cursor: pointer
     height: 30px
-    width: 130px
+    width: 140px
     display: flex
     align-items: center
     justify-content: center
@@ -450,6 +355,129 @@
       background: #32CCCD
       color: #fff
 
+.top
+  width: 90vw
+  margin: auto
+  &__head
+    display: flex
+    align-items: center
+    flex-direction: column
+    @include for-size(tablet-landscape-up)
+      align-items: flex-start
+      padding: 0 4%
+    &__title
+      font-size: 1.4rem
+      font-weight: bold
+      text-transform: uppercase
+      @include for-size(tablet-landscape-up)
+        font-size: 1.6rem
+      @include for-size(desktop-up)
+        font-size: 1.8rem
+    &__underline
+      height: 1px
+      background: #32CCCD
+      width: 50px
+      margin: 10px 0 30px 0
+      @include for-size(tablet-landscape-up)
+        width: 70px
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    @include for-size(tablet-landscape-up)
+      flex-direction: inherit
+    &__item
+      width: 80%
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50)
+      margin-bottom: 8vh
+      overflow: hidden
+      @include for-size(tablet-landscape-up)
+        margin: 0 5%
+      &__img
+        width: 100%
+        transition: transform .5s
+        &:hover
+          transform: scale(1.1)
+          transition: transform .5s
+      &__title
+        text-align: center
+        padding: 5% 0
+        font-size: 1.4rem
+        font-family: 'montserrat-regular'
+
+.advertise
+  width: 100vw
+  height: 30vh
+  background: url("../assets/img/sand.png")
+  background-size: cover
+  margin: 20px 0
+  @include for-size(tablet-landscape-up)
+    height: 360px
+  &__infos
+    display: flex
+    height: 100%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: #fff
+    &__title
+      font-size: 1.9rem
+      font-family: 'montserrat-bold'
+      text-align: center
+      padding: 30px auto
+    &__sentence
+      font-size: 1.4rem
+      padding: 20px 0 40px 0
+    &__btn
+      border: 1px solid #fff
+      color: #fff
+      cursor: pointer
+      height: 30px
+      width: 140px
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 1.1rem
+      margin: 30px auto
+      text-transform: uppercase
+      @include for-size (tablet-landscape-up)
+        margin: 20px auto
+        height: 35px
+        font-size: 12px
+        width: 150px
+
+.twitter
+  padding: 10px
+  &__head
+    display: flex
+    align-items: center
+    flex-direction: column
+    @include for-size(tablet-landscape-up)
+      align-items: flex-start
+      padding: 0 4%
+    &__title
+      font-size: 1.4rem
+      font-weight: bold
+      padding-top: 20px
+      text-transform: uppercase
+      @include for-size(tablet-landscape-up)
+        font-size: 1.6rem
+      @include for-size(desktop-up)
+        font-size: 1.8rem
+    &__underline
+      height: 1px
+      background: #32CCCD
+      width: 17%
+      margin: 10px 0 50px
+      @include for-size(tablet-landscape-up)
+        width: 6%
+  &__container
+    display: flex
+    flex-direction: column
+    @include for-size(tablet-landscape-up)
+      flex-direction: inherit
+      justify-content: space-around
 
 .promo
   padding: 10px
@@ -462,8 +490,9 @@
       padding: 0 4%
     &__title
       font-size: 1.4rem
-      font-weight: bold
-      padding-top: 50px
+      font-family: 'montserrat-bold'
+      padding-top: 20px
+      text-transform: uppercase
       @include for-size(tablet-landscape-up)
         font-size: 1.6rem
       @include for-size(desktop-up)
@@ -472,28 +501,26 @@
       height: 1px
       background: #32CCCD
       width: 17%
-      margin: 10px 0 50px
+      margin: 10px 0 30px
       @include for-size(tablet-landscape-up)
         width: 6%
-
-
   &__container
     display: flex
     flex-direction: column
     align-items: center
-    padding: 0 35px
     @include for-size(tablet-landscape-up)
       flex-direction: inherit
       justify-content: space-around
     &__img
-      width: 249px
+      width: 70vw
       @include for-size(tablet-landscape-up)
         width: 329px
         order: 2
     &__description
 
       justify-content: center
-      width: 52%
+      width: 75%
+      text-align: center
       &__img
         width: 73px
         display: none
