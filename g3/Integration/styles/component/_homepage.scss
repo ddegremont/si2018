@@ -1,0 +1,158 @@
+
+@font-face {
+  font-family: "LeagueSpartan-Bold";
+  src: url("fonts/LeagueSpartan-Bold.otf");
+}
+
+@font-face {
+  font-family: "Montserrat300";
+  src: url("fonts/Montserrat300.ttf");
+}
+
+.homepage{
+  background-image: url('../styles/img/mook_filter.png');
+  background-repeat: no-repeat;
+  background-position: top right -19rem;
+  background-size: 42rem 59.4rem;
+  @include for-size('tablet-portrait-up'){
+    background-image: url('../styles/img/mook_filter.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 42rem 59.4rem;
+    }
+    @include for-size('desktop-up'){
+      background-color: white;
+      }
+
+  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 63rem;
+
+
+  &-bar{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: black;
+  height: 0.4rem;
+  width: 77px;
+  };
+
+  &-title{
+    font-family: "LeagueSpartan-Bold";
+  font-size: 4rem;
+  };
+
+  &-paragraph{
+    line-height: 2.4rem;
+  font-size: 1.4rem;
+  font-family: "Montserrat300";
+
+  };
+};
+
+.about{
+  margin-bottom: 8rem;
+  height: 35rem;
+  &-title{
+    font-family: "LeagueSpartan-Bold";
+    margin-top: 1rem;
+  margin-left: 3rem;
+  font-size: 2.4rem;
+  };
+  &-bar{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: black;
+    height: 0.4rem;
+    width: 77px;
+  };
+  &-paragraph{
+    width: 24.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.3rem;
+    font-family: "Montserrat300";
+
+    @include for-size('tablet-portrait-up'){
+      width: 60rem;
+    }
+    &-content{
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+      @include for-size('tablet-portrait-up'){
+font-size: 1.7rem
+     }
+    };
+  };
+}
+
+.tweets{
+  height: 35rem;
+  width: 100%;
+  &-title{
+    margin-left: 3rem;
+    font-family: "LeagueSpartan-Bold";
+    font-size: 2.4rem;
+  };
+  &-bar{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: black;
+    height: 0.4rem;
+    width: 77px;
+  };
+}
+
+.partners{
+  background-color: #F7F7F7;
+  height: 14rem;
+  width: 100%;
+
+  &-title{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.4rem;
+    font-family: "LeagueSpartan-Bold";
+  }
+  &-container{
+    margin-bottom: 2.5rem;
+    padding: 0 16rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &-aeroports{
+      height: 3.4rem;
+      width: 6rem;
+    }
+    &-fujifilm{
+      height: 1.5rem;
+      width: 7.7rem;
+    }
+    &-nikon{
+      height: 3.9rem;
+      width: 3.9rem;
+    }
+  }
+  &-copyrights{
+
+    border-top: 0.001rem solid #d3d3d3;
+    &-content{
+      padding-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.tweeterContainer{
+  display: flex;
+  padding: 1rem;
+}
