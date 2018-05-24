@@ -1,0 +1,152 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <title>Une Année De Voyages</title>
+  <link rel="stylesheet" href="./img/src.f51fa5be.css">
+</head>
+
+<body>
+  <img alt="Background" src="./img/header-bg.f98e5e99.png" class="header-bgImg">
+  <div class="header">
+    <img alt="Logo" src="./img/logo-lebook.6ca64a74.svg" class="header-logoImg">
+    <div class="header-container">
+      <ul class="header-list">
+        <li class="header-listItemLeft-active">
+          <a href="#" class="header-listItemLink">ACCUEIL</a>
+        </li>
+        <li class="header-listItemLeft">
+          <a href="#" class="header-listItemLink">FICHES PRATIQUES</a>
+        </li>
+        <li class="header-listItemLeft">
+          <a href="./img/classement.html" class="header-listItemLink">NOTRE CLASSEMENT</a>
+        </li>
+        <li class="header-listItemLeft">
+          <a href="#" class="header-listItemLink">LES PAYS</a>
+        </li>
+        <li class="header-listItemRight">
+          <a href="#" class="header-listItemLink">LE MOOK</a>
+        </li>
+        <li class="header-listItemLeft">
+          <a href="#" class="header-listItemLink">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-item">
+      <p class="header-title">Une Année de Voyages</p>
+      <p class="header-sentence">Le seul magazine-book annuel qui regroupe tout ce qu’il faut
+        <br> pour voyager toute l’année.</p>
+      <button type="button" class="header-itemBtn">En savoir plus</button>
+    </div>
+  </div>
+  <div class="home-container">
+    <div class="home-replacelogo">
+    </div>
+    <div class="slt">
+      <div class="home">
+      </div>
+      <div class="home-sticky">
+        <p class="home-title">Vous recherchez..</p>
+        <ul class="home-list">
+          <li class="home-listItem">
+            <button type="button" class="home-button">Articles</button>
+          </li>
+          <li class="home-listItem">
+            <button type="button" class="home-button">Fiches pratiques</button>
+          </li>
+          <li class="home-listItem">
+            <button type="button" class="home-button">Actu Twitter</button>
+          </li>
+          <li class="home-listItem">
+            <button type="button" class="home-button">Boîte à images</button>
+          </li>
+          <li class="home-listItem">
+            <button type="button" class="home-button">Notre sélection</button>
+          </li>
+          <li class="home-listItem">
+            <button type="button" class="home-button">Bon plans</button>
+          </li>
+          <li class="home-listItem">
+            <button type="button" class="home-button">Offres d'annonce</button>
+          </li>
+          <li class="home-listItem">
+            <button type="button" class="home-button">Bars</button>
+          </li>
+          <li class="home-listItem">
+            <button type="button" class="home-button">Restaurants</button>
+          </li>
+          <li class="home-listItem">
+            <button type="button" class="home-button">Hôtels</button>
+          </li>
+          <li class="home-listItem">
+            <button type="button" class="home-button">SPAs</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-containerImage">
+    <div class="home-gastronomie">#gastronomie</div>
+    <div class="home-carousel">
+      <img alt="Plat" src="./img/plat.e463421b.png">
+      <img alt="Plat" src="./img/plat1.40b0e1a6.jpg">
+      <img alt="Plat" src="./img/plat2.46d9b991.jpg">
+      <img alt="Plat" src="./img/plat3.9bbba88d.jpg">
+      <img alt="Plat" src="./img/plat4.3b8d6419.jpg">
+      <img alt="Plat" src="./img/plat5.6d3ccb7b.jpg">
+    </div>
+    <div class="home-arrow">
+      <img alt="Previous" src="./img/previous.e5526f1a.png" class="home-previous">
+      <img alt="Next" src="./img/next.ccb5fc13.png" class="home-next">
+    </div>
+
+    <div class="home-articles">
+      <img alt="Country" src="./img/france.7594afc4.jpeg" class="home-country-img">
+      <div class="home-articles-background">
+        <p class="home-country-title">Les plus belles plages de Corse</p>
+        <div class="home-country-div">
+          <p class="home-country">FRANCE</p>
+          <p class="home-country-date">24/04/2018</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    var btn_left = document.querySelector('.home-previous');
+    var btn_right = document.querySelector('.home-next');
+    var imgs = document.querySelectorAll('.home-carousel img');
+    var counter = Math.floor(Math.random() * imgs.length);
+    imgs[counter].classList.add('is-active');
+    btn_left.addEventListener('click', function () {
+      if (counter > 0) {
+        imgs[counter].classList.remove('is-active');
+        counter--;
+        imgs[counter].classList.add('is-active');
+      } else {
+        imgs[counter].classList.remove('is-active');
+        counter = 5;
+        imgs[counter].classList.add('is-active');
+      }
+    });
+    btn_right.addEventListener('click', function () {
+      if (counter < imgs.length - 1) {
+        imgs[counter].classList.remove('is-active');
+        counter++;
+        imgs[counter].classList.add('is-active');
+      } else {
+        imgs[counter].classList.remove('is-active');
+        counter = 0;
+        imgs[counter].classList.add('is-active');
+      }
+    });
+  </script>
+  <script src="./img/src.f51fa5be.js"></script>
+</body>
+
+</html>

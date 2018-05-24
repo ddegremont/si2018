@@ -85,7 +85,9 @@ a {
     font-family: 'Helvetica Neue', sans-serif;
     color: white;
     text-transform: uppercase;
-    line-height: 52px; }
+    line-height: 52px;
+    transition: border-color .2s ease-out;
+    border-color: #222; }
     @media (min-width: 600px) {
       .Header__navLink {
         margin-right: 50px; } }
@@ -97,6 +99,9 @@ a {
     .Header__navLink-active {
       border-top: 4px solid #D2A900;
       border-bottom: 4px solid #222; }
+    .Header__navLink:hover {
+      border-top: 4px solid #222;
+      border-bottom: 4px solid white; }
 
 .Transition {
   display: none; }
