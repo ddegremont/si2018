@@ -31,14 +31,15 @@ function addActive(string $slug, string $navTitle, string $currentPage): void
 function displayPage(array $page): void
 {
 ?>
-    <div class="container theme-showcase" role="main">
-        <div class="jumbotron">
-            <h1><?=$page['title']?></h1>
-            <h2><?=$page['subtitle']?></h2>
-            <p><?=$page['content']?></p>
+    <section class="preview">
+        <h2 class="preview__title"><?= $page['title'] ?></h2>
+        <div class="preview__blueline"></div>
+        <p class="preview__paragraph"><?= $page['content'] ?></p>
+        <div class="preview__textArrow">
+            <span class="preview__textArrow__text">Lire davantage</span>
+            <img class="preview__textArrow__arrow" src="assets/img/chevron-right-grey.svg">
         </div>
-        <img class="img-thumbnail" alt="<?=$page['img_alt']?>" src="img/<?=$page['img_src']?>.jpg" data-holder-rendered="true">
-    </div>
+    </section>
 <?php
 }
 
@@ -106,31 +107,31 @@ function getPage(PDO $pdo, string $slug): ?array
  * @return array
  */
 
-function slugify($text)
+function slugify($slug)
 {
     // replace non letter or digits by -
-    $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+    $slug = preg_replace('~[^\pL\d]+~u', '-', $slug);
 
     // transliterate
-    $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+    $slug = iconv('utf-8', 'us-ascii//TRANSLIT', $slug);
 
     // remove unwanted characters
-    $text = preg_replace('~[^-\w]+~', '', $text);
+    $slug = preg_replace('~[^-\w]+~', '', $slug);
 
     // trim
-    $text = trim($text, '-');
+    $slug = trim($slug, '-');
 
     // remove duplicate -
-    $text = preg_replace('~-+~', '-', $text);
+    $slug = preg_replace('~-+~', '-', $slug);
 
     // lowercase
-    $text = strtolower($text);
+    $slug = strtolower($slug);
 
-    if (empty($text)) {
+    if (empty($slug)) {
         return 'n-a';
     }
 
-    return $text;
+    return $slug;
 }
 
 /**

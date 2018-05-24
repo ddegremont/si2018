@@ -112,8 +112,29 @@
   position: fixed
   z-index: 1
   right: -100%
+  padding: 10%
   top: 0
   transition: 0.3s ease
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100%
+    &__item
+      font-size: 1.6rem
+      padding: 40px 0 0
+      font-weight: 500
+      &__home
+        cursor: pointer
+      &__title
+        &__link
+          cursor: pointer
+      &__subtitle
+        padding: 7% 10% 0
+        font-weight: 200
+        &__link
+          cursor: pointer
+
 
 
 .--set-position
@@ -316,7 +337,6 @@
       @include for-size (desktop-up)
         grid-template-columns: repeat(3, 1fr)
         grid-template-rows: 250px 200px
-        grid-gap: none
     &__article
       width: 90%
       height: 100%
@@ -338,7 +358,6 @@
         overflow: hidden
         @include for-size (tablet-landscape-up)
         min-width: 100%
-        height: 100%
         position: absolute
         transition: transform .5s
         &:hover
@@ -357,8 +376,9 @@
         &__content
           font-size: 13px
           line-height: 19px
-          font-family: 'didot'
+          font-family: 'didot',sans-serif
           height: 150px
+          overflow: hidden
         &__circle
           width: 100%
           & > a
@@ -380,9 +400,6 @@
               z-index: 2
             & svg:hover
               fill: #ffffff
-
-    .article04
-      display: none
 
 
     .circlesCtn

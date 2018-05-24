@@ -2,22 +2,31 @@
 require 'includes/connection.php';
 
 $sql = "SELECT
+`id`,
+`slug`,
 `title`,
 `content`,
 `img_src`,
 `img_alt`
 FROM
 `articles`
+ORDER BY id DESC 
+LIMIT 3
+
 ;";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
 
 $sql = "SELECT
+`id`,
+`slug`,
 `content`,
 `article_number`
 FROM
 `articles`
+ORDER BY id DESC 
+LIMIT 3
 ;";
 $stmt2 = $pdo->prepare($sql);
 $stmt2->execute();
@@ -82,7 +91,30 @@ $stmt2->execute();
             <h1 class="header__infos__title">une annee de voyage</h1>
             <p class="header__infos__quote">Des voyages testés… Des idées pour partir toute l’année !</p>
         </div>
-        <div class="burger"></div>
+
+        <div class="burger">
+            <div class="burger__container">
+                <div class="burger__container__item">
+                    <p class="burger__container__item__home">Accueil</p>
+                </div>
+                <div class="burger__container__item --list">
+                    <div class="burger__container__item__title --category">
+                        <p class="burger__container__item__title__link">Catégories</p>
+                    </div>
+                    <div class="burger__container__item__subtitle --is-active">
+                        <p class="burger__container__item__subtitle__link">Articles</p>
+                    </div>
+                    <div class="burger__container__item__subtitle --is-active">
+                        <p class="burger__container__item__subtitle__link">Top 100</p>
+                    </div>
+                    <div class="burger__container__item__subtitle --is-active">
+                        <p class="burger__container__item__subtitle__link">Fiches pratiques</p>
+                    </div>
+                </div>
+                <p class="burger__container__item">Qui sommes nous ?</p>
+                <p class="burger__container__item">Contact</p>
+            </div>
+        </div>
 
     </header>
 
@@ -126,15 +158,17 @@ $stmt2->execute();
           <div class="articlesSection__articlesCtn">
             <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
             <div class="articlesSection__articlesCtn__article">
-              <img class="articlesSection__articlesCtn__article__img" src="<?=$row['img_src']?>" alt="<?=$row['img_alt']?>">
-              <h3 class="articlesSection__articlesCtn__article__title"><?=$row['title']?></h3>
+                <a href="articles.php?p=<?= $row['slug'] ?>">
+                  <img class="articlesSection__articlesCtn__article__img" src="<?=$row['img_src']?>" alt="<?=$row['img_alt']?>">
+                  <h3 class="articlesSection__articlesCtn__article__title"><?=$row['title']?></h3>
+                </a>
             </div>
             <?php endwhile;?>
             <?php while (false !== $row = $stmt2->fetch(PDO::FETCH_ASSOC)) :?>
-              <div class="articlesSection__articlesCtn__article__ctn <?=$row['article_number']?>">
+              <div class="articlesSection__articlesCtn__article__ctn ">
                 <p class="articlesSection__articlesCtn__article__ctn__content"><?=$row['content']?></p>
                 <div class="articlesSection__articlesCtn__article__ctn__circle">
-                  <a>
+                   <a href="articles.php?p=<?= $row['slug'] ?>">
                     <svg fill="#32CCCD" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
                     <polygon points="42,20 22,20 22,0 20,0 20,20 0,20 0,22 20,22 20,42 22,42 22,22 42,22 "/>
                     </svg>
@@ -270,7 +304,7 @@ $stmt2->execute();
         <div class="sponsor__container">
             <img src="assets/img/sponsor.png" alt="" class="sponsor__container__img">
         </div>
-      
+    </section>
     
 
     <footer class="footer">

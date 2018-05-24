@@ -56,11 +56,11 @@ require_once "../includes/connection.php";
             </div>
             <div class="form-group">
                 <label for="img_src">Source de l'image :</label>
-                <input type="text" name="img_src" class="form-control">
+                <input type="text" name="img_alt" class="form-control">
             </div>
             <div class="form-group">
                 <label for="img_alt">Alt de l'image :</label>
-                <input type="text" name="img_alt" class="form-control">
+                <input type="text" name="img_src" class="form-control">
             </div>
             <button class="btn btn-success" type="submit" name="submit">Ajouter</button>
         </form>
