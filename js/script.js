@@ -7,11 +7,15 @@ const data = {
     fetchNb: 3,
     visible: true,
     template: `
-    <div class="Main__block">
-      <h1 style="background-color: blue">
-        %title
-      </h1>
-      %texte
+    <div class="home-articles">
+      <img alt="Country" src="./img/france.7594afc4.jpeg" class="home-country-img">
+      <div class="home-articles-background">
+        <p class="home-country-title">Les plus belles plages de Corse</p>
+        <div class="home-country-div">
+        <p class="home-country">FRANCE</p>
+        <p class="home-country-date">24/04/2018</p>
+        </div>
+      </div>
     </div>
     `,
     elements: []
@@ -24,12 +28,21 @@ const data = {
     fetchNb: 1,
     visible: true,
     template: `
-    <div class="Main__block">
-      <h1 style="background-color: red">
-        %name
-      </h1>
-      %image
-    </div>
+    <div class="home-containerImage" style="z-index: -1">
+      <div class="home-gastronomie">#gastronomie</div>
+      <div class="home-carousel">
+        <img alt="Plat" src="./img/plat.e463421b.png">
+        <img alt="Plat" src="./img/plat1.40b0e1a6.jpg">
+        <img alt="Plat" src="./img/plat2.46d9b991.jpg">
+        <img alt="Plat" src="./img/plat3.9bbba88d.jpg">
+        <img alt="Plat" src="./img/plat4.3b8d6419.jpg">
+        <img alt="Plat" src="./img/plat5.6d3ccb7b.jpg">
+      </div>
+      <div class="home-arrow">
+        <img alt="Previous" src="./img/previous.e5526f1a.png" class="home-previous">
+        <img alt="Next" src="./img/next.ccb5fc13.png" class="home-next">
+      </div>
+    <div>
     `,
     elements: []
   }
