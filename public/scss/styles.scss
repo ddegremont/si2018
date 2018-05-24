@@ -1,4 +1,7 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 // global
 @import "global/_vars.scss";
 @import "global/_reset.scss";
