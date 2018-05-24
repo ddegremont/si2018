@@ -47,5 +47,6 @@ $cat3_data = getTopData($connection, "spas");
 </section>
 <?php include "src/includes/footer.php"; ?>
 <script src="js/top.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

@@ -31,11 +31,9 @@ body {
   display: none;
 }
 .headerNavTitle {
-  margin-right: 1%;
   color: white;
 }
 .headerNavTitle:hover {
-  margin-right: 1%;
   color: #49c6e5;
   border-bottom: 1px solid;
 }

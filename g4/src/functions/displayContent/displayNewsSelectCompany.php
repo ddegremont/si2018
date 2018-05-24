@@ -2,7 +2,7 @@
 function displayNewsSelectCompany(array $data)
 {
     ?>
-    <option value="none">none</option>
+    <option value="none"></option>
     <?php
     $companyList = [];
     foreach($data as $item) {

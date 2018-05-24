@@ -40,7 +40,6 @@ body{
   justify-content: flex-end;
 }
 .headerNav {
-  margin-right: 1%;
   color: white;
 
 }
@@ -122,6 +121,7 @@ body{
   font-family: 'Poppins', sans-serif;
   background-color: #9ac2cc;
 }
+
 .footerPartenaire {
   padding-top: 20px;
   text-transform: uppercase;
@@ -130,15 +130,19 @@ body{
   font-size: 40px;
   color: white;
 }
+
 .footerPartImgContainer {
   text-align: center;
 }
+
 .footerPartImg {
   margin-right: 80px;
 }
+
 .footerBotomCopyContainer {
   display: flex;
 }
+
 .footerBotomContainer {
   display: flex;
   color: white;
@@ -146,13 +150,16 @@ body{
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .footerBotomCopyContainer{
   margin-left: 30px;
 }
+
 .footerBotomCopyContainerNav{
   text-transform: uppercase;
   padding-right: 30px;
 }
+
 .footerBotomCopyright{
   text-transform: uppercase;
   margin-right: 30px;

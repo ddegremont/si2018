@@ -57,13 +57,11 @@ ul li:before {
 }
 
 .headerNav {
-    margin-right: 1%;
     color: white;
     font-family: 'Poppins Light', sans-serif;
 }
 
 .headerNav:hover {
-    margin-right: 1%;
     color: #49c6e5;
     transition: 0.3s;
 }

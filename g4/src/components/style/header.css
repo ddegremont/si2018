@@ -10,19 +10,25 @@
     font-family: 'Poppins', sans-serif;
     height: 300px;
     object-fit: cover;
+    padding: 25px 50px 0;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.headerNavTContainer {
+.headerNavContainer {
     display: flex;
     justify-content: space-between;
 }
 
 .headerNavLogo {
-    width: 52px;
-    height: 51px;
+    width: 47px;
+    height: 31px;
 }
 
 .headerNavTel {
+    position: absolute;
+    top: 50px;
+    right: 50px;
     width: 46px;
     height: 23px;
 }
@@ -42,14 +48,14 @@
 }
 
 .headerNav {
-    margin-right: 1%;
+    margin-right: 30px;
     color: white;
     font-family: 'Poppins Light', sans-serif;
 }
 
 .headerNav:hover {
-    margin-right: 1%;
     color: #49c6e5;
+    border-bottom: 1px solid #49c6e5;
     transition: 0.3s;
 }
 
@@ -76,7 +82,9 @@
     .headerNavContainer {
         display: flex;
         justify-content: flex-end;
-        position: relative;
+        position: absolute;
+        top: 25px;
+        right: 50px;
         margin: 10px 20px 0 0;
     }
     .headerNavBurger {

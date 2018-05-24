@@ -9,7 +9,7 @@ $data = getNewsData($connection);
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="src/components/style/reset.css">
-        <!--<link rel="stylesheet" href="src/components/style/actualitestyle.css">-->
+        <link rel="stylesheet" href="src/components/style/actualitestyle.css">
         <link rel="stylesheet" href="src/components/style/header.css">
         <link rel="stylesheet" href="src/components/style/footer.css">
         <title></title>

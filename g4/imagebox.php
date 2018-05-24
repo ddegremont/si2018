@@ -32,6 +32,7 @@ $connection = connect();
         <img class="imagebox_image" src="" alt="">
     </section>
     <?php include "src/includes/footer.php"; ?>
+    <script type="text/javascript" src="src/js/ajax/getImage/getImage.js"></script>
+    <script src="js/index.js"></script>
 </body>
-<script type="text/javascript" src="src/js/ajax/getImage/getImage.js"></script>
 </html>

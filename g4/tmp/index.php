@@ -9,45 +9,7 @@
 </head>
 
 <body>
-<header class="header">
-    <div class="headerNavTContainer">
-        <div class="headerNavLogoContainer">
-            <a href="index.html"><img class="headerNavLogo" src="src/components/img/home/planewhite.png" alt="LogoUneAnneeDeVoyage" class="logo"></a>
-        </div>
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
-
-            <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-            <!-- Overlay content -->
-            <div class="overlay-content">
-                <a href="accueil.html">Home</a>
-                <a href="actualit.html">Actualités</a>
-                <a href="fichepratique.html">Fiches Pratiques</a>
-                <a href="imagebox.html">Boite à image</a>
-                <a href="top.html">Top 100</a>
-                <a href="contact.html">Contact</a>
-            </div>
-
-        </div>
-
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <span onclick="openNav()"><div class="headerNavBurger"><img class="headerNavTel" src="src/components/img/home/burger.png" alt="BurgerMenu" class="bugerMenu"></div></span>
-    </div>
-    <div class="headerNavContainer">
-        <a class="headerNav" href="accueil.html">Home</a>
-        <a class="headerNav" href="actualit.html">Actualités</a>
-        <a class="headerNav" href="fichepratique.html">Fiches pratiques</a>
-        <a class="headerNav" href="imagebox.html">Boite à image</a>
-        <a class="headerNav" href="top.html">Top 100</a>
-        <a class="headerNav" href="contact.html">Contact</a>
-    </div>
-    <div class="headerTitleContainer">
-        <h1 class="headerTitle">Une Année de Voyages</h1>
-        <h1 class="headerSubTitle">Soyez un voyageur averti !</h1>
-    </div>
-</header>
+<?php include "src/includes/header.php" ?>
 <section class="mookSection">
     <a href="https://fr.calameo.com/read/0055876561d93fbc72946" target="_blank"><img class="mookSectionImg" src="src/components/img/Accueil/uadv-couv.png" alt="CouvertureDuMook" class="mookImg"></a>
     </div>

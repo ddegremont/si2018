@@ -2,7 +2,7 @@
 function displayFactsheetSelectCategory(array $data)
 {
     ?>
-    <option value="none">none</option>
+    <option value="none"></option>
     <?php
     $categoryList = [];
     foreach($data as $item) {
