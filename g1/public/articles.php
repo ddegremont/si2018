@@ -1,3 +1,8 @@
+<?php
+define('APP_ROOT_DIR', dirname(__DIR__)."/");
+require_once APP_ROOT_DIR."public/includes/connection.php";
+require_once APP_ROOT_DIR."public/includes/functions.php"; ?>
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -49,17 +54,14 @@
         <h1 class="header__title">Détour par l'Italie.</h1>
     </header>
 
-    <section class="preview">
-        <h2 class="preview__title">Et si vous partiez à la découverte des côtes italiennes ?</h2>
-        <div class="preview__blueline"></div>
-        <p class="preview__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque beatae, aliquid voluptates illum vero libero neque a dolore, quae modi odit, enim perferendis velit voluptatem? Architecto ab, iusto deleniti. Eaque?</p>
-        <p class="preview__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium rerum, nulla accusamus ea unde in. Cum veritatis facere neque rem velit molestias modi delectus. Adipisci voluptatibus, doloremque quis animi cupiditate.</p>
-        <p class="preview__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="preview__textArrow">
-            <span class="preview__textArrow__text">Lire davantage</span>
-            <img class="preview__textArrow__arrow" src="assets/img/chevron-right-grey.svg">
-        </div>
-    </section>
+    <?php
+    define('APP_PAGE_PARAM', 'p');
+    $currentPage = $_GET[APP_PAGE_PARAM];
+    $page = getPage($pdo, $currentPage);
+
+    displayPage($page);
+
+    ?>
 
     <section class="oneWorld">
         <h2 class="oneWorld__title">One World</h2>
@@ -119,6 +121,7 @@
     <footer class="footer">
         <img class="footer__logo" src="assets/img/logo.png">
     </footer>
+
 
 
 
