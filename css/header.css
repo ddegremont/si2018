@@ -1,5 +1,4 @@
 body {
-  height: 2000px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -164,8 +163,8 @@ a {
 
 .Main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
   grid-gap: 40px;
   padding: 40px 20px;
   grid-auto-flow: dense; }
@@ -174,5 +173,8 @@ a {
       padding: 100px 150px; } }
   .Main__block {
     background-color: #e0e0e0; }
+
+.none {
+  display: none; }
 
 /*# sourceMappingURL=header.css.map */
