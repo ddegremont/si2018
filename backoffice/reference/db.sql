@@ -35,8 +35,16 @@ CREATE TABLE Article (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
-INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('Airfrance','lalalala','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
-INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('Title','text','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
+INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('article1','lalalala','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
+INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('article2','text','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
+INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('article3','lalalala','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
+INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('article4','text','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
+INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('article5','lalalala','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
+INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('article6','text','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
+INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('article7','lalalala','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
+INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('article8','text','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
+INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('article9','lalalala','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
+INSERT INTO `Article` (`title`,`texte`,`image`,`alt`,`date`,`auteur`, `signature`, `logo`) VALUES ('article10','text','test.jpg','success','12/12/2012','Caroline', 'carolo', 'logo.jpg');
 
 
 
@@ -82,6 +90,14 @@ CREATE TABLE Boite (
 
 INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite1', 'test.jpg', 'alt', 'type');
 INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite2', 'test.jpg', 'alt', 'type');
+INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite3', 'test.jpg', 'alt', 'type');
+INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite4', 'test.jpg', 'alt', 'type');
+INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite5', 'test.jpg', 'alt', 'type');
+INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite6', 'test.jpg', 'alt', 'type');
+INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite7', 'test.jpg', 'alt', 'type');
+INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite8', 'test.jpg', 'alt', 'type');
+INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite9', 'test.jpg', 'alt', 'type');
+INSERT INTO `Boite` (`id`, `name`, `image`, `alt`, `type`) VALUES (NULL, 'boite10', 'test.jpg', 'alt', 'type');
 
 
 DROP TABLE IF EXISTS Twitter;
