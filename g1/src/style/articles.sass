@@ -1,0 +1,146 @@
+$bp-tablet: 600px
+$bp-desktop: 949px
+$bp-desktop-large: 1200px
+$bp-desktop-x-large: 1800px
+
+
+
+@mixin for-size($range)
+  $phone-upper-boundary: $bp-tablet
+  $tablet-portrait-upper-boundary: $bp-desktop
+  $tablet-landscape-upper-boundary: $bp-desktop-large
+  $desktop-upper-boundary: $bp-desktop-x-large
+
+  @if $range == phone-only
+   @media (max-width: #{$phone-upper-boundary - 1})
+     @content
+  @else if $range == tablet-portrait-up
+   @media (min-width: $phone-upper-boundary)
+     @content
+  @else if $range == tablet-landscape-up
+    @media (min-width: $tablet-portrait-upper-boundary)
+     @content
+  @else if $range == desktop-up
+   @media (min-width: $tablet-landscape-upper-boundary)
+     @content
+  @else if $range == big-desktop-up
+   @media (min-width: $desktop-upper-boundary)
+     @content
+
+
+.header
+  background: url("../assets/img/cote.png") no-repeat
+  background-size: cover
+  height: 249px
+  padding-top: 5%
+  @include for-size(tablet-portrait-up)
+  	height: 100vh
+  	padding-bottom: 50px
+  &__header
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &__logo
+    width: 40px
+    height: 40px
+    margin-right: 50px
+  &__burger
+    width: 20px
+    height: 20px
+    @include for-size(tablet-portrait-up)
+      display: none
+  &__nav
+  	display: none
+  	@include for-size(tablet-portrait-up)
+  		display: block
+  	&__items
+  		display: flex
+  		&__item
+  			margin-left: 15%
+  			&__link
+  				text-decoration: none
+  				color: white
+  &__title
+  	color: white
+  	margin-top: 150px
+  	margin-left: 5%
+  	@include for-size(tablet-portrait-up)
+  	margin-top: 450px
+
+.preview
+	padding-right: 5%
+	&__title
+		margin-top: 20px
+		margin-left: 5%
+		@include for-size(tablet-portrait-up)
+			margin-top: 200px
+	&__blueline
+	    height: 1px
+	    width: 50px
+	    background-color: #00CCCC
+	    margin-top: 10px;
+	    margin-left: 6%
+	    @include for-size(tablet-portrait-up)
+	    	margin-bottom: 70px
+	&__paragraph 
+		margin: 10% 8% 0 8%
+		@include for-size(tablet-portrait-up)
+			margin-top: 30px
+	&__textArrow
+		display: flex
+		align-items: center
+		margin-top: 150px
+		float: right
+    	text-align: center
+    	margin-right: 5%
+		&__arrow
+			width: 15px
+			margin-left: 10%
+		@include for-size(tablet-portrait-up)
+    		margin-top: 60px
+
+.oneWorld
+	&__title
+		margin-top: 280px
+		margin-left: 5%
+		@include for-size(tablet-portrait-up)
+			margin-top: 160px
+	&__blueline
+	    height: 1px
+	    width: 55px
+	    background-color: #00CCCC
+	    margin-top: 10px;
+	    margin-left: 6%
+
+.starAlliance
+	&__title
+		margin-top: 50px
+		margin-left: 5%
+	&__blueline
+	    height: 1px
+	    width: 55px
+	    background-color: #00CCCC
+	    margin-top: 10px;
+	    margin-left: 6%
+
+.skyTeam
+	&__title
+		margin-top: 50px
+		margin-left: 5%
+	&__blueline
+	    height: 1px
+	    width: 55px
+	    background-color: #00CCCC
+	    margin-top: 10px;
+	    margin-left: 6%
+
+.footer
+	height: 51px
+	background-color: #4A4A4A
+	margin-top: 80px
+	padding-left: 8%
+	padding-top: 2%
+	&__logo
+		width: 34px
+	    height: 34px
+	    
