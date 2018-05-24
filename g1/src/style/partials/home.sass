@@ -1,0 +1,414 @@
+@import ../mixins/mixins
+
+.header
+  background: url("../assets/img/main.jpg")
+  background-size: cover
+  height: 85vh
+  @include for-size(tablet-portrait-up)
+    height: 100vh
+  &__nav
+    position: fixed
+    z-index: 2
+    display: flex
+    margin-left: auto
+    margin-right: auto
+    left: 0
+    right: 0
+    top: 0
+    justify-content: space-between
+    align-items: center
+    padding: 3% 4%
+    @include for-size(desktop-up)
+      width: 53%
+      margin-left: 0
+      margin-right: 0
+    &__logo__img
+      width: 45px
+      @include for-size(tablet-portrait-up)
+       width: 65px
+    &__list
+      display: none
+      @include for-size(desktop-up)
+        display: flex
+        justify-content: space-between
+        width: 70%
+      &__item
+        @include for-size(desktop-up)
+          color: #fff
+          font-size: 1.4rem
+    &__burger
+      display: flex
+      flex-direction: column
+      cursor: pointer
+      position: relative
+      z-index: 2
+      @include for-size(desktop-up)
+        display: none
+
+      &__item
+        margin: 3px 0
+        width: 33px
+        height: 4px
+        background: #32CCCD
+        transition: 0.2s ease
+  &__infos
+    color: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    height: 100%
+    padding: 10% 0
+    justify-content: flex-end
+    &__title
+      padding: 20px 0
+      font-size: 1.8rem
+      line-height: 2.2rem
+      text-transform: uppercase
+      width: 196px
+      @include for-size(tablet-portrait-up)
+        width: 379px
+        font-size: 2.6rem
+    &__quote
+      padding: 20px 0
+      font-size: 1.4rem
+      line-height: 1.8rem
+      font-weight: 500
+      width: 234px
+      @include for-size(tablet-portrait-up)
+        width: 423px
+        font-size: 2.0rem
+        line-height: 2.2rem
+
+
+.burger
+  width: 100%
+  height: 100vh
+  background: #fff
+  position: fixed
+  z-index: 1
+  right: -100%
+  top: 0
+  transition: 0.3s ease
+
+
+.--set-position
+  right: 0
+
+.--set-rotationLeft
+  transform: rotate(45deg)
+  transform-origin: 30px 0
+  transition: 0.3s ease
+
+.--set-rotationRight
+  transform: rotate(-45deg)
+  transform-origin: 17px 0
+  transition: 0.3s ease
+
+.--is-active
+  display: none
+
+
+.search
+  padding: 10px
+  &__head
+    display: flex
+    align-items: center
+    flex-direction: column
+    @include for-size(tablet-landscape-up)
+      align-items: flex-start
+      padding: 0 4%
+    &__title
+      font-size: 1.4rem
+      font-weight: bold
+      padding-top: 50px
+      @include for-size(tablet-landscape-up)
+        font-size: 1.6rem
+      @include for-size(desktop-up)
+        font-size: 1.8rem
+    &__underline
+      height: 1px
+      background: #32CCCD
+      width: 17%
+      margin: 10px 0 50px
+      @include for-size(tablet-landscape-up)
+        width: 6%
+  &__infosContainer
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin: 20px 0
+    &__item
+      width: 32%
+      margin: 0 20px
+      display: flex
+      align-items: center
+      flex-direction: column
+      @include for-size(tablet-landscape-up)
+        margin: 0
+      &__img
+        width: 80px
+        height: 80px
+        border-radius: 50%
+        background: #000
+        @include for-size(tablet-landscape-up)
+          width: 152px
+          height: 152px
+      &__title
+        font-size: 1.1rem
+        text-align: center
+        padding: 14px 0 45px
+
+.top
+  padding: 10px
+  &__head
+    display: flex
+    align-items: center
+    flex-direction: column
+    @include for-size(tablet-landscape-up)
+      align-items: flex-start
+      padding: 0 4%
+    &__title
+      font-size: 1.4rem
+      font-weight: bold
+      padding-top: 50px
+      @include for-size(tablet-landscape-up)
+        font-size: 1.6rem
+      @include for-size(desktop-up)
+        font-size: 1.8rem
+    &__underline
+      height: 1px
+      background: #32CCCD
+      width: 17%
+      margin: 10px 0 50px
+      @include for-size(tablet-landscape-up)
+        width: 6%
+
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    @include for-size(tablet-landscape-up)
+      flex-direction: inherit
+    &__item
+      width: 69%
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50)
+      margin: 5% 0
+      @include for-size(tablet-landscape-up)
+        margin: 0 5%
+      &__img
+        width: 100%
+      &__title
+        text-align: center
+        padding: 5% 0
+        font-size: 1.4rem
+        font-weight: 500
+        
+.advertise
+  display: none
+  @include for-size(tablet-landscape-up)
+    display: block
+    height: 360px
+    background: url("../assets/img/sand.png")
+    background-size: cover
+    margin: 70px 0
+  &__infos
+    display: flex
+    height: 100%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: #fff
+    &__title
+      font-size: 2.4rem
+      font-weight: 600
+      padding: 30px 0
+    &__sentence
+      font-size: 1.4rem
+      padding: 20px 0
+    &__img
+      cursor: pointer
+
+.twitter
+  padding: 10px
+  &__head
+    display: flex
+    align-items: center
+    flex-direction: column
+    @include for-size(tablet-landscape-up)
+      align-items: flex-start
+      padding: 0 4%
+    &__title
+      font-size: 1.4rem
+      font-weight: bold
+      padding-top: 50px
+      @include for-size(tablet-landscape-up)
+        font-size: 1.6rem
+      @include for-size(desktop-up)
+        font-size: 1.8rem
+    &__underline
+      height: 1px
+      background: #32CCCD
+      width: 17%
+      margin: 10px 0 50px
+      @include for-size(tablet-landscape-up)
+        width: 6%
+  &__container
+    display: flex
+    flex-direction: column
+    @include for-size(tablet-landscape-up)
+      flex-direction: inherit
+      justify-content: space-around
+
+.promo
+  padding: 10px
+  &__head
+    display: flex
+    align-items: center
+    flex-direction: column
+    @include for-size(tablet-landscape-up)
+      align-items: flex-start
+      padding: 0 4%
+    &__title
+      font-size: 1.4rem
+      font-weight: bold
+      padding-top: 50px
+      @include for-size(tablet-landscape-up)
+        font-size: 1.6rem
+      @include for-size(desktop-up)
+        font-size: 1.8rem
+    &__underline
+      height: 1px
+      background: #32CCCD
+      width: 17%
+      margin: 10px 0 50px
+      @include for-size(tablet-landscape-up)
+        width: 6%
+
+
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 35px
+    @include for-size(tablet-landscape-up)
+      flex-direction: inherit
+      justify-content: space-around
+    &__img
+      width: 249px
+      @include for-size(tablet-landscape-up)
+        width: 329px
+        order: 2
+    &__description
+
+      justify-content: center
+      width: 52%
+      &__img
+        width: 73px
+        display: none
+        @include for-size(tablet-landscape-up)
+          display: block
+      .--right
+        float: right
+      &__text
+        margin: 35px 0 0
+        font-size: 1.0rem
+        line-height: 2.0rem
+        font-weight: 500
+
+        @include for-size(tablet-landscape-up)
+          order: 1
+          width: 81%
+          margin: 0 auto
+          font-size: 1.4rem
+          line-height: 2.8rem
+          &__quote
+            font-weight: 100
+
+.staff
+  padding: 10px
+  &__head
+    display: flex
+    align-items: center
+    flex-direction: column
+    @include for-size(tablet-landscape-up)
+      align-items: flex-start
+      padding: 0 4%
+    &__title
+      font-size: 1.4rem
+      font-weight: bold
+      padding-top: 50px
+      @include for-size(tablet-landscape-up)
+        font-size: 1.6rem
+      @include for-size(desktop-up)
+        font-size: 1.8rem
+    &__underline
+      height: 1px
+      background: #32CCCD
+      width: 17%
+      margin: 10px 0 50px
+      @include for-size(tablet-landscape-up)
+        width: 6%
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include for-size(tablet-landscape-up)
+      flex-direction: inherit
+    &__item
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 10px 0
+      width: 84%
+      @include for-size(tablet-landscape-up)
+        align-items: center
+        justify-content: center
+        flex-direction: column
+      &__img
+        width: 67px
+        height: 67px
+        border-radius: 50%
+        background: #000
+        @include for-size(tablet-landscape-up)
+          margin: 10px
+          width: 178px
+          height: 178px
+      &__infos
+        width: 63%
+        text-align: center
+        &__name
+          font-size: 1.2rem
+          padding:  5px 0
+          @include for-size(tablet-landscape-up)
+            font-size: 1.4rem
+        &__status
+          font-size: 1.0rem
+          font-weight: 100
+          @include for-size(tablet-landscape-up)
+            font-size: 1.4rem
+  &__contact
+    display: flex
+    align-items: center
+    margin: 5% 29px 5% 0
+    justify-content: flex-end
+    @include for-size(tablet-landscape-up)
+      margin: 5% 5% 0
+    &__text
+      font-size: 1.0rem
+      margin: 4%
+      @include for-size(tablet-landscape-up)
+        font-size: 1.2rem
+
+.sponsor
+  padding: 10px
+  &__container
+    display: flex
+    justify-content: center
+    
+.footer
+  background: #4A4A4A
+  height: 39px
+  @include for-size(tablet-landscape-up)
+    height: 96px

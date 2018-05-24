@@ -12,29 +12,18 @@ $bp-desktop-x-large: 1800px
   $desktop-upper-boundary: $bp-desktop-x-large
 
   @if $range == phone-only
-   @media (max-width: #{$phone-upper-boundary - 1})
-     @content
+    @media (max-width: #{$phone-upper-boundary - 1})
+      @content
   @else if $range == tablet-portrait-up
-   @media (min-width: $phone-upper-boundary)
-     @content
+    @media (min-width: $phone-upper-boundary)
+      @content
   @else if $range == tablet-landscape-up
     @media (min-width: $tablet-portrait-upper-boundary)
-     @content
+      @content
   @else if $range == desktop-up
-   @media (min-width: $tablet-landscape-upper-boundary)
-     @content
+    @media (min-width: $tablet-landscape-upper-boundary)
+      @content
   @else if $range == big-desktop-up
-   @media (min-width: $desktop-upper-boundary)
-     @content
-
-// partials
-@import partials/topRestoPage
-@import partials/home
-@import mixins/mixins
-
-body
-  font-family: "Montserrat",sans-serif
-
-html
-  font-size: 62.5%
+    @media (min-width: $desktop-upper-boundary)
+      @content
 

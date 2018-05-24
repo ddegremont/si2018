@@ -34,61 +34,192 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-header">
-            <img class="header-logo" src="assets/img/logo.png">
-            <img class="header-burger" src="assets/img/bars.svg">
+        <nav class="header__nav">
+
+            <div class="header__nav__logo">
+                <img src="assets/img/logo.png" alt="" class="header__nav__logo__img">
+            </div>
+
+            <div class="header__nav__list">
+                <div class="header__nav__list__item">Accueil </div>
+                <div class="header__nav__list__item">Catégorie</div>
+                <div class="header__nav__list__item">Qui sommes-nous ?</div>
+                <div class="header__nav__list__item">Contact</div>
+            </div>
+
+            <div class="header__nav__burger" >
+                <div class="header__nav__burger__item"></div>
+                <div class="header__nav__burger__item"></div>
+                <div class="header__nav__burger__item"></div>
+            </div>
+        </nav>
+        <div class="header__infos">
+            <h1 class="header__infos__title">une annee de voyage</h1>
+            <p class="header__infos__quote">Des voyages testés… Des idées pour partir toute l’année !</p>
         </div>
-        <h1 class="header-title">Une année de voyages</h1>
-        <h2 class="header-subtitle">Des voyages testés... Des idées pour partir toute l'année !</h2>
+        <div class="burger"></div>
     </header>
 
-
-    <section class="section2">
-        <h2 class="section2-title">Soyez un voyageur averti !</h2>
-        <div class="section2-blueline"></div>
-        <span class="section2-list">Un mook collector. Des fiches pratiques. Une application. Un site.</span>
-        <p class="section2-paragraph">"Un mook (contraction de magazine et book) est un ouvrage hybride dont le format se situe entre le magazine et le livre. Il est publié de manière périodique et renferme essentiellement de grands reportages. Il comprend également des dessins et des photos servant à l'illustration des textes.</p>
-        <img class="section2-magazine" src="">
-    </section>
-
-    <section class="section3">
-        <h1 class="section3-title">Carnet de voyage</h1>
-        <h2 class="section3-subtitle">Détour par la côte italienne pour cet été 2018. Les meilleurs hôtels et restaurants de la côte.</h2>
-        <div class="section3-textArrow">
-            <span class="section3-textArrow-text">Lire l'article</span>
-            <img class="section3-textArrow-arrow" src="assets/img/chevron-right.svg">
+    <section class="search">
+        <div class="search__head">
+            <h2 class="search__head__title">Je cherche un(e)...</h2>
+            <div class="search__head__underline"></div>
         </div>
-    </section>
 
-    <section class="carousel">
-        
-    </section>
-
-    <section class="section4Mobile">
-        <h2>Découvrez nos Tops</h2>
-        <div class="section4Mobile-textArrow">
-            <span class="section4Mobile-textArrow-text">Découvrir</span>
-            <img class="section4Mobile-textArrow-arrow" src="assets/img/chevron-right.svg">
-        </div>
-    </section>
-
-    <section class="section4Desktop">
-        <h2>Découvrez nos TOPS</h2>
-        <div class="section4Desktop-blueline"></div>
-        <div class="section4Desktop-align">
-            <div class="section4Desktop-align-item">
-                <p>Top 100 de nos meilleurs restaurants</p>
+        <div class="search__infosContainer">
+            <div class="search__infosContainer__item">
+                <div class="search__infosContainer__item__img"></div>
+                <p class="search__infosContainer__item__title">Compagnies aériennes</p>
             </div>
-            <div class="section4Desktop-align-item"></div>
-            <div class="section4Desktop-align-item"></div>
+            <div class="search__infosContainer__item">
+                <div class="search__infosContainer__item__img"></div>
+                <p class="search__infosContainer__item__title">Croisières</p>
+            </div>
+            <div class="search__infosContainer__item">
+                <div class="search__infosContainer__item__img"></div>
+                <p class="search__infosContainer__item__title">Hôtel</p>
+            </div>
+            <div class="search__infosContainer__item">
+                <div class="search__infosContainer__item__img"></div>
+                <p class="search__infosContainer__item__title">Restaurants</p>
+            </div>
+            <div class="search__infosContainer__item">
+                <div class="search__infosContainer__item__img"></div>
+                <p class="search__infosContainer__item__title">Activités</p>
+            </div>
+            <div class="search__infosContainer__item">
+                <div class="search__infosContainer__item__img"></div>
+                <p class="search__infosContainer__item__title">Spa / Thalasso</p>
+            </div>
+        </div>
+    </section>
+
+
+<!--integration christelle article-->
+
+    <section class="top">
+        <div class="top__head">
+            <h2 class="top__head__title">Découvrez nos TOPS</h2>
+            <div class="top__head__underline"></div>
+        </div>
+
+        <div class="top__container">
+            <div class="top__container__item">
+                <img src="assets/img/top1.png" alt="" class="top__container__item__img">
+                <p class="top__container__item__title">Nos meilleurs hôtels</p>
+            </div>
+
+            <div class="top__container__item">
+                <img src="assets/img/top1.png" alt="" class="top__container__item__img">
+                <p class="top__container__item__title">Nos meilleurs hôtels</p>
+            </div>
+
+            <div class="top__container__item">
+                <img src="assets/img/top1.png" alt="" class="top__container__item__img">
+                <p class="top__container__item__title">Nos meilleurs hôtels</p>
+            </div>
         </div>
 
     </section>
 
-    <footer>
+    <section class="advertise">
+        <div class="advertise__infos">
+            <h2 class="advertise__infos__title">Annonceurs rejoignez-nous !</h2>
+            <p class="advertise__infos__sentence">En savoir plus</p>
+            <img src="assets/img/arrow.svg" alt="" class="advertise__infos__img">
+        </div>
+    </section>
+
+    <section class="twitter">
+        <div class="twitter__head">
+            <h2 class="twitter__head__title">Les derniers Tweets</h2>
+            <div class="twitter__head__underline"></div>
+        </div>
+        <div class="twitter__container">
+            <blockquote class="twitter-tweet" data-lang="fr"><p lang="fr" dir="ltr">Gênes accueille le <a href="https://twitter.com/hashtag/MSCFantasia?src=hash&amp;ref_src=twsrc%5Etfw">#MSCFantasia</a> dans toute sa splendeur.<br>Merci Nico pour cette photo. <a href="https://t.co/IGU2i0g4lL">https://t.co/IGU2i0g4lL</a> <a href="https://t.co/iTjSA9xbg3">pic.twitter.com/iTjSA9xbg3</a></p>&mdash; MSC Croisières (@MSCCroisieres) <a href="https://twitter.com/MSCCroisieres/status/996341944233099265?ref_src=twsrc%5Etfw">15 mai 2018</a></blockquote>
+
+            <blockquote class="twitter-tweet" data-lang="fr"><p lang="fr" dir="ltr">Nous y sommes presque.<a href="https://twitter.com/hashtag/EnjoyTheSea?src=hash&amp;ref_src=twsrc%5Etfw">#EnjoyTheSea</a> <a href="https://twitter.com/hashtag/MSCSeaview?src=hash&amp;ref_src=twsrc%5Etfw">#MSCSeaview</a> <a href="https://t.co/XxByiqpT91">https://t.co/XxByiqpT91</a> <a href="https://t.co/Cf7nZSKvkL">pic.twitter.com/Cf7nZSKvkL</a></p>&mdash; MSC Croisières (@MSCCroisieres) <a href="https://twitter.com/MSCCroisieres/status/996033665372229632?ref_src=twsrc%5Etfw">14 mai 2018</a></blockquote>
+
+
+        </div>
+
+    </section>
+
+    <section class="promo">
+        <div class="promo__head">
+            <h2 class="promo__head__title">Soyez un voyageur averti !</h2>
+            <div class="promo__head__underline"></div>
+        </div>
+
+        <div class="promo__container">
+            <img src="assets/img/promo.png" alt="" class="promo__container__img">
+            <div class="promo__container__description">
+                <img src="assets/img/leftLine.png" alt="" class="promo__container__description__img --left">
+                <p class="promo__container__description__text">
+                    "Un mook (contraction de magazine et book) est un ouvrage hybride dont le format se situe entre le magazine et le livre. Il est publié de manière périodique et renferme essentiellement de grands reportages. Il comprend également des dessins et des photos servant à l’illustration des textes." <span class="promo__container__description__text__quote">— Wikipédia</span></p>
+                <img src="assets/img/rightLine.png" alt="" class="promo__container__description__img --right">
+            </div>
+        </div>
+    </section>
+
+    <section class="staff">
+        <div class="staff__head">
+            <h2 class="staff__head__title">L'équipe</h2>
+            <div class="staff__head__underline"></div>
+        </div>
+
+        <div class="staff__container">
+            <div class="staff__container__item">
+                <div class="staff__container__item__img"></div>
+                <div class="staff__container__item__infos">
+                    <p class="staff__container__item__infos__name">Judith Lossmann
+                    </p>
+                    <p class="staff__container__item__infos__status">Fondatrice - Rédactrice en chef</p>
+                </div>
+            </div>
+            <div class="staff__container__item">
+                <div class="staff__container__item__img"></div>
+                <div class="staff__container__item__infos">
+                    <p class="staff__container__item__infos__name">Caroline M’zali</p>
+                    <p class="staff__container__item__infos__status">Pigiste - Secrétaire de rédaction</p>
+                </div>
+            </div>
+            <div class="staff__container__item">
+                <div class="staff__container__item__img"></div>
+                <div class="staff__container__item__infos">
+                    <p class="staff__container__item__infos__name">Inma Serrano
+                    </p>
+                    <p class="staff__container__item__infos__status">Illustratrice</p>
+                </div>
+            </div>
+            <div class="staff__container__item">
+                <div class="staff__container__item__img"></div>
+                <div class="staff__container__item__infos">
+                    <p class="staff__container__item__infos__name">Damien Dégremont
+                    </p>
+                    <p class="staff__container__item__infos__status">Développeur du site</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="staff__contact">
+            <p class="staff__contact__text">Nous contacter </p>
+            <img src="assets/img/arrowContact.svg" alt="" class="staff__contact_img">
+        </div>
+    </section>
+
+    <section class="sponsor">
+        <div class="sponsor__container">
+            <img src="assets/img/sponsor.png" alt="" class="sponsor__container__img">
+        </div>
+    </section>
+
+    <footer class="footer">
 
     </footer>
 
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="app.generated.js"></script>
 </body>
 </html>
