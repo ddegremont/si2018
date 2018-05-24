@@ -49,7 +49,9 @@ $data = getNewsData($connection);
         <h2 class="news_filter_title">Filtres:</h2>
         <label for="company">Company name</label>
         <select name="company" title="company">
-            <?php displayNewsSelectCompany($data) ?>
+             <div class="newsairJobContainer">
+                <?php displayNewsSelectCompany($data) ?>
+             </div>
         </select>
         <input type="submit">
     </form>
@@ -58,7 +60,9 @@ $data = getNewsData($connection);
     <a class="newsairAddArticle" href="newsCreate.php">AJOUTER UN ARTICLE</a>
 </div>
 <section class="newsairJob">
-    <?php displayNewsContent($data) ?>
+  <div class="newsairJobContainer">
+        <?php displayNewsContent($data) ?>
+  </div>
 </section>
 <section class="bonplan">
     <h2 class="bonplanTitle">Bons plans</h2>
@@ -69,9 +73,9 @@ $data = getNewsData($connection);
 <footer class="footer">
     <h1 class="footerPartenaire">PARTENAIRES</h1>
     <div class="footerPartImgContainer">
-        <img class="footerPartImg" src="img/Accueil/adp-logo2.png" alt="">
-        <img class="footerPartImg" src="img/Accueil/Fujifilm_logo_logotype.png" alt="">
-        <img class="footerPartImg" src="img/Accueil/nikon-logo.png" alt="">
+        <img class="footerPartImg" src="src/components/img/Accueil/adp-logo2.png" alt="">
+        <img class="footerPartImg" src="src/components/img/Accueil/Fujifilm_logo_logotype.png" alt="">
+        <img class="footerPartImg" src="src/components/img/Accueil/nikon-logo.png" alt="">
     </div>
     <div class="footerBotomContainer">
         <div class="footerBotomCopyContainer">
