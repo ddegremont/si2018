@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -588,3 +589,17 @@ a {
 .Contact__form {
   margin-left: 20px;
   margin-top: 20px; }
+=======
+* {
+  margin: 0;
+  padding: 0; }
+
+.Header {
+  background: green;
+  height: 50px;
+  width: 100vw; }
+
+.Nav {
+  background: #fd79a8;
+  height: 100vh; }
+>>>>>>> 66bfd1f0c217a1abeccfabc5e16eb6f5324c52f0
