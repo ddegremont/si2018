@@ -5,7 +5,7 @@
  * Date: 23/05/2018
  * Time: 10:33
  */
-session_start();
+
 require_once "../connection.php";
 if (true) {
     if (!empty($_POST['pseudo']) || !empty($_POST['password'])) {

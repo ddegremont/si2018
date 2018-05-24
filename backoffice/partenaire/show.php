@@ -5,7 +5,7 @@
  * Date: 05/05/2018
  * Time: 17:39
  */
-session_start();
+
 require_once "../connection.php";
 
 $request = "SELECT 

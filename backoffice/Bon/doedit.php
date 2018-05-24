@@ -5,7 +5,6 @@
  * Date: 01/05/2018
  * Time: 18:08
  */
-session_start();
 require_once "../connection.php";
 
 $request = 'UPDATE

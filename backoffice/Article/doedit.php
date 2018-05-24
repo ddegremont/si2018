@@ -5,7 +5,7 @@
  * Date: 01/05/2018
  * Time: 18:08
  */
-session_start();
+
 require_once "../connection.php";
 if (empty($_POST['title']) || empty($_POST['texte']) || empty($_POST['image']) || empty($_POST['alt'])||
     empty($_POST['date']) || empty($_POST['auteur']) || empty($_POST['signature']) || empty($_POST['logo'])) {
