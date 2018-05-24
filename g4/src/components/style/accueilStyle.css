@@ -503,3 +503,7 @@ url(https://codyhouse.co/demo/back-to-top/img/cd-top-arrow.svg) no-repeat center
     border: 10px solid white;
   }
 }
+
+input {
+  display: block;
+}
