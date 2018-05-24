@@ -1,111 +1,50 @@
-body {
-  font-family: "Agency FB",sans-serif;
-  font-size: 62.5%; }
-
 .header {
-  background: url("../assets/img/main.jpg") no-repeat;
-  background-size: cover;
-  height: 568px;
-  padding-top: 5%; }
-  @media (min-width: 600px) {
-    .header {
-      height: 100vh; } }
-  .header__header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-  .header__logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 50px; }
-  .header__subtitle {
-    color: white;
-    margin: 35px auto 0 auto;
-    text-align: center;
-    width: 300px; }
-  .header__burger {
-    width: 20px;
-    height: 20px; }
-    @media (min-width: 600px) {
-      .header__burger {
-        display: none; } }
-  .header__nav {
-    display: none; }
-    @media (min-width: 600px) {
-      .header__nav {
-        display: block; } }
-    .header__nav__items {
-      display: flex; }
-      .header__nav__items__item {
-        margin-left: 15%; }
-        .header__nav__items__item__link {
-          text-decoration: none;
-          color: white; }
-  .header__title {
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 150px;
-    margin-top: 350px; }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  background: lightGrey; }
+  .header__container {
+    width: 95vw;
+    margin: auto; }
+    .header__container__logoContainer {
+      width: 12%; }
+      .header__container__logoContainer > img {
+        width: 100%; }
+    .header__container__burgerMenu {
+      width: 12%; }
 
-.section2__title {
+.title {
+  text-transform: uppercase;
   text-align: center;
-  margin-top: 40px; }
-  @media (min-width: 600px) {
-    .section2__title {
-      text-align: left; } }
+  margin: 20px 0;
+  font-size: 12px; }
 
-.section2__blueline {
-  height: 1px;
-  width: 150px;
-  background-color: #00CCCC;
-  margin: 20px auto 0 auto; }
-
-.section2__list {
-  display: none; }
-  @media (min-width: 600px) {
-    .section2__list {
-      border: 2px solid red;
-      display: inline-block; } }
-
-.section2__paragraph {
-  display: none; }
-  @media (min-width: 600px) {
-    .section2__paragraph {
-      display: block; } }
-
-.section3 {
-  background: url("../assets/img/cote.png") no-repeat;
-  background-size: cover;
-  color: white;
-  height: 463px;
-  padding-top: 95%; }
-  .section3__subtitle {
-    margin-top: 5%; }
-  .section3__textArrow {
+.filtersCtn {
+  width: 100vw; }
+  .filtersCtn__buttonsCtn {
     display: flex;
-    align-items: center;
-    float: right;
-    margin-right: 5%;
-    text-align: center;
-    margin-top: 5%; }
-  .section3__textArrow-arrow {
-    height: 20px; }
+    width: 80vw;
+    margin: auto;
+    justify-content: space-between; }
+    .filtersCtn__buttonsCtn__button {
+      background: #32CCCD;
+      height: 30px;
+      width: 45%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-size: 11px; }
+  .filtersCtn__sortList {
+    display: none; }
+  .filtersCtn__filterListCtn {
+    display: none; }
 
-.section4Mobile {
-  background: url("../assets/img/discover.png") no-repeat;
-  background-size: cover;
-  height: 277px;
-  color: white;
-  padding-top: 55%; }
-  .section4Mobile__title {
-    margin-left: 5%;
-      margin-left-width: 100px; }
-  .section4Mobile__textArrow {
-    display: flex;
-    align-items: center;
-    float: right;
-      float-text-align: center;
-      float-margin-right: 5%; }
-    .section4Mobile__textArrow__arrow {
-      height: 20px; }
+body {
+  font-family: "Agency FB",sans-serif; }
+
+html {
+  font-size: 62.5%; }

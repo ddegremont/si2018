@@ -27,111 +27,12 @@ $bp-desktop-x-large: 1800px
    @media (min-width: $desktop-upper-boundary)
      @content
 
+// partials
+@import partials/topRestoPage
+
+
 body
   font-family: "Agency FB",sans-serif
+
+html
   font-size: 62.5%
-.header
-  background: url("../assets/img/main.jpg") no-repeat
-  background-size: cover
-  height: 568px
-  padding-top: 5%
-  @include for-size(tablet-portrait-up)
-  	height: 100vh
-  &__header
-    display: flex
-    justify-content: space-around
-    align-items: center
-  &__logo
-    width: 40px
-    height: 40px
-    margin-right: 50px
-  &__subtitle
-    color: white
-    margin: 35px auto 0 auto
-    text-align: center
-    width: 300px
-  &__burger
-    width: 20px
-    height: 20px
-    @include for-size(tablet-portrait-up)
-      display: none
-  &__nav
-  	display: none
-  	@include for-size(tablet-portrait-up)
-  		display: block
-  	&__items
-  		display: flex
-  		&__item
-  			margin-left: 15%
-  			&__link
-  				text-decoration: none
-  				color: white
-  &__title
-    color: white
-    text-transform: uppercase
-    text-align: center
-    margin-top: 150px
-    @include for-size(tablet-portrait-up)
-    margin-top: 350px
-
-.section2
-  &__title
-  	text-align: center
-  	margin-top: 40px
-  	@include for-size(tablet-portrait-up)
-  		text-align: left
-  &__blueline
-    height: 1px
-    width: 150px
-    background-color: #00CCCC
-    margin: 20px auto 0 auto
-  &__list
-    display: none
-    @include for-size(tablet-portrait-up)
-      border: 2px solid red
-      display: inline-block
-  &__paragraph
-    display: none
-    @include for-size(tablet-portrait-up)
-      display: block
-
-.section3
-  background: url("../assets/img/cote.png") no-repeat
-  background-size: cover
-  color: white
-  height: 463px
-  padding-top: 95%    
-  &__subtitle
-    margin-top: 5%
-  &__textArrow
-    display: flex
-    align-items: center
-    float: right
-    margin-right: 5%
-    text-align: center
-    margin-top: 5%
-  &__textArrow-arrow
-    height: 20px
-
-
-
-.section4Mobile
-  background: url("../assets/img/discover.png") no-repeat
-  background-size: cover
-  height: 277px
-  color: white
-  padding-top: 55%
-  &__title
-  	margin-left: 5%
-    width: 100px
-  &__textArrow
-  	display: flex
-  	align-items: center
-  	float: right
-    text-align: center
-    margin-right: 5%
-  	&__arrow
-  		height: 20px
-
-
-
