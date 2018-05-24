@@ -14,19 +14,19 @@
             <a href="index.php">Home Admin</a>
                 <ul class="nav flex-colum bg-light" style="height:100vh;">
                     <li class="nav-item">
-                        <a class="nav-link" href="./establishements.php">Etablissements</a>
+                        <a class="nav-link" href="./establishements/index.php">Etablissements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./countries.php">Pays</a>
+                        <a class="nav-link" href="./countries/index.php">Pays</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./users.php">Utilisateurs</a>
+                        <a class="nav-link" href="./users/index.php">Utilisateurs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./partners.php">Gestion des partenaires</a>
+                        <a class="nav-link" href="./partners/index.php">Gestion des partenaires</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./slideshow.php">Boîte à Images</a>
+                        <a class="nav-link" href="./slideshow/index.php">Boîte à Images</a>
                     </li>
                 </ul>
         </div>
