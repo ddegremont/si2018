@@ -59,29 +59,37 @@ $stmt2->execute();
 </head>
 <!--<body>
     <header class="header">
-        <div class="header-header">
-            <img class="header-logo" src="assets/img/logo.png">
-            <img class="header-burger" src="assets/img/bars.svg">
+        <div class="header__header">
+            <img class="header__logo" src="assets/img/logo.png">
+            <img class="header__burger" src="assets/img/bars.svg">
+            <nav class="header__nav">
+                <ul class="header__nav__items">
+                    <li class="header__nav__items__item"><a href="#" class="header__nav__items__item__link">Accueil</a></li>
+                    <li class="header__nav__items__item"><a href="#" class="header__nav__items__item__link">Catégorie</a></li>
+                    <li class="header__nav__items__item"><a href="#" class="header__nav__items__item__link">Qui sommes-nous ?</a>
+                    <li class="header__nav__items__item"><a href="#" class="header__nav__items__item__link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <h1 class="header-title">Une année de voyages</h1>
-        <h2 class="header-subtitle">Des voyages testés... Des idées pour partir toute l'année !</h2>
+        <h1 class="header__title">Une année de voyages</h1>
+        <h2 class="header__subtitle">Des voyages testés... Des idées pour partir toute l'année !</h2>
     </header>
 
 
     <section class="section2">
-        <h2 class="section2-title">Soyez un voyageur averti !</h2>
-        <div class="section2-blueline"></div>
-        <span class="section2-list">Un mook collector. Des fiches pratiques. Une application. Un site.</span>
+        <h2 class="section2__title">Soyez un voyageur averti !</h2>
+        <div class="section2__blueline"></div>
+        <span class="section2__list">Un mook collector. Des fiches pratiques. Une application. Un site.</span>
         <p class="section2-paragraph">"Un mook (contraction de magazine et book) est un ouvrage hybride dont le format se situe entre le magazine et le livre. Il est publié de manière périodique et renferme essentiellement de grands reportages. Il comprend également des dessins et des photos servant à l'illustration des textes.</p>
-        <img class="section2-magazine" src="">
+        <img class="section2__magazine" src="">
     </section>
 
     <section class="section3">
-        <h1 class="section3-title">Carnet de voyage</h1>
-        <h2 class="section3-subtitle">Détour par la côte italienne pour cet été 2018. Les meilleurs hôtels et restaurants de la côte.</h2>
-        <div class="section3-textArrow">
-            <span class="section3-textArrow-text">Lire l'article</span>
-            <img class="section3-textArrow-arrow" src="assets/img/chevron-right.svg">
+        <h1 class="section3__title">Carnet de voyage</h1>
+        <h2 class="section3__subtitle">Détour par la côte italienne pour cet été 2018. Les meilleurs hôtels et restaurants de la côte.</h2>
+        <div class="section3__textArrow">
+            <div class="section3__textArrow-text">Lire l'article</div>
+            <img class="section3__textArrow-arrow" src="assets/img/chevron-right.svg">
         </div>
     </section>
 
@@ -90,22 +98,22 @@ $stmt2->execute();
     </section>
 
     <section class="section4Mobile">
-        <h2>Découvrez nos Tops</h2>
-        <div class="section4Mobile-textArrow">
-            <span class="section4Mobile-textArrow-text">Découvrir</span>
-            <img class="section4Mobile-textArrow-arrow" src="assets/img/chevron-right.svg">
+        <h2 class="section4Mobile__title">Découvrez nos Tops</h2>
+        <div class="section4Mobile__textArrow">
+            <span class="section4Mobile__textArrow-text">Découvrir</span>
+            <img class="section4Mobile__textArrow__arrow" src="assets/img/chevron-right.svg">
         </div>
     </section>
 
     <section class="section4Desktop">
         <h2>Découvrez nos TOPS</h2>
-        <div class="section4Desktop-blueline"></div>
-        <div class="section4Desktop-align">
-            <div class="section4Desktop-align-item">
+        <div class="section4Desktop__blueline"></div>
+        <div class="section4Desktop__align">
+            <div class="section4Desktop__align__item">
                 <p>Top 100 de nos meilleurs restaurants</p>
             </div>
-            <div class="section4Desktop-align-item"></div>
-            <div class="section4Desktop-align-item"></div>
+            <div class="section4Desktop__align__item"></div>
+            <div class="section4Desktop__align__item"></div>
         </div>
 
     </section>-->
