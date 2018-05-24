@@ -9,28 +9,26 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-3">
-            <a href="index.php">Home Admin</a>
-                <ul class="nav flex-colum bg-light" style="height:100vh;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./establishements/index.php">Etablissements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./countries/index.php">Pays</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./users/index.php">Utilisateurs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./partners/index.php">Gestion des partenaires</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./slideshow/index.php">Boîte à Images</a>
-                    </li>
-                </ul>
-        </div>
-        <div class="col-9" >
+   <nav>
+       <ul class="nav bg-light">
+           <li class="nav-item">
+               <a class="nav-link" href="./establishements/index.php">Etablissements</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="./partners/index.php">Partenaires</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="./articles/index.php">Articles</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="./sheets/index.php">Fiches pratiques</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="./slideshow/index.php">Boîte à Images</a>
+           </li>
+       </ul>
+   </nav>
+
 
 
 
