@@ -1,0 +1,233 @@
+body {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.4px;
+}
+
+.retour {
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.danang {
+  text-align: center;
+}
+
+.advert {
+  display: none;
+}
+
+.global {
+  font-family: 'Lato';
+  display: flex;
+}
+
+.littleTitle {
+  font-size: 22px;
+}
+
+.containerImg {
+  width: 650px;
+  height: 726px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-top: 80px;
+}
+
+.picto {
+  width: 22px;
+  height: 22px;
+}
+
+.littleArrow {
+  width: 15px;
+  height: 15px;
+}
+
+.flex {
+  padding-bottom: 13px;
+  display: flex;
+}
+
+.infoRoom {
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.img {
+  width: 650px;
+  height: 726px;
+}
+
+.rightContainer {
+  margin-left: 70px;
+}
+
+.danang {
+  font-style: italic;
+  font-weight: bold italic;
+  font-size: 32px;
+  color: #B1A3D9;
+  margin-top: 60px;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.line {
+  background-color: #B1A3D9;
+  margin-top: 25px;
+  width: 84%;
+  height: 3px;
+}
+
+.description {
+  font-size: 14px;
+  width: 80%;
+}
+
+.descriptionDanang {
+  width: 80%;
+  margin-top: 50px;
+  margin-right: 60px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
+.descriptionDanang2 {
+  margin-top: 20px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
+.descriptionDanang3 {
+  margin-top: 20px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+
+.descriptionDanang4 {
+  margin-top: 20px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
+.descriptionDanang5 {
+  margin-top: 20px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
+.littleArrow {
+  width: 13px;
+  height: 13px;
+}
+
+.goTo {
+  display: flex;
+  margin-top: 50px;
+}
+
+.arrow {
+  width: 45px;
+  height: 30px;
+}
+
+.texteTokyo {
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+.styleOnText {
+  font-weight: italic;
+  color: #B1A3D9;
+}
+
+@media only screen and (max-width: 1200px) {
+  .img {
+    width: 460px;
+    height: 895px;
+    filter: blur(3px) brightness(0.8);
+  }
+  .advert {
+    margin-top: 60px;
+    display: block;
+  }
+  .global {
+    margin: 0 auto;
+    padding-right: 16%;
+  }
+  .line {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .descriptionDanang {
+    margin-top: 50px;
+    margin-left: 12%;
+    text-align: center;
+  }
+  .descriptionDanang2 {
+    text-align: center;
+  }
+  .descriptionDanang3 {
+    text-align: center;
+  }
+  .descriptionDanang4 {
+    text-align: center;
+  }
+  .descriptionDanang5 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  img {
+    display: none;
+  }
+  .global {
+    z-index: 6;
+    width: 480px;
+    margin: 0 auto;
+    padding-right: 16%;
+  }
+  .subtitle {
+    text-align: center;
+  }
+  .container {
+    position: absolute;
+    text-align: center;
+    display: block;
+  }
+  .advert {
+    padding-top: 60px;
+    margin: 0 auto;
+    display: block;
+  }
+  .line {
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .subtitle {
+    margin: 0 auto;
+    margin-top: 17%;
+  }
+  .description {
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+  .descriptionKerid {
+    margin-left: 10%;
+  }
+  .goTo {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}

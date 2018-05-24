@@ -1,0 +1,160 @@
+body {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.3px;
+  overflow-x: hidden;
+}
+
+.retour {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.advert {
+  display: none;
+}
+
+.global {
+  font-family: 'Lato';
+  display: flex;
+}
+
+.littleTitle {
+  font-size: 22px;
+}
+
+.containerImg {
+  width: 650px;
+  height: 726px;
+}
+
+.img {
+  width: 650px;
+  height: 726px;
+}
+
+.littleArrow {
+  width: 15px;
+  height: 15px;
+}
+
+.rightContainer {
+  margin-left: 70px;
+}
+
+.tokyo {
+  font-style: italic;
+  font-weight: bold italic;
+  font-size: 32px;
+  color: #CFC236;
+  margin-top: 35px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-top: 100px;
+}
+
+.infoRoom {
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.detailsRoom {
+  padding-top: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 80%;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
+.flex {
+  padding-bottom: 13px;
+  display: flex;
+}
+
+.littleArrow {
+  width: 13px;
+  height: 13px;
+}
+
+.line {
+  background-color: #CFC236;
+  margin-top: 25px;
+  width: 400px;
+  height: 3px;
+}
+
+.containerPart {
+  display: flex;
+  margin-top: 60px;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.goTo {
+  display: flex;
+  margin-top: 50px;
+}
+
+.arrow {
+  width: 45px;
+  height: 30px;
+}
+
+.texteTokyo {
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+.styleOnText {
+  font-weight: italic;
+  color: #CFC236;
+}
+
+@media only screen and (max-width: 1200px) {
+  .picto {
+    display: none;
+  }
+  .containerPart {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  img {
+    display: none;
+  }
+  .global {
+    z-index: 6;
+    width: 480px;
+    margin: 0 auto;
+    padding-right: 16%;
+  }
+  .advert {
+    padding-top: 60px;
+    margin: 0 auto;
+    display: block;
+  }
+  .tokyo {
+    text-align: center;
+  }
+  .littleTitle {
+    font-style: normal;
+  }
+  .containerPart {
+    display: flex;
+  }
+  .line {
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .goTo {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
