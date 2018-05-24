@@ -1,7 +1,12 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 .Header {
-  background: red;
+  background: green;
   height: 50px;
   width: 100vw; }
 
-body {
-  background: red; }
+.Nav {
+  background: #fd79a8;
+  height: 100vh; }
