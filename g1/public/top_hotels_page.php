@@ -33,7 +33,7 @@ $stmt->execute();
         <li class="header__menuList__item">Contact</li>
       </ul>
     </header>
-    <h2 class="title">Top 100 Restaurants</h2>
+    <h2 class="title">Top 100 Hôtels</h2>
     <div class="filtersCtn">
       <div class="filtersCtn__buttonsCtn">
         <div class="filtersCtn__buttonsCtn__button --sortBtn">Trier par : </div>
@@ -67,7 +67,7 @@ $stmt->execute();
             <input type="range" min="1" max="300" value="50" class="slider">
             <p><span class="demo"></span>€</p>
           </li>
-          <li>Type de cuisine :</li>
+          <li>Type d'hégergement :</li>
           <button class="filtersCtn__ctn__btn">Appliquer les filtres</button>
         </ul>
       </div>
