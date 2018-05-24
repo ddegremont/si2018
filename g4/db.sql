@@ -51,8 +51,10 @@ CREATE TABLE `factsheets` (
   `paragraph` text NOT NULL,
   `category` varchar(64) NOT NULL,
   `websiteUrl` varchar(255) NOT NULL,
-  PRIMARY KEY (`title`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -61,6 +63,7 @@ CREATE TABLE `factsheets` (
 
 LOCK TABLES `factsheets` WRITE;
 /*!40000 ALTER TABLE `factsheets` DISABLE KEYS */;
+INSERT INTO `factsheets` VALUES ('1','1','1','1','1','1',1),('44','4','4','4','4','4',4),('5','5','5','5','5','5',5);
 /*!40000 ALTER TABLE `factsheets` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -105,9 +108,11 @@ CREATE TABLE `news` (
   `signature` varchar(255) NOT NULL,
   `logoSrc` varchar(255) NOT NULL,
   `logoAlt` varchar(64) NOT NULL,
-  `newscol` varchar(45) NOT NULL,
-  PRIMARY KEY (`title`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `company` varchar(64) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -116,6 +121,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
+INSERT INTO `news` VALUES ('3','3','3','3','3','3','3','3','3',3),('4','4','4','4','4','4','4','4','4',4),('5','5','5','5','5','5','5','5','5',5);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -180,4 +186,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-22 18:56:15
+-- Dump completed on 2018-05-24 10:41:33
