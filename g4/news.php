@@ -49,7 +49,9 @@ $data = getNewsData($connection);
         <h2 class="news_filter_title">Filtres:</h2>
         <label for="company">Company name</label>
         <select name="company" title="company">
-            <?php displayNewsSelectCompany($data) ?>
+             <div class="newsairJobContainer">
+                <?php displayNewsSelectCompany($data) ?>
+             </div>
         </select>
         <input type="submit">
     </form>
@@ -58,7 +60,9 @@ $data = getNewsData($connection);
     <a class="newsairAddArticle" href="newsCreate.php">AJOUTER UN ARTICLE</a>
 </div>
 <section class="newsairJob">
-    <?php displayNewsContent($data) ?>
+  <div class="newsairJobContainer">
+        <?php displayNewsContent($data) ?>
+  </div>
 </section>
 <section class="bonplan">
     <h2 class="bonplanTitle">Bons plans</h2>
