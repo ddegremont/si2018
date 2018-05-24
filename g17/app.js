@@ -67,7 +67,7 @@ sequelize
   .catch(err => {
     console.error('Unable to connect to the database:', err);
   });
-///////////////////////////////////////////////////////////////////////////
+
 
 //Storage Multer
 ///////////////////////////////////////////////////////////////////////////
@@ -86,10 +86,10 @@ let upload = multer({
   storage: storage
 }).single('image');
 
-///////////////////////////////////////////////////////////////////////////
+
 
 // Routing
-///////////////////////////////////////////////////////////////////////////
+
 // app.use('/index', index);
 
 // Routes backoffice
@@ -102,7 +102,7 @@ app.get('/auth', (req, res) => {
   res.render('auth');
 });
 
-////////////////////////////////////////////////////////////////////////////
+
 
 // Routes front
 
@@ -113,27 +113,6 @@ app.get('/top100', (req, res) => {
 
 app.get('/auth', (req,res) => {
   res.render('auth');
- /* passport.use(new LocalStrategy(
-    function(username, password, done) {
-      Model.User.findOne({
-        where: {
-          'username': username
-        }
-      }).then(function (user) {
-        if (user == null) {
-          return done(null, false, { message: 'Incorrect credentials.' })
-        }
-          
-        var hashedPassword = bcrypt.hashSync(password, user.salt)
-          
-        if (user.password === hashedPassword) {
-          return done(null, user)
-        }
-          
-        return done(null, false, { message: 'Incorrect credentials.' })
-      })
-    }
-  ))*/
 })
 
 app.post('/auth', (req,res) => {
@@ -188,7 +167,7 @@ app.get('/actualites', (req, res) => {
   });
 });
 
-app.get('/top100', (req, res) => {
+app.get('/top100/*', (req, res) => {
   res.render('front/top100', {
     current: 'categories'
   });
