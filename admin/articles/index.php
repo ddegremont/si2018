@@ -5,7 +5,7 @@ require_once '../functions.php';
     <h2>Articles</h2>
     <a href="../index.php">Home admin</a>
     <p>Ici, vous gérez les articles</p>
-    <a href="./add.php">ajouter un nouvel article</a>
+    <a href="./add.php">ajouter un article</a>
     <table class="table">
         <thead>
         <tr>

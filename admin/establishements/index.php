@@ -5,7 +5,7 @@ require_once '../functions.php';
 <h2>Etablissements</h2>
     <a href="../index.php">Home admin</a>
 <p>Ici, vous gérez les établissements que vous voulez conseiller</p>
-    <a href="add.php">ajouter un nouvel établissement</a>
+    <a href="./add.php">ajouter un nouvel établissement</a>
     <table class="table">
         <thead>
         <tr>
