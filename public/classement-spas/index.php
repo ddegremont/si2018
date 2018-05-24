@@ -16,7 +16,7 @@
     <!-- Header -->
     <header class="Header">
       <div class="Logo">
-        <img class="Logo__img" src="../img/logo.png" alt="Logo">
+          <a href="../index.php"><img class="Logo__img" src="../img/logo.png" alt="Logo"></a>
         <span class="Logo__name"></span>
       </div>
       <div class="Menu">

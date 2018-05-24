@@ -48,10 +48,25 @@
     color: #646464;
     line-height: 22px;
   }
-  .__mockupContainer {
-    width: 200px;
+  &__mockupContainer {
+    margin-top: 25px;
+    width: 300px;
   }
-  .__mockup {
+  &__mockup {
     width: 100%;
+  }
+  &__premium {
+    display: flex;
+    justify-content: center;
+  }
+  &__premiumText {
+    background: #00CCCC;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
   }
 }

@@ -351,7 +351,142 @@ a {
     font-family: 'AvenirNext-Regular';
     color: #646464;
     line-height: 22px; }
-  .Desc .__mockupContainer {
-    width: 200px; }
-  .Desc .__mockup {
+  .Desc__mockupContainer {
+    margin-top: 25px;
+    width: 300px; }
+  .Desc__mockup {
     width: 100%; }
+  .Desc__premium {
+    display: flex;
+    justify-content: center; }
+  .Desc__premiumText {
+    background: #00CCCC;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 15px;
+    padding: 10px;
+    width: 150px; }
+
+.Stats {
+  background: #1E6E97; }
+  .Stats__description {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .Stats__descriptionLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .Stats__descriptionLine:not(:last-child) {
+      margin-bottom: 30px; }
+  .Stats__descriptionNumber {
+    font-family: 'AvenirNext-Bold';
+    color: white;
+    margin-bottom: 10px; }
+  .Stats__descriptionText {
+    font-family: 'AvenirNext-Medium';
+    color: white; }
+
+.Plans {
+  margin-top: 20px; }
+  .Plans__maintitleContainer {
+    margin-left: 20px; }
+  .Plans__maintitle {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 20px; }
+  .Plans__titleLine {
+    background: #00CCCC;
+    margin-top: 5px;
+    width: 25px;
+    height: 3px; }
+  .Plans__container {
+    display: flex;
+    justify-content: center; }
+  .Plans__card {
+    -webkit-box-shadow: 0px 2px 5px -1px #cccccc;
+    -moz-box-shadow: 0px 2px 5px -1px #cccccc;
+    box-shadow: 0px 2px 5px -1px #cccccc;
+    margin-top: 30px;
+    width: 300px; }
+    .Plans__card:last-child {
+      margin-bottom: 30px; }
+  .Plans__articleLinkContainer {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px; }
+  .Plans__articleLink {
+    font-family: 'AvenirNext-Regular';
+    color: #32CCCD;
+    font-size: 10px; }
+  .Plans__img {
+    width: 100%; }
+  .Plans__recent {
+    font-family: 'AvenirNext-UltraLight';
+    opacity: .8;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px; }
+  .Plans__title {
+    font-family: 'Didot';
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px; }
+  .Plans__text {
+    margin-top: 10px;
+    font-family: 'AvenirNext-UltraLight';
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 18px; }
+  .Plans__good {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; }
+  .Plans__goodText {
+    background: #00CCCC;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 15px;
+    padding: 10px;
+    width: 200px; }
+
+.Ads__description {
+  margin-left: 20px; }
+
+.Ads__maintitleContainer {
+  margin-left: 20px; }
+
+.Ads__maintitle {
+  font-family: 'AvenirNext-DemiBold';
+  font-size: 20px; }
+
+.Ads__titleLine {
+  background: #00CCCC;
+  margin-top: 5px;
+  width: 25px;
+  height: 3px; }
+
+.Ads__img {
+  width: 50px; }
+
+.Ads__box {
+  display: flex;
+  align-items: center; }
+
+.Ads__textContainer {
+  margin-left: 10px; }
+
+.Ads__title {
+  font-family: 'AvenirNext-Bold';
+  font-size: 13px;
+  margin-top: 30px; }
+
+.Ads__text {
+  font-family: 'AvenirNext-Regular';
+  font-size: 11px;
+  margin-top: 10px;
+  line-height: 16px; }
