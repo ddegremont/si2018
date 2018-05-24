@@ -1,0 +1,137 @@
+$bp-tablet: 600px
+$bp-desktop: 949px
+$bp-desktop-large: 1200px
+$bp-desktop-x-large: 1800px
+
+
+
+@mixin for-size($range)
+  $phone-upper-boundary: $bp-tablet
+  $tablet-portrait-upper-boundary: $bp-desktop
+  $tablet-landscape-upper-boundary: $bp-desktop-large
+  $desktop-upper-boundary: $bp-desktop-x-large
+
+  @if $range == phone-only
+   @media (max-width: #{$phone-upper-boundary - 1})
+     @content
+  @else if $range == tablet-portrait-up
+   @media (min-width: $phone-upper-boundary)
+     @content
+  @else if $range == tablet-landscape-up
+    @media (min-width: $tablet-portrait-upper-boundary)
+     @content
+  @else if $range == desktop-up
+   @media (min-width: $tablet-landscape-upper-boundary)
+     @content
+  @else if $range == big-desktop-up
+   @media (min-width: $desktop-upper-boundary)
+     @content
+
+body
+  font-family: "Montserrat", sans-serif
+
+.header
+  background: url("../assets/img/form.jpeg") no-repeat
+  background-size: cover
+  background-position: center;
+  height: 82px
+  padding-top: 20px
+  margin-bottom: 30px
+  &__logo
+    width: 40px
+    height: 40px
+    margin-left: 5%
+
+.content
+  @include for-size(tablet-portrait-up)
+    display: flex
+
+.informations
+  margin-left: 5%
+  &__subtitle
+    text-transform: uppercase
+  &__blueline
+    height: 1px
+    width: 50px
+    background-color: #00CCCC
+    margin-top: 10px;
+    margin-left: 6%
+    margin-bottom: 30px
+  &__paragraph
+    margin-top: 30px
+    &__blue
+      color: #00CCCC
+  &__circles
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+    margin-right: 40%
+    @include for-size(tablet-portrait-up)
+      display: none
+    &__circle
+      background-color: rgba(0, 0, 0, 0.1)
+      border: 1px solid rgba(0, 0, 0, 0.4)
+      height: 40px
+      width: 40px
+      border-radius: 50%
+
+
+.form
+  margin-top: 40px
+  display: flex
+  justify-content: center
+  width: 100%
+
+
+  &__theForm
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include for-size(tablet-portrait-up)
+        margin-top: -50px
+    &__input
+      height: 40px
+      margin-top: 15px
+      border: 1px solid rgba(0, 0, 0, 0.4)
+      padding-left: 1%
+      width: 300px
+      @include for-size(tablet-portrait-up)
+        width: 600px
+    &__message
+      height: 250px
+      margin-top: 15px
+      width: 300px
+      border: 1px solid rgba(0, 0, 0, 0.4)
+      @include for-size(tablet-portrait-up)
+        width: 600px
+    &__submit
+      color: #00CCCC
+      border: 1px solid #00CCCC
+      background-color: white
+      height: 30px
+      width: 100px
+      margin-top: 15px
+      margin-bottom: 50px
+      @include for-size(tablet-portrait-up)
+        width: 200px
+
+.footer
+  height: 50px
+  background-color: #4A4A4A
+  display: flex
+  justify-content: space-around
+  align-items: center
+  @include for-size(tablet-portrait-up)
+    height: 127px
+  &__logo
+    width: 40px
+    height: 40px
+    margin-left: 5%
+  &__text
+    color: white
+    width: 60%
+    text-align: center
+    margin-right: 5%
+
+
+
