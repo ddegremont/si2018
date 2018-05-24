@@ -1,3 +1,20 @@
+<?php
+require_once "../admin/connection.php";
+require_once "../admin/functions.php";
+
+$sql = "SELECT
+          `logo_src`,
+          `logo_alt`
+        FROM
+          `partners`
+        ORDER BY 
+        `id`
+        DESC
+;";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+handlePDOError($stmt);
+?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -219,16 +236,13 @@
         </div>
         <div class="Partners__logos">
             <div class="Partners__logosContainer">
-                <img class="Partners__logo" src="img/nikon.png" alt="Nikon logo">
-                <img class="Partners__logo" src="img/adp.png" alt="Adp logo">
-                <img class="Partners__logo" src="img/fujifilm.png" alt="Fujifilm">
+                <?php while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
+                <img class="Partners__logo" src="img/<?=$row['logo_src']?>" alt="<?=$row['logo_alt']?>">
+                <?php endwhile; ?>
             </div>
         </div>
 
     </section>
-
-<script type="text/javascript" src="./js/main.js">
-
-</script>
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
