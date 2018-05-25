@@ -95,37 +95,37 @@ $stmt2->execute();
         <div class="search__infosContainer">
             <div class="search__infosContainer__item">
                 <div class="search__infosContainer__item__img">
-                  <a><img src="../src/img/Tops/Resto/r1.jpg" alt=""></a>
+                  <a><img src="../src/img/emirates.jpg" alt=""></a>
                 </div>
                 <p class="search__infosContainer__item__title">Compagnies aériennes</p>
             </div>
             <div class="search__infosContainer__item">
                 <div class="search__infosContainer__item__img">
-                  <a><img src="../src/img/Tops/Resto/r1.jpg" alt=""></a>
+                  <a><img src="../src/img/croisiere.jpg" alt=""></a>
                 </div>
                 <p class="search__infosContainer__item__title">Croisières</p>
             </div>
             <div class="search__infosContainer__item">
                 <div class="search__infosContainer__item__img">
-                  <a><img src="../src/img/Tops/Hotel/barcelona.jpg" alt=""></a>
+                  <a><img src="../src/img/Tops/Hotel/bucharest.jpg" alt=""></a>
                 </div>
                 <p class="search__infosContainer__item__title">Hôtel</p>
             </div>
             <div class="search__infosContainer__item">
                 <div class="search__infosContainer__item__img">
-                  <a><img src="../src/img/Tops/Resto/r1.jpg" alt=""></a>
+                  <a><img src="../src/img/Tops/Resto/bangkok.jpg" alt=""></a>
                 </div>
                 <p class="search__infosContainer__item__title">Restaurants</p>
             </div>
             <div class="search__infosContainer__item">
                 <div class="search__infosContainer__item__img">
-                  <a><img src="../src/img/Tops/Resto/r1.jpg" alt=""></a>
+                  <a><img src="../src/img/activities.jpg" alt=""></a>
                 </div>
                 <p class="search__infosContainer__item__title">Activités</p>
             </div>
             <div class="search__infosContainer__item">
                 <div class="search__infosContainer__item__img">
-                  <a><img src="../src/img/Tops/Spa/spaHome.jpg" alt=""></a>
+                  <a><img src="../src/img/Tops/Spa/s14.jpg" alt=""></a>
                 </div>
                 <p class="search__infosContainer__item__title">Spa / Thalasso</p>
             </div>
@@ -175,12 +175,12 @@ $stmt2->execute();
 
         <div class="top__container">
             <div class="top__container__item">
-                <a href="top_resto_page.php"><img src="../src/img/Tops/Resto/r1.jpg" alt="Top 100 Restaurants" class="top__container__item__img"></a>
+                <a href="top_resto_page.php"><img src="../src/img/Tops/Resto/abudabhi.jpg" alt="Top 100 Restaurants" class="top__container__item__img"></a>
                 <p class="top__container__item__title">Nos meilleurs restaurants</p>
             </div>
 
             <div class="top__container__item">
-                <a href="top_hotels_page.php"><img src="../src/img/Tops/Hotel/barcelona.jpg" alt="Top 100 Hôtels" class="top__container__item__img"></a>
+                <a href="top_hotels_page.php"><img src="../src/img/Tops/Hotel/capeTown.jpg" alt="Top 100 Hôtels" class="top__container__item__img"></a>
                 <p class="top__container__item__title">Nos meilleurs hôtels</p>
             </div>
 
