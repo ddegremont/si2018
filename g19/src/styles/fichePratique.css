@@ -1,0 +1,85 @@
+.fichePratique{
+  margin: 50px 00px 30px 80px;
+}@media (max-width:768px){
+  .fichePratique{
+    margin: 10px;
+  }
+}
+
+.fichePratique_head{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}@media (max-width:768px){
+  .fichePratique_head{
+    display: inherit;
+  }
+}
+
+.fichePratique_head_titles_little{
+  display: flex;
+  justify-content: space-between;
+}@media (max-width:768px){
+  .fichePratique_head_titles_little{
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.fichePratique h1{
+  font-family: 'Ftr-bold';
+  font-size: 25px;
+}
+
+.fichePratique #first{
+  font-family: 'Ftr-bold';
+  font-size: 15px;
+}
+.fichePratique #second{
+  font-family: 'Ftr-regular';
+  font-size: 15px;
+}
+
+.fichePratique_container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}@media (max-width:768px){
+  .fichePratique_container{
+    flex-direction: column;
+  }
+}
+
+.fichePratique_container img{
+  max-width: 100%;
+  height: auto;
+}
+
+.fichePratique_container_txt{
+  width: 41vw;
+  height: 183px;
+  background-color: whitesmoke;
+  text-align: center;
+  display: flex;
+  margin-left: -18vw;
+  margin-top: 350px;
+  flex-direction: column;
+  justify-content: center;
+}@media (max-width:768px){
+  .fichePratique_container_txt{
+    width: 94.5vw;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+
+.fichePratique_container_txt p{
+  text-align: justify;
+  padding: 30px;
+}@media (max-width:768px){
+  .fichePratique_container_txt p{
+    width: 80%;
+    padding: 35px;
+  }
+}

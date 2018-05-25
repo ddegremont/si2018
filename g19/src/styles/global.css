@@ -1,0 +1,90 @@
+html {
+    font-size: 62.5%;
+    cursor: url(../assets/imgs/cursor/cursor-active.png), auto;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Ftr-Light'
+}
+@media (min-width: 768px) {
+    body {
+        font-size: 1.8rem;
+    }
+}
+a {
+    cursor: url(../assets/imgs/cursor/cursor.png), auto;
+}
+input,
+textarea {
+    border: 0px;
+    background: rgba(255,255,255,0.9);
+    resize: none;
+}
+input:focus,
+textarea:focus {
+    outline: #4A90E2 double;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 48, 104);
+    transition: all 0.25s ease-out;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4A90E2;
+}
+::placeholder {
+    color: #9B9B9B;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1.6rem;
+}
+.is-visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.is-open {
+    border: 2px #000 solid;
+    top: 15px !important;
+    right: 20px !important;
+}
+.is-padding {
+    padding-bottom: 20px;
+}
+.is-active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto !important;
+}
+.is-scaled {
+    transform: scale(1) !important;
+}
+.is-offscreen {
+    right: -100px !important;
+}
+.is-rotated {
+    transform: translate(-50%, -50%) rotate(225deg) !important;
+}
+.is-rotatedInv {
+    transform: translate(-50%, -50%) rotate(-225deg) !important;
+}
+.is-Xed {
+    left: 0% !important;
+}
+.is-XedInv {
+    left: 50% !important;
+}
+.is-Yed {
+    top: 0 !important;
+}
+.is-colored {
+    background: #4A90E2 !important;
+    color: #fff !important;
+}
+.is-flex {
+    display: flex !important;
+}
