@@ -10,7 +10,7 @@ $sql = "INSERT INTO `articles` (
     `title`,
     `subtitle`,
     `content`,
-    `link`,
+    `twitter_link`,
     `details`,
     `deadline`,
     `cover_img`

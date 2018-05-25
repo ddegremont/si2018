@@ -1,7 +1,9 @@
 <?php
 require_once '../connection.php';
 require_once '../functions.php';
+include "../header.php";
 ?>
+<div class="container">
     <h2>Partenaires</h2>
     <a href="../index.php">Home admin</a>
     <p>Ici, vous gérez les partenaires</p>
@@ -32,7 +34,7 @@ require_once '../functions.php';
         <?php while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
             <tr>
                 <th><?=$row["id"]?></th>
-                <td><img src="<?=$row["logo_src"]?>"></td>
+                <td><img style="height: 20px; border: 1px solid #f5f5f5; border-radius: 4px;" src="../../public/img/<?=$row["logo_src"]?>"></td>
                 <td><?=$row["name"]?></td>
                 <td><a href="show.php?id=<?=$row["id"]?>">éditer</a></td>
                 <td><a href="delete.php?id=<?=$row["id"]?>">supprimer</a></td>
@@ -40,5 +42,6 @@ require_once '../functions.php';
         <?php endwhile;?>
         </tbody>
     </table>
-<?php
-require_once '../footer.php';
+</div>
+<?php include '../footer.php';
+
