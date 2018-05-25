@@ -11,6 +11,33 @@ easy_admin:
           - shortDescription
           - tags
           - articleCategory
+    Hostel:
+      class: App\Entity\Hostel
+      label: 'Hôtel'
+      form:
+        fields:
+          - title
+          - content
+          - shortDescription
+          - tags
+    Restaurant:
+      class: App\Entity\Restaurant
+      label: 'Restaurant'
+      form:
+        fields:
+          - title
+          - content
+          - shortDescription
+          - tags
+    SPA:
+      class: App\Entity\SPA
+      label: 'SPA'
+      form:
+        fields:
+          - title
+          - content
+          - shortDescription
+          - tags
     ArticleCategory:
       class: App\Entity\ArticleCategory
       label: 'Categorie Article'
