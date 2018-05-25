@@ -1,0 +1,166 @@
+@import ../mixins/mixins
+
+.preview
+	padding-right: 5%
+	&__title
+      margin-top: 20px
+      margin-left: 5%
+      font-size: 1.2rem
+      font-weight: 500
+      @include for-size(tablet-portrait-up)
+        margin-top: 200px
+        font-size: 1.4rem
+	&__blueline
+      height: 1px
+      width: 50px
+      background-color: #00CCCC
+      margin-top: 10px
+      margin-left: 6%
+      @include for-size(tablet-portrait-up)
+          margin-bottom: 70px
+	&__paragraph 
+      margin: 10% 8% 0 8%
+      font-size: 1.2rem
+      line-height: 1.8rem
+      @include for-size(tablet-portrait-up)
+        margin-top: 30px
+        font-size: 1.4rem
+        line-height: 2.2rem
+	&__textArrow
+      display: flex
+      align-items: center
+      margin-top: 150px
+      justify-content: flex-end
+      &__arrow
+        width: 15px
+        margin-left: 5%
+      &__text
+        font-weight: bold
+      @include for-size(tablet-portrait-up)
+          margin-top: 60px
+
+.oneWorld
+	&__title
+      margin-top: 280px
+      margin-left: 5%
+      @include for-size(tablet-portrait-up)
+        margin-top: 160px
+	&__blueline
+	    height: 1px
+	    width: 55px
+	    background-color: #00CCCC
+	    margin-top: 10px
+	    margin-left: 6%
+	    margin-bottom: 50px
+	&__container
+		display: none
+		@include for-size(tablet-portrait-up)
+			display: flex
+			justify-content: space-around
+		&__item
+			border: 1px solid rgba(0, 0, 0, 0.5)
+			width: 20%
+			height: 313px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: flex-end
+			&__circle
+				height: 60px
+				width: 60px
+				border: 1px solid rgba(0, 0, 0, 0.5)
+				border-radius: 50%
+				z-index: 2
+				margin-bottom: 50px
+			&__img
+				height: 66%
+			&__box
+				border-top: 1px solid rgba(0, 0, 0, 0.5)
+	&__mobileContainer
+		display: flex
+		justify-content: space-around
+		margin-top: 50px
+		@include for-size(tablet-portrait-up)
+			display: none
+		&__item
+			border: 1px solid rgba(0, 0, 0, 0.5)
+			width: 40%
+			height: 313px
+
+.starAlliance
+	&__title
+		margin-top: 50px
+		margin-left: 5%
+	&__blueline
+	    height: 1px
+	    width: 55px
+	    background-color: #00CCCC
+	    margin-top: 10px
+	    margin-left: 6%
+	&__container
+		display: none
+		@include for-size(tablet-portrait-up)
+			display: flex
+			justify-content: space-around
+			margin-top: 50px
+		&__item
+			border: 1px solid rgba(0, 0, 0, 0.5)
+			width: 20%
+			height: 313px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: flex-end
+			&__img
+				height: 66%
+			&__box
+				border-top: 1px solid rgba(0, 0, 0, 0.5)
+	&__mobileContainer
+		display: flex
+		justify-content: space-around
+		margin-top: 50px
+		@include for-size(tablet-portrait-up)
+			display: none
+		&__item
+			border: 1px solid rgba(0, 0, 0, 0.5)
+			width: 40%
+			height: 313px
+
+.skyTeam
+	&__title
+		margin-top: 50px
+		margin-left: 5%
+	&__blueline
+	    height: 1px
+	    width: 55px
+	    background-color: #00CCCC
+	    margin-top: 10px
+	    margin-left: 6%
+	&__container
+		display: none
+		@include for-size(tablet-portrait-up)
+			display: flex
+			justify-content: space-around
+			margin-top: 50px
+		&__item
+			border: 1px solid rgba(0, 0, 0, 0.5)
+			width: 20%
+			height: 313px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: flex-end
+			&__img
+				height: 66%
+			&__box
+				border-top: 1px solid rgba(0, 0, 0, 0.5)
+	&__mobileContainer
+		display: flex
+		justify-content: space-around
+		margin-top: 50px
+		@include for-size(tablet-portrait-up)
+			display: none
+		&__item
+			border: 1px solid rgba(0, 0, 0, 0.5)
+			width: 40%
+			height: 313px

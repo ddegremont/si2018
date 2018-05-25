@@ -7,11 +7,11 @@ body
   width: 100vw
   height: 50px
   background: #fff
-  border-bottom: 1px solid #32CCCD
   display: flex
   justify-content: space-between
   align-items: center
   &__nav
+
     position: fixed
     z-index: 2
     display: flex
@@ -35,6 +35,7 @@ body
   width: 100%
   &__nav
     position: fixed
+
     z-index: 2
     display: flex
     margin-left: auto
@@ -43,6 +44,7 @@ body
     align-items: center
     width: 95vw
     @include for-size(desktop-up)
+      border-bottom: 1px solid #32CCCD
       width: 100vw
       height: 50px
       background: rgba(0,0,0,0.2)
@@ -495,11 +497,16 @@ body
       font-size: 1.1rem
       margin: 30px auto
       text-transform: uppercase
+      transition: 0.3s ease
       @include for-size (tablet-landscape-up)
         margin: 20px auto
         height: 35px
         font-size: 12px
         width: 150px
+    &__btn:hover
+      color: #000
+      background: #fff
+
 
 .twitter
   padding: 10px
@@ -546,7 +553,7 @@ body
       padding: 0 4%
     &__title
       font-size: 1.4rem
-      font-family: 'montserrat-bold'
+      font-family: 'montserrat-bold',sans-serif
       padding-top: 20px
       text-transform: uppercase
       @include for-size(tablet-landscape-up)
@@ -569,15 +576,15 @@ body
     @include for-size(tablet-landscape-up)
       flex-direction: inherit
       justify-content: space-around
+      padding: 0 5%
     &__img
       width: 70vw
       @include for-size(tablet-landscape-up)
         width: 329px
         order: 2
     &__description
-
       justify-content: center
-      width: 75%
+      width: 65%
       text-align: center
       &__img
         width: 73px
@@ -684,9 +691,49 @@ body
   &__container
     display: flex
     justify-content: center
+    &__img
+      width: 50%
+      height: 50%
 
 .footer
   background: #4A4A4A
   height: 39px
   @include for-size(tablet-landscape-up)
     height: 96px
+  &__container
+    display: flex
+    height: 100%
+    padding: 10px 40px
+    color: #fff
+    font-size: 1.0rem
+    justify-content: space-around
+    @include for-size(tablet-landscape-up)
+      justify-content: space-between
+      font-size: 1.4rem
+    &__left
+      display: flex
+      justify-content: space-between
+      align-items: center
+      @include for-size(tablet-landscape-up)
+        width: 50%
+      &__img
+        width: 30px
+        height: 30px
+        @include for-size(tablet-landscape-up)
+          width: 45px
+          height: 45px
+      &__list
+        display: none
+        @include for-size(tablet-landscape-up)
+          display: flex
+          flex-direction: column
+          width: 30%
+        &__item
+          padding: 5px 0
+    &__right
+      display: flex
+      justify-content: center
+      width: 50%
+      text-align: center
+      @include for-size(tablet-landscape-up)
+        align-items: flex-end

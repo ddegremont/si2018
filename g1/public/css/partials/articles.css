@@ -42,7 +42,8 @@
   .header__title {
     color: white;
     margin-top: 150px;
-    margin-left: 5%; }
+    margin-left: 5%;
+    margin-top: 450px; }
 
 .preview {
   padding-right: 5%; }

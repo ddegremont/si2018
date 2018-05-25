@@ -17,14 +17,14 @@ $stmt->execute();
       <nav class="header__nav">
 
           <div class="header__nav__logo">
-              <img src="assets/img/logo.png" alt="" class="header__nav__logo__img">
+              <a href="index.php"><img src="assets/img/logo.png" alt="" class="header__nav__logo__img"></a>
           </div>
 
           <div class="header__nav__list">
-              <div class="header__nav__list__item">Accueil </div>
+              <div><a href="index.php" class="header__nav__list__item">Accueil</a></div>
               <div class="header__nav__list__item">Catégorie</div>
               <div class="header__nav__list__item">Qui sommes-nous ?</div>
-              <div class="header__nav__list__item">Contact</div>
+              <div ><a href="form.php" class="header__nav__list__item">Contact</a></div>
           </div>
 
           <div class="header__nav__burger">
@@ -33,8 +33,9 @@ $stmt->execute();
               <div class="header__nav__burger__item"></div>
           </div>
       </nav>
-      <div class="burger"></div>
+        <?php include 'includes/burger.php';?>
     </header>
+
     <h2 class="title">Top 100 Spa / Thalasso</h2>
     <div class="filtersCtn">
       <div class="filtersCtn__buttonsCtn">
@@ -82,5 +83,6 @@ $stmt->execute();
         <?php endwhile;?>
     </div>
     <div class="overlay"></div>
-    <script type="text/javascript" src="app.generated.js"></script>
-<?php require 'includes/footer.php' ?>
+    <?php
+    include 'includes/footer.php';
+    ?>

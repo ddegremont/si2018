@@ -32,13 +32,10 @@ function displayPage(array $page): void
 {
 ?>
     <section class="preview">
+        <img src="./assets/img/<?= $page['img_src']?>" alt="<?= $page['img_alt']?>">
         <h2 class="preview__title"><?= $page['title'] ?></h2>
         <div class="preview__blueline"></div>
         <p class="preview__paragraph"><?= $page['content'] ?></p>
-        <div class="preview__textArrow">
-            <span class="preview__textArrow__text">Lire davantage</span>
-            <img class="preview__textArrow__arrow" src="assets/img/chevron-right-grey.svg">
-        </div>
     </section>
 <?php
 }

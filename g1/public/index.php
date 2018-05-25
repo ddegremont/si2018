@@ -18,6 +18,8 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
 
+
+
 $sql = "SELECT
 `id`,
 `slug`,
@@ -30,52 +32,20 @@ LIMIT 3
 ;";
 $stmt2 = $pdo->prepare($sql);
 $stmt2->execute();
+include_once "includes/header.php";
 ?>
 
-<!doctype html>
-<html lang="fr">
-<head>
-    <!-- HTML Meta Tags -->
-    <title>The design tool that does it all.</title>
-    <meta name="description" content="Framer is the only tool you need to create interactive designs for any platform. Powering the product teams at Dropbox, Pinterest, Twitter, and thousands more.">
 
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Une année de voyages">
-    <meta itemprop="description" content="Framer is the only tool you need to create interactive designs for any platform. Powering the product teams at Dropbox, Pinterest, Twitter, and thousands more.">
-    <meta itemprop="image" content="http://framer.com/assets/static/images/social/design.png">
-
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="http://uneanneedevoyages.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Une année de voyages">
-    <meta property="og:description" content="Des voyages testés... Des idées pour partir toute l'année !">
-    <meta property="og:image" content="http://framer.com/assets/static/images/social/design.png">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Une année de voyages">
-    <meta name="twitter:description" content="Des voyages testés... Des idées pour partir toute l'année !">
-    <meta name="twitter:image" content="http://framer.com/assets/static/images/social/design.png">
-
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
-</head>
 <body>
     <header class="header">
         <nav class="header__nav">
 
             <div class="header__nav__logo">
-                <img src="assets/img/logo.png" alt="" class="header__nav__logo__img">
+                <a href="index.php"><img src="assets/img/logo.png" alt="" class="header__nav__logo__img"></a>
             </div>
 
             <div class="header__nav__list">
-                <div class="header__nav__list__item">Accueil </div>
+                <div><a href="index.php" class="header__nav__list__item">Accueil</a></div>
                 <div class="header__nav__list__item">Catégorie</div>
                 <div class="header__nav__list__item">Qui sommes-nous ?</div>
                 <div class="header__nav__list__item">Contact</div>
@@ -92,29 +62,7 @@ $stmt2->execute();
             <p class="header__infos__quote">Des voyages testés… Des idées pour partir toute l’année !</p>
         </div>
 
-        <div class="burger">
-            <div class="burger__container">
-                <div class="burger__container__item">
-                    <p class="burger__container__item__home">Accueil</p>
-                </div>
-                <div class="burger__container__item --list">
-                    <div class="burger__container__item__title --category">
-                        <p class="burger__container__item__title__link">Catégories</p>
-                    </div>
-                    <div class="burger__container__item__subtitle --is-active">
-                        <p class="burger__container__item__subtitle__link">Articles</p>
-                    </div>
-                    <div class="burger__container__item__subtitle --is-active">
-                        <p class="burger__container__item__subtitle__link">Top 100</p>
-                    </div>
-                    <div class="burger__container__item__subtitle --is-active">
-                        <p class="burger__container__item__subtitle__link">Fiches pratiques</p>
-                    </div>
-                </div>
-                <p class="burger__container__item">Qui sommes nous ?</p>
-                <p class="burger__container__item">Contact</p>
-            </div>
-        </div>
+        <?php include 'includes/burger.php';?>
 
     </header>
 
@@ -172,7 +120,7 @@ $stmt2->execute();
             <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
             <div class="articlesSection__articlesCtn__article">
                 <a href="articles.php?p=<?= $row['slug'] ?>">
-                  <img class="articlesSection__articlesCtn__article__img" src="<?=$row['img_src']?>" alt="<?=$row['img_alt']?>">
+                  <img class="articlesSection__articlesCtn__article__img" src="./assets/img/<?= $row['img_src']?>" alt="<?=$row['img_alt']?>">
                   <h3 class="articlesSection__articlesCtn__article__title"><?=$row['title']?></h3>
                 </a>
             </div>
@@ -255,7 +203,7 @@ $stmt2->execute();
         </div>
 
         <div class="promo__container">
-            <img src="assets/img/promo.png" alt="" class="promo__container__img">
+            <a href="pdf.php" class="promo__container__img" title="Télécharger le pdf"> <img src="assets/img/promo.png" alt="" class="promo__container__img"></a>
             <div class="promo__container__description">
                 <img src="assets/img/leftLine.png" alt="" class="promo__container__description__img --left">
                 <p class="promo__container__description__text">
@@ -307,7 +255,7 @@ $stmt2->execute();
         </div>
 
         <div class="staff__contact">
-            <p class="staff__contact__text">Nous contacter </p>
+            <p class="staff__contact__text"><a class="staff__contact__text" href="form.php">Nous contacter </a></p>
             <img src="assets/img/arrowContact.svg" alt="" class="staff__contact_img">
         </div>
     </section>
@@ -318,12 +266,6 @@ $stmt2->execute();
         </div>
     </section>
 
-
-    <footer class="footer">
-
-    </footer>
-
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script src="app.generated.js"></script>
-</body>
-</html>
+<?php
+include 'includes/footer.php';
+?>

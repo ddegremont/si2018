@@ -1,48 +1,9 @@
-$bp-tablet: 600px
-$bp-desktop: 949px
-$bp-desktop-large: 1200px
-$bp-desktop-x-large: 1800px
-
-
-
-@mixin for-size($range)
-  $phone-upper-boundary: $bp-tablet
-  $tablet-portrait-upper-boundary: $bp-desktop
-  $tablet-landscape-upper-boundary: $bp-desktop-large
-  $desktop-upper-boundary: $bp-desktop-x-large
-
-  @if $range == phone-only
-   @media (max-width: #{$phone-upper-boundary - 1})
-     @content
-  @else if $range == tablet-portrait-up
-   @media (min-width: $phone-upper-boundary)
-     @content
-  @else if $range == tablet-landscape-up
-    @media (min-width: $tablet-portrait-upper-boundary)
-     @content
-  @else if $range == desktop-up
-   @media (min-width: $tablet-landscape-upper-boundary)
-     @content
-  @else if $range == big-desktop-up
-   @media (min-width: $desktop-upper-boundary)
-     @content
-
-body
-  font-family: "Montserrat", sans-serif
-
-.header
-  background: url("../assets/img/form.jpeg") no-repeat
-  background-size: cover
-  background-position: center;
-  height: 82px
-  padding-top: 20px
-  margin-bottom: 30px
-  &__logo
-    width: 40px
-    height: 40px
-    margin-left: 5%
+@import ../mixins/mixins
 
 .content
+  height: 73vh
+  padding: 5vh 0
+  margin: 5vh 0
   @include for-size(tablet-portrait-up)
     display: flex
 
@@ -54,7 +15,7 @@ body
     height: 1px
     width: 50px
     background-color: #00CCCC
-    margin-top: 10px;
+    margin-top: 10px
     margin-left: 6%
     margin-bottom: 30px
   &__paragraph
@@ -81,7 +42,6 @@ body
   display: flex
   justify-content: center
   width: 100%
-
 
   &__theForm
     display: flex
@@ -114,24 +74,6 @@ body
       margin-bottom: 50px
       @include for-size(tablet-portrait-up)
         width: 200px
-
-.footer
-  height: 50px
-  background-color: #4A4A4A
-  display: flex
-  justify-content: space-around
-  align-items: center
-  @include for-size(tablet-portrait-up)
-    height: 127px
-  &__logo
-    width: 40px
-    height: 40px
-    margin-left: 5%
-  &__text
-    color: white
-    width: 60%
-    text-align: center
-    margin-right: 5%
 
 
 
