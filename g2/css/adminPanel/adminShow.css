@@ -1,0 +1,72 @@
+.adminShow {
+        padding: 0 25px;
+        box-sizing: border-box;
+        margin: auto;
+    max-width: 600px;
+}
+
+
+.adminShow_title {
+    font-family: "JosefinSans-Bold";
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #175e5e;
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+
+.adminShow_label {
+    font-size: 12px;
+    font-family: "JosefinSans-SemiBold";
+    text-transform: uppercase;
+    color: #25a3a3;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.adminShow_text {
+    font-family: "JosefinSans-Light";
+    color: #25a3a3;
+    font-size: 13px;
+    margin-bottom: 18px;
+    border: none;    
+    width: 40vw;
+}
+
+.adminShow_img {
+    margin-bottom: 18px;
+
+    width: 150px;
+}
+
+.adminButtonSection {
+    display: flex;
+    justify-content: center;
+margin: 42px auto;
+padding: 0 25px 30px 25px;
+}
+
+.adminButtonSection_editLink {
+    font-family: "JosefinSans-SemiBold";
+    text-transform: uppercase;
+    font-size: 11px;
+    height: 11px;
+    padding: 10px 16px;
+    background-color: #32cccd;
+    color: #ffffff;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+.adminButtonSection_deleteLink {
+    font-family: "JosefinSans-SemiBold";
+    text-transform: uppercase;
+    font-size: 11px;
+    height: 11px;
+    padding: 10px 16px;
+    background-color: #b1061b;
+    color: #ffffff;
+    border-radius: 2px;
+    white-space: nowrap;
+    margin-left: 20px;
+}

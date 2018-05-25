@@ -1,0 +1,115 @@
+@font-face {
+    src: url("../fonts/JosefinSans-Light.ttf");
+    font-family: "JosefinSans-Light";
+}
+
+.top100Section {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.top100Section_title {
+    font-family: "JosefinSans-Light";
+    text-transform: uppercase;
+    color: #175e5e;
+}
+
+.top100Section_filters {
+    margin-left: 16px;
+    margin-bottom: 32px;
+}
+
+.top100Section_filtersItem {
+    color: #32cccd;
+    background: #ffffff;
+    font-family: "JosefinSans-Light";
+    font-size: 14px;
+    border: 1px solid #32cccd;
+    border-radius: 2px;
+    margin-right: 10px;
+    padding: 3px 10px;
+}
+
+.top100Section_filtersItem.--active {
+    color: #ffffff;
+    background: #32cccd;
+}
+
+.top100Section_ranking {
+    display: none;
+}
+.top100Section_ranking.--active {
+    display: block;
+}
+
+.top100Section_rankingItem {
+    display: flex;
+    border-bottom: 3px solid #32cccd;
+    margin-bottom:30px;
+    width: 100%;
+}
+
+.top100Section_rankingItem_imgContainer {
+    height: 75px;
+    width: 130px;
+}
+.top100Section_rankingItem_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top100Section_rankingItem_link {
+    color : #175e5e;
+
+}
+
+.top100Section_rankingItem_rank {
+    font-family: "JosefinSans-Light";
+    font-size: 36px;
+    margin-right:20px;
+}
+
+.top100Section_rankingItem_infoName {
+    font-family: "JosefinSans-Light";
+    text-transform: uppercase;
+    margin: auto;
+    margin-left: 20px;
+}
+
+@media (min-width:768px) {
+    .top100Section {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .top100Section_rankingItem_imgContainer {
+        height: 100px;
+        width: 180px;
+    }
+    .top100Section_rankingItem_infoName {
+        margin-left: 40px;
+
+    }
+}
+
+@media (min-width:1024px) {
+    .top100Section {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .top100Section_rankingItem_imgContainer {
+        height: 200px;
+        width: 300px;
+    }
+    .top100Section_rankingItem_infoName {
+        margin-left: 60px;
+
+    }
+}
+

@@ -1,0 +1,32 @@
+.adminMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 52px 25px;
+    margin: auto;
+    max-width: 600px;
+}
+
+.adminMenu_listItem {
+    font-family: "JosefinSans-SemiBold";
+    text-transform: uppercase;
+    letter-spacing: 0.74;
+    font-size: 14px;
+    padding-bottom: 15px;
+    position: relative;
+    margin-bottom: 26px;
+}
+
+.adminMenu_listItem::after {
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 2px;
+    background-color: #32cccd;
+    bottom: 0;
+    left: 0;
+}
+
+.adminMenu_listItem_link {
+    color: #175e5e;
+}

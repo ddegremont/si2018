@@ -1,0 +1,539 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+::selection {
+    background-color: #25a3a3;
+    color: #000;
+    text-shadow: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*
+
+#d8d8d8
+#25a3a3
+#175e5e
+#ffffff
+#4a4a4a
+#000000
+#1da0f0
+
+ */
+
+ /* Keyframes */
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* Buttons */
+
+.btn,
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(#000, .2);
+
+}
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+
+.btn:active,
+.btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(#000,.2);
+}
+
+
+.btn--green {
+    background-color: #175e5e;
+    color: white;
+}
+    .btn--green::after {
+        background-color: #175e5e;
+    }
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+/* Header */
+
+
+
+.header{
+  width: 100%;
+  height: auto;
+}
+.header-logo{
+  width: 120px;
+}
+.header-nav-logo{
+  z-index: 4;
+}
+
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  padding: 30px 0 60px 0;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.header-nav-burger{
+margin-top: 5px;
+z-index: 3;
+}
+.burger-menu-1, .burger-menu-2, .burger-menu-3{
+  width: 30px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: #175E5E;
+  margin-top: 5px;
+  transition: transform 0.5s;
+}
+.burger-menu-1.close{
+  transform: rotate(135deg);
+}
+.burger-menu-2.close{
+  display: none;
+}
+.burger-menu-3.close{
+  transform: rotate(-135deg) translateX(6px) translateY(5px);
+}
+.header-nav-desktop{
+  display: none;
+}
+
+.header-nav-modal{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+}
+.header-nav-modal.visible{
+  display: block;
+}
+.header-modal-content{
+  margin: 0 auto;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-modal-item{
+  padding: 10px 0;
+  border-bottom:1px solid #32CCCD;
+  transition: 0.5s;
+  color: #175E5E;
+}
+.header-modal-item:hover{
+  background-color: #D3F4F5;
+}
+
+
+@media (min-width:600px){
+
+  .header-nav-desktop{
+    display: block;
+  }
+  .header-nav-item{
+    display: flex;
+    justify-content: space-between;
+    width: 112%;
+  }
+  .header-nav-burger{
+    display: none;
+  }
+  .header-nav-text{
+    color: #175E5E;
+  }
+  .header-nav-modal{
+    display: none;
+  }
+}
+
+/* Contact */
+
+.contact {
+  width: 100%;
+  height: auto;
+}
+
+.contact__nav-container {
+  display: grid;
+  grid-auto-columns: 3% 95%;
+  padding: 1rem;
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  grid-column: 2;
+}
+
+.contact__list-item {
+  color: #4a4a4a;
+}
+
+.contact__list-link {
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+
+.contact__container {
+  padding: 1rem;
+  /* background-color: pink; */
+  display: grid;
+  grid-auto-columns: 3% 95%;
+}
+
+.contact__h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #25a3a3;
+  font-weight: 700;
+  grid-column: 2;
+}
+
+.contact__container-description {
+/* background-color: green; */
+grid-column: 2;
+}
+
+.contact__listContact {
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+.contact__listContact-item {
+  color: #25a3a3;
+  margin-bottom: .5rem;
+}
+
+.contact__span {
+  display: inline-block;
+  margin-top: .5rem;
+  text-transform: uppercase;
+  color: #175e5e;
+}
+
+.contact__spanAnnee {
+  color: #175e5e;
+}
+
+/* Formulaire */
+
+.form {
+  height: auto;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__container {
+  background-color: #25a3a3;
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__job {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.form__select {
+  width: 95%;
+  text-transform: uppercase;
+  height: 3rem;
+  color: #25a3a3;
+  outline: none;
+  margin-top: 2rem;
+}
+
+.form__group {
+  /* background-color: pink; */
+  padding: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.form__fullname-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: yellow; */
+  width: 100%;
+}
+
+.form__input {
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: #25a3a3;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all .3s;
+  font-size: 1.2rem;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(#000, .1);
+  border-bottom: 3px solid #1da0f0;
+}
+
+.form__input:invalid {
+  border-bottom: 3px solid white;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: white;
+}
+
+
+
+.form__label {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s;
+  color: #fff;
+}
+
+.form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
+
+
+.form__text {
+  text-transform: uppercase;
+  padding: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+.form__btn {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+/*
+body {
+  background-color: red;
+} */
+
+  .contact__list-link {
+    font-size: 1.7rem;
+
+  }
+
+  .contact__h3 {
+    font-size: 2.6rem;
+  }
+
+  .contact__listContact-item {
+    font-size: 1.7rem;
+  }
+
+  .form__select {
+    font-size: 1.3rem;
+  }
+
+  .form__input {
+    font-size: 1.3rem;
+  }
+
+  .form__label {
+    font-size: 1.1rem;
+  }
+
+.form {
+    padding: 3rem;
+  }
+
+  .form__btn {
+    margin-top: 3rem;
+  }
+
+}
+
+@media only screen and (min-width: 949px) {
+  /* body {
+    background-color: green;
+  } */
+
+  .main  {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .contact__container {
+    margin-top: 4rem;
+    padding: 1rem;
+    display: grid;
+  }
+
+  .contact__listContact {
+    margin-top: 0;
+    padding: 2rem 0;
+  }
+
+  .contact__list-link {
+    font-size: 1.8rem;
+  }
+
+  .contact__h3 {
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+  }
+
+  .contact__listContact-item {
+    margin-bottom: 2rem;
+
+    font-size: 1.8rem;
+  }
+
+  .form__select {
+    font-size: 1.4rem;
+  }
+
+  .form__input {
+    font-size: 1.4rem;
+  }
+
+  .form__label {
+    font-size: 1.2rem;
+  }
+
+  .form {
+      padding: 4rem;
+    }
+    .form__btn {
+      margin-top: 3rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* body {
+    background-color: yellow;
+  } */
+
+    .contact__list-link {
+      font-size: 2rem;
+
+    }
+
+    .contact__h3 {
+      font-size: 3rem;
+    }
+
+    .contact__listContact-item {
+      font-size: 2rem;
+    }
+
+    .form__container {
+      margin-right: 5rem;
+    }
+
+    .form__select {
+      font-size: 1.4rem;
+    }
+
+    .form__input {
+      font-size: 1.4rem;
+    }
+
+    .form__label {
+      font-size: 1.2rem;
+    }
+
+  .form {
+      padding: 5rem;
+    }
+
+
+}

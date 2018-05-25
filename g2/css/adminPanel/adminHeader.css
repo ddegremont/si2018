@@ -1,0 +1,72 @@
+@font-face {
+    src: url("../../fonts/JosefinSans-Regular.ttf");
+    font-family: "JosefinSans-Regular";
+}
+
+@font-face {
+    src: url("../../fonts/JosefinSans-Bold.ttf");
+    font-family: "JosefinSans-Bold";
+}
+
+@font-face {
+    src: url("../../fonts/JosefinSans-SemiBold.ttf");
+    font-family: "JosefinSans-SemiBold";
+}
+
+@font-face {
+    src: url("../../fonts/JosefinSans-Light.ttf");
+    font-family: "JosefinSans-Light";
+}
+
+a {
+    text-decoration: none;
+}
+
+.adminHeader {
+    padding: 32px 12px 32px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 500px;
+    margin: auto;
+    
+    box-sizing: border-box;
+}
+
+.adminHeader_title {
+    font-family: "JosefinSans-Bold";
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 16px 10px 16px 0;
+    background-color: #d3f4f5;
+    position: relative;
+    white-space: nowrap;
+}
+
+.adminHeader_title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #32cccd;
+    bottom: 0;
+    left: 0;
+}
+
+.adminHeader_title_link {
+    color: #175e5e;
+}
+
+.adminHeader_returnLink {
+    font-family: "JosefinSans-SemiBold";
+    text-transform: uppercase;
+    font-size: 11px;
+    height: 11px;
+    padding: 10px 16px;
+    background-color: #32cccd;
+    color: #ffffff;
+    border-radius: 2px;
+    white-space: nowrap;
+    margin-left: 20px;
+}

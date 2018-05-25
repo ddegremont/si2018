@@ -1,0 +1,409 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+::selection {
+    background-color: #25a3a3;
+    color: #000;
+    text-shadow: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+
+#d8d8d8
+#25a3a3
+#175e5e
+#ffffff
+#4a4a4a
+#000000
+#1da0f0
+
+ */
+
+.header__main {
+  width: 100%;
+  height: 88%;
+  background-image: url("../image/mook.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  object-fit: fill;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__main-h2 {
+  color: #fff;
+  font-size: 3rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.header__main-textPrimary {
+  padding: 1rem;
+  background-color: #175E5E;
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.header__main-textSec {
+  padding: 1rem;
+  background-color: #175E5E;
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.header__main-list {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+
+}
+
+.header__main-item {
+  color: #25a3a3;
+  font-size: 1.4rem;
+}
+
+.mook {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+  
+
+}
+
+.mook__title {
+  width: 100%;
+  height: auto;
+  background-image: url("../image/bg-collector.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: fill;
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mook__title-h3 {
+  font-size: 2.6rem;
+  color: #25a3a3;
+}
+
+.mook__title-description {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mook__title-text {
+  font-size: 1.6rem;
+}
+
+.mook__container {
+  width: 100%;
+  height: auto;
+}
+
+.mook__containerMini {
+  width: 100%;
+  height: auto;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.mook__containerImg {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.mook__container-img {
+  width: 10rem;
+  height: 25rem;
+}
+
+.mook__container-img2 {
+  width: 100%;
+  height: auto;
+  background-image: url(/image/iphone-droit.jpg);
+  background-repeat: no-repeat;
+  background-size: 35rem 45rem;
+  background-position: -16rem;
+  object-fit: fill;
+}
+
+.mook__containerTxt {
+  padding: 1rem;
+}
+
+.mook__containerTxt2 {
+  padding: 1rem;
+  width: 80rem;
+}
+
+.mook__container-h4 {
+  color: #25a3a3;
+  font-size: 2.4rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.moon__containerLink {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.mook__link {
+  color: #000;
+  font-size: 2.2rem;
+}
+
+@media only screen and (min-width: 600px) {
+
+  /* body {
+    background-color: red;
+  } */
+
+  .header__main-h2 {
+    font-size: 3.2rem;
+  }
+
+  .header__main-textPrimary {
+    font-size: 1.7rem;
+  }
+
+  .header__main-textSec {
+    font-size: 1.7rem;
+  }
+
+  .header__main-list {
+    width: 92%;
+    padding: 1rem;
+
+  }
+
+  .header__main-item {
+    color: #25a3a3;
+    font-size: 1.5rem;
+  }
+
+  .mook__title {
+    padding: 1.5rem;
+  }
+
+  .mook__title-h3 {
+    font-size: 3rem;
+  }
+
+  .mook__title-description {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .mook__title-text {
+    font-size: 1.7rem;
+  }
+
+  .mook__containerMini {
+    width: 100%;
+    height: 40rem;
+
+  }
+
+  .mook__containerImg {
+    padding: 1rem 2rem 2rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .mook__container-img {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  .mook__container-img2 {
+    background-size: cover;
+    background-position: -15rem;
+  }
+
+  .mook__containerTxt {
+    padding: 2rem;
+    width: 60%;
+    line-height: 1.8;
+  }
+
+  .mook__container-text {
+    font-size: 1.7rem;
+  }
+
+  .mook__containerTxt2 {
+    padding: 2rem;
+    width: 80%;
+    line-height: 1.8;
+    margin-top: 5rem;
+  }
+
+  .mook__container-h4 {
+    font-size: 2.6rem;
+  }
+
+  .mook__link {
+    font-size: 2.4rem;
+  }
+
+}
+
+@media only screen and (min-width: 949px) {
+  /* body {
+    background-color: green;
+  } */
+
+
+    .header__main-h2 {
+      font-size: 3.4rem;
+    }
+
+    .header__main-textPrimary {
+      font-size: 1.8rem;
+    }
+
+    .header__main-textSec {
+      font-size: 1.8rem;
+    }
+
+    .header__main-list {
+      width: 92%;
+      padding: 1rem;
+    }
+
+    .header__main-item {
+      font-size: 1.6rem;
+    }
+
+    .mook__title {
+      margin-left: 3rem;
+    }
+
+    .mook__title-h3 {
+      font-size: 3.2rem;
+    }
+
+    .mook__title-description {
+      padding: 2rem;
+      margin-bottom: 3rem;
+      margin-left: 1rem;
+    }
+
+    .mook__title-text {
+      font-size: 1.8rem;
+    }
+
+    .mook__container-text {
+      font-size: 1.8rem;
+      margin-left: 1rem;
+    }
+
+    .mook__containerTxt2 {
+      padding: 2rem 3rem;
+    }
+
+    .mook__container-h4 {
+      font-size: 2.8rem;
+    }
+
+    .mook__link {
+      font-size: 2.6rem;
+    }
+
+    .mook__container-img {
+      width: 25rem;
+      height: 35rem;
+    }
+
+    .mook__container-img2 {
+      background-size: 55rem 60rem;
+      background-position: -15rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* body {
+    background-color: yellow;
+    } */
+
+    .header__main-h2 {
+      font-size: 3.6rem;
+    }
+
+    .header__main-textPrimary {
+      font-size: 1.9rem;
+    }
+
+    .header__main-textSec {
+      font-size: 1.9rem;
+    }
+
+    .header__main-list {
+      width: 95%;
+    }
+
+    .header__main-item {
+      font-size: 1.7rem;
+    }
+
+    .mook__title-h3 {
+      font-size: 3.4rem;
+    }
+
+    .mook__title-text {
+      font-size: 1.9rem;
+    }
+
+    .mook__container-text {
+      font-size: 2rem;
+    }
+
+
+    .mook__container-h4 {
+      font-size: 3rem;
+    }
+
+    .mook__link {
+      font-size: 2.8rem;
+    }
+
+    .mook__container-img2 {
+      background-size: 65rem 65rem;
+    }
+  }

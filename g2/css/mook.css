@@ -1,0 +1,193 @@
+ *,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+::selection {
+    background-color: #25a3a3;
+    color: #000;
+    text-shadow: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+
+#d8d8d8
+#25a3a3
+#175e5e
+#ffffff
+#4a4a4a
+#000000
+#1da0f0
+
+ */
+
+.mook {
+  margin-top: -5rem;
+  width: 100%;
+}
+
+.mb {
+  margin-bottom: 40rem;
+}
+
+.mook__h2 {
+  margin-top: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d8d8d8;
+  opacity: .2;
+  font-size: 10rem;
+}
+
+.mook__mini-containerFirst {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  background-image: url(/image/mockupMook.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  object-fit: fill;
+  margin-top: -8rem;
+  padding: 1rem;
+}
+
+.mook__mini-container {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  background-image: url(/image/mockupMook.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  object-fit: fill;
+  padding: 1rem;
+
+}
+
+.mook__container-text {
+  text-transform: uppercase;
+  color: #d8d8d8;
+  opacity: .5;
+  font-size: 6rem;
+}
+
+.mook__container-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.mook__link {
+  color: #4a4a4a;
+}
+
+@media only screen and (min-width: 600px) {
+/*
+  body {
+    background-color: red;
+  } */
+ 
+  .mook__h2 {
+    font-size: 16rem;
+  }
+
+  .mb {
+    margin-bottom: 45rem;
+  }
+
+  .mook__mini-containerFirst {
+    margin-top: -15rem;
+  }
+
+  .mook__container-text {
+    font-size: 8rem;
+    margin-left: 8rem;
+  }
+
+  .mook__container-link {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .mook__link {
+    font-size: 1.7rem;
+  }
+
+}
+
+@media only screen and (min-width: 949px) {
+  /* body {
+    background-color: green;
+  } */
+
+
+  .mook__h2 {
+    font-size: 18rem;
+  }
+
+  .mb {
+    margin-bottom: 47rem;
+  }
+
+
+  .mook__container-text {
+    font-size: 9rem;
+    margin-left: 12rem;
+  }
+
+  .mook__container-link {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .mook__link {
+    font-size: 1.8rem;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .mook__h2 {
+      font-size: 20rem;
+    }
+
+    .mb {
+      margin-bottom: 60rem;
+    }
+
+    .mook__container-text {
+      font-size: 12rem;
+      margin-left: 16rem;
+    }
+
+    .mook__container-link {
+      margin-bottom: 2.5rem;
+      margin-top: 2rem;
+    }
+
+    .mook__link {
+      font-size: 2rem;
+    }
+
+  }
