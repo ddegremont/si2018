@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=neanneedevoyages;port=3307', 'root','');
+    $pdo = new PDO('mysql:host=localhost;dbname=neanneedevoyages;port=3306', 'root','root');
 } catch (PDOException $exception) {
     require "databaseDied.php";
     die($exception->getMessage());

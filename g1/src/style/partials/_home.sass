@@ -39,39 +39,37 @@ body
     display: flex
     margin-left: auto
     margin-right: auto
+    left: 0
+    right: 0
+    top: 0
     justify-content: space-between
     align-items: center
-    width: 95vw
+    padding: 3% 4%
     @include for-size(desktop-up)
-      width: 100vw
-      height: 50px
-      background: rgba(0,0,0,0.2)
+      width: 53%
+      margin-left: 0
+      margin-right: 0
     &__logo__img
-      visibility: hidden
-      margin-left: 5vw
       width: 45px
-      @include for-size(desktop-up)
-        visibility: visible
+      @include for-size(tablet-portrait-up)
+       width: 65px
     &__list
       display: none
       @include for-size(desktop-up)
         display: flex
-        justify-content: space-around
+        justify-content: space-between
         width: 70%
       &__item
         @include for-size(desktop-up)
           color: #fff
           font-size: 1.4rem
-        &:hover
-          color: #32CCCD
-          cursor: pointer
     &__burger
       display: flex
       flex-direction: column
       cursor: pointer
       position: relative
       z-index: 2
-      @include for-size(tablet-landscape-up)
+      @include for-size(desktop-up)
         display: none
 
       &__item
@@ -117,8 +115,29 @@ body
   position: fixed
   z-index: 1
   right: -100%
+  padding: 10%
   top: 0
   transition: 0.3s ease
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100%
+    &__item
+      font-size: 1.6rem
+      padding: 40px 0 0
+      font-weight: 500
+      &__home
+        cursor: pointer
+      &__title
+        &__link
+          cursor: pointer
+      &__subtitle
+        padding: 7% 10% 0
+        font-weight: 200
+        &__link
+          cursor: pointer
+
 
 
 .--set-position
@@ -141,9 +160,6 @@ body
 .search
   width: 90vw
   margin: auto
-  height: 100vh
-  @include for-size(desktop-up)
-    height: auto
   &__head
     text-align: center
     &__title
@@ -152,7 +168,6 @@ body
       text-transform: uppercase
       padding-top: 30px
       @include for-size(tablet-landscape-up)
-        padding-top: 60px
         font-size: 1.6rem
       @include for-size(desktop-up)
         font-size: 1.8rem
@@ -162,7 +177,6 @@ body
       width: 50px
       margin: 10px auto 30px auto
       @include for-size(tablet-landscape-up)
-        margin: 10px auto 50px auto
         width: 70px
   &__infosContainer
     display: flex
@@ -176,7 +190,6 @@ body
       align-items: center
       flex-direction: column
       @include for-size(tablet-landscape-up)
-        width: 32%
         margin: 0
       &__img
         width: 90px
@@ -187,9 +200,6 @@ body
         @include for-size(tablet-landscape-up)
           width: 152px
           height: 152px
-        @include for-size(desktop-up)
-          width: 180px
-          height: 180px
         & > a
           & > img
             height: 100%
@@ -197,10 +207,6 @@ body
         font-size: 1.2rem
         text-align: center
         padding: 14px 0 45px
-        @include for-size(tablet-landscape-up)
-          font-size: 1.3rem
-        @include for-size(desktop-up)
-          font-size: 1.4rem
 
 .articlesSection
   width: 100vw
@@ -209,17 +215,11 @@ body
   @include for-size (tablet-portrait-up)
     height: auto
     width: 90vw
-  @include for-size(desktop-up)
-    margin: 50px auto
   &__title
     font-family: "montserrat-bold"
     text-align: center
     text-transform: uppercase
     font-size: 1.4rem
-    @include for-size(tablet-landscape-up)
-      font-size: 1.6rem
-    @include for-size(desktop-up)
-      font-size: 1.8rem
   &__underline
     height: 1px
     background: #32CCCD
@@ -227,8 +227,6 @@ body
     margin: 10px auto 30px auto
     @include for-size(tablet-landscape-up)
       width: 70px
-    @include for-size(desktop-up)
-      margin: 10px auto 50px auto
   &__articlesCtn
     height: 72vh
     width: 100vw
@@ -246,7 +244,6 @@ body
       @include for-size (desktop-up)
         grid-template-columns: repeat(3, 1fr)
         grid-template-rows: 250px 200px
-        grid-gap: none
     &__article
       width: 90%
       height: 100%
@@ -269,7 +266,6 @@ body
         overflow: hidden
         @include for-size (tablet-landscape-up)
         min-width: 100%
-        height: 100%
         position: absolute
         transition: transform .5s
         &:hover
@@ -288,14 +284,15 @@ body
         &__content
           font-size: 13px
           line-height: 19px
-          font-family: 'didot'
-          height: 130px
+          font-family: 'didot',sans-serif
+          height: 150px
+          overflow: hidden
         &__circle
           width: 100%
           & > a
             margin: auto
-            height: 35px
-            width: 35px
+            height: 25px
+            width: 25px
             border: 1px solid #32CCCD
             cursor: pointer
             color: #32CCCD
@@ -311,8 +308,7 @@ body
               z-index: 2
             & svg:hover
               fill: #ffffff
-    .article04
-      display: none
+
     .circlesCtn
         display: flex
         justify-content: center
@@ -374,11 +370,6 @@ body
       height: 35px
       font-size: 12px
       width: 150px
-      @include for-size (desktop-up)
-        margin: 20px auto
-        height: 40px
-        font-size: 13px
-        width: 160px
     &:hover
       background: #32CCCD
       color: #fff
@@ -386,8 +377,6 @@ body
 .top
   width: 90vw
   margin: auto
-  @include for-size(tablet-landscape-up)
-    height: 80vh
   &__head
     display: flex
     align-items: center
@@ -399,19 +388,16 @@ body
       font-size: 1.4rem
       font-weight: bold
       text-transform: uppercase
-      margin: auto
       @include for-size(tablet-landscape-up)
         font-size: 1.6rem
-        margin-top: 50px
       @include for-size(desktop-up)
         font-size: 1.8rem
     &__underline
       height: 1px
       background: #32CCCD
       width: 50px
-      margin: 10px auto 30px auto
+      margin: 10px 0 30px 0
       @include for-size(tablet-landscape-up)
-        margin: 10px auto 50px auto
         width: 70px
   &__container
     display: flex
@@ -426,7 +412,7 @@ body
       margin-bottom: 8vh
       overflow: hidden
       @include for-size(tablet-landscape-up)
-        margin: 0 2vw
+        margin: 0 5%
       &__img
         width: 100%
         transition: transform .5s
@@ -494,7 +480,6 @@ body
       font-weight: bold
       padding-top: 20px
       text-transform: uppercase
-      margin: auto
       @include for-size(tablet-landscape-up)
         font-size: 1.6rem
       @include for-size(desktop-up)
@@ -506,7 +491,6 @@ body
       margin: 10px 0 50px
       @include for-size(tablet-landscape-up)
         width: 6%
-        margin: 10px auto 30px auto
   &__container
     display: flex
     flex-direction: column
@@ -530,7 +514,6 @@ body
       text-transform: uppercase
       @include for-size(tablet-landscape-up)
         font-size: 1.6rem
-        margin: auto
       @include for-size(desktop-up)
         font-size: 1.8rem
     &__underline
@@ -540,7 +523,6 @@ body
       margin: 10px 0 30px
       @include for-size(tablet-landscape-up)
         width: 6%
-        margin: 10px auto 30px auto
   &__container
     display: flex
     flex-direction: column
@@ -593,10 +575,8 @@ body
       font-size: 1.4rem
       font-weight: bold
       padding-top: 50px
-      text-transform: uppercase
       @include for-size(tablet-landscape-up)
         font-size: 1.6rem
-        margin: auto
       @include for-size(desktop-up)
         font-size: 1.8rem
     &__underline
@@ -605,7 +585,6 @@ body
       width: 17%
       margin: 10px 0 50px
       @include for-size(tablet-landscape-up)
-        margin: 10px auto 30px auto
         width: 6%
   &__container
     display: flex
