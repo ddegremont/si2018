@@ -1,0 +1,58 @@
+@import './global/reset';
+@import './global/variables';
+@import './mixins/forsize';
+@import './mixins/top';
+@import './mixins/footer';
+@import './mixins/contact';
+@import './mixins/actu';
+@import './mixins/responsive';
+@import './mixins/news';
+@import './mixins/info';
+// @import './mixins/pictureBox';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+   text-decoration: none;
+   color:#242424;
+}
+
+.h1-color {
+   color: #9F9EF8;
+}
+
+.h1-contact {
+   font-size: 30px;
+}
+
+.triangle {
+   position: absolute;
+   right: 12%;
+   top: 32%;
+   width: 10px;
+}
+
+.logo {
+   width: 200px;
+}
+
+h1 {
+   font-size: 7vw;
+   font-weight: 700;
+   margin-left: 30px;
+}
+
+.blue {
+   color: #9F9EF8 !important;
+}
