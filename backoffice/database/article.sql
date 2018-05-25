@@ -33,14 +33,14 @@ CREATE TABLE Article (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('8 expériences à tester pour vivre comme les australiens', 'loremzefzefzfe', 'autraslie.jpeg', 'autraslie', '',  'italie', 'lorem', '');
-INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('VILA BUARQUE LE QUARTIER BOHÈME DE SÃO PAULO', 'loremzffefez', 'bresil.jpeg', 'Brésil', '',  'Brésil', 'lorem', '');
+INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('8 expériences à tester pour vivre comme les australiens', 'loremzefzefzfe', 'australie.jpeg', 'autraslie', '',  'australie', 'lorem', '');
+INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('Vila Buarque, le quartier bohème de São Paulo', 'loremzffefez', 'bresil.jpeg', 'Brésil', '',  'Brésil', 'lorem', '');
 INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('Polynésie, carnet pratique', 'lorem', 'polynésie.jpeg', 'polynésie', '',  'polynésie', 'lorem', '');
-INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('Les plus beaux hôtels d Islande', 'lorem', 'islande.jpeg', 'islande', '',  'islande', 'lorem', '');
+INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('Les plus beaux hôtels d\'Islande', 'lorem', 'islande.jpeg', 'islande', '',  'islande', 'lorem', '');
 INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('Les plus belles plages de Corse', 'lorem', 'france.jpeg', 'rance', '',  'france', 'lorem', '');
 INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('Laponie, carnet pratique', 'lorem', 'finlande.jpeg', 'finlande', '',  'finlande', 'lorem', '');
 INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('Les plus beaux sommets du Japon', 'lorem', 'japon.jpeg', 'japon', '',  'japon', 'lorem', '');
-INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('Bangkok VS Singapour : Le match en 10 rounds', 'lorem', 'bangkokvssingapour.jpeg', 'bangkokvssingapour', '',  'bangkokvssingapour', 'lorem', '');
+INSERT INTO `Article` (`title`, `texte`, `image`, `alt`, `date`, `auteur`, `signature`, `logo`) VALUES ('Bangkok vs Singapour : Le match en 10 rounds', 'lorem', 'bangkokvssingapour.jpeg', 'bangkokvssingapour', '',  'Asie', 'lorem', '');
 
 
 
@@ -91,7 +91,7 @@ CREATE TABLE Boite (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `Boite` (`image`, `image1`, `image2`, `image3`, `image4`, `image5`) VALUES ('plat.png', 'plat1.png', 'plat2.png', 'plat4.png', 'plat4.png', 'plat5.png');
+INSERT INTO `Boite` (`image`, `image1`, `image2`, `image3`, `image4`, `image5`) VALUES ('plat.jpg', 'plat1.jpg', 'plat2.jpg', 'plat3.jpg', 'plat4.jpg', 'plat5.jpg');
 
 
 
@@ -134,8 +134,8 @@ DROP TABLE IF EXISTS Bon;
 
 CREATE TABLE Bon (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `from` VARCHAR(100) NOT NULL,
-  `to` VARCHAR(100) NOT NULL,
+  `departure` VARCHAR(100) NOT NULL,
+  `arrival` VARCHAR(100) NOT NULL,
   `image` VARCHAR(2048)NOT NULL,
   `alt` VARCHAR(100)NOT NULL,
   `date` VARCHAR(100)NOT NULL,
@@ -143,10 +143,10 @@ CREATE TABLE Bon (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `Bon` (`from`, `to`, `image`, `alt`, `date`, `price`) VALUES ('France', 'Brésil', '', '', '27/05/18 - 30/05/18', '€€€');
-INSERT INTO `Bon` (`from`, `to`, `image`, `alt`, `date`, `price`) VALUES ('Finlande', 'italie', '', '', '02/06/18 - 02/07/18', '€€€€');
-INSERT INTO `Bon` (`from`, `to`, `image`, `alt`, `date`, `price`) VALUES ('islande', 'polynésie', '', '', '15/01/18 - 30/01/18', '€');
-INSERT INTO `Bon` (`from`, `to`, `image`, `alt`, `date`, `price`) VALUES ('france', 'japon', '', '', '27/11/18 - 30/12/18', '€€');
+INSERT INTO `Bon` (`departure`, `arrival`, `image`, `alt`, `date`, `price`) VALUES ('France', 'Brésil', '', '', '27/05/18 - 30/05/18', '2 120');
+INSERT INTO `Bon` (`departure`, `arrival`, `image`, `alt`, `date`, `price`) VALUES ('Finlande', 'italie', '', '', '02/06/18 - 02/07/18', '2 345');
+INSERT INTO `Bon` (`departure`, `arrival`, `image`, `alt`, `date`, `price`) VALUES ('islande', 'polynésie', '', '', '15/01/18 - 30/01/18', '1 620');
+INSERT INTO `Bon` (`departure`, `arrival`, `image`, `alt`, `date`, `price`) VALUES ('france', 'japon', '', '', '27/11/18 - 30/12/18', '3 140');
 
 
 

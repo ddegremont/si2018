@@ -1077,6 +1077,7 @@ table {
   .mook-itemBtn {
     font-size: 12px;
     color: white;
+    font-weight: 100;
     background-color: black;
     margin-top: 40px;
     margin-left: 250px;
@@ -1307,8 +1308,9 @@ table {
     height: 40px;
     margin-left: 200px;
     margin-top: 20px;
+    font-size: 12px;
     background-color: white;
-    border: solid 1px white; }
+    border: none; }
     .mook-footerBtn:focus {
       outline: none; }
   .mook-social {

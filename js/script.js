@@ -2,18 +2,17 @@ const data = {
   article: {
     dom: document.querySelector('[name="article"]'),
     info: [],
-    needed: ['title', 'texte'],
+    needed: ['title', 'image', 'alt', 'auteur'],
     currentID: 1,
-    fetchNb: 3,
+    fetchNb: 2,
     visible: true,
     template: `
-    <div class="home-articles">
-      <img alt="Country" src="./img/france.7594afc4.jpeg" class="home-country-img">
-      <div class="home-articles-background">
-        <p class="home-country-title">Les plus belles plages de Corse</p>
-        <div class="home-country-div">
-        <p class="home-country">FRANCE</p>
-        <p class="home-country-date">24/04/2018</p>
+    <div class="Main__block__article" style="background-image: url(img2/%image);" title="%alt">
+      <div class="Main__block__article__content">
+        <h4 class="Main__block__article__contentTitle">%title</h4>
+        <div class="Main__block__article__contentInfo">
+          <span class="Main__block__article__contentInfoCountry">%auteur</span>
+          <span class="Main__block__article__contentInfoDate">24/04/2018</span>
         </div>
       </div>
     </div>
@@ -23,26 +22,56 @@ const data = {
   boite: {
     dom: document.querySelector('[name="boite"]'),
     info: [],
-    needed: ['name', 'image'],
+    needed: ['image', 'image1', 'image2', 'image3', 'image4', 'image5'],
     currentID: 1,
     fetchNb: 1,
     visible: true,
     template: `
-    <div class="home-containerImage" style="z-index: -1">
-      <div class="home-gastronomie">#gastronomie</div>
-      <div class="home-carousel">
-        <img alt="Plat" src="./img/plat.e463421b.png">
-        <img alt="Plat" src="./img/plat1.40b0e1a6.jpg">
-        <img alt="Plat" src="./img/plat2.46d9b991.jpg">
-        <img alt="Plat" src="./img/plat3.9bbba88d.jpg">
-        <img alt="Plat" src="./img/plat4.3b8d6419.jpg">
-        <img alt="Plat" src="./img/plat5.6d3ccb7b.jpg">
+    <div class="Main__block__slider">
+      <div class="Main__block__slider__images">
+        <img src="img2/%image" alt="" class="Main__block__slider__imagesImg">
+        <img src="img2/%image1" alt="" class="Main__block__slider__imagesImg">
+        <img src="img2/%image2" alt="" class="Main__block__slider__imagesImg">
+        <img src="img2/%image3" alt="" class="Main__block__slider__imagesImg">
+        <img src="img2/%image4" alt="" class="Main__block__slider__imagesImg">
+        <img src="img2/%image5" alt="" class="Main__block__slider__imagesImg">
       </div>
-      <div class="home-arrow">
-        <img alt="Previous" src="./img/previous.e5526f1a.png" class="home-previous">
-        <img alt="Next" src="./img/next.ccb5fc13.png" class="home-next">
+    
+      <span class="Main__block__slider__tag">#gastronomie</span>
+      <button class="Main__block__slider__button Main__block__slider__button--plus"></button>
+      <button class="Main__block__slider__button Main__block__slider__button--minus"></button>
+    </div>
+    `,
+    elements: [],
+    script: function() {
+      slider()
+    }
+  },
+  coupon: {
+    dom: document.querySelector('[name="bon"]'),
+    info: [],
+    needed: ['departure', 'arrival', 'date', 'price'],
+    currentID: 1,
+    fetchNb: 1,
+    visible: true,
+    template: `
+    <div class="Main__block__coupon">
+      <div class="Main__block__coupon__remaining">BON PLAN - 7 jours restants</div>
+      <div class="Main__block__coupon__dates">%date</div>
+      <div class="Main__block__coupon__main">
+        <h5 class="Main__block__coupon__mainFrom">%departure</h5>
+        <img class="Main__block__coupon__mainX" src="img2/x.svg" alt="to">
+        <h5 class="Main__block__coupon__mainTo">%arrival</h5>
       </div>
-    <div>
+      <div class="Main__block__coupon__class">Première classe</div>
+      <div class="Main__block__coupon__airline">
+        <img src="img2/oman-air.png" alt="" class="Main__block__coupon__airlineImg">
+      </div>
+      <div class="Main__block__coupon__price">
+        <span class="Main__block__coupon__priceSubtitle">À partir de</span>
+        <span class="Main__block__coupon__priceTitle">%price€</span>
+      </div>
+    </div>
     `,
     elements: []
   }
@@ -84,6 +113,9 @@ function goFetch() {
     const el = data[item];
     fetchData(el)
   }
+  // fetchData(data.coupon)
+  // fetchData(data.article)
+  // fetchData(data.boite)
 }
 goFetch()
 
@@ -100,12 +132,21 @@ function create(item) {
     div.innerHTML = template
     mainRoot.appendChild(div)
     item.elements.push(div)
+    item.script && item.script()
   }
 }
-
+let timeID
+let canFetch = true
 window.addEventListener('scroll', event => {
+  if (!canFetch) {
+    return
+  }
   if (mainRoot.getBoundingClientRect().bottom <= window.innerHeight) {
     goFetch()
+    canFetch = false
+    timeID = window.setTimeout(() => {
+      canFetch = true
+    }, 500)
   }
 })
 
