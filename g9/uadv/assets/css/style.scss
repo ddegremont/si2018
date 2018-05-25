@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+@import 'global/reset';
+@import 'global/variables';
+@import 'mixins/forsize';
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto');
+// COMPONENTS
+@import 'components/nav';
+@import "./components/home";
+@import "./components/images";
+@import "./components/twitter";
+@import "./components/contact";
+@import 'components/header';
+@import 'components/magazine';
+@import 'components/magazine2';
+@import 'components/news';
+@import 'components/themes';
+@import 'components/deals';
+@import 'components/team';
+
+
+/* FONTS */
+// @font-face {
+//   font-family: 'space_monoregular';
+//   src: url('../font/spacemono-regular-webfont.woff2');
+// }
+
+body {
+  background: #ffffff !important;
+  color: #1a1a1a;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  font-family: "avenir";
+  overflow-x: hidden;
+}
+
+.--active {
+  color: black;
+  font-size: 3em;
+}
+
+a {
+  color: #3b94d9;
+}

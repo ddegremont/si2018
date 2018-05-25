@@ -1,0 +1,110 @@
+.Twitter {
+  padding: 5em 0;
+  &-tweetContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  &-tweet {
+    width: 50%;
+    padding: 0.5em;
+  }
+  &-tweetContent {
+    padding: 1.5em;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075);
+  }
+  &-title {
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 0.5em;
+    font-size: 50px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -50%;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 2px;
+      width: 100px;
+      background: #1a1a1a;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: -50%;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 2px;
+      width: 100px;
+      background: #1a1a1a;
+    }
+  }
+  &-imgContainer {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &-img {
+    max-width: 100%;
+  }
+  &-textContainer {
+    width: calc(100% - 50px);
+    padding: 0 1em;
+  }
+  &-top {
+    margin-bottom: 16px;
+    font-size: 12px;
+  }
+  &-pseudo,
+  &-date {
+    color: #657786;
+  }
+  &-name,
+  &-pseudo,
+  &-date {
+    margin-right: 0.5em;
+    line-height: 1.5;
+  }
+  &-compagnyContainer {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &-compagnyList {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &-compagnyListItem {
+    margin-right: 1em;
+  }
+  &-compagnyLink {
+    margin: 2em 0;
+  }
+  &-compagnyImgContainer {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075);
+  }
+  &-compagnyImg {
+    max-width: 100%;
+  }
+  &-textLink {
+    color: #3b94d9;
+  }
+  &-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

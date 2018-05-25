@@ -1,0 +1,17 @@
+.Twitter {
+  // display: none;
+  flex-direction: column;
+  width: 100%;
+  padding: 10% 0;
+  margin: 0 auto;
+
+  &_select {
+    width: 20%;
+    margin: 5% auto;
+  }
+
+}
+
+.twitter-timeline {
+  margin: 0 auto;
+}

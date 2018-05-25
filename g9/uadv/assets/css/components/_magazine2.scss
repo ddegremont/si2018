@@ -1,0 +1,150 @@
+.magazine2{
+  position: relative;
+  padding-top: 100px;
+  &-ImgContainer{
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    width: 50%;
+    img{
+      width: 100%;
+    }
+  }
+  &-Modal{
+    background-color: #FFF;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    width: 55%;
+    height: 40%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    &-Title{
+      text-align: center;
+      font-size: 43px;
+      margin-top: 50px;
+    }
+    &-Number{
+      margin-top: 20px;
+      font-size: 16px;
+      font-style: italic;
+      text-align: center;
+    }
+    &-Paragraphe{
+      font-family: "Roboto";
+      font-weight: lighter;
+      width: 90%;
+      margin: 50px auto;
+      font-size: 17px;
+      line-height: 30px;
+    }
+    &-Footer{
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      a{
+        font-weight: bold;
+      }
+    }
+  }
+}
+.presentation{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  &-Text{
+    font-size: 17px;
+    line-height: 30px;
+    width: 40%;
+    font-family: "Roboto";
+    font-weight: lighter;
+  }
+}
+
+.collector{
+  position: relative;
+  margin: 100px auto;
+  background-color: #FFF;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16);
+  width: 65%;
+  height: 30%;
+  &-Title{
+    position: absolute;
+    font-size: 50px;
+    top: 0;
+    left: -50px;
+    transform: translateY(-60%);
+  }
+  &-List{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    &-Item{
+      font-family: "Roboto";
+      font-weight: lighter;
+      margin-top: 10px;
+    }
+  }
+}
+
+.informations{
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  &-Inner{
+    display: flex;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+  &-Text{
+    font-family: "Roboto";
+    font-weight: lighter;
+    font-size: 17px;
+    line-height: 30px;
+    width: 40%;
+  }
+  &-ImgContainer{
+    width: 50%;
+    height: 100%;
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%
+    }
+  }
+  }
+}
+
+.pdf{
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+  &-Title{
+    font-size: 50px;
+  }
+  &-Subtitle{
+    font-family: "Roboto";
+    font-weight: lighter;
+    margin-top: 30px;
+    font-size: 17px;
+  }
+  img{
+    width: 50%;
+    margin: 30px auto;
+  }
+}
+
+.magazineButton{
+  font-family: "Roboto";
+  font-weight: lighter;
+  font-size: 16px;
+  display: block;
+  width: 360px;
+  padding: 20px 0;
+  margin: auto;
+  background-color: #FFF;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16);
+  border: 0;
+}

@@ -1,0 +1,120 @@
+.Contact {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+
+  @include for-size(big-desktop-up) {
+    display: none;
+  }
+
+
+  &_containerLeft {
+    margin: 0 auto;
+    padding: 5%;
+    width: 54%;
+    height: 32.5%;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+
+    @include for-size(big-desktop-up) {
+      position: absolute;
+      top: 26%;
+      left: 17%;
+      width: 21%;
+      height: 25%;
+      padding: 3%;
+    }
+
+    &_title {
+      position: absolute;
+      top: -0.68em;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    &_top {
+      width: 70%;
+      margin: 0 auto 0 auto;
+
+      &_content {
+        display: flex;
+
+        &_img {
+          height: 20px;
+          width: 20px;
+          padding: 4% 0;
+        }
+
+        &_p {
+          width: 78%;
+          padding: 5%;
+          word-wrap: break-word;
+        }
+      }
+    }
+
+    &_bottom {
+      width: 70%;
+      margin: 0 auto;
+      padding: 5% 0;
+
+      &_p {}
+
+      &_social {
+        width: 36%;
+        margin: 3% 25%;
+
+        &_fb {
+          height: 20px;
+          width: 20px;
+        }
+
+        &_ig {
+          height: 20px;
+          width: 20px;
+        }
+
+        &_twi {
+          height: 20px;
+          width: 20px;
+        }
+
+        &_ytb {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  &_containerRight {
+    margin: -11% 0;
+    background: #F0F5F9;
+
+    @include for-size(big-desktop-up) {
+      margin: 0 0 0 40%;
+    }
+
+    &_form {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      margin: 13em auto;
+
+      &_input {
+        border: none;
+        border-bottom: 1px solid grey;
+        background: #F0F5F9;
+        margin: 2em 0;
+        padding: 0.5em;
+        resize: none;
+
+        &::placeholder {
+          color: #000000;
+        }
+      }
+    }
+  }
+}

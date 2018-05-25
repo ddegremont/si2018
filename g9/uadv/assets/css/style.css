@@ -1,0 +1,1344 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto");
+/* line 1, style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, global/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, global/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, global/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, global/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, global/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, global/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, global/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, global/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, components/_Nav.scss */
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 19%;
+  top: 6%;
+  right: 13%;
+  z-index: 5;
+  background: #FFFFFF;
+  font-size: 20px;
+}
+/* line 12, components/_Nav.scss */
+.Nav_item {
+  cursor: pointer;
+}
+/* line 15, components/_Nav.scss */
+.Nav_item::hover {
+  border-bottom: 1px solid #000000;
+  animation: all 1s ease;
+}
+
+/* line 3, components/_home.scss */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 8, components/_home.scss */
+.container2 {
+  width: 70%;
+  margin: auto;
+}
+
+/* line 13, components/_home.scss */
+.menu {
+  color: #FFF;
+  font-size: 18px;
+  position: relative;
+  z-index: 555;
+}
+/* line 18, components/_home.scss */
+.menu-List {
+  padding: 20px 0;
+  position: absolute;
+  right: 0;
+}
+/* line 22, components/_home.scss */
+.menu-List-Item {
+  margin-left: 30px;
+  display: inline;
+}
+
+/* line 29, components/_home.scss */
+.homepage {
+  height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+}
+/* line 33, components/_home.scss */
+.homepage-Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0px);
+}
+
+/* line 41, components/_home.scss */
+.card-Container {
+  position: relative;
+}
+/* line 43, components/_home.scss */
+.card-Container-Item {
+  transform: translateY(-20%);
+  padding: 50px 30px;
+  position: absolute;
+  width: 50%;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+  background: #FFF;
+  right: 0;
+  text-align: center;
+}
+@media (min-width: 400px) {
+  /* line 43, components/_home.scss */
+  .card-Container-Item {
+    background: #FF0;
+  }
+}
+/* line 55, components/_home.scss */
+.card-Container-Item-Name {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+/* line 59, components/_home.scss */
+.card-Container-Item-Icon {
+  width: 15px;
+  height: auto;
+  margin-right: 5px;
+  opacity: .7;
+}
+/* line 65, components/_home.scss */
+.card-Container-Item-Adress {
+  font-size: 18px;
+}
+/* line 68, components/_home.scss */
+.card-Container-Item-Description {
+  width: 70%;
+  margin: 30px auto;
+  text-align: left;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+/* line 79, components/_home.scss */
+.horaires-Container {
+  margin: 40px 0;
+  display: flex;
+  align-items: flex-end;
+}
+/* line 83, components/_home.scss */
+.horaires-Container-ImgContainer {
+  z-index: 0;
+  width: 50%;
+  height: auto;
+}
+/* line 87, components/_home.scss */
+.horaires-Container-ImgContainer img {
+  width: 100%;
+}
+/* line 91, components/_home.scss */
+.horaires-Container-Item {
+  margin: 0 auto 100px;
+}
+/* line 93, components/_home.scss */
+.horaires-Container-Item-Title {
+  font-weight: bold;
+  font-size: 30px;
+}
+/* line 97, components/_home.scss */
+.horaires-Container-Item-Jours {
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 30px;
+}
+/* line 102, components/_home.scss */
+.horaires-Container-Item-Heure {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* line 110, components/_home.scss */
+.trait {
+  border: none;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin: 15px 0;
+}
+
+/* line 118, components/_home.scss */
+.avis {
+  padding-bottom: 100px;
+}
+/* line 120, components/_home.scss */
+.avis-Title {
+  font-size: 40px;
+  font-weight: bold;
+}
+/* line 124, components/_home.scss */
+.avis-Paragraphe {
+  margin: 30px 0;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* line 1, components/_Images.scss */
+.Images {
+  height: 100%;
+  display: block;
+}
+/* line 5, components/_Images.scss */
+.Images_return {
+  display: flex;
+  padding: 2% 5%;
+  cursor: pointer;
+}
+/* line 10, components/_Images.scss */
+.Images_return_img {
+  width: 1em;
+  height: 1em;
+}
+/* line 18, components/_Images.scss */
+.Images_nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1em;
+  margin: 12% auto;
+  width: 80%;
+  height: 3em;
+  background: #FFFFFF;
+  color: grey;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 750px) {
+  /* line 18, components/_Images.scss */
+  .Images_nav {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 750px) {
+  /* line 33, components/_Images.scss */
+  .Images_nav_itm {
+    font-size: 30px;
+  }
+}
+/* line 41, components/_Images.scss */
+.Images_card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 5% auto;
+}
+@media (min-width: 750px) {
+  /* line 41, components/_Images.scss */
+  .Images_card {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 10%;
+  }
+}
+@media (min-width: 1730px) {
+  /* line 41, components/_Images.scss */
+  .Images_card {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 23%;
+  }
+}
+/* line 59, components/_Images.scss */
+.Images_card_img {
+  height: 30%;
+}
+/* line 63, components/_Images.scss */
+.Images_card_content {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5% 0 5%;
+  margin: 0.1% auto;
+  height: 18%;
+  background: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 750px) {
+  /* line 63, components/_Images.scss */
+  .Images_card_content {
+    margin: 2em 0 0 -1%;
+  }
+}
+@media (min-width: 1730px) {
+  /* line 63, components/_Images.scss */
+  .Images_card_content {
+    margin: 1em 0 0 -1%;
+  }
+}
+/* line 80, components/_Images.scss */
+.Images_card_content_loc {
+  display: flex;
+}
+/* line 83, components/_Images.scss */
+.Images_card_content_loc_img {
+  width: 10%;
+  height: 10%;
+}
+/* line 92, components/_Images.scss */
+.Images_card_content_sport {
+  margin-left: 10%;
+}
+/* line 96, components/_Images.scss */
+.Images_card_content_id {
+  display: flex;
+  margin: 10% 0 0 0;
+}
+/* line 100, components/_Images.scss */
+.Images_card_content_id_img {
+  width: 10%;
+  height: 10%;
+}
+/* line 109, components/_Images.scss */
+.Images_card_content_txt {
+  margin-left: 10%;
+}
+/* line 117, components/_Images.scss */
+.Images_page_top {
+  display: flex;
+  width: 115%;
+  height: 35%;
+}
+/* line 123, components/_Images.scss */
+.Images_page_top_imgL {
+  width: 30%;
+  height: 100%;
+}
+/* line 128, components/_Images.scss */
+.Images_page_top_content {
+  padding-left: 4%;
+  position: relative;
+}
+/* line 132, components/_Images.scss */
+.Images_page_top_content_title1 {
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  top: -5%;
+  left: -14%;
+}
+/* line 140, components/_Images.scss */
+.Images_page_top_content_title2 {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20%;
+}
+/* line 146, components/_Images.scss */
+.Images_page_top_content_loc {
+  display: flex;
+  padding: 2% 0 0 2%;
+  width: 100%;
+}
+/* line 152, components/_Images.scss */
+.Images_page_top_content_loc_img {
+  width: 20px;
+  height: 20px;
+}
+/* line 157, components/_Images.scss */
+.Images_page_top_content_loc_txt {
+  width: 47%;
+  padding-left: 2%;
+}
+/* line 163, components/_Images.scss */
+.Images_page_top_content_txt {
+  margin: 5% auto;
+}
+/* line 168, components/_Images.scss */
+.Images_page_top_container {
+  width: 30%;
+  height: 130%;
+}
+/* line 172, components/_Images.scss */
+.Images_page_top_container_imgR {
+  margin: 12% 0 0 27%;
+  height: 100%;
+}
+/* line 179, components/_Images.scss */
+.Images_page_bot {
+  margin: 8% auto;
+}
+/* line 182, components/_Images.scss */
+.Images_page_bot_title {
+  margin: 0 0 0 3%;
+  font-weight: bold;
+  font-size: 40px;
+}
+/* line 188, components/_Images.scss */
+.Images_page_bot_content {
+  width: 60%;
+  height: 12%;
+  margin: 3% auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* line 194, components/_Images.scss */
+.Images_page_bot_content_id {
+  display: flex;
+  padding: 2% 0 0 5%;
+  width: 70%;
+  height: 4%;
+}
+/* line 200, components/_Images.scss */
+.Images_page_bot_content_id_img {
+  width: 20px;
+  height: 20px;
+}
+/* line 205, components/_Images.scss */
+.Images_page_bot_content_id_txt {
+  font-weight: bold;
+  padding-left: 2%;
+}
+/* line 212, components/_Images.scss */
+.Images_page_bot_content_txt {
+  padding: 3% 0 0 13%;
+  width: 70%;
+}
+
+/* line 1, components/_Twitter.scss */
+.Twitter {
+  flex-direction: column;
+  width: 100%;
+  padding: 10% 0;
+  margin: 0 auto;
+}
+/* line 8, components/_Twitter.scss */
+.Twitter_select {
+  width: 20%;
+  margin: 5% auto;
+}
+
+/* line 15, components/_Twitter.scss */
+.twitter-timeline {
+  margin: 0 auto;
+}
+
+/* line 1, components/_contact.scss */
+.Contact {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+@media (min-width: 1730px) {
+  /* line 1, components/_contact.scss */
+  .Contact {
+    display: none;
+  }
+}
+/* line 12, components/_contact.scss */
+.Contact_containerLeft {
+  margin: 0 auto;
+  padding: 5%;
+  width: 54%;
+  height: 32.5%;
+  background: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+@media (min-width: 1730px) {
+  /* line 12, components/_contact.scss */
+  .Contact_containerLeft {
+    position: absolute;
+    top: 26%;
+    left: 17%;
+    width: 21%;
+    height: 25%;
+    padding: 3%;
+  }
+}
+/* line 30, components/_contact.scss */
+.Contact_containerLeft_title {
+  position: absolute;
+  top: -0.68em;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* line 37, components/_contact.scss */
+.Contact_containerLeft_top {
+  width: 70%;
+  margin: 0 auto 0 auto;
+}
+/* line 41, components/_contact.scss */
+.Contact_containerLeft_top_content {
+  display: flex;
+}
+/* line 44, components/_contact.scss */
+.Contact_containerLeft_top_content_img {
+  height: 20px;
+  width: 20px;
+  padding: 4% 0;
+}
+/* line 50, components/_contact.scss */
+.Contact_containerLeft_top_content_p {
+  width: 78%;
+  padding: 5%;
+  word-wrap: break-word;
+}
+/* line 58, components/_contact.scss */
+.Contact_containerLeft_bottom {
+  width: 70%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+/* line 65, components/_contact.scss */
+.Contact_containerLeft_bottom_social {
+  width: 36%;
+  margin: 3% 25%;
+}
+/* line 69, components/_contact.scss */
+.Contact_containerLeft_bottom_social_fb {
+  height: 20px;
+  width: 20px;
+}
+/* line 74, components/_contact.scss */
+.Contact_containerLeft_bottom_social_ig {
+  height: 20px;
+  width: 20px;
+}
+/* line 79, components/_contact.scss */
+.Contact_containerLeft_bottom_social_twi {
+  height: 20px;
+  width: 20px;
+}
+/* line 84, components/_contact.scss */
+.Contact_containerLeft_bottom_social_ytb {
+  height: 20px;
+  width: 20px;
+}
+/* line 92, components/_contact.scss */
+.Contact_containerRight {
+  margin: -11% 0;
+  background: #F0F5F9;
+}
+@media (min-width: 1730px) {
+  /* line 92, components/_contact.scss */
+  .Contact_containerRight {
+    margin: 0 0 0 40%;
+  }
+}
+/* line 100, components/_contact.scss */
+.Contact_containerRight_form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 13em auto;
+}
+/* line 106, components/_contact.scss */
+.Contact_containerRight_form_input {
+  border: none;
+  border-bottom: 1px solid grey;
+  background: #F0F5F9;
+  margin: 2em 0;
+  padding: 0.5em;
+  resize: none;
+}
+/* line 114, components/_contact.scss */
+.Contact_containerRight_form_input::placeholder {
+  color: #000000;
+}
+
+/* line 1, components/_header.scss */
+.imgContainer {
+  position: relative;
+  height: 100vh;
+}
+
+/* line 6, components/_header.scss */
+.img {
+  position: absolute;
+  width: 100%;
+  bottom: -20%;
+  background-clip: border-box;
+}
+
+/* line 13, components/_header.scss */
+.img3 {
+  z-index: 1;
+}
+
+/* line 17, components/_header.scss */
+.img2 {
+  z-index: 2;
+}
+
+/* line 21, components/_header.scss */
+.img1 {
+  z-index: 3;
+}
+
+/* line 25, components/_header.scss */
+.edito {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* line 34, components/_header.scss */
+.edito-title {
+  font-size: 60px;
+  line-height: 1.5;
+  font-family: 'Abril Fatface', cursive;
+}
+/* line 39, components/_header.scss */
+.edito-lead {
+  font-size: 20px;
+}
+
+/* line 1, components/_magazine.scss */
+.Magazine {
+  padding: 5em 0;
+}
+/* line 3, components/_magazine.scss */
+.Magazine-imgContainer {
+  position: relative;
+  left: 1em;
+  width: 40%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075);
+}
+/* line 9, components/_magazine.scss */
+.Magazine-img {
+  max-width: 100%;
+}
+/* line 12, components/_magazine.scss */
+.Magazine-textContainer {
+  z-index: 4;
+  position: relative;
+  left: -1%;
+  width: 60%;
+  padding: 5em;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075);
+}
+/* line 21, components/_magazine.scss */
+.Magazine-title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: 'Abril Fatface', cursive;
+}
+/* line 27, components/_magazine.scss */
+.Magazine-ref {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+/* line 32, components/_magazine.scss */
+.Magazine-text {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* line 1, components/_magazine2.scss */
+.magazine2 {
+  position: relative;
+  padding-top: 100px;
+}
+/* line 4, components/_magazine2.scss */
+.magazine2-ImgContainer {
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16);
+  width: 50%;
+}
+/* line 7, components/_magazine2.scss */
+.magazine2-ImgContainer img {
+  width: 100%;
+}
+/* line 11, components/_magazine2.scss */
+.magazine2-Modal {
+  background-color: #FFF;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16);
+  width: 55%;
+  height: 40%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 20, components/_magazine2.scss */
+.magazine2-Modal-Title {
+  text-align: center;
+  font-size: 43px;
+  margin-top: 50px;
+}
+/* line 25, components/_magazine2.scss */
+.magazine2-Modal-Number {
+  margin-top: 20px;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+/* line 31, components/_magazine2.scss */
+.magazine2-Modal-Paragraphe {
+  font-family: "Roboto";
+  font-weight: lighter;
+  width: 90%;
+  margin: 50px auto;
+  font-size: 17px;
+  line-height: 30px;
+}
+/* line 39, components/_magazine2.scss */
+.magazine2-Modal-Footer {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+/* line 43, components/_magazine2.scss */
+.magazine2-Modal-Footer a {
+  font-weight: bold;
+}
+
+/* line 49, components/_magazine2.scss */
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+/* line 53, components/_magazine2.scss */
+.presentation-Text {
+  font-size: 17px;
+  line-height: 30px;
+  width: 40%;
+  font-family: "Roboto";
+  font-weight: lighter;
+}
+
+/* line 62, components/_magazine2.scss */
+.collector {
+  position: relative;
+  margin: 100px auto;
+  background-color: #FFF;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16);
+  width: 65%;
+  height: 30%;
+}
+/* line 69, components/_magazine2.scss */
+.collector-Title {
+  position: absolute;
+  font-size: 50px;
+  top: 0;
+  left: -50px;
+  transform: translateY(-60%);
+}
+/* line 76, components/_magazine2.scss */
+.collector-List {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+/* line 81, components/_magazine2.scss */
+.collector-List-Item {
+  font-family: "Roboto";
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+/* line 89, components/_magazine2.scss */
+.informations {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+}
+/* line 93, components/_magazine2.scss */
+.informations-Inner {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 101, components/_magazine2.scss */
+.informations-Inner-Text {
+  font-family: "Roboto";
+  font-weight: lighter;
+  font-size: 17px;
+  line-height: 30px;
+  width: 40%;
+}
+/* line 108, components/_magazine2.scss */
+.informations-Inner-ImgContainer {
+  width: 50%;
+  height: 100%;
+}
+/* line 111, components/_magazine2.scss */
+.informations-Inner-ImgContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 120, components/_magazine2.scss */
+.pdf {
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+}
+/* line 124, components/_magazine2.scss */
+.pdf-Title {
+  font-size: 50px;
+}
+/* line 127, components/_magazine2.scss */
+.pdf-Subtitle {
+  font-family: "Roboto";
+  font-weight: lighter;
+  margin-top: 30px;
+  font-size: 17px;
+}
+/* line 133, components/_magazine2.scss */
+.pdf img {
+  width: 50%;
+  margin: 30px auto;
+}
+
+/* line 139, components/_magazine2.scss */
+.magazineButton {
+  font-family: "Roboto";
+  font-weight: lighter;
+  font-size: 16px;
+  display: block;
+  width: 360px;
+  padding: 20px 0;
+  margin: auto;
+  background-color: #FFF;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16);
+  border: 0;
+}
+
+/* line 1, components/_news.scss */
+.Twitter {
+  padding: 5em 0;
+}
+/* line 3, components/_news.scss */
+.Twitter-tweetContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+/* line 9, components/_news.scss */
+.Twitter-tweet {
+  width: 50%;
+  padding: 0.5em;
+}
+/* line 13, components/_news.scss */
+.Twitter-tweetContent {
+  padding: 1.5em;
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075);
+}
+/* line 19, components/_news.scss */
+.Twitter-title {
+  font-family: 'Abril Fatface', cursive;
+  margin-bottom: 0.5em;
+  font-size: 50px;
+  position: relative;
+}
+/* line 24, components/_news.scss */
+.Twitter-title:before {
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100px;
+  background: #1a1a1a;
+}
+/* line 34, components/_news.scss */
+.Twitter-title:after {
+  content: '';
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100px;
+  background: #1a1a1a;
+}
+/* line 45, components/_news.scss */
+.Twitter-imgContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* line 51, components/_news.scss */
+.Twitter-img {
+  max-width: 100%;
+}
+/* line 54, components/_news.scss */
+.Twitter-textContainer {
+  width: calc(100% - 50px);
+  padding: 0 1em;
+}
+/* line 58, components/_news.scss */
+.Twitter-top {
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+/* line 62, components/_news.scss */
+.Twitter-pseudo, .Twitter-date {
+  color: #657786;
+}
+/* line 66, components/_news.scss */
+.Twitter-name, .Twitter-pseudo, .Twitter-date {
+  margin-right: 0.5em;
+  line-height: 1.5;
+}
+/* line 72, components/_news.scss */
+.Twitter-compagnyContainer {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+/* line 80, components/_news.scss */
+.Twitter-compagnyList {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+/* line 87, components/_news.scss */
+.Twitter-compagnyListItem {
+  margin-right: 1em;
+}
+/* line 90, components/_news.scss */
+.Twitter-compagnyLink {
+  margin: 2em 0;
+}
+/* line 93, components/_news.scss */
+.Twitter-compagnyImgContainer {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075);
+}
+/* line 100, components/_news.scss */
+.Twitter-compagnyImg {
+  max-width: 100%;
+}
+/* line 103, components/_news.scss */
+.Twitter-textLink {
+  color: #3b94d9;
+}
+/* line 106, components/_news.scss */
+.Twitter-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* line 1, components/_themes.scss */
+.Themes {
+  padding: 5em 0;
+}
+/* line 3, components/_themes.scss */
+.Themes .container {
+  flex-flow: column wrap;
+}
+/* line 6, components/_themes.scss */
+.Themes-titleContainer {
+  padding: 0 0.5em;
+  text-align: right;
+  width: 50%;
+  align-self: flex-end;
+  position: relative;
+  right: 11%;
+}
+/* line 13, components/_themes.scss */
+.Themes-titleContainer:after {
+  content: '';
+  position: absolute;
+  right: -20%;
+  top: 20%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100px;
+  background: #1a1a1a;
+}
+/* line 24, components/_themes.scss */
+.Themes-title {
+  font-size: 50px;
+  margin-bottom: 40px;
+  font-family: 'Abril Fatface', cursive;
+}
+/* line 29, components/_themes.scss */
+.Themes-titleText {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #777575;
+}
+/* line 34, components/_themes.scss */
+.Themes-grid {
+  padding: 40px 0.5em;
+  width: 100%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: 1em;
+}
+/* line 43, components/_themes.scss */
+.Themes-sports {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  position: relative;
+  overflow: hidden;
+}
+/* line 49, components/_themes.scss */
+.Themes-gastronomie {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  position: relative;
+  overflow: hidden;
+}
+/* line 55, components/_themes.scss */
+.Themes-health {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  position: relative;
+  overflow: hidden;
+}
+/* line 61, components/_themes.scss */
+.Themes-culture {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  position: relative;
+  overflow: hidden;
+}
+/* line 67, components/_themes.scss */
+.Themes-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 72, components/_themes.scss */
+.Themes-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* line 80, components/_themes.scss */
+.Themes-overlayTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 46px;
+}
+/* line 88, components/_themes.scss */
+.Themes-gridLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}
+
+/* line 1, components/_deals.scss */
+.Deals {
+  padding: 5em 0;
+}
+/* line 3, components/_deals.scss */
+.Deals .container {
+  flex-flow: column wrap;
+}
+/* line 6, components/_deals.scss */
+.Deals-titleContainer {
+  padding: 0 0.5em;
+  text-align: left;
+  width: 50%;
+  align-self: flex-start;
+  position: relative;
+  left: 11%;
+}
+/* line 13, components/_deals.scss */
+.Deals-titleContainer:before {
+  content: '';
+  position: absolute;
+  left: -20%;
+  top: 20%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100px;
+  background: #1a1a1a;
+}
+/* line 24, components/_deals.scss */
+.Deals-title {
+  font-size: 50px;
+  margin-bottom: 40px;
+  font-family: 'Abril Fatface', cursive;
+}
+/* line 29, components/_deals.scss */
+.Deals-titleText {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #777575;
+}
+/* line 34, components/_deals.scss */
+.Deals-grid {
+  padding: 40px 0.5em;
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: 1em;
+}
+/* line 43, components/_deals.scss */
+.Deals-first {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  overflow: hidden;
+  position: relative;
+}
+/* line 49, components/_deals.scss */
+.Deals-others1 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  overflow: hidden;
+  position: relative;
+}
+/* line 55, components/_deals.scss */
+.Deals-others2 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  overflow: hidden;
+  position: relative;
+}
+/* line 61, components/_deals.scss */
+.Deals-others3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  overflow: hidden;
+  position: relative;
+}
+/* line 67, components/_deals.scss */
+.Deals-others4 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  overflow: hidden;
+  position: relative;
+}
+/* line 73, components/_deals.scss */
+.Deals-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 78, components/_deals.scss */
+.Deals-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* line 86, components/_deals.scss */
+.Deals-overlayContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+}
+/* line 92, components/_deals.scss */
+.Deals-overlayTitle {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+/* line 98, components/_deals.scss */
+.Deals-gridLink {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}
+/* line 105, components/_deals.scss */
+.Deals-overlayLink {
+  color: #ffffff;
+  font-weight: bold;
+}
+/* line 109, components/_deals.scss */
+.Deals-overlayText {
+  color: #ffffff;
+}
+/* line 112, components/_deals.scss */
+.Deals-link {
+  width: 100%;
+  text-align: right;
+  padding: 0.5em;
+}
+
+/* line 1, components/_team.scss */
+.Team {
+  padding: 5em 0;
+}
+/* line 3, components/_team.scss */
+.Team-title {
+  margin-bottom: 70px;
+  font-size: 50px;
+  position: relative;
+  font-family: 'Abril Fatface', cursive;
+}
+/* line 8, components/_team.scss */
+.Team-title:before {
+  content: '';
+  position: absolute;
+  left: -70%;
+  top: 50%;
+  height: 2px;
+  width: 100px;
+  background: #1a1a1a;
+}
+/* line 17, components/_team.scss */
+.Team-title:after {
+  content: '';
+  position: absolute;
+  right: -70%;
+  top: 50%;
+  height: 2px;
+  width: 100px;
+  background: #1a1a1a;
+}
+/* line 27, components/_team.scss */
+.Team-memberContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* line 31, components/_team.scss */
+.Team-member {
+  width: 25%;
+}
+/* line 34, components/_team.scss */
+.Team-memberImgContainer {
+  width: 100%;
+  padding: 0 0.5em;
+}
+/* line 38, components/_team.scss */
+.Team-memberImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 43, components/_team.scss */
+.Team-memberInfo {
+  padding: 0.5em;
+  text-align: center;
+  line-height: 1.5;
+}
+/* line 48, components/_team.scss */
+.Team-name {
+  font-weight: bold;
+  color: #777575;
+}
+/* line 52, components/_team.scss */
+.Team-fonction {
+  color: #777575;
+}
+
+/* FONTS */
+/* line 30, style.scss */
+body {
+  background: #ffffff !important;
+  color: #1a1a1a;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 36, style.scss */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 45, style.scss */
+.body {
+  font-family: "avenir";
+  overflow-x: hidden;
+}
+
+/* line 50, style.scss */
+.--active {
+  color: black;
+  font-size: 3em;
+}
+
+/* line 55, style.scss */
+a {
+  color: #3b94d9;
+}

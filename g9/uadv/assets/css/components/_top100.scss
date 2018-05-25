@@ -1,0 +1,46 @@
+body{
+  height: 100vh;
+}
+.sectionContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item{
+  position: relative;
+  width: 32%;
+  height: 100vh;
+  &-Cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-Content{
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    &-Title{
+      font-size: 40px;
+      font-weight: bold;
+    }
+    hr{
+      width: 200px;
+      height: 2px;
+      background-color: #FFF;
+      margin: 50px auto;
+      border: 0;
+    }
+    &-Description{
+      line-height: 28px;
+      font-size: 18px;
+    }
+  }
+}

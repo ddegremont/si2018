@@ -1,0 +1,55 @@
+.Team {
+  padding: 5em 0;
+  &-title {
+    margin-bottom: 70px;
+    font-size: 50px;
+    position: relative;
+    font-family: 'Abril Fatface', cursive;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -70%;
+      top: 50%;
+      height: 2px;
+      width: 100px;
+      background: #1a1a1a;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: -70%;
+      top: 50%;
+      height: 2px;
+      width: 100px;
+      background: #1a1a1a;
+    }
+  }
+  &-memberContainer {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &-member {
+    width: 25%;
+  }
+  &-memberImgContainer {
+    width: 100%;
+    padding: 0 0.5em;
+  }
+  &-memberImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-memberInfo {
+    padding: 0.5em;
+    text-align: center;
+    line-height: 1.5;
+  }
+  &-name {
+    font-weight: bold;
+    color: #777575;
+  }
+  &-fonction {
+    color: #777575;
+  }
+}

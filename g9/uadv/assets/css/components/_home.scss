@@ -1,0 +1,129 @@
+
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.container2 {
+  width: 70%;
+  margin: auto;
+}
+
+.menu {
+  color: #FFF;
+  font-size: 18px;
+  position: relative;
+  z-index: 555;
+  &-List {
+    padding: 20px 0;
+    position: absolute;
+    right: 0;
+    &-Item{
+      margin-left: 30px;
+      display: inline;
+    }
+  }
+}
+
+.homepage {
+  height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+  &-Image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0px);
+  }
+}
+
+.card-Container {
+  position: relative;
+  &-Item{
+    transform: translateY(-20%);
+    padding: 50px 30px;
+    position: absolute;
+    width: 50%;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    background: #FFF;
+    right: 0;
+    text-align: center;
+    @include for-size(tablet-landscape-up){
+      background: #FF0;
+    }
+    &-Name{
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    &-Icon{
+      width: 15px;
+      height: auto;
+      margin-right: 5px;
+      opacity: .7;
+    }
+    &-Adress{
+      font-size: 18px;
+    }
+    &-Description{
+      width: 70%;
+      margin: 30px auto;
+      text-align: left;
+      line-height: 30px;
+      font-size: 17px;
+    }
+  }
+}
+
+.horaires{
+  &-Container {
+    margin: 40px 0;
+    display: flex;
+    align-items: flex-end;
+    &-ImgContainer{
+      z-index: 0;
+      width: 50%;
+      height: auto;
+      img{
+        width: 100%;
+      }
+    }
+    &-Item{
+      margin: 0 auto 100px;
+      &-Title{
+        font-weight: bold;
+        font-size: 30px;
+      }
+      &-Jours{
+        font-weight: bold;
+        font-size: 19px;
+        margin-top: 30px;
+      }
+      &-Heure{
+        margin-top: 10px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.trait {
+  border: none;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin: 15px 0;
+}
+
+.avis {
+  padding-bottom: 100px;
+  &-Title{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  &-Paragraphe{
+    margin: 30px 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

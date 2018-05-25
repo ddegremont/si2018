@@ -1,0 +1,219 @@
+.Images {
+  height: 100%;
+  display: block;
+
+  &_return {
+    display: flex;
+    padding: 2% 5%;
+    cursor: pointer;
+
+    &_img {
+      width: 1em;
+      height: 1em;
+    }
+
+    &_txt {}
+  }
+
+  &_nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+    margin: 12% auto;
+    width: 80%;
+    height: 3em;
+    background: #FFFFFF;
+    color: grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    @include for-size(desktop-up) {
+      margin: 0 auto;
+    }
+
+    &_itm {
+
+      @include for-size(desktop-up) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &_card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 5% auto;
+
+    @include for-size(desktop-up) {
+      display: flex;
+      flex-direction: row;
+      padding: 0 0 0 10%;
+    }
+
+    @include for-size(big-desktop-up) {
+      display: flex;
+      flex-direction: row;
+      padding: 0 0 0 23%;
+    }
+
+    &_img {
+      height: 30%;
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      padding: 5% 5% 0 5%;
+      margin: 0.1% auto;
+      height: 18%;
+      background: #FFFFFF;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+      @include for-size(desktop-up) {
+        margin: 2em 0 0 -1%;
+      }
+
+      @include for-size(big-desktop-up) {
+        margin: 1em 0 0 -1%;
+      }
+
+      &_loc {
+        display: flex;
+
+        &_img {
+          width: 10%;
+          height: 10%;
+        }
+
+        &_txt {
+        }
+      }
+
+      &_sport {
+        margin-left: 10%;
+      }
+
+      &_id {
+        display: flex;
+        margin: 10% 0 0 0;
+
+        &_img {
+          width: 10%;
+          height: 10%;
+        }
+
+        &_txt {
+        }
+      }
+
+      &_txt {
+        margin-left: 10%;
+      }
+    }
+  }
+
+  &_page {
+
+    &_top {
+      display: flex;
+      // justify-content: space-around;
+      width: 115%;
+      height: 35%;
+
+      &_imgL {
+        width: 30%;
+        height: 100%;
+      }
+
+      &_content {
+        padding-left: 4%;
+        position: relative;
+
+        &_title1 {
+          font-weight: bold;
+          font-size: 40px;
+          position: absolute;
+          top: -5%;
+          left: -14%;
+        }
+
+        &_title2 {
+          font-weight: bold;
+          font-size: 20px;
+          padding-top: 20%;
+        }
+
+        &_loc {
+          display: flex;
+          padding: 2% 0 0 2%;
+          width: 100%;
+
+
+          &_img {
+            width: 20px;
+            height: 20px;
+          }
+
+          &_txt {
+            width: 47%;
+            padding-left: 2%;
+          }
+        }
+
+        &_txt {
+          margin: 5% auto;
+        }
+      }
+
+      &_container {
+        width: 30%;
+        height: 130%;
+
+        &_imgR {
+          margin:  12% 0 0 27%;
+          height: 100%;
+        }
+      }
+    }
+
+    &_bot {
+      margin: 8% auto;
+
+      &_title {
+        margin: 0 0 0 3%;
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      &_content {
+        width: 60%;
+        height: 12%;
+        margin: 3% auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        &_id {
+          display: flex;
+          padding: 2% 0 0 5%;
+          width: 70%;
+          height: 4%;
+
+          &_img {
+            width: 20px;
+            height: 20px;
+          }
+
+          &_txt {
+            font-weight: bold;
+            padding-left: 2%;
+
+          }
+        }
+
+        &_txt {
+          padding: 3% 0 0 13%;
+          width: 70%;
+        }
+      }
+    }
+  }
+}

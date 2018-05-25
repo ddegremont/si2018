@@ -1,0 +1,42 @@
+.imgContainer {
+  position: relative;
+  height: 100vh;
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+  bottom: -20%;
+  background-clip: border-box;
+}
+
+.img3 {
+  z-index: 1;
+}
+
+.img2 {
+  z-index: 2;
+}
+
+.img1 {
+  z-index: 3;
+}
+
+.edito {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  &-title {
+    font-size: 60px;
+    line-height: 1.5;
+    font-family: 'Abril Fatface', cursive;
+  }
+  &-lead {
+    font-size: 20px;
+  }
+}

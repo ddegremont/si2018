@@ -1,0 +1,118 @@
+.back{
+  position: relative;
+  padding: 100px 0 0 0;
+  &-Inner{
+    position: relative;
+    &-Title{
+      font-size: 90px;
+      opacity: .05;
+    }
+    &-Button{
+      position: absolute;
+      font-size: 20px;
+      top: 0;
+      left: 30px;
+      display: flex;
+      align-items: center;
+      opacity: .3;
+      img{
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: absolute;
+  width: calc(1000px + 120px);
+  right: 12%;
+  &-Square{
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    transition: height .2s;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.modal{
+  display: none;
+  width: 60%;
+  height: 50%;
+  background-color: #FFF;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  top: 70%;
+  transform: translateY(-50%);
+  position: fixed;
+  left: 200px;
+  &-Number{
+    position: absolute;
+    font-size: 50px;
+    left: 30%;
+    transform: translateX(-20%);
+    top: 30px;
+  }
+  &-Back{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    opacity: .3;
+    img{
+      width: 30px;
+      transform: rotate(180deg);
+    }
+  }
+  &-ImageContainer{
+    height: 100%;
+    width: 30%;
+    left: 0;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-Inner-Text{
+    position: absolute;
+    top: 0;
+    width: 70%;
+    left: 40%;
+    margin-top: 100px;
+    &-Lieu{
+      font-size: 40px;
+    }
+    &-Location{
+      margin-top: 10px;
+      display: flex;
+      width: 55%;
+      justify-content: space-between;
+      align-items: center;
+      &-Adress{
+        opacity: .7;
+        img{
+          width: 15px;
+          margin-right: 10px;
+        }
+      }
+      &-Website{
+        border-bottom: 1px solid grey;
+        padding-bottom: 5px;
+      }
+    }
+    &-Description{
+      color: #3E3D3D;
+      margin-top: 70px;
+      width: 70%;
+      line-height: 28px;
+      font-size: 18px;
+    }
+  }
+}
