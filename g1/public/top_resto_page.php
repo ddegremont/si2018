@@ -77,7 +77,7 @@ $stmt->execute();
     <div class="grid">
         <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
       <div class="grid__imgContainer">
-          <a href="#"><img class="grid__imgContainer__img" src="<?=$row['img_src']?>" alt="<?=$row['img_alt']?>"></a>
+          <a href="#"><img class="grid__imgContainer__img" src="./assets/img/<?=$row['img_src']?>" alt="<?=$row['img_alt']?>"></a>
       </div>
         <?php endwhile;?>
     </div>

@@ -157,7 +157,7 @@ include_once "includes/header.php";
 
         <div class="top__container">
             <div class="top__container__item">
-                <a href="top_resto_page.php"><img src="../src/img/Tops/Resto/abudabhi.jpg" alt="Top 100 Restaurants" class="top__container__item__img"></a>
+                <a href="top_resto_page.php"><img src="./assets/img/abudhabi.jpg" alt="Top 100 Restaurants" class="top__container__item__img"></a>
                 <p class="top__container__item__title">Nos meilleurs restaurants</p>
             </div>
 
