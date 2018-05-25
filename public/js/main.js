@@ -1,5 +1,9 @@
-var Menu__img = document.querySelector('.Menu__img');
+var closeIcon = document.querySelector('.Menu__closeIcon');
+var menuIsActive = document.querySelector('.Menu--isActive');
+var burger = document.querySelector('.Menu__burger').addEventListener('click', function () {
+        menuIsActive.style.display = 'block';
+});
 
-Menu__img.addEventListener('click', function() {
-    // alert('Hello');
+closeIcon.addEventListener('click',  function() {
+    menuIsActive.style.display = 'none';
 });

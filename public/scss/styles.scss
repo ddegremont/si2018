@@ -1,7 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-}
 // global
 @import "global/_vars.scss";
 @import "global/_reset.scss";
@@ -10,7 +6,6 @@
 @import "mixins/_forsize.scss";
 // partials
 @import "partials/_header.scss";
-<<<<<<< HEAD
 @import "partials/_plugs.scss";
 @import "partials/_oneplug.scss";
 @import "partials/_find.scss";
@@ -20,6 +15,5 @@
 @import "partials/_ads.scss";
 @import "partials/_partners.scss";
 @import "partials/_contact.scss";
-=======
-@import "partials/_admin.scss";
->>>>>>> 66bfd1f0c217a1abeccfabc5e16eb6f5324c52f0
+@import "partials/_search.scss";
+

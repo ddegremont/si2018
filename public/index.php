@@ -13,13 +13,26 @@
 
     <section class="Find" style="background-image: url('img/wow.jpg')">
 
+        <div class="Menu--isActive">
+            <div class="Oneplug__closeIconContainer">
+                <img class="Menu__closeIcon" src="../img/close.svg" alt="Close icon">
+            </div>
+            <ul class="Menu__navigationActived">
+                <li class="Menu__navigationActivedElement"><a href="../index.php">Accueil</a></li>
+                <li class="Menu__navigationActivedElement"><a href="../bons-plans-aériens/">Bons plans</a></li>
+                <li class="Menu__navigationActivedElement"><a href="../contact.php">Contact</a></li>
+                <li class="Menu__navigationActivedElement"><a href="../classement-resto/">Top 100 Restos</a></li>
+                <li class="Menu__navigationActivedElement"><a href="../classement-hotel/">Top 100 Hôtels</a></li>
+                <li class="Menu__navigationActivedElement"><a href="../classement-spas/">Top 100 Spas</a></li>
+            </ul>
+        </div>
         <header class="Header">
             <div class="Logo">
                 <a href="index.php"><img class="Logo__img" src="../img/logo.png" alt="Logo"></a>
                 <span class="Logo__name"></span>
             </div>
             <div class="Menu">
-                <img class="Menu__img" src="../img/burger_menu.svg" alt="">
+                <img class="Menu__burger" src="img/burger_menu.svg" alt="burger icon">
             </div>
         </header>
 
@@ -27,13 +40,14 @@
         <div class="Find__searchContainer">
             <div class="Find__searchBox">
                 <h2 class="Find__searchTitle">Choisissez une destination</h2>
-                <form class="Find_form" action="" method="post">
+                <form class="Find_form" action="résultat-recherche/" method="post">
                     <p class="Find__text">Où?</p>
                     <input class="Find__location" type="text" placeholder="France...">
                     <p class="Find__text">Catégorie?</p>
                     <select class="Find__category" type="text">
-                        <option value="Gastronomie">Gastronomie</option>*
+                        <option value="Gastronomie">Gastronomie</option>
                         <option value="Hôtellerie">Hôtellerie</option>
+                        <option value="Bien-être">Bien-être</option>
                     </select>
                     <br>
                     <div class="Find__submitContainer">
