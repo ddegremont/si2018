@@ -339,14 +339,9 @@ body {
         .articlesSection__articlesCtn__article__ctn__content {
           font-size: 13px;
           line-height: 19px;
-<<<<<<< HEAD
-          font-family: 'didot';
-          height: 130px; }
-=======
           font-family: 'didot',sans-serif;
           height: 150px;
           overflow: hidden; }
->>>>>>> ccc8a2df83bd450a584366444ca3782a04cecef7
         .articlesSection__articlesCtn__article__ctn__circle {
           width: 100%; }
           .articlesSection__articlesCtn__article__ctn__circle > a {
@@ -1276,14 +1271,9 @@ body {
         .articlesSection__articlesCtn__article__ctn__content {
           font-size: 13px;
           line-height: 19px;
-<<<<<<< HEAD
-          font-family: 'didot';
-          height: 130px; }
-=======
           font-family: 'didot',sans-serif;
           height: 150px;
           overflow: hidden; }
->>>>>>> ccc8a2df83bd450a584366444ca3782a04cecef7
         .articlesSection__articlesCtn__article__ctn__circle {
           width: 100%; }
           .articlesSection__articlesCtn__article__ctn__circle > a {
