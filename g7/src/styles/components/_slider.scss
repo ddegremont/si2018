@@ -1,0 +1,72 @@
+.items {
+  height: 25rem;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transform: scale(0.99);
+  transition: all 0.2s;
+  will-change: transform;
+  filter: blur(0px);
+  position: relative;
+  font-size: 0;
+  margin: 0 auto;
+  @include for-size (desktop-up) {
+    height: 100%;
+  }
+}
+
+.items.active {
+  cursor: grabbing;
+  transform: scale(1);
+}
+
+.item {
+  width: 250px;
+  display: inline-flex;
+  transition: all 0.4s ease-out;
+  margin-left: 10%;
+  align-items: center;
+  justify-content: center;
+  @include for-size (desktop-up) {
+    margin-left: 150px;
+    width: 500px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:nth-child(9n+1) {
+    height: 100%;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1492455417212-e162ed4446e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e8bd81d8bc531873ab3af61d83ef0c19&auto=format&fit=crop&w=3300&q=80");
+  }
+
+  &:nth-child(9n+2) {
+    height: 100%;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1484452330304-377cdeb05340?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b93f3a16f8dd5838e60a60373b8106ce&auto=format&fit=crop&w=2251&q=80");
+  }
+
+  &:nth-child(9n+3) {
+    height: 100%;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1474546652694-a33dd8161d66?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=04bf1ed464c62345a6b4de1b5a3e8ecb&auto=format&fit=crop&w=2262&q=80");
+  }
+  &:nth-child(9n+4) {
+    height: 100%;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e0245bb4e87077312cc3d102e68c1efd&auto=format&fit=crop&w=2235&q=80");
+  }
+}

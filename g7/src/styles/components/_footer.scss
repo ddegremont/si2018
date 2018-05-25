@@ -1,0 +1,76 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 7rem;
+  width: 100%;
+  background: $secondaryColor;
+  box-shadow: 0px 0px 30px -11px rgba(0, 0, 0, 1);
+  font-size: 1.4rem;
+  &-home {
+    margin-left: 4rem;
+  }
+  &-profile {
+    margin-right: 4rem;
+  }
+}
+
+.footerDesktop {
+  position: relative;
+  bottom: -136px;
+  background: #F7F7F7;
+  &-line {
+    position: absolute;
+    height: .3rem;
+    width: 90%;
+    background: #EBEBEB;
+    left: 5%;
+    top: 11rem;
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-containterLeft {
+    padding-top: 6.1rem;
+    padding-bottom: 3rem;
+    &-list {
+      display: flex;
+      & li a {
+        color: $mainColor;
+        font-size: 1.6rem;
+        margin-left: 4.5rem;
+        &:first-child {
+          margin-left: 1.7rem;
+        }
+      }
+    }
+    &-text {
+      font-size: 1.4rem;
+      color: $mainColor;
+      margin-top: 5.3rem;
+      margin-left: 1.7rem;
+      line-height: 1.5;
+    }
+  }
+  &-containerRight {
+    padding-top: 6.1rem;
+    margin-right: 4rem;
+    &-contact {
+      &-tel {
+        font-size: 1.8rem;
+        color: $mainColor;
+        padding: 1.5rem;
+      }
+    }
+    &-social {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4.4rem;
+      font-size: 2rem;
+      color: $mainColor;
+    }
+  }
+}
