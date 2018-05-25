@@ -1,0 +1,7 @@
+{
+    "require": {
+        "abraham/twitteroauth": "^0.7.4",
+        "nojimage/twitter-text-php": "^2.0",
+        "almasaeed2010/adminlte": "~2.4"
+    }
+}

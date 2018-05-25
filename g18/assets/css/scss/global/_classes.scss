@@ -1,0 +1,14 @@
+
+/* Classes */
+
+.btn-theme{
+    background: $gold;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.btn-theme:hover{
+    background: darken($gold, 10%);
+    color: darken(#fff, 10%);
+}
