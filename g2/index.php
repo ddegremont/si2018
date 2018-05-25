@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/category.css">
-  <link rel="stylesheet" href="css/article.css">
   <link rel="stylesheet" href="css/footer.css">
   
   <!-- <link href="css/starter-template.css" rel="stylesheet"> -->
@@ -83,28 +82,12 @@
 </div>
 </div>
 <div class="container mt-5">
-<div class="row">
-<div class="col">
+  
 
-</div>
-<div class="col">
-<div class="card">
-<img class="card-img-top" src="image/France.jpg/100px180/" alt="Card image cap">
-<div class="card-body">
-<h5 class="card-title">Gastronomie</h5>
-<p class="card-text">Air France fait voyager la gastronomie française.</p>
-<a href="article.php" class="card-link">En savoir plus <span>&rarr;</span></a>
-</div>
-</div>
-</div>
-
-<div class="col"></div>
-
-</div>
 <div class="all-article">
 <a class="all-articles-link" href="allArticles.php">Tous les articles<span>&rarr;</span></a>
 </div>
-</div>
+
 
 
 <?php include 'footer.php';?>
