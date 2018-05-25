@@ -71,7 +71,7 @@ body
       cursor: pointer
       position: relative
       z-index: 2
-      @include for-size(tablet-landscape-up)
+      @include for-size(desktop-up)
         display: none
 
       &__item
@@ -301,18 +301,18 @@ body
           display: block
           margin: 0 auto
           box-shadow: 5px 10px 8px #e6e6e6
-          padding: 10px
+          padding: 15px
           justify-content: center
           height: 200px
         &__content
           font-size: 13px
           line-height: 19px
-
           font-family: 'didot',sans-serif
-          height: 150px
+          height: 120px
           overflow: hidden
 
         &__circle
+          margin-top: 10px
           width: 100%
           & > a
             margin: auto

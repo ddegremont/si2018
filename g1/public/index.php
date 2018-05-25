@@ -10,7 +10,7 @@ $sql = "SELECT
 `img_alt`
 FROM
 `articles`
-ORDER BY id DESC 
+ORDER BY id DESC
 LIMIT 3
 
 ;";
@@ -25,7 +25,7 @@ $sql = "SELECT
 `article_number`
 FROM
 `articles`
-ORDER BY id DESC 
+ORDER BY id DESC
 LIMIT 3
 ;";
 $stmt2 = $pdo->prepare($sql);
@@ -196,9 +196,9 @@ $stmt2->execute();
               <div></div>
             </div>
           </div>
-          <div class="articlesSection__btn">
+          <a href="articles.php"<div class="articlesSection__btn">
             Voir tous les articles
-          </div>
+          </div></a>
         </section>
 
     <section class="top">
@@ -219,7 +219,7 @@ $stmt2->execute();
             </div>
 
             <div class="top__container__item">
-                <img src="../src/img/Tops/Spa/spaHome.jpg" alt="Top 100 Spas/Thalassos" class="top__container__item__img">
+                <a href="top_detente_page.php"><img src="../src/img/Tops/Spa/spaHome.jpg" alt="Top 100 Spas/Thalassos" class="top__container__item__img"></a>
                 <p class="top__container__item__title">Nos meilleures Thalassos</p>
             </div>
         </div>

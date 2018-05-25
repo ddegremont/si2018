@@ -14,7 +14,7 @@ $stmt->execute();
 ?>
   <body>
     <header class="headerTops">
-      <nav class="headerTops__nav">
+      <nav class="header__nav">
 
           <div class="header__nav__logo">
               <img src="assets/img/logo.png" alt="" class="header__nav__logo__img">
@@ -82,5 +82,5 @@ $stmt->execute();
         <?php endwhile;?>
     </div>
     <div class="overlay"></div>
-    <script type="text/javascript" src="../../src/js/app.js"></script>
+    <script type="text/javascript" src="app.generated.js"></script>
 <?php require 'includes/footer.php' ?>

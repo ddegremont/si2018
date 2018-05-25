@@ -1,4 +1,4 @@
-import './burger.js';
+
 
 const topPages = () => {
   const sortBtn = document.querySelector('.--sortBtn')
@@ -35,3 +35,5 @@ const topPages = () => {
 }
 
 topPages()
+
+import './burger.js';
