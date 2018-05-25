@@ -1,0 +1,382 @@
+.about {
+  position: relative;
+  &-whiteRectangle {
+    margin-top: 5.5rem;
+    width: 100%;
+    height: 150.69rem;
+    background-color: #fff;
+    @include for-size(phone-only){
+      width: 100%;
+      height: 15rem;
+    };
+  }
+  &-title {
+    color: #15DAB6;
+    opacity: 0.2;
+    font-size: 5rem;
+    font-family: 'PlayfairDisplay-BlackItalic',serif;
+    @include for-size(phone-only){
+      font-size: 2.9rem;
+      text-align: center;
+    };
+  }
+
+  &-mookContainer {
+    padding-top: 2rem;
+    @include for-size(phone-only){
+      margin: 0 auto;
+      width: 23.4rem;
+      height: 40rem;
+    };
+  }
+
+  &-mook {
+    display: flex;
+    align-items: center;
+    padding-left: 5.8rem;
+    @include for-size(phone-only){
+      padding-left: 0.01rem;
+      display: flex;
+      flex-direction: column;
+    };
+  }
+
+  &-mookImg {
+    width: 5.6rem;
+    height: 7.3rem;
+    @include for-size(phone-only){
+      width: 4.3rem;
+      height: 6.2rem;
+    };
+  }
+
+  &-mookTitle {
+    font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+    color: #4A4A4A;
+    font-size: 2.8rem;
+    padding-left: 4.7rem;
+    @include for-size(phone-only){
+      padding-left: 0.01rem;
+      padding-top: 2rem;
+      font-size: 1.8rem;
+    };
+  }
+
+  &-mookTextContainer {
+    padding-left: 17.3rem;
+    padding-top: 1rem;
+    @include for-size(phone-only){
+      padding-left: 1.8rem;
+    };
+  }
+
+  &-mookText {
+    width: 65rem;
+    font-family: 'Playfair Display Regular', serif;
+    font-size: 1.2rem;
+    color: #979797;
+    line-height: 2rem;
+    @include for-size(phone-only){
+      width: 20rem;
+      font-size: 1.2rem;
+      line-height: 2rem;
+    };
+  }
+
+  &-listContainer {
+    font-size: 1.2rem;
+    color: #979797;
+    line-height: 2rem;
+    padding-top: 1rem;
+    @include for-size(phone-only){
+      font-size: 1.2rem;
+      line-height: 2rem;
+    };
+  }
+
+  &-practicalContainer {
+    width: 80.3rem;
+    height: 26.9rem;
+    padding-top: 3rem;
+    padding-left: 5.8rem;
+    @include for-size(phone-only){
+      padding-top: 10rem;
+      padding-left: 0.01rem;
+      margin: 0 auto;
+      width: 23.4rem;
+      height: 40rem;
+    };
+  }
+
+  &-practical {
+    display: flex;
+    align-items: center;
+    @include for-size(phone-only){
+      padding-top: 13rem;
+      padding-left: 0.01rem;
+      display: flex;
+      flex-direction: column;
+    };
+  }
+
+  &-practicalImg {
+    width: 5.6rem;
+    height: 7.3rem;
+    @include for-size(phone-only){
+      width: 4.3rem;
+      height: 6.2rem;
+    };
+  }
+
+  &-practicalTitle {
+    font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+    color: #4A4A4A;
+    font-size: 2.8rem;
+    padding-left: 4.7rem;
+    text-align: center;
+    @include for-size(phone-only){
+      padding-left: 0.01rem;
+      padding-top: 2rem;
+      font-size: 1.8rem;
+    };
+  }
+
+  &-practicalTextContainer {
+    padding-left: 10.3rem;
+    padding-top: 1rem;
+    @include for-size(phone-only){
+      padding-left: 1.8rem;
+    };
+  }
+
+  &-practicalText {
+    font-family: 'Playfair Display Regular', serif;
+    font-size: 1.2rem;
+    color: #979797;
+    line-height: 2rem;
+    @include for-size(phone-only){
+      font-size: 1.2rem;
+      line-height: 2rem;
+    };
+  }
+
+  &-practicalQR {
+    padding-top: 2rem;
+    font-family: 'Playfair Display Regular', serif;
+    font-size: 1.2rem;
+    color: #979797;
+    @include for-size(phone-only){
+      font-size: 1.2rem;
+      line-height: 2rem;
+    };
+  }
+
+  &-applicationContainer {
+    width: 80.3rem;
+    height: 22.8rem;
+    padding-left: 5.8rem;
+    @include for-size(phone-only){
+      padding-top: 10rem;
+      padding-left: 0.01rem;
+      margin: 0 auto;
+      width: 23.4rem;
+      height: 40rem;
+    };
+  }
+
+  &-application {
+    display: flex;
+    align-items: center;
+    @include for-size(phone-only){
+      padding-top: 15rem;
+      padding-left: 0.01rem;
+      display: flex;
+      flex-direction: column;
+    };
+  }
+
+  &-applicationImg {
+    width: 5.6rem;
+    height: 7.3rem;
+    @include for-size(phone-only){
+      width: 4.3rem;
+      height: 6.2rem;
+    };
+  }
+
+  &-applicationTitle {
+    font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+    color: #4A4A4A;
+    font-size: 2.8rem;
+    padding-left: 4.7rem;
+    text-align: center;
+    @include for-size(phone-only){
+      padding-left: 0.01rem;
+      padding-top: 2rem;
+      font-size: 1.8rem;
+    };
+  }
+
+  &-applicationTextContainer {
+    height: 23.5rem;
+    padding-left: 10.3rem;
+    padding-top: 1rem;
+    @include for-size(phone-only){
+      padding-left: 1.8rem;
+    };
+  }
+
+  &-applicationText {
+    font-family: 'Playfair Display Regular', serif;
+    font-size: 1.2rem;
+    color: #979797;
+    line-height: 2rem;
+    @include for-size(phone-only){
+      font-size: 1.2rem;
+      line-height: 2rem;
+    };
+  }
+
+  &-applicationText2 {
+    padding-top: 1rem;
+    font-family: 'Playfair Display Regular', serif;
+    font-size: 1.2rem;
+    color: #979797;
+    line-height: 2rem;
+    @include for-size(phone-only){
+      font-size: 1.2rem;
+      line-height: 2rem;
+    };
+  }
+
+  &-WebContainer {
+    width: 80.3em;
+    height: 20rem;
+    padding-top: 1rem;
+    padding-left: 5.8rem;
+    @include for-size(phone-only){
+      padding-top: 10rem;
+      padding-left: 0.01rem;
+      margin: 0 auto;
+      width: 23.4rem;
+      height: 40rem;
+    };
+  }
+
+  &-Web {
+    display: flex;
+    align-items: center;
+    @include for-size(phone-only){
+      padding-top: 10rem;
+      padding-left: 0.01rem;
+      display: flex;
+      flex-direction: column;
+    };
+  }
+
+  &-WebImg {
+    width: 5.6rem;
+    height: 7.3rem;
+    @include for-size(phone-only){
+      width: 4.3rem;
+      height: 6.2rem;
+    };
+  }
+
+  &-WebTitle {
+    font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+    color: #4A4A4A;
+    font-size: 2.8rem;
+    padding-left: 4.7rem;
+    text-align: center;
+    @include for-size(phone-only){
+      padding-left: 0.01rem;
+      padding-top: 2rem;
+      font-size: 1.8rem;
+    };
+  }
+
+  &-WebListContainer {
+    padding-top: 1rem;
+    padding-left: 10rem;
+    @include for-size(phone-only){
+      padding-left: 1.8rem;
+    };
+  }
+
+  &-WebList {
+    font-size: 1.2rem;
+    color: #979797;
+    line-height: 2rem;
+    @include for-size(phone-only){
+      font-size: 1.2rem;
+      line-height: 2rem;
+    };
+  }
+
+  &-teamContainer {
+    width: 100%;
+  }
+
+  &-teamTitle {
+    font-size: 5rem;
+    font-family: 'PlayfairDisplay-BlackItalic',serif;
+    line-height: 192px;
+    color: #15DAB6;
+    opacity: 0.2;
+    @include for-size(phone-only){
+      font-size: 3.4rem;
+      text-align: center;
+    };
+  }
+
+  &-teamProfile {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    @include for-size(phone-only){
+      flex-wrap: wrap;
+    };
+  }
+
+  &-teamItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-teamImg {
+    width: 10rem;
+    height: 10rem;
+    @include for-size(phone-only){
+      width: 5rem;
+      height: 5rem;
+    };
+  }
+
+  &-teamName {
+    font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    color: #4A4A4A;
+    @include for-size(phone-only){
+      font-size: 1.2rem;
+    };
+  }
+
+  &-teamJob {
+    width: 100%;
+    height: 6.4rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+    line-height: 25px;
+    text-align: center;
+    color: #9B9B9B;
+    @include for-size(phone-only){
+      font-size: 1rem;
+      line-height: 20px;
+    };
+  }
+}
