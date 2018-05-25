@@ -1,0 +1,58 @@
+//font
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+//Global
+@import "./global/_reset";
+@import "./global/_variables";
+
+//Mixin
+@import "./mixins/_forsize";
+
+//Components
+@import "./components/_header";
+@import "./components/_article";
+@import "./components/_magazine";
+@import "./components/_top";
+@import "./components/_admin";
+@import "./components/_add";
+@import "./components/_partners";
+@import "./components/_twitter";
+@import "./components/_contact";
+@import "./components/_footer";
+
+
+body{
+  font-family: 'Futura';
+  width: 100%;
+}
+
+.goUp{
+  margin-left: 85%;
+  margin-right: 2%;
+  margin-top: 90vh;
+  position: fixed;
+  z-index: 2222;
+  img{
+    width: 40px;
+    height: 40px;
+    transition: all 0.3;
+  }
+}
+@media (min-width: 550px){
+  .goUp{
+    margin-left: 90%;
+  }
+}
+@media (min-width: 850px){
+  .goUp{
+    margin-left: 94%;
+  }
+}
+
+.breaker{
+  width: 80%;
+  height: 5px;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 44;
+}
