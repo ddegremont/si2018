@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.337 74.337">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #b29e63;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <path id="Line" class="cls-1" d="M0,66,45,0" transform="translate(4.168 4.169)"/>
+</svg>

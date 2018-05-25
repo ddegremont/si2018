@@ -1,0 +1,17 @@
+{
+    "name": "mourn/dist",
+    "authors": [
+        {
+            "name": "Quentin-Aime",
+            "email": "quentin.aime.dev@gmail.com"
+        }
+    ],
+    "autoload": {
+	    "psr-4": {
+	        "TwitterOAuth\\": "./"
+	    }
+	},
+    "require": {
+    	"ricardoper/twitteroauth": "2.*"
+    }
+}
