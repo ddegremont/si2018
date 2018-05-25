@@ -1,0 +1,341 @@
+// setting the value of this variable to an empty data URL is the only working solution
+// to load the Bootswatch web fonts locally and avoid loading them from Google servers
+// see https://github.com/thomaspark/bootswatch/issues/55#issuecomment-298093182
+$web-font-path: 'data:text/css;base64,';
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+// pick the Lato fonts individually to avoid importing the entire font family
+@import '~lato-font/scss/public-api';
+@include lato-include-font('normal');
+@include lato-include-font('bold');
+
+body {
+  font-family: 'Assistant', sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 150px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #363636;
+}
+
+.social-link {
+  position: fixed;
+  left: 0;
+  height: auto;
+  padding-left: 15px;
+
+  &-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  li {
+    list-style: none;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.container {
+  width: 1080px;
+  margin: auto;
+  min-height: 50vh;
+}
+
+header {
+  top: 0;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+footer {
+  width: 100%;
+  background-color: #bcb38f;
+  padding: 50px;
+  text-align: center;
+  margin-top: 100px;
+  font-style: 18px;
+
+  .container-footer {
+    ul li {
+      display: inline-block;
+      font-weight: bold;
+      opacity: 0.5;
+
+      &,a {
+        color: #000000;
+      }
+    }
+  }
+}
+
+.navbar {
+  width: max-content;
+
+  .navbar-header {
+    display: flex;
+    &-list {
+      margin: 0;
+      display: flex;
+    }
+    &-item {
+      margin-right: 40px;
+      a:link {
+        text-decoration: none;
+      }
+      a {
+        color: #000;
+      }
+      a:hover {
+        font-weight: bold;
+      }
+
+      .sidebar {
+        .search-sidebar {
+          border-top: none;
+          border-right: none;
+          border-left: none;
+          outline: 0;
+          font-size: 15px;
+        }
+        img {
+          width: 20px;
+          height: auto;
+        }
+      }
+      &-ruban {
+        top: -5px;
+        position: fixed;
+
+        img {
+          width: 75px;
+        }
+      }
+    }
+  }
+}
+
+.anneeVoyages {
+  display: flex;
+  flex-direction: column;
+
+  .container-img {
+    width: 1058px;
+    height: 486px;
+    background: url("../../public/img/beach.png");
+
+    .container-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+      height: 100%;
+
+      h1,h1 span {
+        font-family: 'Playfair Display', serif;
+        font-size: 70px;
+        font-weight: bold;
+      }
+      
+      h1 span {
+        display: block;
+      }
+
+      h1,p {
+        color: #ffffff;
+        text-shadow: 0 0 20px black;
+      }
+
+      p {
+        font-size: 25px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.top-scroll-img {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.landing-words-list {
+  list-style-type: circle;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+
+  span {
+    display: inline-block;
+    font-size: 25px;
+  }
+}
+
+.landing-section-split {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  .landing-section-split-text{
+    margin: auto;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #efd242;
+      font-weight: bold;
+    }
+  }
+}
+
+.landing-section-popup {
+  margin-top: 80px;
+  padding: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+  text-align: center;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  .partners {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
+.landing-chiffres {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-around;
+
+  &-picto {
+    text-align: center;
+
+    h2,p {
+      color: #6a6a6a;
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+.landing-annonceur-section {
+  margin: 100px 0;
+
+  .twitter-feed .tweet {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    margin-top: 50px;
+
+    img.avatar {
+      float: left;
+      margin-right: 15px;
+    }
+  }
+}
+
+.carousel {
+  width: 200px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 0.8s;
+}
+
+.carousel-wrap img {
+  display: block;
+  width: 400px;
+  height: 200px;
+}
+
+.newsair {
+  margin-bottom: 100px;
+
+  .container-news {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  a {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #000;
+  }
+}
+
+.equipe {
+  .container-equipe {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    p.team-name {
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
+
+body#tops {
+  .page-header-title {
+    background: #f9e6a6;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 50px;
+
+    h1,p {
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 50px;
+      
+      span {
+        display: block;
+      }
+    }
+
+    p {
+      font-size: 32px;
+    }
+  }
+}

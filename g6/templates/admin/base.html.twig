@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+
+    <title>{% block title %}Dashboard{% endblock %} | Une année de Voyage</title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    {% endblock %}
+</head>
+
+<body>
+{% block header %}
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="{{ path('admin_index') }}">Une Année de Voyage</a>
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" href="{{ logout_url('main') }}">Déconnexion</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('admin_index') }}">
+                            <span data-feather="home"></span>
+                            <i class="fa fa-tachometer-alt"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('admin_post_index') }}">
+                            <span data-feather="file"></span>
+                            <i class="fa fa-newspaper"></i> Articles
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('admin_company_index') }}">
+                            <span data-feather="shopping-cart"></span>
+                            <i class="fa fa-comments"></i> Companies aériennes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('admin_partner_index') }}">
+                            <span data-feather="shopping-cart"></span>
+                            <i class="fa fa-handshake"></i> Partenaires
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('admin_message_index') }}">
+                            <span data-feather="shopping-cart"></span>
+                            <i class="fa fa-envelope"></i> Messages
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('admin_place_index') }}">
+                            <span data-feather="shopping-cart"></span>
+                            <i class="fa fa-location-arrow"></i> Commerces
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('admin_fiche_index') }}">
+                            <span data-feather="shopping-cart"></span>
+                            <i class="fa fa-file-alt"></i> Fiches pratiques
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('blog_index') }}" target="_blank">
+                            <span data-feather="users"></span>
+                            <i class="fa fa-external-link-alt"></i> Voir le site
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+{% endblock %}
+
+        {% block body %}
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            {{ include('default/_flash_messages.html.twig') }}
+
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                <h1 class="h2">{{ block('title') }}</h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                    {% block buttons %}{% endblock %}
+                </div>
+            </div>
+
+            {% block main %}{% endblock %}
+        </main>
+        {% endblock body %}
+    </div>
+</div>
+
+{% block javascripts %}
+    <script src="{{ asset('build/manifest.js') }}"></script>
+    <script src="{{ asset('build/js/common.js') }}"></script>
+    <script src="{{ asset('build/js/app.js') }}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% endblock %}
+</body>
+</html>
