@@ -1,0 +1,25 @@
+/* Fonts ----------------------------------------*/
+@font-face {
+	font-family: "Ftr-Light";
+    src: url('../assets/fonts/Futura/Futura-Light.ttf');
+}
+@font-face {
+	font-family: "Ftr-Regular";
+    src: url('../assets/fonts/Futura/Futura-Regular.ttf');
+}
+@font-face {
+	font-family: "Ftr-Medium";
+    src: url('../assets/fonts/Futura/Futura-Medium.ttf');
+}
+@font-face {
+	font-family: "Ftr-SemiBold";
+    src: url('../assets/fonts/Futura/Futura-SemiBold.ttf');
+}
+@font-face {
+	font-family: "Ftr-Bold";
+    src: url('../assets/fonts/Futura/Futura-Bold.ttf');
+}
+@font-face {
+	font-family: "Ftr-ExtraBold";
+    src: url('../assets/fonts/Futura/Futura-ExtraBold.ttf');
+}

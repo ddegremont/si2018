@@ -1,0 +1,76 @@
+.topBar{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 18px;
+}@media (max-width:768px){
+  .topBar{
+    flex-direction: column;
+  }
+}
+
+.topBar h2{
+  font-family: "Ftr-Bold";
+}
+.topBar nav{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 25px;
+}@media (max-width:768px){
+  .topBar nav{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px;
+  }
+}
+
+.topBar nav li{
+  margin: 5px 20px 20px 20px;
+  font-family: 'Ftr-Bold';
+  padding: 2px 8px 2px 8px;
+  border-radius: 2px;
+}
+
+.fiches_article{
+  width: 85%;
+}@media (max-width:768px){
+  .fiches_article{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+}
+
+.fiches_article_box{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.fiches_article_box_subtitle{
+  margin: 0;
+}@media (max-width:768px){
+  .fiches_article_box_subtitle{
+    margin-top: -100px;
+  }
+}
+
+.fiches_article_box_text{
+  color: grey;
+}@media (max-width:768px){
+  .fiches_article_box_text{
+    display: none;
+  }
+}
+
+@media (max-width:768px){
+  .fiches_article_box_subtitle{
+    color: white;
+  }
+}
+
+.is-swipswip{
+  background-color: rgb(74, 144, 226);
+  color: white;
+}

@@ -1,0 +1,124 @@
+body{
+  overflow-x: hidden;
+}
+
+.bonPlans{
+  background: url('../assets/imgs/plane.png') no-repeat center;
+  background-size: cover;
+  width: auto;
+  margin: 100px 25px 25px;
+}
+@media (max-width: 768px) {
+    .bonPlans {
+
+    }
+}
+.bonPlans_box {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .bonPlans_box {
+    flex-direction: row;
+  }
+}
+.bonPlans_title {
+  padding: 25px 0 0 0;
+  font-size: 2.6rem;
+  font-family: 'Ftr-Bold';
+  text-align: center;
+}
+@media (min-width:768px) {
+  .bonPlans_title {
+    padding: 0 0 0 25px;
+    text-align: left;
+    font-size: 3.6rem;
+    position: relative;
+    top: -17px;
+  }
+}
+.bonPlans_offers{
+  width: 100%;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .bonPlans_offers {
+    width: 60%;
+    margin: 25px;
+  }
+}
+
+.bonPlans_offers_title_span {
+  color: #FB3640;
+}
+
+.bonPlans_offers_container{
+  
+  width: 100%;
+  background: rgba(255,255,255,0.6);
+  border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bonPlans_offers_container_article {
+  background: rgba(255,255,255,0.75);
+  padding: 25px;
+  margin: 25px;
+}
+.bonPlans_offers_container_article_text {
+  padding-top: 25px;
+  line-height: 1.2;
+}
+.bonPlans_offers_container_article_headBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bonPlans_offers_container_article_headBox_img {
+  
+  height: auto;
+  width: 150px; 
+}
+.bonPlans_offers_container_article_headBox_titleBox {
+  
+}
+.bonPlans_offesr_container_article_headBox_titleBox_title {
+  font-family: 'Ftr-Medium';
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+
+.bonPlans_tweetBox{
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .bonPlans_tweetBox {
+    width: 40%;
+  }
+}
+
+.bonPlans_tweetBox_container {
+  padding: 25px 10% 40px;
+}
+
+.bonPlans_tweetBox h2{
+  font-family: 'Ftr-Bold';
+  padding: 25px 0 0 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.bonPlans_tweetBox_flow{
+  overflow: scroll;
+  height: 530px;
+}@media (max-width: 768px) {
+    .bonPlans_tweetBox_flow::-webkit-scrollbar{
+      display: none;
+    }
+}

@@ -1,0 +1,450 @@
+<!--
+Using my personnal BEM,
+<div class="block">
+  <p class="block_element">Content
+    <span class="block_element-modifier">Modified content</span>
+  </p>
+</div>
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="Une année de voyages">
+    <meta name="description" content="Redesign du site http://uneanneedevoyages.com dans le cadre d'une semaine intensive à HÉTIC">
+    <meta itemprop="name" content="Une année de voyages">
+		<meta itemprop="description" content="Redesign du site http://uneanneedevoyages.com dans le cadre d'une semaine intensive à HÉTIC">
+		<meta itemprop="image" content="https://image.noelshack.com/fichiers/2018/21/5/1527201485-capture-d-ecran-2018-05-25-a-00-37-35.png">
+		<meta property="og:url" content="http://alexandredelaloy.com">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Une année de voyages">
+		<meta property="og:description" content="Redesign du site http://uneanneedevoyages.com dans le cadre d'une semaine intensive à HÉTIC">
+		<meta property="og:image" content="https://image.noelshack.com/fichiers/2018/21/5/1527201485-capture-d-ecran-2018-05-25-a-00-37-35.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Une année de voyages">
+		<meta name="twitter:description" content="Redesign du site http://uneanneedevoyages.com dans le cadre d'une semaine intensive à HÉTIC">
+		<meta name="twitter:image" content="https://image.noelshack.com/fichiers/2018/21/5/1527201485-capture-d-ecran-2018-05-25-a-00-37-35.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/mook.css">
+    <link rel="stylesheet" href="styles/fiches.css">
+    <link rel="stylesheet" href="styles/imageBox.css">
+    <link rel="stylesheet" href="styles/top.css">
+    <link rel="stylesheet" href="styles/team.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/flickity.css">
+    <link rel="stylesheet" href="styles/tweetflow.css">
+    <link rel="icon" type="image/png" href="assets/imgs/icons/favicon.png" />
+    <title>Une année de voyages</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header_burger">
+        <div class="header_burger_line hbl-nm"></div>
+        <div class="header_burger_line hbl-1"></div>
+        <div class="header_burger_line hbl-2"></div>
+        <div class="header_burger_line hbl-nm"></div>
+      </div>
+      <ul class="header_deskMenu">
+        <li class="header_deskMenu_item gotoHome">Accueil</li>
+        <li class="header_deskMenu_item gotoMook">Le mook</li>
+        <li class="header_deskMenu_item gotoFiches">Fiches pratiques</li>
+        <li class="header_deskMenu_item gotoBonPlans">Bons plans</li>
+        <li class="header_deskMenu_item gotoTop">Top 100</li>
+        <li class="header_deskMenu_item gotoTeam">L'équipe</li>
+        <li class="header_deskMenu_item gotoContact">Contact</li>
+      </ul>
+      <div class="header_titleBox">
+        <h1 class="header_titleBox_title">Une année de voyages<span class="header_titleBox_title_span">.</span></h1>
+      <h2 class="header_titleBox_subtitle">DES VOYAGES TESTÉS…<br>DES IDÉES POUR PARTIR TOUTES L’ANNÉES !</h2>
+      </div>
+      <ul class="header_menu">
+        <li class="header_menu_item gotoHome">Accueil</li>
+        <li class="header_menu_item gotoMook">Le mook</li>
+        <li class="header_menu_item gotoFiches">Fiches pratiques</li>
+        <li class="header_menu_item gotoBonPlans">Bons plans</li>
+        <li class="header_menu_item gotoTop">Top 100</li>
+        <li class="header_menu_item gotoTeam">L'équipe</li>
+        <li class="header_menu_item gotoContact">Contact</li>
+        <div class="header_menu_bg hmb-1"></div>
+        <div class="header_menu_bg hmb-2"></div>
+      </ul>
+      <div class="header_videoBox">
+        <video autoplay muted loop src="assets/clips/bg.mp4" class="header_videoBox_video"></video>
+      </div>
+    </header>
+    <section class="mook">
+      <h3 class="mook_box_title">Le Mook <span class="mook_box_title_span">.</span></h3>
+      <img src="./assets/imgs/mook.jpg" alt="aperçu mook #0001-2018" class="mook_img">
+      <div class="mook_box">
+        <h3 class="mook_box_deskTitle">Le Mook <span class="mook_box_deskTitle_span">.</span></h3>
+        <div class="mook_box_textBox">
+          <p class="mook_box_textBox_text">Un mook annuel à collectionner grâce à sa couverture illustrée, œuvre d'un artiste.
+            </p>
+          <p class="mook_box_textBox_text">Des goddies : 5 dessins originaux issus des "illustrateurs voyageurs" de la communauté internationale Urban Sketchers.
+            </p>
+          <p class="mook_box_textBox_text">300 pages de reportages sous forme de "carnets de voyages"
+            </p>
+          <p class="mook_box_textBox_text">Des destinations testées et approuvées par nos journalistes (pas de mauvaise surprise à l'arrivée !)
+            </p>
+          <p class="mook_box_textBox_text">40.000 exemplaires vendus en kiosques, librairies et sur notre site.
+            </p>
+            <p class="mook_box_textBox_text">Des fiches pratiques d'exception et détachables.
+              </p>
+            <p class="mook_box_textBox_text">TV YouTube</p>
+        </div>
+        <nav class="mook_box_nav">
+          <a href="https://fr.calameo.com/read/005588247325549c8dd75" target="blank_" class="mook_box_nav_button" title="Lire un extrait du Mook">Lire un extrait</a>
+          <a href="#" class="mook_box_nav_button" title="Acheter le Mook">Acheter</a>
+        </nav>
+      </div>
+    </section>
+    <section class="fiches">
+      <h3 class="fiches_title">Les fiches pratiques<span class="fiches_title_span">.</span></h3>
+      <div class="fiches_textBox">
+        <p class="fiches_textBox_text">Minutieusement détaillées, elles vous disent tout du voyage décrit nos articles : Hôtels, restaurants, boutiques, musée, shopping, The Place to be et aussi quelle est la meilleure compagnie aérienne pour rejoindre par exemple San Francisco, quelles sont les meilleures dates, comment aller à pied de Nob Hill au Golden Gate en passant par des ruelles remplies de street art méconnus du grand public, arriver pile à l'heure pour être dans l'axe du soleil sur le 3ème pilier et réussir à coup sûr la photo du siècle tout en s'émerveillant de la beauté de la Bay... ça, c'est Une Année de Voyages !</p>
+        <p class="fiches_textBox_text">Des QR Codes intégrés aux fiches pratiques pour offrir une vitrine extra-large à nos partenaires.</p>
+      </div>
+      <h4 class="fiches_subtitle">Découvrir :</h4>
+      <section class="fiche_articleBox" data-flickity='{ "wrapAround": true }'>
+        <article class="fiches_article">
+          <img src="assets/imgs/res/res3.jpg" alt="Plat de moules" class="fiches_article_img">
+          <div class="fiches_article_box">
+            <h5 class="fiches_article_box_subtitle">Restaurant</h5>
+            <h3 class="fiches_article_box_title"> NUSR-ET</h3>
+            <p class="fiches_article_box_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="" class="fiches_article_box_link" title="Voir toute la fiche pratique">+ lire la suite</a>
+          </div>
+        </article>
+        <article class="fiches_article">
+          <img src="assets/imgs/hot/hot1.jpg" alt="Hôtel ambiance Asie" class="fiches_article_img">
+          <div class="fiches_article_box">
+            <h5 class="fiches_article_box_subtitle">Hôtel</h5>
+            <h3 class="fiches_article_box_title">SOFITELO</h3>
+            <p class="fiches_article_box_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="" class="fiches_article_box_link" title="Voir toute la fiche pratique">+ lire la suite</a>
+          </div>
+        </article>
+        <article class="fiches_article">
+          <img src="assets/imgs/bar/bar2.jpg" alt="Cocktail rouge" class="fiches_article_img">
+          <div class="fiches_article_box">
+            <h5 class="fiches_article_box_subtitle">Bar</h5>
+            <h3 class="fiches_article_box_title">PANAME ART CAFÉ</h3>
+            <p class="fiches_article_box_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="" class="fiches_article_box_link" title="Voir toute la fiche pratique">+ lire la suite</a>
+          </div>
+        </article>
+      </section>
+      <div class="fiches_linkBox">
+          <a href="ficheMenu.html" class="fiches_linkBox_link" title="Voir toutes les fiches pratiques">Voir plus</a>
+      </div>
+    </section>
+    <section class="imageBox">
+        <div class="imageBox_visible">
+          <div class="imageBox_imgBox">
+            <h4 class="imageBox_imgBox_title">title</h4>
+            <h5 class="imageBox_imgBox_subtitle">subtitle</h5>
+            <img class=" imageBox_img is-active-2" src="assets/imgs/res/res1.jpg" alt="Restaurant petit déjeûner">
+          </div>
+          <div class="imageBox_imgBox">
+            <h4 class="imageBox_imgBox_title">title</h4>
+            <h5 class="imageBox_imgBox_subtitle">subtitle</h5>
+            <img  class="imageBox_img" src="assets/imgs/hot/hot3.jpg" alt="Hôtel grec rouge">
+          </div>
+          <div class="imageBox_imgBox">
+            <h4 class="imageBox_imgBox_title">title</h4>
+            <h5 class="imageBox_imgBox_subtitle">subtitle</h5>
+            <img class="imageBox_img" src="assets/imgs/bar/bar2.jpg" alt="Cocktail rouge">
+          </div>
+          <div class="imageBox_imgBox">
+            <h4 class="imageBox_imgBox_title">title</h4>
+            <h5 class="imageBox_imgBox_subtitle">subtitle</h5>
+            <img class=" imageBox_img" src="assets/imgs/res/res3.jpg" alt="Plat de moules">
+          </div>
+          <div class="imageBox_imgBox">
+            <h4 class="imageBox_imgBox_title">title</h4>
+            <h5 class="imageBox_imgBox_subtitle">subtitle</h5>
+            <img class="imageBox_img" src="assets/imgs/hot/hot2.jpg" alt="Hôtel immeuble">
+          </div>
+          <div class="imageBox_imgBox">
+            <h4 class="imageBox_imgBox_title">title</h4>
+            <h5 class="imageBox_imgBox_subtitle">subtitle</h5>
+            <img  class="imageBox_img" src="assets/imgs/bar/bar3.jpg" alt="Bar multicolore">
+          </div>
+          <div class="imageBox_imgBox">
+            <h4 class="imageBox_imgBox_title">title</h4>
+            <h5 class="imageBox_imgBox_subtitle">subtitle</h5>
+            <img class="imageBox_img" src="assets/imgs/res/res2.jpg" alt="Oeufs & bacon">
+          </div>
+          <div class="imageBox_imgBox">
+            <h4 class="imageBox_imgBox_title">title</h4>
+            <h5 class="imageBox_imgBox_subtitle">subtitle</h5>
+            <img class="imageBox_img" src="assets/imgs/hot/hot1.jpg" alt="Hôtel ambiance Asie">
+          </div>
+        </div>
+        <nav class="buttons">
+          <button class="buttons_left">&#60;
+          </button>
+          <button class="buttons_right">&#62;</button>
+        </nav>
+    </section>
+    <section class="bonPlans">
+      <h3 class="bonPlans_title">Les bons plans aériens <span class="bonPlans_offers_title_span">.</span></h3>
+      <div class="bonPlans_box">
+          <div class="bonPlans_offers">
+              <div class="bonPlans_offers_container">
+                <article class="bonPlans_offers_container_article">
+                  <div class="bonPlans_offers_container_article_headBox">
+                    <div class="bonPlans_offers_container_article_headBox_titleBox">
+                      <h4 class="bonPlans_offesr_container_article_headBox_titleBox_title">air</h4>
+                      <h4 class="bonPlans_offesr_container_article_headBox_titleBox_title">france</h4>
+                    </div>
+                    <img src="./assets/imgs/af.png" alt="Air France logo" class="bonPlans_offers_container_article_headBox_img">
+                  </div>
+                  <p class="bonPlans_offers_container_article_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ipsum dolor porro assumenda officia! Vel optio deserunt tenetur nisi iste quos, in eaque voluptates, suscipit possimus pariatur aut quia mollitia?</p>
+                </article>
+                <article class="bonPlans_offers_container_article">
+                  <div class="bonPlans_offers_container_article_headBox">
+                    <div class="bonPlans_offers_container_article_headBox_titleBox">
+                      <h4 class="bonPlans_offesr_container_article_headBox_titleBox_title">turkish</h4>
+                      <h4 class="bonPlans_offesr_container_article_headBox_titleBox_title">airline</h4>
+                    </div>
+                    <img src="./assets/imgs/ta.png" alt="Turkish Airlines logo" class="bonPlans_offers_container_article_headBox_img">
+                  </div>
+                  <p class="bonPlans_offers_container_article_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ipsum dolor porro assumenda officia! Vel optio deserunt tenetur nisi iste quos, in eaque voluptates, suscipit possimus pariatur aut quia mollitia? </p>
+                </article>
+              </div>
+            </div>
+            <div class="bonPlans_tweetBox">
+              <h2>Fil d'actualité Twitter</h2>
+              <div class="bonPlans_tweetBox_container">
+                <div class="bonPlans_tweetBox_flow">
+      
+                  <a class="twitter-timeline" href="https://twitter.com/skyteam?ref_src=twsrc%5Etfw">Tweets by our partners</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      
+                  <a class="twitter-timeline" href="https://twitter.com/staralliance?ref_src=twsrc%5Etfw"></a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      
+                  <a class="twitter-timeline" href="https://twitter.com/traveloneworld?ref_src=twsrc%5Etfw"></a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="fiches_linkBox">
+        <a href="ficheMenu.html" class="fiches_linkBox_link" title="Voir tous les bons plans aériens">Voir tous les bons plans</a>
+      </div>
+    </section>
+    <section class="top aled">
+      <nav class="top_nav">
+          <h3 class="top_nav_title">Top 100<span class="top_nav_title_span">.</span></h3>
+          <nav class="top_nav_menu">
+            <p class="top_nav_menu_main">Thalasso / SPA</p>
+            <ul class="top_nav_menu_list">
+              <li class="top_nav_menu_list_item topSpa is-colored">Thalasso / SPA</li>
+              <li class="top_nav_menu_list_item topHot">Hôtels</li>
+              <li class="top_nav_menu_list_item topRes">Restaurants</li>
+            </ul>
+          </nav>
+          <ul class="top_nav_deskMenu_list">
+            <li class="top_nav_menu_list_item topSpa is-colored">Thalasso / SPA</li>
+            <li class="top_nav_menu_list_item topHot">Hôtels</li>
+            <li class="top_nav_menu_list_item topRes">Restaurants</li>
+          </ul>
+      </nav>
+      <ul class="top_list topSpaList is-flex">
+        <li class="top_list_item">
+          <p class="top_list_item_nb">1.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">George V</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Paris</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">2.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Nusret</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Dubaï</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">3.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Asian Touch</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Paris</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">4.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Factory Café</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Paris</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">5.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Street House</h4>
+            <h5 class="top_list_item_titleBox_subtitle">New York</h5>
+          </div>
+        </li>
+      </ul>
+      <ul class="top_list topHotList">
+        <li class="top_list_item">
+          <p class="top_list_item_nb">1.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Royal Penthouse Suite</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Genève</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">2.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Shahi Mahal Suite</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Jaipur</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">3.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Ty Warner Penthouse</h4>
+            <h5 class="top_list_item_titleBox_subtitle">New-York</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">4.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Sky Villa</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Las Vegas</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">5.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Owner’s Accommodation</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Laucala Island Resort</h5>
+          </div>
+        </li>
+      </ul>
+      <ul class="top_list topResList">
+        <li class="top_list_item">
+          <p class="top_list_item_nb">1.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Eleven Madison Park</h4>
+            <h5 class="top_list_item_titleBox_subtitle">New-York</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">2.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Osteria Francescana</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Modena</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">3.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">El Celler de Can Roca</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Girona</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">4.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Mirazur</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Menton</h5>
+          </div>
+        </li>
+        <li class="top_list_item">
+          <p class="top_list_item_nb">5.</p>
+          <div class="top_list_item_titleBox">
+            <h4 class="top_list_item_titleBox_title">Central</h4>
+            <h5 class="top_list_item_titleBox_subtitle">Lima</h5>
+          </div>
+        </li>
+      </ul>
+      <div class="fiches_linkBox">
+          <a href="#" class="fiches_linkBox_link" title="Voir tous les tops 100">Voir tout</a>
+      </div>
+    </section>
+    <section class="team">
+      <h3 class="team_title">Notre équipe<span class="team_title_span">.</span></h3>
+      <div class="team_articleBox">
+        <article class="team_article">
+          <img src="assets/imgs/team/team1.jpg" alt="Judith Lossman" class="team_article_img">
+          <div class="team_article_titleBox">
+            <h4 class="team_article_titleBox_title">Judith LOSSMANN</h4>
+            <h5 class="team_article_titleBox_subtitle">Fondatrice</h5>
+            <h5 class="team_article_titleBox_subtitle">Rédactrice en chef</h5>
+          </div>
+        </article>
+        <article class="team_article">
+          <img src="assets/imgs/team/team2.jpg" alt="Caroline M'zali" class="team_article_img">
+          <div class="team_article_titleBox">
+            <h4 class="team_article_titleBox_title">Caroline M'ZALI</h4>
+            <h5 class="team_article_titleBox_subtitle">Pigiste</h5>
+            <h5 class="team_article_titleBox_subtitle">Secrétaire de rédaction</h5>
+          </div>
+        </article>
+        <article class="team_article">
+          <img src="assets/imgs/team/team3.jpg" alt="Inma Serrano" class="team_article_img">
+          <div class="team_article_titleBox">
+            <h4 class="team_article_titleBox_title">Inma SERRANO</h4>
+            <h5 class="team_article_titleBox_subtitle">Illustratrice</h5>
+          </div>
+        </article>
+        <article class="team_article">
+          <img src="assets/imgs/team/team4.jpg" alt="Damien Dégremont" class="team_article_img">
+          <div class="team_article_titleBox">
+            <h4 class="team_article_titleBox_title">Damien DÉGREMONT</h4>
+            <h5 class="team_article_titleBox_subtitle">Développeur du site</h5>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="contact">
+      <h3 class="contact_title">Nous contacter<span class="contact_title_span">.</span></h3>
+      <form action="" class="contact_form">
+        <input type="text" placeholder="Vous êtes" class="contact_form_input" required>
+        <input type="text" placeholder="Société" class="contact_form_input" required>
+        <input type="text" placeholder="Votre nom" class="contact_form_input" required>
+        <input type="email" placeholder="e-mail" class="contact_form_input" required>
+        <input type="text" placeholder="Téléphone" class="contact_form_input" required>
+        <textarea placeholder="Votre message" id="" cols="30" rows="10" class="contact_form_textarea" required></textarea>
+        <button type="submit" class="contact_link" title="Envoyer le questionnaire">Envoyer</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <h3 class="footer_title">Nos partenaires<span class="footer_title_span">.</span></h3>
+      <section class="part">
+        <img src="./assets/imgs/adp.png" alt="Aéroport de Paris" class="part_img">
+        <img src="./assets/imgs/fuji.png" alt="Fujifilm" class="part_img">
+        <img src="./assets/imgs/nikon.png" alt="Nikon" class="part_img">
+      </section>
+      <section class="footer_box">
+          <p class="footer_text">Copyright 2018 - Une année de voyages</p>
+          <nav class="footer_nav">
+            <a href="" title="Notre page Facebook">
+              <img src="./assets/imgs/icons/facebook.svg" alt="Facebook icône" class="footer_nav_imgBox">
+            </a>
+            <a href="" title="Notre compte Instagram">
+              <img src="./assets/imgs/icons/instagram.svg" alt="Intagram icône" class="footer_nav_imgBox">
+            </a>
+            <a href="" title="Notre compte Twitter">
+              <img src="./assets/imgs/icons/twitter.svg" alt="Twitter icône" class="footer_nav_imgBox">
+            </a>
+          </nav>
+      </section>
+    </footer>
+    
+    <script src="js/swip.js" type="text/javascript"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/flickity.js"></script>
+  </body>
+</html>
