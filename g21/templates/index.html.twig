@@ -1,0 +1,244 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Une année de voyages : Des voyages testés... Des idées pour partir toute l'année !{% endblock %}
+
+{% block body %}
+    <nav class="menu">
+        <div class="menu__wrapper wrapper">
+            <a class="brand" href="{{ path('index') }}">
+                <img class="brand__image" src="/images/logo_white.png" alt="Logo de Une Année de Voyage">
+            </a>
+            <ul class="menu__items">
+                <li class="menu__item">
+                    <a class="menu__link" href="{{ path('article_list', {'page': 1}) }}">Actualité</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="spas.html">Spas</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="hotels.html">Hôtels</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="restaurants.html">Restaurants</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="{{ path('contact') }}">Contact</a>
+                </li>
+            </ul>
+            <button class="menu__button"></button>
+        </div>
+    </nav>
+    <header class="header">
+        <video class="header__image" src="/images/header_background.mp4" autoplay="true" loop muted></video>
+        <div class="header__content">
+            <h1 class="header__title">Une Année de Voyages</h1>
+            <h2 class="header__subtitle">Des voyages testés... Des idées pour partir toute l'année !</h2>
+        </div>
+        <div class="social">
+            <a class="social__link" target="_blank" href="https://www.facebook.com/uneanneedevoyages/">
+                <i class="social__icon fa fa-facebook"></i>
+            </a>
+            <a class="social__link" target="_blank" href="https://twitter.com/1AnneeDeVoyages">
+                <i class="social__icon fa fa-twitter"></i>
+            </a>
+            <a class="social__link" target="_blank" href="https://www.instagram.com/uneanneedevoyages/">
+                <i class="social__icon fa fa-instagram"></i>
+            </a>
+            <a class="social__link" target="_blank" href="https://www.youtube.com/channel/UCESfTu2chDpHfGFkx-cfKDQ">
+                <i class="social__icon fa fa-youtube"></i>
+            </a>
+        </div>
+    </header>
+    <section class="section">
+        <div class="section__wrapper wrapper">
+            <p class="section__catchphrase">Soyez un voyageur averti !</p>
+            <h3 class="section__title">Dernières publications</h3>
+            <div class="section__cards">
+                {% for article in articles %}
+                    <article class="card">
+                        <header class="card__header">
+                            <img class="card__thumbnail" src="images/card_thumbnail.jpg" alt="Vignette de l'article">
+                        </header>
+                        <main class="card__content">
+                            <h4 class="card__title">{{ article.title }}</h4>
+                            <p class="card__description">{{ article.shortDescription }}</p>
+                            <a class="card__link" href="{{ path('article_show', {'slug': article.slug }) }}">Lire l'article</a>
+                        </main>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__wrapper wrapper">
+            <div class="section__content">
+                <h3 class="section__title">Un mook collector</h3>
+                <blockquote class="section__quote">"Un mook (contraction de magazine et book) est un ouvrage hybride dont le format se situe entre le magazine et le livre. Il est publié de manière périodique et renferme essentiellement de grands reportages. Il comprend également des dessins et des photos servant à l’illustration des textes."</blockquote>
+                <p class="section__author">Wikipedia</p>
+                <div class="section__container">
+                    <ul class="section__items">
+                        <li class="section__item">Un mook annuel à collectionner grâce à sa couverture illustrée, œuvre d'un artiste</li>
+                        <li class="section__item">Des goddies : 5 dessins originaux issus des "illustrateurs voyageurs" de la communauté internationale Urban Sketchers</li>
+                        <li class="section__item">300 pages de reportages sous forme de "carnets de voyages"</li>
+                        <li class="section__item">Des destinations testées et approuvées par nos journalistes (pas de mauvaise surprise à l'arrivée !)</li>
+                        <li class="section__item">40.000 exemplaires vendus en kiosques, librairies et sur notre site</li>
+                        <li class="section__item">Des fiches pratiques d'exception et détachables.</li>
+                        <li class="section__item">TV YouTube</li>
+                    </ul>
+                    <img class="section__image" src="images/mook.jpg" alt="Couverture du mook n°1 de 2018">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__wrapper wrapper">
+            <div class="section__content">
+                <h3 class="section__title">Une appli</h3>
+                <div class="section__container section__container--2">
+                    <ul class="section__items">
+                        <li class="section__item">Qui supprime l'obsolescence du print... Rien que ça ! Une Année De Voyages est un mook print qui vit simultanément à l’ère du numérique... C'est sur l'application que nos fiches pratiques seront updatées et téléchargeables ! Ainsi Une Année De Voyages devient une sorte de "bible" intemporelle des destinations avec des reportages bénéficiant d'une durée de vie illimitée... Le rêve !</li>
+                        <li class="section__item">Qui vous dit, sous forme d'un Quizz fun et personnalisé "Quel voyage êtes-vous ?" dont le résultat renvoie forcément à une destination qui correspond à un de nos articles.</li>
+                    </ul>
+                    <img class="section__image section__image--2" src="images/mockup.png" alt="Image de l'app">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slider__container">
+            <div class="slider__item">
+                <img class="slider__image" src="images/slider_1.jpg" alt="">
+                <div class="slider__content">
+                    <h4 class="slider__title">Lorem ipsum</h4>
+                    <p class="slider__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corporis veniam, repellendus. Enim accusantium culpa, nulla nam mollitia provident rem, pariatur. Sequi eveniet, veniam quisquam facilis consectetur fuga iure ut!</p>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="images/slider_2.jpg" alt="">
+                <div class="slider__content">
+                    <h4 class="slider__title">Lorem ipsum</h4>
+                    <p class="slider__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corporis veniam, repellendus. Enim accusantium culpa, nulla nam mollitia provident rem, pariatur. Sequi eveniet, veniam quisquam facilis consectetur fuga iure ut!</p>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="images/slider_3.jpg" alt="">
+                <div class="slider__content">
+                    <h4 class="slider__title">Lorem ipsum</h4>
+                    <p class="slider__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corporis veniam, repellendus. Enim accusantium culpa, nulla nam mollitia provident rem, pariatur. Sequi eveniet, veniam quisquam facilis consectetur fuga iure ut!</p>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="images/slider_4.jpg" alt="">
+                <div class="slider__content">
+                    <h4 class="slider__title">Lorem ipsum</h4>
+                    <p class="slider__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corporis veniam, repellendus. Enim accusantium culpa, nulla nam mollitia provident rem, pariatur. Sequi eveniet, veniam quisquam facilis consectetur fuga iure ut!</p>
+                </div>
+            </div>
+            <div class="slider__item">
+                <img class="slider__image" src="images/slider_5.jpg" alt="">
+                <div class="slider__content">
+                    <h4 class="slider__title">Lorem ipsum</h4>
+                    <p class="slider__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corporis veniam, repellendus. Enim accusantium culpa, nulla nam mollitia provident rem, pariatur. Sequi eveniet, veniam quisquam facilis consectetur fuga iure ut!</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider__buttons">
+            <button class="slider__button slider__button--left"><</button>
+            <button class="slider__button slider__button--right">></button>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__wrapper wrapper">
+            <h3 class="section__title">Lieux à découvrir</h3>
+            <div class="section__cards">
+                <article class="card">
+                    <header class="card__header">
+                        <img class="card__thumbnail" src="images/card_thumbnail.jpg" alt="Vignette de l'article">
+                    </header>
+                    <main class="card__content">
+                        <h4 class="card__title">Lorem ipsum</h4>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius labore distinctio magni quidem, debitis qui quasi, magnam quae placeat dolorem explicabo adipisci ipsam laborum neque at culpa nesciunt praesentium assumenda.</p>
+                        <a class="card__link" href="fiche.html">En savoir plus</a>
+                    </main>
+                </article>
+                <article class="card">
+                    <header class="card__header">
+                        <img class="card__thumbnail" src="images/card_thumbnail.jpg" alt="Vignette de l'article">
+                    </header>
+                    <main class="card__content">
+                        <h4 class="card__title">Lorem ipsum</h4>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius labore distinctio magni quidem, debitis qui quasi, magnam quae placeat dolorem explicabo adipisci ipsam laborum neque at culpa nesciunt praesentium assumenda.</p>
+                        <a class="card__link" href="fiche.html">En savoir plus</a>
+                    </main>
+                </article>
+                <article class="card">
+                    <header class="card__header">
+                        <img class="card__thumbnail" src="images/card_thumbnail.jpg" alt="Vignette de l'article">
+                    </header>
+                    <main class="card__content">
+                        <h4 class="card__title">Lorem ipsum</h4>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius labore distinctio magni quidem, debitis qui quasi, magnam quae placeat dolorem explicabo adipisci ipsam laborum neque at culpa nesciunt praesentium assumenda.</p>
+                        <a class="card__link" href="fiche.html">En savoir plus</a>
+                    </main>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="numbers">
+        <div class="numbers__wrapper wrapper">
+            <ul class="numbers__items">
+                <li class="numbers__item">
+                    <p class="numbers__stat">11</p>
+                    <p class="numbers__text">Reporters et Photographes</p>
+                </li>
+                <li class="numbers__item">
+                    <p class="numbers__stat">130</p>
+                    <p class="numbers__text">Destinations</p>
+                </li>
+                <li class="numbers__item">
+                    <p class="numbers__stat">12,000,000</p>
+                    <p class="numbers__text">Pages imprimées</p>
+                </li>
+                <li class="numbers__item">
+                    <p class="numbers__stat">4211</p>
+                    <p class="numbers__text">Photos sélectionnées</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="newsair">
+        <div class="newsair__wrapper wrapper">
+            <h3 class="newsair__title">News Air</h3>
+            <p class="newsair__text">Acheter un billet "Tour du monde" pour moins de 3.000 €… Séquencer un voyage à destinations multiples… Cumuler les milles inter-compagnies… Permettre un stop longue durée sur une escale avec un billet unique… sont autant d'avantages offerts par les Alliances des Compagnies aériennes !</p>
+            <p class="newsair__text">Le voyage commence à peine le pied posé dans l'avion. La meilleure façon de découvrir une destination consiste à voyager avec la Compagnie aérienne nationale. Chacune avec son style, sa culture, son identité s'applique à nous transmettre "l'esprit du pays", dans les meilleures conditions de sécurité, de confort et d'accueil.</p>
+            <p class="newsair__text">Les compagnies aériennes, regroupées en trois Alliances mondiales, s'enrichissent de leur multiculturalisme, offrent des innovations constantes, possèdent un "réseau" planétaire. Elles mutualisent leurs qualités et compétences, améliorent et harmonisent l'expérience "voyage".</p>
+            <p class="newsair__text">Découvrez-les.</p>
+            <div class="newsair__container">
+                <div class="newsair__item">
+                    <img class="newsair__brand" src="images/logo_staralliance.png" alt="Logo de StarAlliance">
+                    <div class="newsair__timeline">
+                        <a class="twitter-timeline" href="https://twitter.com/staralliance?ref_src=twsrc%5Etfw">Tweets by staralliance</a>
+                    </div>
+                </div>
+                <div class="newsair__item">
+                    <img class="newsair__brand" src="images/logo_skyteam.png" alt="Logo de SkyTeam">
+                    <div class="newsair__timeline">
+                        <a class="twitter-timeline" href="https://twitter.com/skyteam?ref_src=twsrc%5Etfw">Tweets by skyteam</a>
+                    </div>
+                </div>
+                <div class="newsair__item">
+                    <img class="newsair__brand" src="images/logo_oneworld.png" alt="Logo de OneWorld">
+                    <div class="newsair__timeline">
+                        <a class="twitter-timeline" href="https://twitter.com/traveloneworld?ref_src=twsrc%5Etfw">Tweets by traveloneworld</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "footer.html.twig" %}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="js/app.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% endblock %}

@@ -1,0 +1,125 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Une année de voyages : Des voyages testés... Des idées pour partir toute l'année !{% endblock %}
+
+{% block body %}
+    <nav class="menu">
+        <div class="menu__wrapper wrapper">
+            <a class="brand" href="{{ path('index') }}">
+                <img class="brand__image" src="/images/logo_white.png" alt="Logo de Une Année de Voyage">
+            </a>
+            <ul class="menu__items">
+                <li class="menu__item">
+                    <a class="menu__link" href="{{ path('article_list', {'page': 1}) }}">Actualité</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="spas.html">Spas</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="hotels.html">Hôtels</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="restaurants.html">Restaurants</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="{{ path('contact') }}">Contact</a>
+                </li>
+            </ul>
+            <button class="menu__button"></button>
+        </div>
+    </nav>
+    <header class="header">
+        <img class="header__image" src="/images/header_actualite.jpg"></img>
+        <div class="header__content--page">
+            <h1 class="header__name">Actualité</h1>
+            <h2 class="header__description">Découvrez nos derniers articles et passer le voyage de vos rêves</h2>
+        </div>
+        <div class="social">
+            <a class="social__link" target="_blank" href="https://www.facebook.com/uneanneedevoyages/">
+                <i class="social__icon fa fa-facebook"></i>
+            </a>
+            <a class="social__link" target="_blank" href="https://twitter.com/1AnneeDeVoyages">
+                <i class="social__icon fa fa-twitter"></i>
+            </a>
+            <a class="social__link" target="_blank" href="https://www.instagram.com/uneanneedevoyages/">
+                <i class="social__icon fa fa-instagram"></i>
+            </a>
+            <a class="social__link" target="_blank" href="https://www.youtube.com/channel/UCESfTu2chDpHfGFkx-cfKDQ">
+                <i class="social__icon fa fa-youtube"></i>
+            </a>
+        </div>
+    </header>
+    <section class="section">
+        <div class="section__wrapper wrapper">
+            <div class="section__cards">
+                {% if articles.count < 4 %}
+                    {% for article in articles %}
+                        <article class="card">
+                            <header class="card__header">
+                                <img class="card__thumbnail" src="/images/card_thumbnail.jpg" alt="Vignette de l'article">
+                            </header>
+                            <main class="card__content">
+                                <h4 class="card__title">{{ article.title }}</h4>
+                                <p class="card__description">{{ article.shortDescription }}</p>
+                                <a class="card__link" href="{{ path('article_show', {'slug': article.slug }) }}">Lire l'article</a>
+                            </main>
+                        </article>
+                    {% endfor %}
+                {% else %}
+                    {% for article in articles|slice(0, 3) %}
+                        <article class="card">
+                            <header class="card__header">
+                                <img class="card__thumbnail" src="/images/card_thumbnail.jpg" alt="Vignette de l'article">
+                            </header>
+                            <main class="card__content">
+                                <h4 class="card__title">{{ article.title }}</h4>
+                                <p class="card__description">{{ article.shortDescription }}</p>
+                                <a class="card__link" href="{{ path('article_show', {'slug': article.slug }) }}">Lire l'article</a>
+                            </main>
+                        </article>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="section__cards">
+                    {% for article in articles|slice(3, 6) %}
+                        <article class="card">
+                            <header class="card__header">
+                                <img class="card__thumbnail" src="/images/card_thumbnail.jpg" alt="Vignette de l'article">
+                            </header>
+                            <main class="card__content">
+                                <h4 class="card__title">{{ article.title }}</h4>
+                                <p class="card__description">{{ article.shortDescription }}</p>
+                                <a class="card__link" href="{{ path('article_show', {'slug': article.slug }) }}">Lire l'article</a>
+                            </main>
+                        </article>
+                    {% endfor %}
+            </div>
+        </div>
+        {% if pagination.nbPages > 0 %}
+            <div class="pagination">
+                <div class="pagination__wrapper wrapper">
+                    <ul class="pagination__items">
+                        {% if pagination.page > 1 %}
+                            <li class="pagination__item pagination__item--button">
+                                <a class="pagination__link pagination__link--button" href="{{ path(pagination.routeName, {'page': pagination.page - 1}) }}"><</a>
+                            </li>
+                        {% endif %}
+                        {% for p in range(max(pagination.page-4, 1), min(pagination.page+4, pagination.nbPages)) %}
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="{{ path(pagination.routeName, pagination.routeParam|merge({'page': p})) }}">
+                                    {{ p }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                        {% if pagination.page < pagination.nbPages %}
+                            <li class="pagination__item pagination__item--button">
+                                <a class="pagination__link pagination__link--button" href="{{ path(pagination.routeName, {'page': pagination.page + 1}) }}">></a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
+    </section>
+    {% include "footer.html.twig" %}
+{% endblock %}

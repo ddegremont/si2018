@@ -1,0 +1,93 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Une année de voyages : Des voyages testés... Des idées pour partir toute l'année !{% endblock %}
+
+{% block body %}
+    <nav class="menu">
+        <div class="menu__wrapper wrapper">
+            <a class="brand" href="{{ path('index') }}">
+                <img class="brand__image" src="/images/logo_white.png" alt="Logo de Une Année de Voyage">
+            </a>
+            <ul class="menu__items">
+                <li class="menu__item">
+                    <a class="menu__link" href="{{ path('article_list', {'page': 1}) }}">Actualité</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="spas.html">Spas</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="hotels.html">Hôtels</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="restaurants.html">Restaurants</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="{{ path('contact') }}">Contact</a>
+                </li>
+            </ul>
+            <button class="menu__button"></button>
+        </div>
+    </nav>
+    <header class="header">
+        <img class="header__image" src="/images/header_contact.jpg"></img>
+        <div class="header__content--page">
+            <h1 class="header__name">Contact</h1>
+            <h2 class="header__description">N'hésitez pas à nous contacter, on ne mord pas !</h2>
+        </div>
+        <div class="social">
+            <a class="social__link" target="_blank" href="https://www.facebook.com/uneanneedevoyages/">
+                <i class="social__icon fa fa-facebook"></i>
+            </a>
+            <a class="social__link" target="_blank" href="https://twitter.com/1AnneeDeVoyages">
+                <i class="social__icon fa fa-twitter"></i>
+            </a>
+            <a class="social__link" target="_blank" href="https://www.instagram.com/uneanneedevoyages/">
+                <i class="social__icon fa fa-instagram"></i>
+            </a>
+            <a class="social__link" target="_blank" href="https://www.youtube.com/channel/UCESfTu2chDpHfGFkx-cfKDQ">
+                <i class="social__icon fa fa-youtube"></i>
+            </a>
+        </div>
+    </header>
+    <section class="contact">
+        <div class="contact__wrapper wrapper">
+            <div class="contact__infos">
+                <ul class="contact__items">
+                    <li class="contact__item">Une Année de Voyages</li>
+                    <li class="contact__item">32, rue des Peupliers</li>
+                    <li class="contact__item">92100 Boulogne</li>
+                    <li class="contact__item">Phone : <a class="contact__link" href="tel:+3341310513">+33 (0) 413 10 513</a></li>
+                    <li class="contact__item">E-mail : <a class="contact__link" href="mailto:rédaction@uneanneedevoyages.com">rédaction@uneanneedevoyages.com</a></li>
+                    <li class="contact__item">Ouvert du lundi au vendredi de 10h à 18h</li>
+                    <li class="contact__item">
+                        <p class="contact__text">Rédactrice en chef : Judith Lossmann</p>
+                        <a class="contact__link" href="tel:+33688316137">+ 33 (0) 6 88 31 61 37</a>
+                        <a class="contact__link" href="mailto:judith.lossmann@uneanneedevoyages.com">judith.lossmann@uneanneedevoyages.com</a>
+                    </li>
+                    <li class="contact__item">
+                        <p class="contact__text">Pigiste et secrétaire de rédaction : Caroline M’zali</p>
+                        <a class="contact__link" href="tel:+33771128748">+33 (0) 7 71 12 87 48</a>
+                        <a class="contact__link" href="mailto:caroline.mzali@uneanneedevoyages.com">caroline.mzali@uneanneedevoyages.com</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="contact__form">
+                <select class="contact__select" name="profil">
+                    <option class="contact__option" value disabled selected>Vous êtes :</option>
+                    <option class="contact__option" value="Un journaliste">Un journaliste</option>
+                    <option class="contact__option" value="Un annonceur">Un annonceur</option>
+                    <option class="contact__option" value="Un lecteur">Un lecteur</option>
+                    <option class="contact__option" value="Un partenaire">Un partenaire</option>
+                    <option class="contact__option" value="Un office de tourisme">Un office de tourisme</option>
+                </select>
+                <input class="contact__input" type="text" placeholder="Votre société" text-area="Votre société">
+                <input class="contact__input" type="text" placeholder="Votre nom" text-area="Votre nom">
+                <input class="contact__input" type="text" placeholder="Votre e-mail" text-area="Votre e-mail">
+                <input class="contact__input" type="text" placeholder="Votre téléphone" text-area="Votre téléphone">
+                <textarea class="contact__textarea" name="" id="" cols="30" rows="10" placeholder="Saisissez votre message"></textarea>
+                <button class="contact__button" type="submit" value="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    {% include "footer.html.twig" %}
+{% endblock %}
