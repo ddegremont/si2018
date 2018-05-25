@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Top 100</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+</head>
+
+<body>
+  <div class="menuDesktop">
+    <nav class="navDesktop">
+      <ul class="ulDesktop">
+        <li class="liDesktop"><a href="../../index.php" class="liLinks">Accueil</a></li>
+        <li class="liDesktop"><a href="./articles.html" class="liLinks">Article</a></li>
+        <li class="liDesktop"><a href="./top.html" class="liLinks">Top 100</a></li>
+        <li class="liDesktop"><a href="./contact.html" class="liLinks">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="burgermenuContainer --phoneTablet">
+    <div class="button_container" id="toggle">
+      <span class="top --pos"></span>
+      <span class="middle --pos"></span>
+      <span class="bottom --pos"></span>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu --nav">
+        <ul>
+          <li><a href="../../index.php" class="container-a">Accueil</a></li>
+          <li> <a href="./articles.html" class="container-a">Article</a></li>
+          <li><a href="./top.html" class="container-a">Top 100</a></li>
+          <li><a href="./contact.html" class="container-a">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="top">
+    <div class="top-container">
+      <div class="top-titleContainer">
+        <h1 class="top-mainTitle">Top 100</h1>
+        <div class="top-titleDecor"></div>
+      </div>
+
+      <div class="top-stroke"></div>
+    </div>
+    <div class="articles-imgContainer">
+      <div class="articles-imgContentcontainer --button ">
+        <a href="#" onclick="modal()" class="articles-imgLink"><img src="../img/bar.png" alt="img" class="articles-imgContent"></a>
+        <a href="#" onclick="modal()" class="articles-imgLink"><img src="../img/restaurants.png" alt="img" class="articles-imgContent"></a>
+        <a href="#" onclick="modal()" class="articles-imgLink"><img src="../img/hotels.png" alt="img" class="articles-imgContent"></a>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <div class="modal-imgcontent">
+        <img src="../img/img1.jpg" alt="">
+      </div>
+      <div class="modal-contentContainer">
+        <div class="modal-leftContent">
+          <h3 class="modal-title">Titre de L'article</h3><br>
+          <p class="modal-para">auteur</p><br>
+          <p class="modal-para"><span class="modal-legend">lieu</span></p><br>
+          <p class="modal-para">date</p><br>
+        </div>
+        <div class="modal-rightContent">
+          <p class="modal-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL -->
+
+  <script src="../../index.js"></script>
+</body>
+
+</html>
