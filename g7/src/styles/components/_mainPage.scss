@@ -1,0 +1,228 @@
+.loadingOverlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  z-index: 5;
+  animation: fadeOut 3s ease-in;
+  &-img {
+    height: 15rem;
+    width: 15rem;
+    animation: fadeOut 1.5s ease-in;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-text {
+    font-size: 2rem;
+    color: $secondaryColor;
+    text-align: center;
+    margin-top: 10rem;
+    animation: fadeOut 1.5s ease-in;
+  }
+}
+
+.mainPage {
+  .backdrop {
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    background: $white;
+    width: 37.5rem;
+    height: 20.4rem;
+    @include for-size(desktop-up) {
+      width: 100%;
+      height: 46rem;
+    }
+    &-img {
+      width: 11.8rem;
+      height: 16.8rem;
+      margin: 0 auto;
+      @include for-size(desktop-up) {
+        height: 35.8rem;
+        width: 25.3rem;
+      }
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  &-titleContainer {
+    border-bottom: 2px solid rgba(#000, .1);
+    padding-bottom: 2.25rem;
+    @include for-size(desktop-up) {
+      border: none;
+    }
+    &-title {
+      margin-top: 3.8rem;
+      margin-left: 1.5rem;
+      width: 20rem;
+      font-size: 2.4rem;
+      @include for-size(desktop-up) {
+        font-size: 3.8rem;
+        width: 40rem;
+        margin-left: 7rem;
+      }
+      & h2 {
+        position: relative;
+        line-height: 1.5;
+        &::after {
+          content: " ";
+          height: .3rem;
+          width: 5.3rem;
+          background: $mainColor;
+          position: absolute;
+          bottom: 10%;
+          right: 10%;
+          @include for-size(desktop-up) {
+            right: 40%;
+          }
+        }
+      }
+    }
+  }
+  &-twitterFeed {
+    margin-bottom: 15rem;
+    margin-left: 2.4rem;
+    width: 22rem;
+    font-size: 2.4rem;
+    @include for-size(desktop-up) {
+      font-size: 3.8rem;
+      width: 33rem;
+      margin-left: 7rem;
+    }
+    & h2 {
+      position: relative;
+      line-height: 1.5;
+      &::after {
+        content: " ";
+        height: .3rem;
+        width: 5.3rem;
+        background: $mainColor;
+        position: absolute;
+        bottom: 10%;
+        right: 0%;
+      }
+    }
+  }
+}
+
+
+.bonPlansTitle {
+  font-size: 2.4rem;
+  margin-top: 3.8rem;
+  margin-left: 2.4rem;
+  width: 18rem;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  @include for-size(desktop-up) {
+    font-size: 3.8rem;
+    width: 29rem;
+    margin-left: 7rem;
+  }
+  & h2 {
+    position: relative;
+    &::after {
+      content: " ";
+      height: .3rem;
+      width: 5.3rem;
+      background: $mainColor;
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+    }
+  }
+}
+
+
+.bonPlansContainer {
+  border-bottom: 2px solid rgba(#000, .1);
+  @include for-size(desktop-up) {
+    border: none;
+  }
+  &-main {
+    width: 87.2vw;
+    margin: 0 auto;
+    @include for-size(desktop-up) {
+      width: 85%;
+      margin-left: 8rem;
+      margin-right: 7rem;
+    }
+  }
+}
+.bonPlanContainer-a {
+  .recommandationElement {
+    margin: 2rem 0;
+    @include for-size(desktop-up) {
+      margin-top: 8rem;
+    }
+    .background {
+      height: 105px;
+      width: 327px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 16px;
+      @include for-size(desktop-up) {
+        height: 230px;
+        width: 360px;
+      }
+      .backgroundImg {
+        position: absolute;
+        bottom: -70px;
+        width: 100%;
+      }
+    }
+    .mainElementContainerMainPage {
+      display: flex;
+      .elementContainerMainPage {
+        width: 75%;
+        .elementTitleMainPage {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 25px;
+        }
+        .elementDescriptionContainerMainPage {
+          display: flex;
+          justify-content: space-between;
+          .elementAdresseMainPage {
+            font-size: 14px;
+            font-weight: normal;
+          }
+          .divideMainPage {
+            background: #000;
+            width: 39px;
+            height: 1px;
+            margin: auto;
+          }
+        }
+      }
+      .numberContainerMainPage {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        background: #F5F5F5;
+        .numberElementMainPage {
+          font-size: 16px;
+          font-weight: bold;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+
+
+.mainPageContainerarticles {
+  @include for-size(desktop-up) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

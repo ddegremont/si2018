@@ -1,0 +1,58 @@
+// global
+@import './global/reset';
+@import './global/variables';
+
+// mixins
+@import './mixins/forsize';
+@import './mixins/button';
+@import './mixins/mixins';
+// components
+@import './components/mainPage';
+@import './components/login';
+@import './components/articles';
+@import './components/articlesPage';
+@import './components/search';
+@import './components/footer';
+@import './components/keyframes';
+@import './components/slider';
+@import './components/connect';
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+
+::selection {
+    background-color: $darkYellow;
+    color: #000;
+    text-shadow: none;
+}
+
+
+.desktop {
+  display: none;
+  @include for-size(desktop-up) {
+    display: block;
+  }
+}
+
+.desktopFlex {
+  display: none;
+  @include for-size(desktop-up) {
+    display: flex;
+  }
+}
+
+
+.mobile {
+  @include for-size(desktop-up) {
+    display: none;
+  }
+}

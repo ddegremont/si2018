@@ -1,0 +1,119 @@
+.articlesContainer {
+    margin-bottom: 10rem;
+  @include for-size(desktop-up) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12rem;
+  }
+}
+.articles-title {
+  width: 60%;
+  font-size: 2.8rem;
+  color: $mainColor;
+  margin-top: 7rem;
+  margin-left: 2.6rem;
+  @include for-size(desktop-up) {
+    width: 27.9%;
+    margin-left: 4rem;
+  }
+  &-h2 {
+    position: relative;
+    width: 15rem;
+    margin-bottom: 3rem;
+    @include for-size(desktop-up) {
+      width: 18rem;
+    }
+    &::after {
+      content: " ";
+      height: .3rem;
+      width: 5.3rem;
+      background: $mainColor;
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+    }
+  }
+  & p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    width: 80%;
+    margin-top: 2rem;
+  }
+}
+.articleContainer {
+  width: 100%;
+  @include for-size(desktop-up) {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+  }
+  &-article {
+    display: flex;
+    justify-content: flex-start;
+    height: 16rem;
+    border-bottom: 2px solid rgba(#000, .16);
+    @include for-size(desktop-up) {
+      width: 100%;
+      margin-top: 0;
+      border-bottom: none;
+      display: block;
+      height: auto;
+    }
+    &-img {
+      height: 9rem;
+      width: 12rem;
+      overflow: hidden;
+      margin-left: 1.4rem;
+      align-self: center;
+    @include for-size(desktop-up) {
+      width: 70%;
+      height: auto;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      }
+    }
+    &-titleContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 2rem;
+      color: $mainColor;
+      margin: 4rem 2.5rem;
+      @include for-size(desktop-up) {
+        margin: 2rem 0;
+        text-align: center;
+      }
+    }
+    &-details {
+      display: flex;
+      justify-content: space-between;
+      color: rgba($mainColor, .5);
+      font-size: 1.2rem;
+      white-space: nowrap;
+      width: 85%;
+      padding-top: 0px;
+      @include for-size(desktop-up) {
+        align-items: center;
+        width: 30%;
+        padding-top: 10px;
+        margin: 0 auto;
+      }
+      &-date{
+        position: relative;
+        &::after {
+          content: " ";
+          position: absolute;
+          bottom: 40%;
+          left: 110%;
+          height: .1rem;
+          width: 3rem;
+          background: rgba($mainColor, .5);
+          @include for-size(desktop-up) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
