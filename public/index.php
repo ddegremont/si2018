@@ -1,9 +1,12 @@
+<?php
+require_once "../admin/connection.php";
+require_once "../admin/functions.php";
+?>
 <!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <link rel="stylesheet" href="styles/styles.css">
@@ -125,39 +128,10 @@
             <h3 class="Plans__maintitle">Bons plans</h3>
             <div class="Plans__titleLine"></div>
         </div>
-        <div class="Plans__container">
-            <div class="Plans__card">
-                <img class="Plans__img" src="img/thailande.png" alt="Thailande image">
-                <h3 class="Plans__recent">Récent</h3>
-                <h4 class="Plans__title">La Thaïlande: Un voyage incroyable.</h4>
-                <p class="Plans__text">Et voici un bon plan solo dans un pays qui s'y prête parfaitement bien au vu des rencontres que vous ferez sur place…</p>
-                <div class="Plans__articleLinkContainer">
-                    <a class="Plans__articleLink" href="bons-plans-aériens/plug.php">Voir l'article <span class="Container__arrow">▶</span></a>
-                </div>
-            </div>
-        </div>
-        <div class="Plans__container">
-            <div class="Plans__card">
-                <img class="Plans__img" src="img/bon-plan-maroc.jpg" alt="Maroc image">
-                <h3 class="Plans__recent">Récent</h3>
-                <h4 class="Plans__title"> Turquie: Séjour. </h4>
-                <p class="Plans__text">Entrer dans les coulisses d’une Turquie autenthique en optant pour une location de charme au village...</p>
-                <div class="Plans__articleLinkContainer">
-                    <a class="Plans__articleLink" href="bons-plans-aériens/plug.php">Voir l'article <span class="Container__arrow">▶</span></a>
-                </div>
-            </div>
-        </div>
-        <div class="Plans__container">
-            <div class="Plans__card">
-                <img class="Plans__img" src="img/bon-plan-malte.jpg" alt="Malte image">
-                <h3 class="Plans__recent">Récent</h3>
-                <h4 class="Plans__title">Malte: Voyage. </h4>
-                <p class="Plans__text">Vous avez envie de partir au soleil et de vous prélasser sur une plage le long de la mer Méditerranée? Envolez-vous… </p>
-                <div class="Plans__articleLinkContainer">
-                    <a class="Plans__articleLink" href="bons-plans-aériens/plug.php">Voir l'article <span class="Container__arrow">▶</span></a>
-                </div>
-            </div>
-        </div>
+
+        <?php
+            getGoodDeals($pdo);
+        ?>
 
         <div class="Plans__good">
             <p class="Plans__goodText">Voir tous les bons plans</p>
@@ -233,16 +207,13 @@
         </div>
         <div class="Partners__logos">
             <div class="Partners__logosContainer">
-                <img class="Partners__logo" src="img/nikon.png" alt="Nikon logo">
-                <img class="Partners__logo" src="img/adp.png" alt="Adp logo">
-                <img class="Partners__logo" src="img/fujifilm.png" alt="Fujifilm">
+                <?php
+                getPatnersData($pdo);
+                ?>
             </div>
         </div>
 
     </section>
-
-<script type="text/javascript" src="./js/main.js">
-
-</script>
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

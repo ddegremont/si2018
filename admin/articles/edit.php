@@ -5,12 +5,13 @@ if (!isset($_GET['id'])) {
 }
 require_once '../connection.php';
 require_once '../functions.php';
+include "../header.php";
 $sql = "SELECT 
     `id`,
     `title`,
     `subtitle`,
     `content`,
-    `link`,
+    `twitter_link`,
     `details`,
     `deadline`,
     `cover_img`
@@ -29,45 +30,49 @@ if ($row === false) {
     exit;
 }
 ?>
-<h2>Editer un article</h2>
-<a href="./index.php">retour aux articles</a>
-<form action="doedit.php" method="post">
-    <input type="hidden" name="article[id]" value="<?=$row['id']?>">
-    <div class="form-group">
-        <label for="name"> Titre </label>
-        <input type="text" class="form-control" name="article[title]" value="<?=$row['title']?>">
-    </div>
+<div class="container">
+    <h2>Editer un article</h2>
+    <a href="./index.php">retour aux articles</a>
+    <form action="doedit.php" method="post">
+        <input type="hidden" name="article[id]" value="<?=$row['id']?>">
+        <div class="form-group">
+            <label for="name"> Titre </label>
+            <input type="text" class="form-control" name="article[title]" value="<?=$row['title']?>">
+        </div>
 
-    <div class="form-group">
-        <label for="subtitle"> Sous titre </label>
-        <input type="text" class="form-control" name="article[subtitle]" value="<?=$row['subtitle']?>">
-    </div>
+        <div class="form-group">
+            <label for="subtitle"> Sous titre </label>
+            <input type="text" class="form-control" name="article[subtitle]" value="<?=$row['subtitle']?>">
+        </div>
 
-    <div class="form-group">
-        <label for="content"> contenu de l'article </label>
-        <textarea class="form-control" name="article[content]" ><?=$row['content']?></textarea>
-    </div>
+        <div class="form-group">
+            <label for="content"> contenu de l'article </label>
+            <textarea class="form-control" name="article[content]" ><?=$row['content']?></textarea>
+        </div>
 
-    <div class="form-group">
-        <label for="link"> lien (optionnel) </label>
-        <input class="form-control" name="article[link]" ><?=$row['link']?>
-    </div>
+        <div class="form-group">
+            <label for="link"> lien (optionnel) </label>
+            <input class="form-control" name="article[link]" ><?=$row['link']?>
+        </div>
 
-    <div class="form-group">
-        <label for="details"> details </label>
-        <input type="text" class="form-control" name="article[details]" value="<?=$row['details']?>">
-    </div>
+        <div class="form-group">
+            <label for="details"> details </label>
+            <input type="text" class="form-control" name="article[details]" value="<?=$row['details']?>">
+        </div>
 
-    <div class="form-group">
-        <label for="deadline"> date limite </label>
-        <input type="date" class="form-control" name="article[deadline]" value="<?=$row['deadline']?>">
-    </div>
+        <div class="form-group">
+            <label for="deadline"> date limite </label>
+            <input type="date" class="form-control" name="article[deadline]" value="<?=$row['deadline']?>">
+        </div>
 
-    <div class="form-group">
-        <label for="cover_img"> image de couverture </label>
-        <input type="text" class="form-control" name="article[cover_img]" value="<?=$row['cover_img']?>">
-    </div>
+        <div class="form-group">
+            <label for="cover_img"> image de couverture </label>
+            <input type="text" class="form-control" name="article[cover_img]" value="<?=$row['cover_img']?>">
+        </div>
 
-    <button type="submit" class="btn btn-primary">Modifier</button>
+        <button type="submit" class="btn btn-primary">Modifier</button>
 
-</form>
+    </form>
+
+</div>
+<?php include "../footer.php";

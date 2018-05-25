@@ -13,7 +13,7 @@ function getArticleData($pdo)
     `title`,
     `subtitle`,
     `content`,
-    `link`,
+    `twitter_link`,
     `details`,
     `deadline`,
     `cover_img`
@@ -31,4 +31,58 @@ function getArticleData($pdo)
         header("Location : admin.php?error=noidtoedit");
         exit;
     }
+}
+function getPatnersData($pdo)
+{
+    $sql = "SELECT
+          `logo_src`,
+          `logo_alt`
+        FROM
+          `partners`
+        ORDER BY 
+        `id`
+        DESC
+;";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    handlePDOError($stmt);
+
+    while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):
+        ?>
+            <img class="Partners__logo" src="img/<?=$row['logo_src']?>" alt="<?=$row['logo_alt']?>">
+        <?php
+    endwhile;
+}
+
+function getGoodDeals($pdo)
+{
+    $sql = "SELECT
+          `id`,
+          `title`,
+          `content`,
+          `cover_img`
+        FROM
+          `articles`
+        ORDER BY 
+        `id`
+;";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    handlePDOError($stmt);
+
+    while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):
+        ?>
+        <div class="Plans__container">
+            <div class="Plans__card">
+                <img class="Plans__img" src="img/<?=$row['cover_img']?>" alt="Thailande image">
+                <h3 class="Plans__recent">Récent</h3>
+                <h4 class="Plans__title"><?=$row['title']?></h4>
+                <p class="Plans__text"><?=$row['content']?></p>
+                <div class="Plans__articleLinkContainer">
+                    <a class="Plans__articleLink" href="bons-plans-aériens/plug.php">Voir l'article <span class="Container__arrow">▶</span></a>
+                </div>
+            </div>
+        </div>
+        <?php
+    endwhile;
 }

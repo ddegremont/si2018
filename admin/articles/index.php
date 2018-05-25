@@ -1,7 +1,9 @@
 <?php
 require_once '../connection.php';
 require_once '../functions.php';
+include '../header.php';
 ?>
+<div class="container">
     <h2>Articles</h2>
     <a href="../index.php">Home admin</a>
     <p>Ici, vous gérez les articles</p>
@@ -37,5 +39,6 @@ require_once '../functions.php';
         <?php endwhile;?>
         </tbody>
     </table>
+</div>
 <?php
-require_once '../footer.php';
+include '../footer.php';

@@ -5,12 +5,13 @@ if (!isset($_GET['id'])) {
 }
 require_once "../connection.php";
 require_once "../functions.php";
+include "../header.php";
 $sql = "SELECT 
     `id`,
     `title`,
     `subtitle`,
     `content`,
-    `link`,
+    `twitter_link`,
     `details`,
     `deadline`,
     `cover_img`
@@ -29,10 +30,14 @@ if ($row === false) {
     exit;
 }
 ?>
-<form action="dodelete.php" method="post">
-    <h1>supprimer l'article ?</h1>
-    <input type="hidden" name="article[id]" value="<?=$_GET['id']?>">
-    <h2><?=$row['title']?></h2>
-    <button type="submit">Oui</button>
-    <a href="index.php">non</a>
-</form>
+<div class="container">
+    <form action="dodelete.php" method="post">
+        <h1>supprimer l'article ?</h1>
+        <input type="hidden" name="article[id]" value="<?=$_GET['id']?>">
+        <h2><?=$row['title']?></h2>
+        <button type="submit">Oui</button>
+        <a href="index.php">non</a>
+    </form>
+</div>
+<?php include "../footer.php";
+
