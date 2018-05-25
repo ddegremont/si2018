@@ -1,11 +1,18 @@
-*{
-  margin: 0;
-  padding: 0;
-}
 // global
 @import "global/_vars.scss";
+@import "global/_reset.scss";
+@import "global/_fonts.scss";
 // mixins
 @import "mixins/_forsize.scss";
 // partials
 @import "partials/_header.scss";
-@import "partials/_admin.scss";
+@import "partials/_plugs.scss";
+@import "partials/_oneplug.scss";
+@import "partials/_find.scss";
+@import "partials/_desc.scss";
+@import "partials/_stats.scss";
+@import "partials/_plans.scss";
+@import "partials/_ads.scss";
+@import "partials/_partners.scss";
+@import "partials/_contact.scss";
+@import "partials/_search.scss";

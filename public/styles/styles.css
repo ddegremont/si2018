@@ -1,12 +1,681 @@
-* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+@font-face {
+  font-family: 'Didot';
+  src: url("../fonts/Didot.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-Bold';
+  src: url("../fonts/AvenirNext-Bold.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-BoldItalic';
+  src: url("../fonts/AvenirNext-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-DemiBold';
+  src: url("../fonts/AvenirNext-DemiBold.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-DemiBoldItalic';
+  src: url("../fonts/AvenirNext-DemiBoldItalic.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-Heavy';
+  src: url("../fonts/AvenirNext-Heavy.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-HeavyItalic';
+  src: url("../fonts/AvenirNext-HeavyItalic.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-Italic';
+  src: url("../fonts/AvenirNext-Italic.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-Medium';
+  src: url("../fonts/AvenirNext-Medium.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-MediumItalic';
+  src: url("../fonts/AvenirNext-MediumItalic.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-Regular';
+  src: url("../fonts/AvenirNext-Regular.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-UltraLight';
+  src: url("../fonts/AvenirNext-UltraLight.ttf"); }
+
+@font-face {
+  font-family: 'AvenirNext-UltraLightItalic';
+  src: url("../fonts/AvenirNext-UltraLightItalic.ttf"); }
 
 .Header {
-  background: green;
-  height: 50px;
-  width: 100vw; }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
-.Nav {
-  background: #fd79a8;
+.Logo__img {
+  width: 40px;
+  margin-top: 20px;
+  margin-left: 20px; }
+
+.Menu {
+  margin-top: 20px;
+  margin-right: 20px; }
+  .Menu__imgBlack {
+    -webkit-filter: brightness(0.2);
+    filter: brightness(0.2); }
+  .Menu--isActive {
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    display: none;
+    font-family: 'AvenirNext-Regular'; }
+  .Menu__closeIconContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .Menu__closeIcon {
+    -webkit-filter: brightness(0);
+    filter: brightness(0);
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    margin-right: 15px; }
+    .Menu__closeIcon:hover {
+      cursor: pointer; }
+  .Menu__navigationActived {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 26px; }
+
+.Top {
+  background-position: left;
+  background-size: cover;
   height: 100vh; }
+  .Top__titles {
+    margin-top: 200px;
+    margin-left: 20px; }
+  .Top__hotelTitle {
+    font-family: 'AvenirNext-Regular';
+    color: white;
+    font-size: 38px;
+    line-height: 48px; }
+
+.Plugs {
+  background: white;
+  width: 100%; }
+
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px; }
+  .Container__plug {
+    width: 250px;
+    height: 300px;
+    background: white;
+    margin-top: 50px;
+    -webkit-box-shadow: 2px 2px 12px -1px #cccccc;
+    -moz-box-shadow: 2px 2px 12px -1px #cccccc;
+    box-shadow: 2px 2px 12px -1px #cccccc;
+    position: relative; }
+  .Container__imgContainer {
+    width: 100%;
+    height: 125px; }
+  .Container__img {
+    width: 100%;
+    height: 100%; }
+  .Container__countryTitle {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: 'Didot';
+    color: #32CCCD; }
+  .Container__cityTitle {
+    margin-left: 20px;
+    font-family: 'AvenirNext-Regular';
+    color: #646464;
+    font-size: 18px; }
+  .Container__cityTitleContainer {
+    margin-top: 5px;
+    line-height: 20px; }
+  .Container__place {
+    width: 50px;
+    height: 50px;
+    background: #32CCCD;
+    border-radius: 100%;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    right: -25px; }
+  .Container__placeText {
+    font-family: 'AvenirNext-Regular';
+    color: white; }
+  .Container__paragraph {
+    margin-left: 20px;
+    width: 200px;
+    font-family: 'AvenirNext-UltraLight';
+    font-size: 12px; }
+  .Container__boldParagraph {
+    font-family: 'AvenirNext-Regular';
+    font-weight: 400; }
+  .Container__articleLinkContainer {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .Container__articleLink {
+    font-family: 'AvenirNext-Regular';
+    color: #32CCCD;
+    font-size: 10px; }
+  .Container__arrow {
+    font-size: 8px; }
+
+.Oneplug {
+  background: white; }
+  .Oneplug__header {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; }
+  .Oneplug__headerTextContainer {
+    line-height: 32px;
+    padding-top: 40px;
+    padding-left: 20px; }
+  .Oneplug__headerCountryTitle {
+    font-family: 'AvenirNext-Regular';
+    color: #32CCCD; }
+  .Oneplug__headerCityTitle {
+    font-family: 'AvenirNext-Regular';
+    color: white;
+    font-size: 30px; }
+  .Oneplug__contentParagraph {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: flex; }
+  .Oneplug__line {
+    width: 20px;
+    height: 3px;
+    background: #32CCCD;
+    margin-top: 8px; }
+  .Oneplug__paragraph {
+    width: 80%;
+    font-family: 'AvenirNext-Regular';
+    margin-left: 10px;
+    color: #646464;
+    line-height: 20px; }
+  .Oneplug__closeIconContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .Oneplug__iconsContainer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column; }
+  .Oneplug__iconsLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
+  .Oneplug__iconBox {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; }
+  .Oneplug__text {
+    margin-top: 10px;
+    font-family: 'AvenirNext-Regular';
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center; }
+
+.Find {
+  background-position: left;
+  background-size: cover;
+  height: 100vh; }
+  .Find__mainTitle {
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 32px;
+    font-family: 'AvenirNext-Regular';
+    color: white;
+    font-size: 30px; }
+  .Find__searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: .9; }
+  .Find__searchBox {
+    background: white;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px; }
+  .Find__searchTitle {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 16px; }
+  .Find__text {
+    font-family: 'AvenirNext-DemiBold';
+    margin-top: 20px;
+    font-size: 14px; }
+  .Find__location {
+    margin-top: 10px;
+    border: 1px solid #979797;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5px; }
+  .Find__category {
+    margin-top: 10px;
+    border: 1px solid #979797;
+    height: 30px; }
+  .Find__submitContainer {
+    display: flex;
+    justify-content: center; }
+  .Find__submit {
+    margin-top: 20px;
+    background: #00CCCC;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    font-family: 'AvenirNext-DemiBold'; }
+
+.Desc {
+  background: white; }
+  .Desc__content {
+    padding: 20px; }
+  .Desc__titleContainer:not(:first-child) {
+    margin-top: 30px; }
+  .Desc__title {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 20px; }
+  .Desc__titleLine {
+    background: #00CCCC;
+    margin-top: 5px;
+    width: 25px;
+    height: 3px; }
+  .Desc__travelContent {
+    margin-top: 30px; }
+  .Desc__travelBox {
+    display: flex;
+    align-items: center; }
+    .Desc__travelBox:not(:last-child) {
+      margin-bottom: 20px; }
+  .Desc__travelImg {
+    width: 50px; }
+  .Desc__travelText {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 16px; }
+  .Desc__subtitle {
+    font-family: 'AvenirNext-Medium';
+    margin-top: 30px;
+    line-height: 22px; }
+  .Desc__paragraph {
+    margin-top: 20px;
+    font-family: 'AvenirNext-Regular';
+    color: #646464;
+    line-height: 22px; }
+  .Desc__mockupContainer {
+    margin-top: 25px;
+    width: 300px; }
+  .Desc__mockup {
+    width: 100%; }
+  .Desc__premium {
+    display: flex;
+    justify-content: center; }
+  .Desc__premiumText {
+    background: #00CCCC;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 15px;
+    padding: 10px;
+    width: 150px; }
+
+.Stats {
+  background: #1E6E97; }
+  .Stats__description {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .Stats__descriptionLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .Stats__descriptionLine:not(:last-child) {
+      margin-bottom: 30px; }
+  .Stats__descriptionNumber {
+    font-family: 'AvenirNext-Bold';
+    color: white;
+    margin-bottom: 10px; }
+  .Stats__descriptionText {
+    font-family: 'AvenirNext-Medium';
+    color: white; }
+
+.Plans {
+  margin-top: 20px; }
+  .Plans__maintitleContainer {
+    margin-left: 20px; }
+  .Plans__maintitle {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 20px; }
+  .Plans__titleLine {
+    background: #00CCCC;
+    margin-top: 5px;
+    width: 25px;
+    height: 3px; }
+  .Plans__container {
+    display: flex;
+    justify-content: center; }
+  .Plans__card {
+    -webkit-box-shadow: 0px 2px 5px -1px #cccccc;
+    -moz-box-shadow: 0px 2px 5px -1px #cccccc;
+    box-shadow: 0px 2px 5px -1px #cccccc;
+    margin-top: 30px;
+    width: 300px; }
+    .Plans__card:last-child {
+      margin-bottom: 30px; }
+  .Plans__articleLinkContainer {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px; }
+  .Plans__articleLink {
+    font-family: 'AvenirNext-Regular';
+    color: #32CCCD;
+    font-size: 10px; }
+  .Plans__img {
+    width: 100%; }
+  .Plans__recent {
+    font-family: 'AvenirNext-UltraLight';
+    opacity: .8;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px; }
+  .Plans__title {
+    font-family: 'Didot';
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px; }
+  .Plans__text {
+    margin-top: 10px;
+    font-family: 'AvenirNext-UltraLight';
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 18px; }
+  .Plans__good {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; }
+  .Plans__goodText {
+    background: #00CCCC;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 15px;
+    padding: 10px;
+    width: 200px; }
+
+.Ads__description {
+  margin-left: 20px; }
+
+.Ads__maintitleContainer {
+  margin-left: 20px; }
+
+.Ads__maintitle {
+  font-family: 'AvenirNext-DemiBold';
+  font-size: 20px; }
+
+.Ads__titleLine {
+  background: #00CCCC;
+  margin-top: 5px;
+  width: 25px;
+  height: 3px; }
+
+.Ads__img {
+  width: 40px; }
+
+.Ads__box {
+  display: flex;
+  align-items: center; }
+
+.Ads__textContainer {
+  margin-left: 10px; }
+
+.Ads__title {
+  font-family: 'AvenirNext-Bold';
+  font-size: 13px;
+  margin-top: 30px; }
+
+.Ads__text {
+  font-family: 'AvenirNext-Regular';
+  font-size: 11px;
+  margin-top: 10px;
+  line-height: 16px;
+  width: 250px; }
+
+.Partners {
+  margin-top: 30px; }
+  .Partners__maintitleContainer {
+    margin-left: 20px; }
+  .Partners__maintitle {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 20px; }
+  .Partners__titleLine {
+    background: #00CCCC;
+    margin-top: 5px;
+    width: 25px;
+    height: 3px; }
+  .Partners__logos {
+    display: flex;
+    justify-content: center; }
+  .Partners__logosContainer {
+    width: 300px;
+    display: flex;
+    justify-content: space-between; }
+  .Partners__logo {
+    object-fit: contain; }
+    .Partners__logo:not(:first-child) {
+      width: 100px; }
+
+.Contact__maintitleContainer {
+  margin-left: 20px;
+  margin-top: 40px; }
+
+.Contact__maintitle {
+  font-family: 'AvenirNext-DemiBold';
+  font-size: 20px; }
+
+.Contact__titleLine {
+  background: #00CCCC;
+  margin-top: 5px;
+  width: 25px;
+  height: 3px; }
+
+.Contact__imgContainer {
+  margin-top: 20px;
+  height: 200px; }
+
+.Contact__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.Contact__boxContainer {
+  display: flex;
+  justify-content: center; }
+
+.Contact__infos {
+  margin-top: 20px;
+  background: white;
+  width: 90%;
+  webkit-box-shadow: 0px 2px 5px -1px #cccccc;
+  -moz-box-shadow: 0px 2px 5px -1px #cccccc;
+  box-shadow: 0px 2px 5px -1px #cccccc; }
+
+.Contact__box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+.Contact__name {
+  font-family: 'AvenirNext-Regular';
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 10px; }
+
+.Contact__address {
+  margin-top: 20px;
+  margin-left: 10px; }
+
+.Contact__addressText {
+  font-family: 'AvenirNext-DemiBold';
+  font-size: 12px;
+  margin-top: 20px; }
+
+.Contact__phoneNumber {
+  font-family: 'AvenirNext-Regular';
+  font-size: 11px; }
+
+.Contact__email {
+  font-family: 'AvenirNext-Regular';
+  font-size: 11px;
+  margin-top: 10px; }
+
+.Contact__color {
+  color: #00CCCC; }
+
+.Contact__form {
+  margin-left: 20px;
+  margin-top: 20px; }
+
+.Search__header {
+  width: 100%;
+  height: 250px;
+  background-size: cover; }
+
+.Search__cardsContainer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around; }
+  .Search__cardsContainer:last-child {
+    margin-bottom: 40px; }
+
+.Search__card {
+  background: white;
+  width: 300px;
+  height: 500px;
+  webkit-box-shadow: 0px 2px 5px -1px #cccccc;
+  -moz-box-shadow: 0px 2px 5px -1px #cccccc;
+  box-shadow: 0px 2px 5px -1px #cccccc; }
+
+.Search__titles {
+  padding-top: 100px;
+  padding-left: 80px;
+  font-family: 'AvenirNext-Medium';
+  color: white;
+  font-size: 32px;
+  line-height: 36px; }
+
+.Search__category {
+  font-family: 'AvenirNext-Regular';
+  font-size: 26px; }
+
+.Search_imgContainer {
+  width: 100%; }
+
+.Search__img {
+  width: 100%; }
+
+.Search__subtitle {
+  font-family: 'AvenirNext-Regular';
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 18px; }
+
+.Search__iconContainer {
+  display: flex;
+  align-items: center; }
+  .Search__iconContainer:not(:last-child) {
+    margin-bottom: 10px; }
+
+.Search__iconsLine {
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'AvenirNext-Regular';
+  font-size: 12px; }
+
+.Search__icon {
+  margin-right: 10px;
+  width: 25px; }

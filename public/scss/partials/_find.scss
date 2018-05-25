@@ -1,0 +1,61 @@
+.Find {
+  background-position: left;
+  background-size: cover;
+  height: 100vh;
+  &__mainTitle {
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 32px;
+    font-family: 'AvenirNext-Regular';
+    color: white;
+    font-size: 30px;
+  }
+  &__searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: .9;
+  }
+  &__searchBox {
+    background: white;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  &__searchTitle {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 16px;
+  }
+  &__text {
+    font-family: 'AvenirNext-DemiBold';
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  &__location {
+    margin-top: 10px;
+    border: 1px solid #979797;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5px;
+  }
+  &__category {
+    margin-top: 10px;
+    border: 1px solid #979797;
+    height: 30px;
+  }
+  &__submitContainer {
+    display: flex;
+    justify-content: center;
+  }
+  &__submit {
+    margin-top: 20px;
+    background: #00CCCC;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    font-family: 'AvenirNext-DemiBold';
+  }
+}

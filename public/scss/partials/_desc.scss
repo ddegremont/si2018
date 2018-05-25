@@ -1,0 +1,72 @@
+.Desc {
+  background: white;
+  &__content {
+    padding: 20px;
+  }
+  &__titleContainer {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+  &__title {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 20px;
+  }
+  &__titleLine {
+    background: #00CCCC;
+    margin-top: 5px;
+    width: 25px;
+    height: 3px;
+  }
+  &__travelContent {
+    margin-top: 30px;
+  }
+  &__travelBox {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__travelImg {
+    width: 50px;
+  }
+  &__travelText {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 16px;
+  }
+  &__subtitle {
+    font-family: 'AvenirNext-Medium';
+    margin-top: 30px;
+    line-height: 22px;
+  }
+  &__paragraph {
+    margin-top: 20px;
+    font-family: 'AvenirNext-Regular';
+    color: #646464;
+    line-height: 22px;
+  }
+  &__mockupContainer {
+    margin-top: 25px;
+    width: 300px;
+  }
+  &__mockup {
+    width: 100%;
+  }
+  &__premium {
+    display: flex;
+    justify-content: center;
+  }
+  &__premiumText {
+    background: #00CCCC;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+  }
+}

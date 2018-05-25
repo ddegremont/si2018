@@ -1,0 +1,74 @@
+.Contact {
+  &__maintitleContainer {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  &__maintitle {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 20px;
+  }
+  &__titleLine {
+    background: #00CCCC;
+    margin-top: 5px;
+    width: 25px;
+    height: 3px;
+  }
+  &__imgContainer {
+    margin-top: 20px;
+    height: 200px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__boxContainer {
+    display: flex;
+    justify-content: center;
+  }
+  &__infos {
+    margin-top: 20px;
+    background: white;
+    width: 90%;
+    webkit-box-shadow: 0px 2px 5px -1px #cccccc;
+    -moz-box-shadow: 0px 2px 5px -1px #cccccc;
+    box-shadow: 0px 2px 5px -1px #cccccc;
+  }
+  &__box {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__name {
+    font-family: 'AvenirNext-Regular';
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  &__address {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  &__addressText {
+    font-family: 'AvenirNext-DemiBold';
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  &__phoneNumber {
+    font-family: 'AvenirNext-Regular';
+    font-size: 11px;
+  }
+  &__email {
+    font-family: 'AvenirNext-Regular';
+    font-size: 11px;
+    margin-top: 10px;
+  }
+  &__color {
+    color: #00CCCC;
+  }
+  &__form {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
